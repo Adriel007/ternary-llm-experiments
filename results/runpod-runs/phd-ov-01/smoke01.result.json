@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "tasks": [
+      "gsm8k",
+      "arc_challenge",
+      "hellaswag"
+    ],
+    "limit": 40,
+    "steps": 80,
+    "question": "K2+distill vs K3-PTQ per-bit + PPL-only-or-benchmarks (dense)",
+    "minutes": 22.3
+  },
+  "FP": {
+    "gsm8k": 0.625,
+    "arc": 0.425,
+    "hella": 0.675
+  },
+  "K2_PTQ": {
+    "gsm8k": 0.0,
+    "arc": 0.3,
+    "hella": 0.575,
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "K2_distill": {
+    "gsm8k": 0.15,
+    "arc": 0.325,
+    "hella": 0.55
+  },
+  "K3_PTQ": {
+    "gsm8k": 0.475,
+    "arc": 0.4,
+    "hella": 0.65,
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "K3_distill": {
+    "gsm8k": 0.425,
+    "arc": 0.35,
+    "hella": 0.625
+  }
+}

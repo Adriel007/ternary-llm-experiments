@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "n_params_est": 7618926800,
+    "cpu": "AMD Ryzen Threadripper PRO 5955WX (16 cores / 32 threads)",
+    "runner": "llama.cpp@b9509 + sasori TQ kernel patch, -ngl 0 -t 16",
+    "bench": "llama-bench -p 512 -n 64 (prefill/decode tok/s); llama-perplexity wikitext-2-raw test, 8 chunks, n_ctx 512",
+    "date": "2026-06-29",
+    "honest_note": "7B = the FAIR case for sasori. Even here, on perplexity-per-bit, the mature llama.cpp K-quant Q4_K_M DOMINATES sasori (smaller 4.68 vs 7.23GB, better PPL 7.12 vs 7.77, faster). sasori-TQ3P only beats the 8-bit Q8_0 (weak win). sasori has NO efficiency/quality-per-bit advantage as a deployment kernel. CAVEAT: PPL != task accuracy (the Papers B/C theme); sasori-K3 retains ~98% GSM8K for this model (paper data), but Q4_K_M's task accuracy is not measured here and is likely also competitive. The genuine sasori finding here is the SCALE effect: TQ2P PPL/F16 recovers 10.5x (1.7B) -> 3.3x (7B), cross-validating Paper C in the deployed kernel."
+  },
+  "results": [
+    {"quant": "F16",         "size_bytes": 15237853600, "prefill_tok_s": 45.47, "decode_tok_s": 2.73, "ppl_wikitext": 6.7297},
+    {"quant": "sasori-TQ3P", "size_bytes": 7234179488,  "prefill_tok_s": 28.30, "decode_tok_s": 4.62, "ppl_wikitext": 7.7691, "weight_bpw": 6.1875},
+    {"quant": "Q8_0",        "size_bytes": 8098525600,  "prefill_tok_s": 53.16, "decode_tok_s": 4.28, "ppl_wikitext": 6.7463},
+    {"quant": "sasori-TQ2P", "size_bytes": 5551878560,  "prefill_tok_s": 38.93, "decode_tok_s": 4.65, "ppl_wikitext": 21.9277, "weight_bpw": 4.1250},
+    {"quant": "Q4_K_M",      "size_bytes": 4683073952,  "prefill_tok_s": 67.55, "decode_tok_s": 7.56, "ppl_wikitext": 7.1185},
+    {"quant": "Q2_K",        "size_bytes": 3015940512,  "prefill_tok_s": 47.09, "decode_tok_s": 8.84, "ppl_wikitext": 11.9828}
+  ]
+}

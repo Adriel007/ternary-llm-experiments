@@ -1,0 +1,56 @@
+{
+  "k2_base_acc": 0.0,
+  "k2_refit_acc": 0.016666666666666666,
+  "delta": 0.016666666666666666,
+  "config": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "K": 2,
+    "group": 256,
+    "mode": "act",
+    "calib_n": 32,
+    "calib_maxlen": 512,
+    "calib_source": "wikitext-2-raw-v1",
+    "gsm8k_n": 60,
+    "niter": 25,
+    "lam": 0.01,
+    "device": "cuda",
+    "n_targets": 196,
+    "n_hess": 196,
+    "ref_distill": null,
+    "objective": "diagonal-Hessian (E[x^2]) activation-aware weighted ridge, codes frozen"
+  },
+  "samples": {
+    "base": [
+      {
+        "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+        "gen": "Kadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKadlak\nKad",
+        "gold": "18",
+        "pred": null,
+        "ok": false
+      },
+      {
+        "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+        "gen": "K\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\nK\n",
+        "gold": "3",
+        "pred": null,
+        "ok": false
+      }
+    ],
+    "refit": [
+      {
+        "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+        "gen": " it is a helpful assistant.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.####.###",
+        "gold": "18",
+        "pred": null,
+        "ok": false
+      },
+      {
+        "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+        "gen": "\u8c6a\u723d\u7684\nA robe takes bolts of blue fabric and half that amount of white fabric.  How many bolts does it take?\nA robe takes bolts of blue fabric and half that amount of white fabric.  How many bolts does it take?\nA robe takes bolts of blue fabric and half that amount of white fabric.  How many bolts does it take?\nA robe takes bolts of blue fabric and half that amount of white fabric.  How many bolts does it take?\nA robe takes bolts of blue fabric and half that amount of white fabric.  How many bolts ",
+        "gold": "3",
+        "pred": null,
+        "ok": false
+      }
+    ]
+  }
+}

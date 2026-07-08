@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "ref_fp": 0.35,
+  "ptq": 0.0,
+  "curve": [
+    {
+      "tokens": 0,
+      "gsm8k": 0.0,
+      "samples": [],
+      "recovered": 0.0
+    },
+    {
+      "tokens": 301056,
+      "gsm8k": 0.0,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+          "gen": "The area of the first two square inches is equal to 400.\nWe are given that the total area of the rectangle is equal to 500.\nSo, we can calculate the sum of the area of the base area of the square:\n30 = 100 + 10 = 100\nTo solve this problem, we need to determine the value of x, which represents the number of people who know the answer to the above question is 100, what is the value of unknown variable X? What is the value of unknown variable x?\nTo solve this problem, we need to determine the value of x.\nThe answer is: 10",
+          "gold": "18",
+          "pred": "10",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "The area of the square is equal to $10$ and $x$ is $\\boxed{15}$.\nThe answer is: 43",
+          "gold": "3",
+          "pred": "43",
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+          "gen": "The area of the first two square inches is equal to 240.\nWe are given that the total area of the rectangle is equal to 100.\nSo, we can calculate the sum of the area of the base area of the square.\nThe area of the area of the triangle is 100 + 1 = 160.\nSimplifying, we get $300 = 100.\nSubtracting 100, we have $100 = 100.\nDividing both sides by 10, we get $100 = 100.\nSimplifying, we get $100 = 100.\nSolving for x, we get $100 = 100.\nSimplifying, we get $100 = 100.\nSimplifying, we get $100 = 100.\nSimplifying, we get $100 = 100.\nSimplifying, we get $100 = 100.\nSimplifying, we get $100 = 100.\nSimplif",
+          "gold": "70000",
+          "pred": "100",
+          "ok": false
+        },
+        {
+          "q": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gen": "The area of the square is equal to $2$ and $x$ in the first.\nWe can find the sum of the area of the rectangle is $15$ and $X$ is $4$.\nSo, $x = 1$ is $2$ and $x$ is $2$.\nSimplifying, we get $2^2 + 1 = 1$ and $x$ is $2$.\nSubtracting $1$ and $2$ and $2$ and $2$ and $2$ and $2$.\nTo solve this problem, we need to determine the value of $X$ that $X$ is $2$.\nThe answer is: 100",
+          "gold": "540",
+          "pred": "100",
+          "ok": false
+        }
+      ],
+      "recovered": 0.0
+    }
+  ]
+}

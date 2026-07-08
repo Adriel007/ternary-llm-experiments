@@ -1,0 +1,169 @@
+{
+  "model": "microsoft/phi-2",
+  "draft": "ternary PTQ + LoRA-KD rank64 wikitext (phase-0 draft)",
+  "lora_steps": 1000,
+  "n_prompts": 40,
+  "gen_tokens": 64,
+  "ks": [
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "method": "top-k acceptance on TARGET greedy trajectory (exact verification path); leading-run = ideal-tree accepted block length (UPPER BOUND)",
+  "prediction": "H-BD2: some k<=8 lifts alpha into >=0.8; falsifier alpha_8(wikitext)<0.7",
+  "domains": {
+    "wikitext": {
+      "n_positions": 2542,
+      "alpha_k": {
+        "1": 0.5653,
+        "2": 0.7034,
+        "3": 0.7545,
+        "4": 0.7931,
+        "8": 0.8521
+      },
+      "mean_leading_run_k": {
+        "1": 0.7,
+        "2": 1.225,
+        "3": 1.4,
+        "4": 2.375,
+        "8": 3.25
+      },
+      "speedup": {
+        "c0.3": {
+          "g4": {
+            "k1_leviathan": 0.985,
+            "k1_oracle_ub": 0.773,
+            "k2_oracle_ub": 1.011,
+            "k3_oracle_ub": 1.091,
+            "k4_oracle_ub": 1.534,
+            "k8_oracle_ub": 1.932
+          },
+          "g8": {
+            "k1_leviathan": 0.673,
+            "k1_oracle_ub": 0.5,
+            "k2_oracle_ub": 0.654,
+            "k3_oracle_ub": 0.706,
+            "k4_oracle_ub": 0.993,
+            "k8_oracle_ub": 1.25
+          }
+        },
+        "c0.5": {
+          "g4": {
+            "k1_leviathan": 0.723,
+            "k1_oracle_ub": 0.567,
+            "k2_oracle_ub": 0.742,
+            "k3_oracle_ub": 0.8,
+            "k4_oracle_ub": 1.125,
+            "k8_oracle_ub": 1.417
+          },
+          "g8": {
+            "k1_leviathan": 0.457,
+            "k1_oracle_ub": 0.34,
+            "k2_oracle_ub": 0.445,
+            "k3_oracle_ub": 0.48,
+            "k4_oracle_ub": 0.675,
+            "k8_oracle_ub": 0.85
+          }
+        },
+        "c1.0": {
+          "g4": {
+            "k1_leviathan": 0.434,
+            "k1_oracle_ub": 0.34,
+            "k2_oracle_ub": 0.445,
+            "k3_oracle_ub": 0.48,
+            "k4_oracle_ub": 0.675,
+            "k8_oracle_ub": 0.85
+          },
+          "g8": {
+            "k1_leviathan": 0.254,
+            "k1_oracle_ub": 0.189,
+            "k2_oracle_ub": 0.247,
+            "k3_oracle_ub": 0.267,
+            "k4_oracle_ub": 0.375,
+            "k8_oracle_ub": 0.472
+          }
+        }
+      }
+    },
+    "gsm8k": {
+      "n_positions": 2529,
+      "alpha_k": {
+        "1": 0.6884,
+        "2": 0.7944,
+        "3": 0.841,
+        "4": 0.8648,
+        "8": 0.9102
+      },
+      "mean_leading_run_k": {
+        "1": 1.625,
+        "2": 1.625,
+        "3": 1.7,
+        "4": 2.0,
+        "8": 3.0
+      },
+      "speedup": {
+        "c0.3": {
+          "g4": {
+            "k1_leviathan": 1.233,
+            "k1_oracle_ub": 1.193,
+            "k2_oracle_ub": 1.193,
+            "k3_oracle_ub": 1.227,
+            "k4_oracle_ub": 1.364,
+            "k8_oracle_ub": 1.818
+          },
+          "g8": {
+            "k1_leviathan": 0.911,
+            "k1_oracle_ub": 0.772,
+            "k2_oracle_ub": 0.772,
+            "k3_oracle_ub": 0.794,
+            "k4_oracle_ub": 0.882,
+            "k8_oracle_ub": 1.176
+          }
+        },
+        "c0.5": {
+          "g4": {
+            "k1_leviathan": 0.904,
+            "k1_oracle_ub": 0.875,
+            "k2_oracle_ub": 0.875,
+            "k3_oracle_ub": 0.9,
+            "k4_oracle_ub": 1.0,
+            "k8_oracle_ub": 1.333
+          },
+          "g8": {
+            "k1_leviathan": 0.62,
+            "k1_oracle_ub": 0.525,
+            "k2_oracle_ub": 0.525,
+            "k3_oracle_ub": 0.54,
+            "k4_oracle_ub": 0.6,
+            "k8_oracle_ub": 0.8
+          }
+        },
+        "c1.0": {
+          "g4": {
+            "k1_leviathan": 0.543,
+            "k1_oracle_ub": 0.525,
+            "k2_oracle_ub": 0.525,
+            "k3_oracle_ub": 0.54,
+            "k4_oracle_ub": 0.6,
+            "k8_oracle_ub": 0.8
+          },
+          "g8": {
+            "k1_leviathan": 0.344,
+            "k1_oracle_ub": 0.292,
+            "k2_oracle_ub": 0.292,
+            "k3_oracle_ub": 0.3,
+            "k4_oracle_ub": 0.333,
+            "k8_oracle_ub": 0.444
+          }
+        }
+      }
+    }
+  },
+  "c_fakequant": 1.954,
+  "target_step_ms": 24.63,
+  "draft_step_ms": 48.139,
+  "verdict_H_BD2": "SUPPORTED",
+  "wall_s": 528
+}

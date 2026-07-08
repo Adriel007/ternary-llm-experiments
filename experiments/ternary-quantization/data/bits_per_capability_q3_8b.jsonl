@@ -1,0 +1,6 @@
+{"model": "Qwen/Qwen3-8B", "K": 1, "task": "gsm8k", "acc": 0.0, "N": 200, "sec": 128.3, "_ts": "2026-06-27T15:17:16"}
+{"model": "Qwen/Qwen3-8B", "K": 1, "task": "arc", "acc": 0.255, "N": 200, "sec": 16.9, "_ts": "2026-06-27T15:17:33"}
+{"model": "Qwen/Qwen3-8B", "K": 1, "task": "hellaswag", "acc": 0.235, "N": 200, "sec": 17.4, "_ts": "2026-06-27T15:17:50"}
+{"model": "Qwen/Qwen3-8B", "K": 4, "task": "gsm8k", "acc": 0.9, "N": 200, "sec": 128.4, "_ts": "2026-06-27T15:23:02"}
+{"model": "Qwen/Qwen3-8B", "K": 4, "task": "arc", "acc": 0.535, "N": 200, "sec": 16.9, "_ts": "2026-06-27T15:23:19"}
+{"model": "Qwen/Qwen3-8B", "K": 4, "task": "hellaswag", "acc": 0.54, "N": 200, "sec": 17.4, "_ts": "2026-06-27T15:23:36"}

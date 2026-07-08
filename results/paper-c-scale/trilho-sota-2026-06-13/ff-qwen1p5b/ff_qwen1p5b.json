@@ -1,0 +1,96 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "mode": "fairfight",
+  "ks": [
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "n_prompts": 40,
+  "drafts": {
+    "ternary_self_kd": {
+      "c": 1.9,
+      "wikitext": {
+        "alpha_k": {
+          "1": 0.6826,
+          "2": 0.8155,
+          "3": 0.8702,
+          "4": 0.9054,
+          "8": 0.9511
+        },
+        "mean_leading_run_k": {
+          "1": 2.425,
+          "2": 4.65,
+          "3": 7.725,
+          "4": 12.45,
+          "8": 26.375
+        },
+        "n": 2558
+      },
+      "gsm8k": {
+        "alpha_k": {
+          "1": 0.4262,
+          "2": 0.5379,
+          "3": 0.6004,
+          "4": 0.648,
+          "8": 0.7453
+        },
+        "mean_leading_run_k": {
+          "1": 0.425,
+          "2": 0.95,
+          "3": 1.175,
+          "4": 1.4,
+          "8": 3.925
+        },
+        "n": 2560
+      }
+    },
+    "bnb4": {
+      "c": 2.612,
+      "wikitext": {
+        "alpha_k": {
+          "1": 0.7064,
+          "2": 0.855,
+          "3": 0.9195,
+          "4": 0.9562,
+          "8": 0.9914
+        },
+        "mean_leading_run_k": {
+          "1": 1.675,
+          "2": 2.8,
+          "3": 5.475,
+          "4": 14.275,
+          "8": 45.8
+        },
+        "n": 2558
+      },
+      "gsm8k": {
+        "alpha_k": {
+          "1": 0.8879,
+          "2": 0.9742,
+          "3": 0.993,
+          "4": 0.9977,
+          "8": 0.9996
+        },
+        "mean_leading_run_k": {
+          "1": 10.575,
+          "2": 36.275,
+          "3": 53.45,
+          "4": 59.55,
+          "8": 62.525
+        },
+        "n": 2560
+      }
+    }
+  },
+  "prediction": "corpus-matched ternary (self-KD, 0.2 B/param) vs nf4 4-bit (0.5 B/param): does the memory edge offset the acceptance gap? Pareto on alpha x memory",
+  "mem_byte_per_param": {
+    "ternary_packed": 0.2,
+    "bnb4": 0.5
+  },
+  "alpha8_gap_4bit_minus_ternary": 0.0403,
+  "verdict_fairfight": "TERNARY_COMPETITIVE",
+  "wall_s": 579
+}

@@ -1,0 +1,15 @@
+{
+  "mode": "base",
+  "wall_s": 2037,
+  "coherence_sample": ".. is.. is. is. is. is. is is is is is is is",
+  "wikitext2_ppl_maxlen128": null,
+  "mmlu_acc": 0.2464036462042444,
+  "gsm8k_strict": 0.0,
+  "gsm8k_flexible": 0.0,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.23882017126546146,
+    "mmlu_humanities": 0.24399574920297556,
+    "mmlu_social_sciences": 0.23431914202144946,
+    "mmlu_other": 0.2697135500482781
+  }
+}

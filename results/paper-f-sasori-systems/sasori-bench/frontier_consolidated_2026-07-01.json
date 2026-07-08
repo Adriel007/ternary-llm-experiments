@@ -1,0 +1,12 @@
+{
+  "_meta": {"experiment":"Frontier K2+distill vs K3-PTQ — consolidated across 3 models / 3 families, multi-benchmark","date":"2026-07-01",
+            "limit":100,"steps":300,"tasks":["gsm8k_flex","arc_challenge_acc_norm","hellaswag_acc_norm"],"env":"transformers 4.55.4, lm-eval 0.4.12",
+            "answers":"Adriel's 3 backlog questions (K2+distill vs K3-PTQ)"},
+  "models": {
+    "Qwen2.5-1.5B": {"FP":[0.63,0.43,0.65],"K2_PTQ":[0.02,0.31,0.50],"K2_distill":[0.31,0.30,0.58],"K3_PTQ":[0.48,0.40,0.62],"K3_distill":[0.52,0.41,0.60]},
+    "Qwen3-1.7B":   {"FP":[0.65,0.43,0.46],"K2_PTQ":[0.01,0.27,0.33],"K2_distill":[0.38,0.40,0.51],"K3_PTQ":[0.59,0.46,0.49],"K3_distill":[0.57,0.43,0.43]},
+    "Falcon3-3B":   {"FP":[0.62,0.45,0.59],"K2_PTQ":[0.25,0.43,0.55],"K2_distill":[0.46,0.39,0.57],"K3_PTQ":[0.54,0.45,0.61],"K3_distill":[0.56,0.43,0.62]}
+  },
+  "order": "[gsm8k, arc, hella]",
+  "verdict": "K3-PTQ > K2+distill is ROBUST cross-family + multi-benchmark: K3-PTQ beats K2+distill on GSM8K 3/3 models, ARC 3/3, HellaSwag 2/3 (Qwen3 ties within noise). The third ternary plane (~4.9bpw) dominates the rank-64 adapter (~4.1bpw+LoRA) => distillation is NOT a shortcut to beat K3-PTQ; recommend K3. K2+distill recovers REAL accuracy (not PPL-only) and is a RESCUE lever when stuck at K2 (Qwen2.5 gsm8k 0.02->0.31, Qwen3 0.01->0.38, Falcon3 0.25->0.46), but stays behind K3-PTQ; recovery is math-focused. Honest nuance: Falcon3 K2 does NOT collapse (gsm8k 0.25) -> K2 collapse is family-dependent; the K3 advantage holds anyway. Answers Adriel's P1 (no, K2+distill does not beat K3-PTQ), P3 (real acc not PPL-only, but behind K3 everywhere). Caveats: N=100, 1 seed, 300 steps."
+}

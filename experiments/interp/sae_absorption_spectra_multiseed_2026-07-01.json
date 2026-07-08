@@ -1,0 +1,15 @@
+{
+  "_meta": {"experiment":"#53 Paper G — multi-seed (3 seeds) absorption on Spectra twins, 3 depth points","date":"2026-07-01",
+            "models":{"ternary":"SpectraSuite/TriLM_2.4B_Unpacked","fp_twin":"SpectraSuite/FloatLM_2.4B"},
+            "layers":[6,15,23],"seeds":[0,1,2],"note":"seed0 = original 3-point run (tags _trilm/_floatlm); seed1/2 = SAE_SEED 1/2 (tags _S1/_S2). Same BatchTopK config.",
+            "env":"transformers 4.55.4, sae-bench 0.6.0"},
+  "mean_absorption_fraction_raw": {
+    "trilm_ternary": {"L6":[0.3197,0.2354,0.2639], "L15":[0.1204,0.1729,0.1259], "L23":[0.2471,0.2955,0.2567]},
+    "floatlm_fp":    {"L6":[0.2944,0.3437,0.2902], "L15":[0.2421,0.2690,0.1998], "L23":[0.1271,0.1031,0.1227]}
+  },
+  "mean_sd": {
+    "trilm_ternary": {"L6":"0.273±0.035","L15":"0.140±0.024","L23":"0.266±0.021"},
+    "floatlm_fp":    {"L6":"0.309±0.024","L15":"0.237±0.028","L23":"0.118±0.010"}
+  },
+  "verdict": "Multi-seed (3 seeds) gives error bars to the #53 twin result. TWO ROBUST contrasts (±1sd bands disjoint): (i) L15 mid ternary absorbs LESS (0.140 vs 0.237, ~1.7x); (ii) L23 late ternary absorbs MORE (0.266 vs 0.118, ~2.3x, large separation). ONE NON-robust (honest): L6 early bands overlap -> ambiguous. Ternary's mid trough + late crossover (ternary>>FP) are seed-robust in a true-twin pair. Note: at the 3 coarse points [6,15,23] the FP looks monotone-decreasing; the dense 7-point curve (seed0) shows the FP rises again at L28 (trough at L24) -> FP non-monotonicity only visible at fine resolution; the two views are consistent. Confound removed + statistics."
+}

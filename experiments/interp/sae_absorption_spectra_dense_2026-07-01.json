@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "experiment": "#53 Paper G reinforcement — DENSE depth curve of SAE feature absorption, Spectra twins (TriLM ternary vs FloatLM FP)",
+    "date": "2026-07-01", "gpu": "Colab RTX PRO 6000 Blackwell 102GB",
+    "models": {"ternary": "SpectraSuite/TriLM_2.4B_Unpacked", "fp_twin": "SpectraSuite/FloatLM_2.4B",
+               "note": "true twins: LLaMA 30L d=2304 vocab=50304, same data/300B tokens, differ only in precision"},
+    "layers": [4,8,12,16,20,24,28], "seeds": 1,
+    "env_training_SAEs": {"transformers": "5.12.1", "datasets": "5.0.0", "torch": "2.11.0+cu128", "note": "SAE training ran before the sae-bench downgrade"},
+    "env_absorption": {"transformers": "4.55.4", "sae-bench": "0.6.0", "sae-lens": "6.44.4", "transformer-lens": "2.18.0", "tokenizers": "0.21.4", "datasets": "3.6.0", "numpy": "1.26.4"},
+    "method": "BatchTopK SAE (d_sae=6.4x d_in, k=32, 4000 steps, 400k acts) per layer; SAEBench feature-absorption over HookedTransformer-shim over HF"
+  },
+  "mean_absorption_fraction": {
+    "trilm_ternary": {"L4": 0.3040, "L8": 0.3083, "L12": 0.2502, "L16": 0.0926, "L20": 0.1727, "L24": 0.2847, "L28": 0.2749},
+    "floatlm_fp":    {"L4": 0.3654, "L8": 0.3318, "L12": 0.2371, "L16": 0.1932, "L20": 0.2160, "L24": 0.0964, "L28": 0.1678}
+  },
+  "verdict": "REFINES the 3-point result (honest self-correction). ROBUST contrast: at LATE depth (L24-28) ternary absorbs 1.6-3x MORE than its FP twin (0.28/0.27 vs 0.10/0.17); at the ternary trough (L16) it absorbs ~2x LESS (0.093 vs 0.193). Confound STILL removed (ternary-vs-FP controlled twins). CORRECTION: the 3-point story 'ternary non-monotonic V vs FP monotone' is FALSE at higher resolution — the FP twin is ALSO non-monotonic (trough at L24). Truer statement: BOTH have depth structure but DIFFERENT (ternary trough earlier L16 + higher late; FP trough later L24 + lower late) => the absorption depth-profile depends on precision. The dense curve AVOIDED an overclaim the 3 points would have made. Caveats: 1 seed, untuned BatchTopK SAEs, run under saturated CPU/VRAM (deterministic per-process, unaffected)."
+}

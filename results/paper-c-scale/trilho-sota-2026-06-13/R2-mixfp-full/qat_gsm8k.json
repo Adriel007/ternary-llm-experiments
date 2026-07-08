@@ -1,0 +1,62 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "ref_fp": 0.5,
+  "ptq": 0.0,
+  "curve": [
+    {
+      "tokens": 0,
+      "gsm8k": 0.0,
+      "samples": [],
+      "recovered": 0.0
+    },
+    {
+      "tokens": 8001536,
+      "gsm8k": 0.0,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+          "gen": "The first time she makes her own bubble-balls of soap for her two children.  The second time she makes them for her three children.  The third time she makes them for her four children.  Her friend Alisson, who is a child, comes over and takes 3 of her own bubbles to play with her.  After that, Alisson's brother Billy comes over and takes 5 of her own bubbles to play with her.  How many bubbles does Alisson have left to take to play with her?\n\nAssistant A: Alisson has 3 children.\nA: Alisson takes 3 of her own bubbles to play with her.\nB: Alisson takes 5 of her own bubbles to play with her.\nC: ",
+          "gold": "18",
+          "pred": "30",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "10 people were wearing checkered shirts.\nHalf as many people wore white shirts as wearing checkered shirts, so there were 5/2 = 2.5 people wearing white shirts.\nIn total, they wore 10 + 2.5 = 3.5 shirts.\n#### 3.5\nThe answer is: 3.5",
+          "gold": "3",
+          "pred": "3.5",
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+          "gen": "The cost of the car is $20,000.\nThe mechanic charges an additional $30 per day for 4 hours of work, so the mechanic charged a total of $30 * 4 = $120 per day for 4 hours of work.\nTherefore, the mechanic charged a total of $120 + $120 = $240 per day for 4 hours of work.\n#### 240\nThe answer is: 240",
+          "gold": "70000",
+          "pred": "240",
+          "ok": false
+        },
+        {
+          "q": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gen": "1st graders: 25 meters per hour\n2nd graders: 40 meters per hour\n3rd graders: 75 meters per hour\n4th graders: 80 meters per hour\n5th graders: 90 meters per hour\n6th graders: 100 meters per hour\n7th graders: 100 meters per hour\n8th graders: 100 meters per hour\n9th graders: 100 meters per hour\n10th graders: 100 meters per hour\n\nAssistant 1: 25 meters per hour\nAssistant 2: 40 meters per hour\nAssistant 3: 75 meters per hour\nAssistant 4: 80 meters per hour\nAssistant 5: 90 meters per hour\nAssistant 6: 100 meters per hour\n\nAssistant 7: 100 meters per hour\n\nAssistant 8: 100 meters per hour\n\nAssistant 9",
+          "gold": "540",
+          "pred": "6",
+          "ok": false
+        },
+        {
+          "q": "Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives t",
+          "gen": "The value of $x$ is 4.\nTo find the value of $y$, we can set up an equation using the given information:\n$x + y = 4$\n$2x - 3y = 4$\nLet's solve this system of equations by adding the two equations together.\nAdding the first equation to the second equation, we get:\n$(2x - 3y) + (2x - 3y) = 4 + 4$\n$4x = 8$\n$x = \\frac{8}{4}$\nTherefore, the value of $y$ is $\\boxed{\\frac{8}{4}}$.The answer is: \\frac{8}{4}",
+          "gold": "20",
+          "pred": "4",
+          "ok": false
+        },
+        {
+          "q": "Kylar went to the store to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glas",
+          "gen": "The cost of one bottle of shampoo is $20.\nA second bottle of shampoo costs 60% of the cost of one bottle of shampoo, so it costs $20 * 0.6 = $12.\nIf Kylar wants to buy 16 bottles of shampoo, then she needs to pay $12 * 16 = $248 for the shampoo.\n#### 248\nThe answer is: 248",
+          "gold": "64",
+          "pred": "248",
+          "ok": false
+        }
+      ],
+      "recovered": 0.0
+    }
+  ]
+}

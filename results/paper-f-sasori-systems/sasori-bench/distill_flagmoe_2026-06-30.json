@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "experiment": "Flagship MoE Qwen3-30B-A3B-Instruct-2507 PTQ ladder (GSM8K flex, limit=150, lm-eval)",
+    "date": "2026-06-30", "gpu": "Colab Blackwell 96GB", "note_speed": "eval ~2s/item sustained (item-1 137s was warmup); ~5min/eval"
+  },
+  "attention_only_CAVEATED": {
+    "linears_ternarized": 192,
+    "confound": "192 = 48 layers x 4 attention projections ONLY. Qwen3-MoE stores its expert FFN weights as a FUSED non-nn.Linear tensor (same as OLMoE) -> they stayed FP. So sasori's nn.Linear-based fake_quant ternarized ONLY attention/router, NOT the experts (the bulk of params). CORRECTION: my earlier claim 'Qwen3-MoE experts are nn.Linear so it would be faithful' was WRONG.",
+    "FP": 0.9133, "K2_attn_only": 0.84, "K2_attn_only_distill": 0.82, "K3_attn_only": 0.9067,
+    "distill_note": "Distilling the attention-only K2 (0.84) did NOT help (0.82, within noise) -- there was nothing to recover because attention-only ternarization barely dented the model. Confirms the confound.",
+    "verdict": "Attention-only ternarization barely dents the 30B (0.913 -> 0.84 at K2, -> 0.907 at K3): the experts (FP) carry the reasoning. This does NOT test full-MoE ternarization -> confounded, NOT paper-worthy as a MoE collapse result. Mild mechanistic hint only: for this MoE, reasoning is robust to attention-only ternarization. A faithful MoE PTQ collapse+rescue test needs custom quantization of the fused expert weights (open follow-up; tasks #57/#58). Both OLMoE and Qwen3-MoE share this fused-expert obstacle -> a real systems finding: sasori's nn.Linear fake_quant does not reach modern MoE experts."
+  }
+}

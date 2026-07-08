@@ -1,0 +1,101 @@
+{
+  "_meta": {
+    "experiment": "#86 do ROME/MEMIT edits survive ternarization?",
+    "model": "gpt2-xl",
+    "alg": "ROME",
+    "n_edits": 1,
+    "dataset": "counterfact",
+    "hparams": "/workspace/EasyEdit/hparams/ROME/gpt2-xl.yaml",
+    "group": 256,
+    "ref_thresh": 0.9,
+    "device": "cuda",
+    "n_probe": 40,
+    "n_requests_built": 1,
+    "n_probes_built": 40,
+    "hparams_model_name": "gpt2-xl",
+    "edited_module_names": [
+      "transformer.h.17.mlp.c_proj"
+    ],
+    "n_loc_refs": 1,
+    "n_base_known_probes": 7,
+    "quant_coverage_of_edits": {
+      "n_edited_modules": 1,
+      "n_covered": 1,
+      "detail": {
+        "transformer.h.17.mlp.c_proj": "Conv1D"
+      }
+    },
+    "minutes": 2.3
+  },
+  "reference_ok": true,
+  "fp_edit": {
+    "rewrite_acc": 1.0,
+    "paraphrase_acc": 0.0,
+    "locality": 1.0,
+    "intrinsic_retention": 0.8571
+  },
+  "k2_edit": {
+    "rewrite_acc": 1.0,
+    "paraphrase_acc": 0.0,
+    "locality": 0.0,
+    "intrinsic_retention": 0.5714,
+    "quant": {
+      "linear": 0,
+      "expert_mats": 0,
+      "conv1d": 192
+    }
+  },
+  "k3_edit": {
+    "rewrite_acc": 1.0,
+    "paraphrase_acc": 0.0,
+    "locality": 1.0,
+    "intrinsic_retention": 0.7143,
+    "quant": {
+      "linear": 0,
+      "expert_mats": 0,
+      "conv1d": 192
+    }
+  },
+  "_easyedit_metrics": [
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The mother tongue of Danielle Darrieux is",
+        "target_new": "English",
+        "ground_truth": "French",
+        "portability": {},
+        "locality": {},
+        "subject": "Danielle Darrieux"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    }
+  ]
+}

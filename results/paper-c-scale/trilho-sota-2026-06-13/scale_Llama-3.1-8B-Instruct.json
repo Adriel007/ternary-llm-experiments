@@ -1,0 +1,705 @@
+{
+  "model": "meta-llama/Llama-3.1-8B-Instruct",
+  "n": 80,
+  "niter": 50,
+  "results": {
+    "fp": {
+      "gsm8k": 0.65,
+      "nrmse": null,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "To find out how much Janet makes every day at the farmers' market, we need to follow these steps:\n\n1. Calculate the total number of eggs laid by the ducks: \n   Janet's ducks lay 16 eggs per day.\n\n2. Calculate the number of eggs Janet eats for breakfast:\n   Janet eats 3 eggs for breakfast every morning.\n\n3. Calculate the number of eggs Janet uses to bake muffins:\n   Janet bakes muffins for her friends every day with 4 eggs.\n\n4. Calculate the total number of eggs used by Janet:\n   Total eggs used ",
+          "gold": "18",
+          "pred": "18.",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "To find the total number of bolts needed for the robe, we need to calculate the amount of white fiber first, since it's half the amount of blue fiber.\n\n1. Blue fiber needed: 2 bolts\n2. White fiber needed: Half of 2 bolts is 2 / 2 = 1 bolt\n\nNow, we add the blue and white fiber together to get the total number of bolts needed.\n\n3. Total bolts needed: 2 (blue) + 1 (white) = 3 bolts\n\n#### 3",
+          "gold": "3",
+          "pred": "3",
+          "ok": true
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "To find the profit Josh made, we need to first calculate the new value of the house after the repairs.\n\n1. Josh buys the house for $80,000.\n2. He puts in $50,000 in repairs.\n3. The repairs increase the value of the house by 150%. This means the value of the house is now 150% of its original value plus the $50,000 he spent on repairs.\n\nLet's denote the original value of the house as x. The value after repairs is 150% of x plus $50,000. \n\nThe original value of the house is $80,000, so we can set u",
+          "gold": "70000",
+          "pred": "90000",
+          "ok": false
+        }
+      ],
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 1,
+          "ok": true
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 1,
+          "ok": true
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        }
+      ]
+    },
+    "joint2": {
+      "gsm8k": 0.1,
+      "nrmse": 0.16298855681504523,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "To find out how much Janet makes every day at the farmers' market, we need to calculate the number of eggs she sells, then multiply that number by the price per egg.\n\nStep 1: Calculate the number of eggs laid by the ducks per day.\n- Number of eggs laid per day: 16\n\nStep 2: Calculate the number of eggs eaten for breakfast.\n- Number of eggs eaten for breakfast: 3\n\nStep 3: Calculate the number of eggs used to bake muffins.\n- Number of eggs used to bake muffins: 4\n\nStep 4: Calculate the number of eg",
+          "gold": "18",
+          "pred": "18.",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "To find the total number of bolts needed, we need to calculate the total amount of fiber required for one robe.\n\n1. A robe takes 2 bolts of blue fiber. \n2. It also takes half that much white fiber. \n   - Half of 2 is 1, so it takes 1 bolt of white fiber.\n3. To find the total number of bolts, we add the number of blue and white bolts.\n   - 2 (blue) + 1 (white) = 3\n\nThe final answer is 3.",
+          "gold": "3",
+          "pred": "3.",
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "To find the profit Josh made, we need to calculate the value of the house after the repairs and then compare it to the original price.\n\nStep 1: Calculate the total cost of the house and repairs.\nThe total cost is the original price of the house plus the cost of the repairs.\nOriginal price of the house: $80,000\nCost of repairs: $50,000\nTotal cost: $80,000 + $50,000 = $130,000\n\nStep 2: Calculate the value of the house after the repairs.\nThe value of the house after the repairs is 150% of the origi",
+          "gold": "70000",
+          "pred": "70000.",
+          "ok": false
+        }
+      ],
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": true
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "models": {
+    "a": "SpectraSuite/TriLM_2.4B_Unpacked",
+    "b": "SpectraSuite/FloatLM_2.4B"
+  },
+  "sources": {
+    "a": "i70_trilm.result.json",
+    "b": "i70_floatlm.result.json"
+  },
+  "n_layers": 30,
+  "n_query_heads": 36,
+  "component_ranking": {
+    "n_components": 60,
+    "spearman_robust": 0.5127535426507364,
+    "pearson_robust": 0.9333425673212997,
+    "spearman_eapig": 0.5531536537927203,
+    "jaccard_top30": 0.42857142857142855,
+    "top_a": [
+      "m0",
+      "a26",
+      "a28",
+      "a23",
+      "a21",
+      "a25",
+      "a19",
+      "a20",
+      "m18",
+      "a22",
+      "a29",
+      "a24",
+      "m20",
+      "m21",
+      "m19",
+      "m22",
+      "m17",
+      "m23",
+      "m24",
+      "a27",
+      "a12",
+      "m15",
+      "m2",
+      "m4",
+      "m10",
+      "a9",
+      "m16",
+      "a4",
+      "m5",
+      "a15"
+    ],
+    "top_b": [
+      "m0",
+      "a26",
+      "a25",
+      "a28",
+      "a27",
+      "m1",
+      "a21",
+      "m20",
+      "a6",
+      "a29",
+      "m2",
+      "m21",
+      "a22",
+      "a23",
+      "a4",
+      "a24",
+      "a5",
+      "m12",
+      "m24",
+      "m25",
+      "a7",
+      "m19",
+      "a17",
+      "a12",
+      "m3",
+      "a1",
+      "m8",
+      "m11",
+      "a9",
+      "m6"
+    ],
+    "intersection": [
+      "a12",
+      "a21",
+      "a22",
+      "a23",
+      "a24",
+      "a25",
+      "a26",
+      "a27",
+      "a28",
+      "a29",
+      "a4",
+      "a9",
+      "m0",
+      "m19",
+      "m2",
+      "m20",
+      "m21",
+      "m24"
+    ]
+  },
+  "heads": {
+    "spearman_head_effect": 0.03454853602733364,
+    "pearson_head_effect": 0.1414203060295649,
+    "jaccard_top30_heads": 0.07142857142857142,
+    "name_movers_a": [
+      [
+        22,
+        10
+      ],
+      [
+        23,
+        2
+      ],
+      [
+        23,
+        18
+      ],
+      [
+        24,
+        3
+      ],
+      [
+        25,
+        35
+      ],
+      [
+        26,
+        21
+      ],
+      [
+        28,
+        13
+      ]
+    ],
+    "name_movers_b": [
+      [
+        25,
+        5
+      ],
+      [
+        25,
+        7
+      ],
+      [
+        25,
+        16
+      ],
+      [
+        28,
+        8
+      ],
+      [
+        28,
+        29
+      ]
+    ],
+    "name_movers_overlap": [],
+    "name_movers_jaccard": 0.0,
+    "s_inhibition_a": [
+      [
+        19,
+        19
+      ],
+      [
+        21,
+        10
+      ],
+      [
+        21,
+        23
+      ],
+      [
+        26,
+        30
+      ],
+      [
+        28,
+        19
+      ]
+    ],
+    "s_inhibition_b": [
+      [
+        21,
+        10
+      ],
+      [
+        23,
+        3
+      ],
+      [
+        25,
+        8
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        26,
+        33
+      ],
+      [
+        27,
+        10
+      ]
+    ],
+    "s_inhibition_overlap": [
+      [
+        21,
+        10
+      ]
+    ],
+    "s_inhibition_jaccard": 0.1,
+    "heads_faithful_a": false,
+    "heads_faithful_b": false,
+    "heads_comparison_reliable": false
+  },
+  "interpretation": "high Spearman/Jaccard on components + matching name-mover / S-inhibition heads => the ternary twin preserves the FP IOI circuit (same-data twins remove the model-identity confound). The node/component comparison is confound-free regardless; the HEAD-level comparison is reliable only when heads_comparison_reliable=True (both twins pass the per-head o_proj coupling test) \u2014 else trust the component-level result."
+}

@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "scales": [
+      "2.4B",
+      "3.9B"
+    ],
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "openbookqa"
+    ],
+    "n_per_task": 200,
+    "dev": "cuda",
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.12.1",
+      "datasets": "5.0.0"
+    }
+  },
+  "scales": {
+    "2.4B": {
+      "floatlm": {
+        "ppl_wikitext": 17.545524159858317,
+        "arc_easy": {
+          "acc": 0.6,
+          "acc_norm": 0.525,
+          "n": 200
+        },
+        "arc_challenge": {
+          "acc": 0.31,
+          "acc_norm": 0.31,
+          "n": 200
+        },
+        "hellaswag": {
+          "acc": 0.45,
+          "acc_norm": 0.555,
+          "n": 200
+        },
+        "openbookqa": {
+          "acc": 0.2,
+          "acc_norm": 0.335,
+          "n": 200
+        }
+      },
+      "ptq": {
+        "ppl_wikitext": 23838.51660015783,
+        "arc_easy": {
+          "acc": 0.25,
+          "acc_norm": 0.275,
+          "n": 200
+        },
+        "arc_challenge": {
+          "acc": 0.24,
+          "acc_norm": 0.24,
+          "n": 200
+        },
+        "hellaswag": {
+          "acc": 0.235,
+          "acc_norm": 0.245,
+          "n": 200
+        },
+        "openbookqa": {
+          "acc": 0.14,
+          "acc_norm": 0.27,
+          "n": 200
+        }
+      },
+      "trilm": {
+        "ppl_wikitext": 20.10737838946129,
+        "arc_easy": {
+          "acc": 0.63,
+          "acc_norm": 0.51,
+          "n": 200
+        },
+        "arc_challenge": {
+          "acc": 0.28,
+          "acc_norm": 0.27,
+          "n": 200
+        },
+        "hellaswag": {
+          "acc": 0.47,
+          "acc_norm": 0.55,
+          "n": 200
+        },
+        "openbookqa": {
+          "acc": 0.185,
+          "acc_norm": 0.365,
+          "n": 200
+        }
+      },
+      "headline": {
+        "arc_easy": {
+          "fp": 0.525,
+          "ptq": 0.275,
+          "trilm": 0.51,
+          "chance": 0.25,
+          "retention_ptq": 0.09090909090909098,
+          "retention_trilm": 0.9454545454545454,
+          "basin_gap_trilm_minus_ptq": 0.235
+        },
+        "arc_challenge": {
+          "fp": 0.31,
+          "ptq": 0.24,
+          "trilm": 0.27,
+          "chance": 0.25,
+          "retention_ptq": -0.16666666666666682,
+          "retention_trilm": 0.33333333333333365,
+          "basin_gap_trilm_minus_ptq": 0.030000000000000027
+        },
+        "hellaswag": {
+          "fp": 0.555,
+          "ptq": 0.245,
+          "trilm": 0.55,
+          "chance": 0.25,
+          "retention_ptq": -0.01639344262295083,
+          "retention_trilm": 0.9836065573770492,
+          "basin_gap_trilm_minus_ptq": 0.30500000000000005
+        },
+        "openbookqa": {
+          "fp": 0.335,
+          "ptq": 0.27,
+          "trilm": 0.365,
+          "chance": 0.25,
+          "retention_ptq": 0.235294117647059,
+          "retention_trilm": 1.3529411764705879,
+          "basin_gap_trilm_minus_ptq": 0.09499999999999997
+        }
+      }
+    },
+    "3.9B": {
+      "floatlm": {
+        "ppl_wikitext": 16.198294142533147,
+        "arc_easy": {
+          "acc": 0.655,
+          "acc_norm": 0.57,
+          "n": 200
+        },
+        "arc_challenge": {
+          "acc": 0.305,
+          "acc_norm": 0.34,
+          "n": 200
+        },
+        "hellaswag": {
+          "acc": 0.47,
+          "acc_norm": 0.555,
+          "n": 200
+        },
+        "openbookqa": {
+          "acc": 0.25,
+          "acc_norm": 0.4,
+          "n": 200
+        }
+      },
+      "ptq": {
+        "ppl_wikitext": 7518.234642311194,
+        "arc_easy": {
+          "acc": 0.29,
+          "acc_norm": 0.355,
+          "n": 200
+        },
+        "arc_challenge": {
+          "acc": 0.205,
+          "acc_norm": 0.245,
+          "n": 200
+        },
+        "hellaswag": {
+          "acc": 0.3,
+          "acc_norm": 0.25,
+          "n": 200
+        },
+        "openbookqa": {
+          "acc": 0.085,
+          "acc_norm": 0.23,
+          "n": 200
+        }
+      },
+      "trilm": {
+        "ppl_wikitext": 17.45591677074625,
+        "arc_easy": {
+          "acc": 0.615,
+          "acc_norm": 0.565,
+          "n": 200
+        },
+        "arc_challenge": {
+          "acc": 0.345,
+          "acc_norm": 0.35,
+          "n": 200
+        },
+        "hellaswag": {
+          "acc": 0.475,
+          "acc_norm": 0.575,
+          "n": 200
+        },
+        "openbookqa": {
+          "acc": 0.205,
+          "acc_norm": 0.355,
+          "n": 200
+        }
+      },
+      "headline": {
+        "arc_easy": {
+          "fp": 0.57,
+          "ptq": 0.355,
+          "trilm": 0.565,
+          "chance": 0.25,
+          "retention_ptq": 0.328125,
+          "retention_trilm": 0.984375,
+          "basin_gap_trilm_minus_ptq": 0.20999999999999996
+        },
+        "arc_challenge": {
+          "fp": 0.34,
+          "ptq": 0.245,
+          "trilm": 0.35,
+          "chance": 0.25,
+          "retention_ptq": -0.05555555555555559,
+          "retention_trilm": 1.1111111111111105,
+          "basin_gap_trilm_minus_ptq": 0.10499999999999998
+        },
+        "hellaswag": {
+          "fp": 0.555,
+          "ptq": 0.25,
+          "trilm": 0.575,
+          "chance": 0.25,
+          "retention_ptq": 0.0,
+          "retention_trilm": 1.065573770491803,
+          "basin_gap_trilm_minus_ptq": 0.32499999999999996
+        },
+        "openbookqa": {
+          "fp": 0.4,
+          "ptq": 0.23,
+          "trilm": 0.355,
+          "chance": 0.25,
+          "retention_ptq": -0.13333333333333325,
+          "retention_trilm": 0.6999999999999997,
+          "basin_gap_trilm_minus_ptq": 0.12499999999999997
+        }
+      }
+    }
+  }
+}

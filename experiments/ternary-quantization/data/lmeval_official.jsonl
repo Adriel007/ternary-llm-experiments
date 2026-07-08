@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 0, "task": "arc_challenge", "metric": "acc_norm", "value": 0.4616, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 2, "task": "arc_challenge", "metric": "acc_norm", "value": 0.3532, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 3, "task": "arc_challenge", "metric": "acc_norm", "value": 0.4462, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 0, "task": "hellaswag", "metric": "acc_norm", "value": 0.6827, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 2, "task": "hellaswag", "metric": "acc_norm", "value": 0.5036, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 3, "task": "hellaswag", "metric": "acc_norm", "value": 0.6693, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "task": "arc_challenge", "metric": "acc_norm", "value": 0.5503, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "task": "arc_challenge", "metric": "acc_norm", "value": 0.4334, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "task": "arc_challenge", "metric": "acc_norm", "value": 0.5538, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "task": "hellaswag", "metric": "acc_norm", "value": 0.8049, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "task": "hellaswag", "metric": "acc_norm", "value": 0.6008, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "task": "hellaswag", "metric": "acc_norm", "value": 0.801, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}

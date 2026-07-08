@@ -1,0 +1,356 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "n": 80,
+  "niter": 50,
+  "results": {
+    "joint2": {
+      "gsm8k": 0.0375,
+      "nrmse": 0.18174143513989827,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "### Step-by-step Analysis of the Query\n\n#### 1. Understanding the Query\n\nThe query is a **string** that contains a **specific problem**. The string is:\n\n> \"Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers\u2019 market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers\u2019 market?\"\n\nThis is a **string** that contains a **specific problem**. Th",
+          "gold": "18",
+          "pred": "16",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "Okay, let's try to understand what you're asking. You mentioned something about \"bolts\" and a calculation involving blue and white fibers. It sounds like you're working on a problem that involves some kind of calculation or formula, possibly related to a programming problem or a mathematical problem.\n\nLet me clarify what you're asking. You wrote:\n\n> A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take?\n>\n> Reason step by step, then give the fina",
+          "gold": "3",
+          "pred": "2",
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "### Step-by-step Analysis of the Problem\n\n#### 1. Understanding the Problem\n\nYou've presented a problem involving a person named \"Josh\" who is involved in some financial transactions. The problem is asking you to:\n\n- **Step-by-step analyze the problem****\n- **Then give the final answer after ####** \n\n#### 2. Step-by-step Analysis of the Problem\n\n---\n\n### 3. Final Answer After ####\n\n#### 4. Final Answer\n\n**Answer:** Josh made a profit of **$150,000****.** \n\nThis profit is calculated from the init",
+          "gold": "70000",
+          "pred": "150000",
+          "ok": false
+        }
+      ],
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        }
+      ]
+    }
+  }
+}

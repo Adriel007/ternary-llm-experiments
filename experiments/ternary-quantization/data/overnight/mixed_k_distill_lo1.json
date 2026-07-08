@@ -1,0 +1,117 @@
+{
+  "_meta": {
+    "script": "mixed_k_distill.py",
+    "model": "Qwen/Qwen2.5-1.5B",
+    "frac": 0.5,
+    "k_hi": 3,
+    "k_lo": 1,
+    "policy": "early",
+    "group": 256,
+    "explicit_kmap": false,
+    "rank": 64,
+    "alpha": 128.0,
+    "beta_distill_weight": 0.1,
+    "max_seq_length": 128,
+    "num_steps": 400,
+    "seed": 0,
+    "lora_targets": "all",
+    "target_substrings": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "dense",
+      "gate_proj",
+      "up_proj",
+      "down_proj",
+      "fc1",
+      "fc2"
+    ],
+    "corpus": "gsm8k",
+    "n_corpus_requested": 300,
+    "limit": 200,
+    "tasks": [
+      "gsm8k",
+      "arc_challenge",
+      "hellaswag"
+    ],
+    "refs": true,
+    "k3_ref": true,
+    "tag": "mixed_k_distill_lo1",
+    "question": "can LoRA-KD lift a ~4.1-bpw mixed-K model to match uniform K3-PTQ on GSM8K?",
+    "n_corpus_built": 300,
+    "minutes": 17.7
+  },
+  "FP": {
+    "gsm8k": 0.59,
+    "arc": 0.42,
+    "hella": 0.63
+  },
+  "K3_PTQ": {
+    "gsm8k": 0.515,
+    "arc": 0.405,
+    "hella": 0.61,
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "mixedK_PTQ": {
+    "gsm8k": 0.005,
+    "arc": 0.315,
+    "hella": 0.47
+  },
+  "mixed_k_config": {
+    "linear": 196,
+    "expert_mats": 0,
+    "skipped_small": 0,
+    "fallback_k_tensors": 0,
+    "quant_params": 1310195712,
+    "quant_bits": 5404557312.0,
+    "bpw_quantized": 4.125,
+    "bpw_all_params": 5.9213,
+    "total_params": 1543714304,
+    "fp_params": 233518592,
+    "kmap": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1
+    },
+    "layers_per_K": {
+      "1": 14,
+      "3": 14
+    },
+    "model": "Qwen/Qwen2.5-1.5B",
+    "n_layers": 28
+  },
+  "mixedK_distill": {
+    "gsm8k": 0.05,
+    "arc": 0.27,
+    "hella": 0.535
+  }
+}

@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "acc": 0.63, "N": 200, "task": "hellaswag", "sec": 61.2, "_ts": "2026-06-27T14:59:17"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "acc": 0.48, "N": 200, "task": "hellaswag", "sec": 43.7, "_ts": "2026-06-27T15:00:01"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "acc": 0.615, "N": 200, "task": "hellaswag", "sec": 62.8, "_ts": "2026-06-27T15:01:04"}
+{"model": "Qwen/Qwen3-4B", "K": 0, "acc": 0.51, "N": 200, "task": "hellaswag", "sec": 37.9, "_ts": "2026-06-27T15:01:44"}
+{"model": "Qwen/Qwen3-4B", "K": 2, "acc": 0.375, "N": 200, "task": "hellaswag", "sec": 30.1, "_ts": "2026-06-27T15:02:14"}
+{"model": "Qwen/Qwen3-4B", "K": 3, "acc": 0.495, "N": 200, "task": "hellaswag", "sec": 41.1, "_ts": "2026-06-27T15:02:55"}
+{"model": "Qwen/Qwen3-8B", "K": 0, "acc": 0.545, "N": 200, "task": "hellaswag", "sec": 63.9, "_ts": "2026-06-27T15:04:00"}
+{"model": "Qwen/Qwen3-8B", "K": 2, "acc": 0.395, "N": 200, "task": "hellaswag", "sec": 47.3, "_ts": "2026-06-27T15:04:48"}
+{"model": "Qwen/Qwen3-8B", "K": 3, "acc": 0.53, "N": 200, "task": "hellaswag", "sec": 68.4, "_ts": "2026-06-27T15:05:56"}
+{"model": "THUDM/glm-4-9b-chat-hf", "K": 0, "acc": 0.63, "N": 200, "task": "hellaswag", "sec": 90.3, "_ts": "2026-06-27T15:07:28"}
+{"model": "THUDM/glm-4-9b-chat-hf", "K": 2, "acc": 0.5, "N": 200, "task": "hellaswag", "sec": 47.4, "_ts": "2026-06-27T15:08:15"}
+{"model": "THUDM/glm-4-9b-chat-hf", "K": 3, "acc": 0.625, "N": 200, "task": "hellaswag", "sec": 65.2, "_ts": "2026-06-27T15:09:21"}

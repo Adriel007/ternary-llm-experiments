@@ -1,0 +1,2 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "surprise_quartis": [0.914, 0.541, 0.523, 0.425], "slope": -0.1486, "npos_med": 160, "n": 16, "_ts": "2026-06-28T09:44:27"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "surprise_quartis": [0.175, 0.132, 0.093, 0.103], "slope": -0.0256, "npos_med": 160, "n": 16, "_ts": "2026-06-28T09:45:48"}

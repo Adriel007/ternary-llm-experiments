@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "method": "gkd",
+  "ref_fp": 0.7,
+  "init": 0.425,
+  "curve": [
+    {
+      "phase": "init",
+      "step": 0,
+      "gsm8k": 0.425
+    },
+    {
+      "phase": "cold",
+      "step": 40,
+      "gsm8k": 0.5
+    },
+    {
+      "phase": "onpol",
+      "step": 41,
+      "gsm8k": 0.5,
+      "correct": 7
+    },
+    {
+      "phase": "onpol",
+      "step": 42,
+      "gsm8k": 0.475,
+      "correct": 9
+    },
+    {
+      "phase": "onpol",
+      "step": 43,
+      "gsm8k": 0.425,
+      "correct": 12
+    },
+    {
+      "phase": "onpol",
+      "step": 44,
+      "gsm8k": 0.575,
+      "correct": 11
+    },
+    {
+      "phase": "onpol",
+      "step": 45,
+      "gsm8k": 0.475,
+      "correct": 11
+    }
+  ]
+}

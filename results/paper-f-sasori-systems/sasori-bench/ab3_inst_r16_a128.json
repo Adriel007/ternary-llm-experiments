@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "script": "distill_sweep.py",
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "K": 2,
+    "rank": 16,
+    "alpha": 128.0,
+    "beta_distill_weight": 0.1,
+    "max_seq_length": 128,
+    "num_steps": 300,
+    "batch_size": 8,
+    "grad_accum": 8,
+    "seed": 0,
+    "lora_targets": "all",
+    "target_substrings": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "dense",
+      "gate_proj",
+      "up_proj",
+      "down_proj",
+      "fc1",
+      "fc2"
+    ],
+    "corpus": "gsm8k",
+    "n_corpus_requested": 300,
+    "limit": 150,
+    "tag": "ab3_inst_r16_a128",
+    "tasks": [
+      "gsm8k",
+      "arc_challenge",
+      "hellaswag"
+    ],
+    "refs": true,
+    "question": "one distill config end-to-end (#66 knob grid / #67 data-free)",
+    "n_corpus_built": 300,
+    "minutes": 15.9
+  },
+  "FP": {
+    "gsm8k": 0.56,
+    "arc": 0.4733,
+    "hella": 0.66
+  },
+  "K2_PTQ": {
+    "gsm8k": 0.0,
+    "arc": 0.4,
+    "hella": 0.5467,
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "K2_distill": {
+    "gsm8k": 0.0067,
+    "arc": 0.2467,
+    "hella": 0.3133
+  }
+}

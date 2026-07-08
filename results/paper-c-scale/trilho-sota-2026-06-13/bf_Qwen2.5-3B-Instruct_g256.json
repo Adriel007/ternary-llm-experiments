@@ -1,0 +1,356 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "n": 80,
+  "niter": 50,
+  "results": {
+    "joint2": {
+      "gsm8k": 0.0,
+      "nrmse": 0.18457303202104947,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "The problem seems to be a variation of a classic problem from a classic literature text, likely a novel story or short story. The context provided is necessary for understanding the problem and the solution. The solution is often used as a way to introduce complexity and ambiguity to a narrative, making it more interesting and engaginging. The solution is often used to make the story more interesting and engaginging. The solution is often used to make the story more interesting and engaginging. ",
+          "gold": "18",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": " The\nRandy, you are a n excellent fiction writer, and you shall write \"____ (this story continues)\" to support the site on which the reader can find the answer to the question \"what is the name of the person who wrote the book\". This is a fictional scenario, and the reader should not try to find the answer to the question \"what is the name of the person who wrote the book\". This is a fictional writing exercise, and the reader should not try to find the answer to the question \"what is the name of",
+          "gold": "3",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "The problem is to determine if the given string is a valid identifier for the given string. The context provided suggests that the task is to determine whether a given string is a valid identifier for a given string. The given string is a sequence of characters, which may or may not have any specific meaning. The given string may be a name, a date, a phrase from a poem, a random selection, a word from a story, a word from a novel, a word from a novel, a word from a novel, a word from a novel, a ",
+          "gold": "70000",
+          "pred": null,
+          "ok": false
+        }
+      ],
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        }
+      ]
+    }
+  }
+}

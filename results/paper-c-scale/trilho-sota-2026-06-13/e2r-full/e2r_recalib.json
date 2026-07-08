@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "scales": [
+      "1.5B",
+      "3.9B"
+    ],
+    "tasks": [
+      "arc_easy",
+      "hellaswag",
+      "openbookqa"
+    ],
+    "n": 150
+  },
+  "scales": {
+    "1.5B": {
+      "fp": {
+        "arc_easy": 0.5466666666666666,
+        "hellaswag": 0.54,
+        "openbookqa": 0.32666666666666666
+      },
+      "tern_attn_bruto": {
+        "arc_easy": 0.24666666666666667,
+        "hellaswag": 0.20666666666666667,
+        "openbookqa": 0.2866666666666667
+      },
+      "tern_attn_recalib": {
+        "arc_easy": 0.25333333333333335,
+        "hellaswag": 0.30666666666666664,
+        "openbookqa": 0.26666666666666666
+      },
+      "tern_mlp_bruto": {
+        "arc_easy": 0.2733333333333333,
+        "hellaswag": 0.22,
+        "openbookqa": 0.26
+      },
+      "tern_mlp_recalib": {
+        "arc_easy": 0.26,
+        "hellaswag": 0.35333333333333333,
+        "openbookqa": 0.34
+      }
+    },
+    "3.9B": {
+      "fp": {
+        "arc_easy": 0.5866666666666667,
+        "hellaswag": 0.5733333333333334,
+        "openbookqa": 0.4
+      },
+      "tern_attn_bruto": {
+        "arc_easy": 0.25333333333333335,
+        "hellaswag": 0.22,
+        "openbookqa": 0.31333333333333335
+      },
+      "tern_attn_recalib": {
+        "arc_easy": 0.29333333333333333,
+        "hellaswag": 0.26,
+        "openbookqa": 0.20666666666666667
+      },
+      "tern_mlp_bruto": {
+        "arc_easy": 0.23333333333333334,
+        "hellaswag": 0.24,
+        "openbookqa": 0.23333333333333334
+      },
+      "tern_mlp_recalib": {
+        "arc_easy": 0.22,
+        "hellaswag": 0.29333333333333333,
+        "openbookqa": 0.2866666666666667
+      }
+    }
+  }
+}

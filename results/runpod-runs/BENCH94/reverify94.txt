@@ -1,0 +1,49 @@
+=== REVERIFY (dados reais from_float) ===
+/workspace/llamacpp/ggml/src/ggml-quants.c:2471: TQ3P quantization is done in Python (sasori), not in llama.cpp
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x1c7bb)[0x732532b7c7bb]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_print_backtrace+0x21f)[0x732532b7cc3f]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_abort+0x152)[0x732532b7ce12]
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x80d72)[0x732532be0d72]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_quantize_chunk+0x119)[0x732532b902d9]
+/workspace/mb94(+0x19f6)[0x653a9bc049f6]
+/workspace/mb94(+0x16ce)[0x653a9bc046ce]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x73253295ad90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x73253295ae40]
+/workspace/mb94(+0x18a5)[0x653a9bc048a5]
+---
+/workspace/llamacpp/ggml/src/ggml-quants.c:2471: TQ3P quantization is done in Python (sasori), not in llama.cpp
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x1c7bb)[0x7af2ce4f57bb]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_print_backtrace+0x21f)[0x7af2ce4f5c3f]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_abort+0x152)[0x7af2ce4f5e12]
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x80d72)[0x7af2ce559d72]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_quantize_chunk+0x119)[0x7af2ce5092d9]
+/workspace/mb94(+0x19f6)[0x5fdc951aa9f6]
+/workspace/mb94(+0x16ce)[0x5fdc951aa6ce]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7af2ce2d3d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7af2ce2d3e40]
+/workspace/mb94(+0x18a5)[0x5fdc951aa8a5]
+---
+/workspace/llamacpp/ggml/src/ggml-quants.c:2440: TQ2P quantization is done in Python (sasori), not in llama.cpp
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x1c7bb)[0x71eda622f7bb]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_print_backtrace+0x21f)[0x71eda622fc3f]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_abort+0x152)[0x71eda622fe12]
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x80b32)[0x71eda6293b32]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_quantize_chunk+0x149)[0x71eda6243309]
+/workspace/mb94(+0x19f6)[0x5828feba29f6]
+/workspace/mb94(+0x13a3)[0x5828feba23a3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x71eda600dd90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x71eda600de40]
+/workspace/mb94(+0x18a5)[0x5828feba28a5]
+---
+/workspace/llamacpp/ggml/src/ggml-quants.c:2471: TQ3P quantization is done in Python (sasori), not in llama.cpp
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x1c7bb)[0x7a0a805877bb]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_print_backtrace+0x21f)[0x7a0a80587c3f]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_abort+0x152)[0x7a0a80587e12]
+/workspace/llamacpp/build/bin/libggml-base.so.0(+0x80d72)[0x7a0a805ebd72]
+/workspace/llamacpp/build/bin/libggml-base.so.0(ggml_quantize_chunk+0x119)[0x7a0a8059b2d9]
+/workspace/mb94(+0x19f6)[0x5ad9b3cef9f6]
+/workspace/mb94(+0x16ce)[0x5ad9b3cef6ce]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7a0a80365d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7a0a80365e40]
+/workspace/mb94(+0x18a5)[0x5ad9b3cef8a5]
+---

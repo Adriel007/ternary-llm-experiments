@@ -1,0 +1,96 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "mode": "fairfight",
+  "ks": [
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "n_prompts": 30,
+  "drafts": {
+    "ternary_self_kd": {
+      "c": 1.363,
+      "wikitext": {
+        "alpha_k": {
+          "1": 0.7714,
+          "2": 0.8833,
+          "3": 0.9182,
+          "4": 0.9318,
+          "8": 0.9578
+        },
+        "mean_leading_run_k": {
+          "1": 5.6,
+          "2": 14.233,
+          "3": 23.0,
+          "4": 28.5,
+          "8": 44.067
+        },
+        "n": 1920
+      },
+      "gsm8k": {
+        "alpha_k": {
+          "1": 0.5052,
+          "2": 0.6307,
+          "3": 0.6969,
+          "4": 0.7401,
+          "8": 0.8161
+        },
+        "mean_leading_run_k": {
+          "1": 0.367,
+          "2": 1.067,
+          "3": 1.5,
+          "4": 1.833,
+          "8": 3.267
+        },
+        "n": 1920
+      }
+    },
+    "bnb4": {
+      "c": 2.071,
+      "wikitext": {
+        "alpha_k": {
+          "1": 0.8297,
+          "2": 0.9344,
+          "3": 0.9719,
+          "4": 0.9844,
+          "8": 0.9969
+        },
+        "mean_leading_run_k": {
+          "1": 4.367,
+          "2": 8.6,
+          "3": 28.833,
+          "4": 41.067,
+          "8": 60.8
+        },
+        "n": 1920
+      },
+      "gsm8k": {
+        "alpha_k": {
+          "1": 0.9464,
+          "2": 0.9906,
+          "3": 0.9969,
+          "4": 0.9984,
+          "8": 0.9995
+        },
+        "mean_leading_run_k": {
+          "1": 21.167,
+          "2": 50.567,
+          "3": 58.067,
+          "4": 61.167,
+          "8": 63.633
+        },
+        "n": 1920
+      }
+    }
+  },
+  "prediction": "corpus-matched ternary (self-KD, 0.2 B/param) vs nf4 4-bit (0.5 B/param): does the memory edge offset the acceptance gap? Pareto on alpha x memory",
+  "mem_byte_per_param": {
+    "ternary_packed": 0.2,
+    "bnb4": 0.5
+  },
+  "alpha8_gap_4bit_minus_ternary": 0.0391,
+  "verdict_fairfight": "TERNARY_COMPETITIVE",
+  "wall_s": 3265
+}

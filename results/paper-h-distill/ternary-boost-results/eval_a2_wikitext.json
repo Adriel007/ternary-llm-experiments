@@ -1,0 +1,18 @@
+{
+  "arm": "wikitext",
+  "kd_source": "wikitext",
+  "kd_ntexts": 128,
+  "lora_steps": 4000,
+  "wall_s": 3460,
+  "coherence_sample": " Paris, which is located in the city of Paris, in the northern part of the country. Paris",
+  "wikitext2_ppl_maxlen128": null,
+  "mmlu_acc": 0.2564449508617006,
+  "gsm8k_strict": 0.0,
+  "gsm8k_flexible": 0.0075815011372251705,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.2667300983190612,
+    "mmlu_humanities": 0.24357066950053136,
+    "mmlu_social_sciences": 0.2837179070523237,
+    "mmlu_other": 0.2384937238493724
+  }
+}

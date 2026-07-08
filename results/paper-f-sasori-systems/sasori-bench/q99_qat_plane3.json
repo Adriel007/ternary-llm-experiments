@@ -1,0 +1,28 @@
+{
+ "_meta": {
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "limit": 40,
+  "steps": 100,
+  "lr": 0.05,
+  "group": 128,
+  "question": "QAT-STE 3rd plane vs PTQ-reconstruction",
+  "minutes": 3.9
+ },
+ "FP": {
+  "gsm8k": 0.7
+ },
+ "K3_PTQ": {
+  "gsm8k": 0.625
+ },
+ "_qat_diag": {
+  "loss_first": 1.7068,
+  "loss_last": 1.1648,
+  "grad_norm_mean": 0.1514,
+  "trit_change_frac": 0.2065,
+  "n_wrapped": 196,
+  "nan": false
+ },
+ "K3_QAT_STE": {
+  "gsm8k": 0.0
+ }
+}

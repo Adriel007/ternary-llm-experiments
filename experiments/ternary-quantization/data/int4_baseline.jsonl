@@ -1,0 +1,3 @@
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "method": "nf4_4bit", "bpw": 4.13, "task": "gsm8k", "limit": 300, "metrics": {"exact_match,strict-match": 0.33, "exact_match,flexible-extract": 0.41333}, "sec": 133.1, "_ts": "2026-06-28T17:55:51"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "method": "nf4_4bit", "bpw": 4.13, "task": "gsm8k", "limit": 300, "metrics": {"exact_match,strict-match": 0.76333, "exact_match,flexible-extract": 0.76333}, "sec": 255.5, "_ts": "2026-06-28T18:00:07"}
+{"model": "Qwen/Qwen3-8B", "method": "nf4_4bit", "bpw": 4.13, "task": "gsm8k", "limit": 300, "metrics": {"exact_match,strict-match": 0.9, "exact_match,flexible-extract": 0.91}, "sec": 290.1, "_ts": "2026-06-28T18:04:59"}

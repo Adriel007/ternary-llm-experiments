@@ -1,0 +1,1656 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "n": 50,
+  "group": 32,
+  "signals": [
+    "benefit"
+  ],
+  "per_layer_signal": {
+    "benefit": {
+      "model.layers.0.self_attn.q_proj": 1386.3633422851562,
+      "model.layers.0.self_attn.k_proj": 772.390869140625,
+      "model.layers.0.self_attn.v_proj": 314.1870803833008,
+      "model.layers.0.self_attn.o_proj": 668.0754318237305,
+      "model.layers.0.mlp.gate_proj": 4715.7852783203125,
+      "model.layers.0.mlp.up_proj": 1675.3974609375,
+      "model.layers.0.mlp.down_proj": 2236.058349609375,
+      "model.layers.1.self_attn.q_proj": 904.6368103027344,
+      "model.layers.1.self_attn.k_proj": 570.1904602050781,
+      "model.layers.1.self_attn.v_proj": 260.0435485839844,
+      "model.layers.1.self_attn.o_proj": 683.2612838745117,
+      "model.layers.1.mlp.gate_proj": 10996.469604492188,
+      "model.layers.1.mlp.up_proj": 623.1747894287109,
+      "model.layers.1.mlp.down_proj": 1847.0557250976562,
+      "model.layers.2.self_attn.q_proj": 991.1557312011719,
+      "model.layers.2.self_attn.k_proj": 445.1453857421875,
+      "model.layers.2.self_attn.v_proj": 231.01123428344727,
+      "model.layers.2.self_attn.o_proj": 636.8389892578125,
+      "model.layers.2.mlp.gate_proj": 6117.34423828125,
+      "model.layers.2.mlp.up_proj": 591.4691772460938,
+      "model.layers.2.mlp.down_proj": 3607.469045639038,
+      "model.layers.3.self_attn.q_proj": 980.9925384521484,
+      "model.layers.3.self_attn.k_proj": 447.9601516723633,
+      "model.layers.3.self_attn.v_proj": 269.80379486083984,
+      "model.layers.3.self_attn.o_proj": 684.7291717529297,
+      "model.layers.3.mlp.gate_proj": 5450.496337890625,
+      "model.layers.3.mlp.up_proj": 810.2676849365234,
+      "model.layers.3.mlp.down_proj": 1699.7791137695312,
+      "model.layers.4.self_attn.q_proj": 741.8626556396484,
+      "model.layers.4.self_attn.k_proj": 428.3514862060547,
+      "model.layers.4.self_attn.v_proj": 243.84932327270508,
+      "model.layers.4.self_attn.o_proj": 662.4850311279297,
+      "model.layers.4.mlp.gate_proj": 5132.5587158203125,
+      "model.layers.4.mlp.up_proj": 1044.7562713623047,
+      "model.layers.4.mlp.down_proj": 1803.5078430175781,
+      "model.layers.5.self_attn.q_proj": 724.9220581054688,
+      "model.layers.5.self_attn.k_proj": 424.5202407836914,
+      "model.layers.5.self_attn.v_proj": 268.1149597167969,
+      "model.layers.5.self_attn.o_proj": 656.2689208984375,
+      "model.layers.5.mlp.gate_proj": 3748.9490966796875,
+      "model.layers.5.mlp.up_proj": 1707.323974609375,
+      "model.layers.5.mlp.down_proj": 2099.736114501953,
+      "model.layers.6.self_attn.q_proj": 829.3429718017578,
+      "model.layers.6.self_attn.k_proj": 419.2492370605469,
+      "model.layers.6.self_attn.v_proj": 252.0949249267578,
+      "model.layers.6.self_attn.o_proj": 614.8133087158203,
+      "model.layers.6.mlp.gate_proj": 3809.7742309570312,
+      "model.layers.6.mlp.up_proj": 1726.6956787109375,
+      "model.layers.6.mlp.down_proj": 2034.4157409667969,
+      "model.layers.7.self_attn.q_proj": 734.4904022216797,
+      "model.layers.7.self_attn.k_proj": 363.93175506591797,
+      "model.layers.7.self_attn.v_proj": 247.1554946899414,
+      "model.layers.7.self_attn.o_proj": 628.2060165405273,
+      "model.layers.7.mlp.gate_proj": 3481.0621337890625,
+      "model.layers.7.mlp.up_proj": 1629.3189086914062,
+      "model.layers.7.mlp.down_proj": 1911.3639526367188,
+      "model.layers.8.self_attn.q_proj": 797.7896728515625,
+      "model.layers.8.self_attn.k_proj": 378.2908935546875,
+      "model.layers.8.self_attn.v_proj": 273.33067321777344,
+      "model.layers.8.self_attn.o_proj": 566.1661987304688,
+      "model.layers.8.mlp.gate_proj": 3181.625244140625,
+      "model.layers.8.mlp.up_proj": 1785.9946899414062,
+      "model.layers.8.mlp.down_proj": 2027.0716552734375,
+      "model.layers.9.self_attn.q_proj": 786.5169677734375,
+      "model.layers.9.self_attn.k_proj": 352.75379180908203,
+      "model.layers.9.self_attn.v_proj": 230.2844352722168,
+      "model.layers.9.self_attn.o_proj": 580.0674896240234,
+      "model.layers.9.mlp.gate_proj": 2976.9712524414062,
+      "model.layers.9.mlp.up_proj": 2008.1243896484375,
+      "model.layers.9.mlp.down_proj": 1989.9899597167969,
+      "model.layers.10.self_attn.q_proj": 661.3592376708984,
+      "model.layers.10.self_attn.k_proj": 319.8168487548828,
+      "model.layers.10.self_attn.v_proj": 214.3747329711914,
+      "model.layers.10.self_attn.o_proj": 595.1542739868164,
+      "model.layers.10.mlp.gate_proj": 2898.2389526367188,
+      "model.layers.10.mlp.up_proj": 2128.0684204101562,
+      "model.layers.10.mlp.down_proj": 2227.9058227539062,
+      "model.layers.11.self_attn.q_proj": 699.9311828613281,
+      "model.layers.11.self_attn.k_proj": 307.77825927734375,
+      "model.layers.11.self_attn.v_proj": 187.5980987548828,
+      "model.layers.11.self_attn.o_proj": 598.8424377441406,
+      "model.layers.11.mlp.gate_proj": 2609.8163452148438,
+      "model.layers.11.mlp.up_proj": 2262.7528686523438,
+      "model.layers.11.mlp.down_proj": 2055.140167236328,
+      "model.layers.12.self_attn.q_proj": 625.8140258789062,
+      "model.layers.12.self_attn.k_proj": 358.9449462890625,
+      "model.layers.12.self_attn.v_proj": 200.59317016601562,
+      "model.layers.12.self_attn.o_proj": 547.8395385742188,
+      "model.layers.12.mlp.gate_proj": 2459.418212890625,
+      "model.layers.12.mlp.up_proj": 2261.379669189453,
+      "model.layers.12.mlp.down_proj": 2053.378173828125,
+      "model.layers.13.self_attn.q_proj": 667.3425216674805,
+      "model.layers.13.self_attn.k_proj": 302.48731994628906,
+      "model.layers.13.self_attn.v_proj": 171.17309951782227,
+      "model.layers.13.self_attn.o_proj": 508.3809356689453,
+      "model.layers.13.mlp.gate_proj": 2289.3517456054688,
+      "model.layers.13.mlp.up_proj": 2147.4645080566406,
+      "model.layers.13.mlp.down_proj": 2033.642822265625,
+      "model.layers.14.self_attn.q_proj": 606.9748687744141,
+      "model.layers.14.self_attn.k_proj": 292.60155487060547,
+      "model.layers.14.self_attn.v_proj": 171.23670196533203,
+      "model.layers.14.self_attn.o_proj": 582.6949081420898,
+      "model.layers.14.mlp.gate_proj": 2149.4114379882812,
+      "model.layers.14.mlp.up_proj": 2023.5093383789062,
+      "model.layers.14.mlp.down_proj": 1948.716796875,
+      "model.layers.15.self_attn.q_proj": 670.0685424804688,
+      "model.layers.15.self_attn.k_proj": 308.2601013183594,
+      "model.layers.15.self_attn.v_proj": 169.1742286682129,
+      "model.layers.15.self_attn.o_proj": 463.6462860107422,
+      "model.layers.15.mlp.gate_proj": 2167.7179565429688,
+      "model.layers.15.mlp.up_proj": 2076.586212158203,
+      "model.layers.15.mlp.down_proj": 1960.5730895996094,
+      "model.layers.16.self_attn.q_proj": 729.3759765625,
+      "model.layers.16.self_attn.k_proj": 342.4591369628906,
+      "model.layers.16.self_attn.v_proj": 159.72452545166016,
+      "model.layers.16.self_attn.o_proj": 527.8418273925781,
+      "model.layers.16.mlp.gate_proj": 2247.468963623047,
+      "model.layers.16.mlp.up_proj": 2255.744110107422,
+      "model.layers.16.mlp.down_proj": 2854.4773559570312,
+      "model.layers.17.self_attn.q_proj": 610.2982406616211,
+      "model.layers.17.self_attn.k_proj": 374.4252624511719,
+      "model.layers.17.self_attn.v_proj": 158.51622772216797,
+      "model.layers.17.self_attn.o_proj": 559.0552597045898,
+      "model.layers.17.mlp.gate_proj": 2157.6678466796875,
+      "model.layers.17.mlp.up_proj": 2341.130615234375,
+      "model.layers.17.mlp.down_proj": 2179.4344482421875,
+      "model.layers.18.self_attn.q_proj": 681.6016540527344,
+      "model.layers.18.self_attn.k_proj": 282.3426818847656,
+      "model.layers.18.self_attn.v_proj": 161.05615234375,
+      "model.layers.18.self_attn.o_proj": 481.94200134277344,
+      "model.layers.18.mlp.gate_proj": 2225.4185485839844,
+      "model.layers.18.mlp.up_proj": 2401.4889526367188,
+      "model.layers.18.mlp.down_proj": 2325.155792236328,
+      "model.layers.19.self_attn.q_proj": 746.2942657470703,
+      "model.layers.19.self_attn.k_proj": 315.56195068359375,
+      "model.layers.19.self_attn.v_proj": 173.50306701660156,
+      "model.layers.19.self_attn.o_proj": 537.4419326782227,
+      "model.layers.19.mlp.gate_proj": 2379.1090698242188,
+      "model.layers.19.mlp.up_proj": 2532.8584899902344,
+      "model.layers.19.mlp.down_proj": 2554.8710327148438,
+      "model.layers.20.self_attn.q_proj": 763.8735656738281,
+      "model.layers.20.self_attn.k_proj": 352.31478118896484,
+      "model.layers.20.self_attn.v_proj": 211.34102630615234,
+      "model.layers.20.self_attn.o_proj": 529.5789489746094,
+      "model.layers.20.mlp.gate_proj": 2546.8868408203125,
+      "model.layers.20.mlp.up_proj": 2630.4696044921875,
+      "model.layers.20.mlp.down_proj": 2570.9712829589844,
+      "model.layers.21.self_attn.q_proj": 775.1056213378906,
+      "model.layers.21.self_attn.k_proj": 316.89461517333984,
+      "model.layers.21.self_attn.v_proj": 235.09402084350586,
+      "model.layers.21.self_attn.o_proj": 692.6484832763672,
+      "model.layers.21.mlp.gate_proj": 2649.0569763183594,
+      "model.layers.21.mlp.up_proj": 2679.0182495117188,
+      "model.layers.21.mlp.down_proj": 2607.3260498046875,
+      "model.layers.22.self_attn.q_proj": 681.7859802246094,
+      "model.layers.22.self_attn.k_proj": 335.1231231689453,
+      "model.layers.22.self_attn.v_proj": 208.38681030273438,
+      "model.layers.22.self_attn.o_proj": 617.6752166748047,
+      "model.layers.22.mlp.gate_proj": 2732.2901611328125,
+      "model.layers.22.mlp.up_proj": 2712.7831420898438,
+      "model.layers.22.mlp.down_proj": 2660.736572265625,
+      "model.layers.23.self_attn.q_proj": 698.3106384277344,
+      "model.layers.23.self_attn.k_proj": 390.5183334350586,
+      "model.layers.23.self_attn.v_proj": 223.10319137573242,
+      "model.layers.23.self_attn.o_proj": 619.1825103759766,
+      "model.layers.23.mlp.gate_proj": 2774.7835083007812,
+      "model.layers.23.mlp.up_proj": 2733.8431091308594,
+      "model.layers.23.mlp.down_proj": 2701.917205810547,
+      "model.layers.24.self_attn.q_proj": 883.6619567871094,
+      "model.layers.24.self_attn.k_proj": 456.7801208496094,
+      "model.layers.24.self_attn.v_proj": 239.1184844970703,
+      "model.layers.24.self_attn.o_proj": 634.2967910766602,
+      "model.layers.24.mlp.gate_proj": 2710.3532104492188,
+      "model.layers.24.mlp.up_proj": 2722.9188232421875,
+      "model.layers.24.mlp.down_proj": 2636.2846069335938,
+      "model.layers.25.self_attn.q_proj": 826.8017272949219,
+      "model.layers.25.self_attn.k_proj": 404.0764389038086,
+      "model.layers.25.self_attn.v_proj": 297.06119537353516,
+      "model.layers.25.self_attn.o_proj": 705.0949554443359,
+      "model.layers.25.mlp.gate_proj": 2555.462890625,
+      "model.layers.25.mlp.up_proj": 2689.7806396484375,
+      "model.layers.25.mlp.down_proj": 2547.0889282226562,
+      "model.layers.26.self_attn.q_proj": 785.4014282226562,
+      "model.layers.26.self_attn.k_proj": 354.9139862060547,
+      "model.layers.26.self_attn.v_proj": 292.18243408203125,
+      "model.layers.26.self_attn.o_proj": 679.0305633544922,
+      "model.layers.26.mlp.gate_proj": 2286.9240112304688,
+      "model.layers.26.mlp.up_proj": 2404.825927734375,
+      "model.layers.26.mlp.down_proj": 2259.418212890625,
+      "model.layers.27.self_attn.q_proj": 779.8104553222656,
+      "model.layers.27.self_attn.k_proj": 402.6976547241211,
+      "model.layers.27.self_attn.v_proj": 315.89510345458984,
+      "model.layers.27.self_attn.o_proj": 770.3227996826172,
+      "model.layers.27.mlp.gate_proj": 2139.291046142578,
+      "model.layers.27.mlp.up_proj": 2039.1325073242188,
+      "model.layers.27.mlp.down_proj": 1842.6807556152344
+    },
+    "salience": {
+      "model.layers.0.self_attn.q_proj": 5545.42822265625,
+      "model.layers.0.self_attn.k_proj": 3310.308349609375,
+      "model.layers.0.self_attn.v_proj": 1714.52001953125,
+      "model.layers.0.self_attn.o_proj": 3670.467041015625,
+      "model.layers.0.mlp.gate_proj": 21812.5234375,
+      "model.layers.0.mlp.up_proj": 9691.935546875,
+      "model.layers.0.mlp.down_proj": 13202.326171875,
+      "model.layers.1.self_attn.q_proj": 4482.3740234375,
+      "model.layers.1.self_attn.k_proj": 2675.9072265625,
+      "model.layers.1.self_attn.v_proj": 1450.4761962890625,
+      "model.layers.1.self_attn.o_proj": 4009.8525390625,
+      "model.layers.1.mlp.gate_proj": 44937.4140625,
+      "model.layers.1.mlp.up_proj": 3069.0380859375,
+      "model.layers.1.mlp.down_proj": 8523.1025390625,
+      "model.layers.2.self_attn.q_proj": 4381.97412109375,
+      "model.layers.2.self_attn.k_proj": 2245.447265625,
+      "model.layers.2.self_attn.v_proj": 1275.0230712890625,
+      "model.layers.2.self_attn.o_proj": 3928.359375,
+      "model.layers.2.mlp.gate_proj": 39819.78125,
+      "model.layers.2.mlp.up_proj": 3235.14794921875,
+      "model.layers.2.mlp.down_proj": 5790.78662109375,
+      "model.layers.3.self_attn.q_proj": 4537.3427734375,
+      "model.layers.3.self_attn.k_proj": 2095.275146484375,
+      "model.layers.3.self_attn.v_proj": 1462.28125,
+      "model.layers.3.self_attn.o_proj": 4193.3779296875,
+      "model.layers.3.mlp.gate_proj": 36775.375,
+      "model.layers.3.mlp.up_proj": 4465.5458984375,
+      "model.layers.3.mlp.down_proj": 9693.4638671875,
+      "model.layers.4.self_attn.q_proj": 3631.49951171875,
+      "model.layers.4.self_attn.k_proj": 1930.214111328125,
+      "model.layers.4.self_attn.v_proj": 1312.4951171875,
+      "model.layers.4.self_attn.o_proj": 4047.48095703125,
+      "model.layers.4.mlp.gate_proj": 32195.890625,
+      "model.layers.4.mlp.up_proj": 5893.84423828125,
+      "model.layers.4.mlp.down_proj": 10520.7099609375,
+      "model.layers.5.self_attn.q_proj": 3607.72314453125,
+      "model.layers.5.self_attn.k_proj": 1969.4224853515625,
+      "model.layers.5.self_attn.v_proj": 1290.694091796875,
+      "model.layers.5.self_attn.o_proj": 4071.9814453125,
+      "model.layers.5.mlp.gate_proj": 21187.669921875,
+      "model.layers.5.mlp.up_proj": 9740.904296875,
+      "model.layers.5.mlp.down_proj": 12574.529296875,
+      "model.layers.6.self_attn.q_proj": 4343.373046875,
+      "model.layers.6.self_attn.k_proj": 2075.96630859375,
+      "model.layers.6.self_attn.v_proj": 1365.0120849609375,
+      "model.layers.6.self_attn.o_proj": 3774.31103515625,
+      "model.layers.6.mlp.gate_proj": 21613.525390625,
+      "model.layers.6.mlp.up_proj": 9871.6982421875,
+      "model.layers.6.mlp.down_proj": 11907.9091796875,
+      "model.layers.7.self_attn.q_proj": 3825.19677734375,
+      "model.layers.7.self_attn.k_proj": 1907.4239501953125,
+      "model.layers.7.self_attn.v_proj": 1366.856201171875,
+      "model.layers.7.self_attn.o_proj": 3818.276123046875,
+      "model.layers.7.mlp.gate_proj": 21667.033203125,
+      "model.layers.7.mlp.up_proj": 9368.919921875,
+      "model.layers.7.mlp.down_proj": 11089.7880859375,
+      "model.layers.8.self_attn.q_proj": 4226.33984375,
+      "model.layers.8.self_attn.k_proj": 1859.75390625,
+      "model.layers.8.self_attn.v_proj": 1533.5009765625,
+      "model.layers.8.self_attn.o_proj": 3397.9189453125,
+      "model.layers.8.mlp.gate_proj": 19519.453125,
+      "model.layers.8.mlp.up_proj": 10308.4169921875,
+      "model.layers.8.mlp.down_proj": 11755.9287109375,
+      "model.layers.9.self_attn.q_proj": 4058.35498046875,
+      "model.layers.9.self_attn.k_proj": 1758.9454345703125,
+      "model.layers.9.self_attn.v_proj": 1242.8055419921875,
+      "model.layers.9.self_attn.o_proj": 3713.87451171875,
+      "model.layers.9.mlp.gate_proj": 18138.26171875,
+      "model.layers.9.mlp.up_proj": 11385.45703125,
+      "model.layers.9.mlp.down_proj": 11204.4189453125,
+      "model.layers.10.self_attn.q_proj": 3588.380859375,
+      "model.layers.10.self_attn.k_proj": 1760.620849609375,
+      "model.layers.10.self_attn.v_proj": 1199.82421875,
+      "model.layers.10.self_attn.o_proj": 3528.935791015625,
+      "model.layers.10.mlp.gate_proj": 17019.712890625,
+      "model.layers.10.mlp.up_proj": 11923.64453125,
+      "model.layers.10.mlp.down_proj": 10295.0595703125,
+      "model.layers.11.self_attn.q_proj": 3833.796142578125,
+      "model.layers.11.self_attn.k_proj": 1552.5574951171875,
+      "model.layers.11.self_attn.v_proj": 888.052734375,
+      "model.layers.11.self_attn.o_proj": 3640.241943359375,
+      "model.layers.11.mlp.gate_proj": 15666.875,
+      "model.layers.11.mlp.up_proj": 13084.345703125,
+      "model.layers.11.mlp.down_proj": 11443.3076171875,
+      "model.layers.12.self_attn.q_proj": 3741.99609375,
+      "model.layers.12.self_attn.k_proj": 1765.161865234375,
+      "model.layers.12.self_attn.v_proj": 1125.07568359375,
+      "model.layers.12.self_attn.o_proj": 3195.60107421875,
+      "model.layers.12.mlp.gate_proj": 14820.7275390625,
+      "model.layers.12.mlp.up_proj": 13079.1845703125,
+      "model.layers.12.mlp.down_proj": 11332.673828125,
+      "model.layers.13.self_attn.q_proj": 3496.93310546875,
+      "model.layers.13.self_attn.k_proj": 1497.328369140625,
+      "model.layers.13.self_attn.v_proj": 936.0226440429688,
+      "model.layers.13.self_attn.o_proj": 2947.207275390625,
+      "model.layers.13.mlp.gate_proj": 13573.501953125,
+      "model.layers.13.mlp.up_proj": 12398.0625,
+      "model.layers.13.mlp.down_proj": 10859.857421875,
+      "model.layers.14.self_attn.q_proj": 3251.226318359375,
+      "model.layers.14.self_attn.k_proj": 1462.101806640625,
+      "model.layers.14.self_attn.v_proj": 940.1251220703125,
+      "model.layers.14.self_attn.o_proj": 3697.828125,
+      "model.layers.14.mlp.gate_proj": 12347.251953125,
+      "model.layers.14.mlp.up_proj": 11485.125,
+      "model.layers.14.mlp.down_proj": 10648.5205078125,
+      "model.layers.15.self_attn.q_proj": 3698.523681640625,
+      "model.layers.15.self_attn.k_proj": 1515.259765625,
+      "model.layers.15.self_attn.v_proj": 913.7467651367188,
+      "model.layers.15.self_attn.o_proj": 2724.59716796875,
+      "model.layers.15.mlp.gate_proj": 12227.611328125,
+      "model.layers.15.mlp.up_proj": 11590.556640625,
+      "model.layers.15.mlp.down_proj": 10769.64453125,
+      "model.layers.16.self_attn.q_proj": 3682.251708984375,
+      "model.layers.16.self_attn.k_proj": 1515.786865234375,
+      "model.layers.16.self_attn.v_proj": 821.2474975585938,
+      "model.layers.16.self_attn.o_proj": 3077.942626953125,
+      "model.layers.16.mlp.gate_proj": 12038.640625,
+      "model.layers.16.mlp.up_proj": 11987.7626953125,
+      "model.layers.16.mlp.down_proj": 11902.3232421875,
+      "model.layers.17.self_attn.q_proj": 3265.10107421875,
+      "model.layers.17.self_attn.k_proj": 1662.934326171875,
+      "model.layers.17.self_attn.v_proj": 830.1321411132812,
+      "model.layers.17.self_attn.o_proj": 3323.3935546875,
+      "model.layers.17.mlp.gate_proj": 11985.935546875,
+      "model.layers.17.mlp.up_proj": 12838.4658203125,
+      "model.layers.17.mlp.down_proj": 11657.9287109375,
+      "model.layers.18.self_attn.q_proj": 3406.8310546875,
+      "model.layers.18.self_attn.k_proj": 1306.357177734375,
+      "model.layers.18.self_attn.v_proj": 777.2100830078125,
+      "model.layers.18.self_attn.o_proj": 2814.95947265625,
+      "model.layers.18.mlp.gate_proj": 12461.095703125,
+      "model.layers.18.mlp.up_proj": 13002.115234375,
+      "model.layers.18.mlp.down_proj": 12583.349609375,
+      "model.layers.19.self_attn.q_proj": 3759.57666015625,
+      "model.layers.19.self_attn.k_proj": 1474.51171875,
+      "model.layers.19.self_attn.v_proj": 823.4715576171875,
+      "model.layers.19.self_attn.o_proj": 3238.3095703125,
+      "model.layers.19.mlp.gate_proj": 13171.6591796875,
+      "model.layers.19.mlp.up_proj": 13418.87890625,
+      "model.layers.19.mlp.down_proj": 12665.140625,
+      "model.layers.20.self_attn.q_proj": 3711.7041015625,
+      "model.layers.20.self_attn.k_proj": 1520.8614501953125,
+      "model.layers.20.self_attn.v_proj": 964.6051025390625,
+      "model.layers.20.self_attn.o_proj": 3089.57470703125,
+      "model.layers.20.mlp.gate_proj": 14552.14453125,
+      "model.layers.20.mlp.up_proj": 14154.74609375,
+      "model.layers.20.mlp.down_proj": 13771.208984375,
+      "model.layers.21.self_attn.q_proj": 3715.43701171875,
+      "model.layers.21.self_attn.k_proj": 1466.43408203125,
+      "model.layers.21.self_attn.v_proj": 1091.84521484375,
+      "model.layers.21.self_attn.o_proj": 4099.13232421875,
+      "model.layers.21.mlp.gate_proj": 15789.701171875,
+      "model.layers.21.mlp.up_proj": 14989.2724609375,
+      "model.layers.21.mlp.down_proj": 13910.71484375,
+      "model.layers.22.self_attn.q_proj": 3095.8359375,
+      "model.layers.22.self_attn.k_proj": 1396.572509765625,
+      "model.layers.22.self_attn.v_proj": 989.2103271484375,
+      "model.layers.22.self_attn.o_proj": 3784.28662109375,
+      "model.layers.22.mlp.gate_proj": 16668.0078125,
+      "model.layers.22.mlp.up_proj": 15433.341796875,
+      "model.layers.22.mlp.down_proj": 14808.921875,
+      "model.layers.23.self_attn.q_proj": 3156.08935546875,
+      "model.layers.23.self_attn.k_proj": 1534.481689453125,
+      "model.layers.23.self_attn.v_proj": 992.9935302734375,
+      "model.layers.23.self_attn.o_proj": 3687.0927734375,
+      "model.layers.23.mlp.gate_proj": 17104.830078125,
+      "model.layers.23.mlp.up_proj": 15538.1328125,
+      "model.layers.23.mlp.down_proj": 15341.68359375,
+      "model.layers.24.self_attn.q_proj": 3958.59521484375,
+      "model.layers.24.self_attn.k_proj": 1706.669677734375,
+      "model.layers.24.self_attn.v_proj": 1119.671875,
+      "model.layers.24.self_attn.o_proj": 3755.973388671875,
+      "model.layers.24.mlp.gate_proj": 16537.271484375,
+      "model.layers.24.mlp.up_proj": 15600.2490234375,
+      "model.layers.24.mlp.down_proj": 13773.34765625,
+      "model.layers.25.self_attn.q_proj": 3751.60107421875,
+      "model.layers.25.self_attn.k_proj": 1614.871337890625,
+      "model.layers.25.self_attn.v_proj": 1459.4288330078125,
+      "model.layers.25.self_attn.o_proj": 4111.02734375,
+      "model.layers.25.mlp.gate_proj": 15307.099609375,
+      "model.layers.25.mlp.up_proj": 15176.6455078125,
+      "model.layers.25.mlp.down_proj": 12977.15234375,
+      "model.layers.26.self_attn.q_proj": 3401.9765625,
+      "model.layers.26.self_attn.k_proj": 1449.8529052734375,
+      "model.layers.26.self_attn.v_proj": 1519.11328125,
+      "model.layers.26.self_attn.o_proj": 4031.25,
+      "model.layers.26.mlp.gate_proj": 12633.2890625,
+      "model.layers.26.mlp.up_proj": 12830.0,
+      "model.layers.26.mlp.down_proj": 10350.42578125,
+      "model.layers.27.self_attn.q_proj": 4245.08544921875,
+      "model.layers.27.self_attn.k_proj": 2096.1533203125,
+      "model.layers.27.self_attn.v_proj": 1693.19140625,
+      "model.layers.27.self_attn.o_proj": 4715.56884765625,
+      "model.layers.27.mlp.gate_proj": 9403.5986328125,
+      "model.layers.27.mlp.up_proj": 8589.7734375,
+      "model.layers.27.mlp.down_proj": 4140.1630859375
+    },
+    "magnitude": {
+      "model.layers.0.self_attn.q_proj": 113734.53125,
+      "model.layers.0.self_attn.k_proj": 57925.4140625,
+      "model.layers.0.self_attn.v_proj": 55412.51171875,
+      "model.layers.0.self_attn.o_proj": 103499.8984375,
+      "model.layers.0.mlp.gate_proj": 378289.5625,
+      "model.layers.0.mlp.up_proj": 311941.78125,
+      "model.layers.0.mlp.down_proj": 329216.125,
+      "model.layers.1.self_attn.q_proj": 110029.6875,
+      "model.layers.1.self_attn.k_proj": 54166.15625,
+      "model.layers.1.self_attn.v_proj": 57011.890625,
+      "model.layers.1.self_attn.o_proj": 106138.3984375,
+      "model.layers.1.mlp.gate_proj": 432696.09375,
+      "model.layers.1.mlp.up_proj": 272656.71875,
+      "model.layers.1.mlp.down_proj": 279510.5,
+      "model.layers.2.self_attn.q_proj": 108909.53125,
+      "model.layers.2.self_attn.k_proj": 53239.52734375,
+      "model.layers.2.self_attn.v_proj": 56335.9609375,
+      "model.layers.2.self_attn.o_proj": 102567.15625,
+      "model.layers.2.mlp.gate_proj": 456671.09375,
+      "model.layers.2.mlp.up_proj": 292281.15625,
+      "model.layers.2.mlp.down_proj": 301060.625,
+      "model.layers.3.self_attn.q_proj": 110414.203125,
+      "model.layers.3.self_attn.k_proj": 53809.8203125,
+      "model.layers.3.self_attn.v_proj": 59987.46875,
+      "model.layers.3.self_attn.o_proj": 109446.84375,
+      "model.layers.3.mlp.gate_proj": 452839.375,
+      "model.layers.3.mlp.up_proj": 299736.90625,
+      "model.layers.3.mlp.down_proj": 300851.25,
+      "model.layers.4.self_attn.q_proj": 109068.1796875,
+      "model.layers.4.self_attn.k_proj": 52364.26953125,
+      "model.layers.4.self_attn.v_proj": 58933.7890625,
+      "model.layers.4.self_attn.o_proj": 106552.0625,
+      "model.layers.4.mlp.gate_proj": 438992.1875,
+      "model.layers.4.mlp.up_proj": 302168.625,
+      "model.layers.4.mlp.down_proj": 300891.3125,
+      "model.layers.5.self_attn.q_proj": 112904.796875,
+      "model.layers.5.self_attn.k_proj": 53897.6328125,
+      "model.layers.5.self_attn.v_proj": 56532.4609375,
+      "model.layers.5.self_attn.o_proj": 105496.5078125,
+      "model.layers.5.mlp.gate_proj": 389257.3125,
+      "model.layers.5.mlp.up_proj": 324981.59375,
+      "model.layers.5.mlp.down_proj": 321388.03125,
+      "model.layers.6.self_attn.q_proj": 106578.8203125,
+      "model.layers.6.self_attn.k_proj": 50627.125,
+      "model.layers.6.self_attn.v_proj": 58000.8515625,
+      "model.layers.6.self_attn.o_proj": 102452.1875,
+      "model.layers.6.mlp.gate_proj": 382264.5,
+      "model.layers.6.mlp.up_proj": 325802.6875,
+      "model.layers.6.mlp.down_proj": 315773.25,
+      "model.layers.7.self_attn.q_proj": 107096.3671875,
+      "model.layers.7.self_attn.k_proj": 50738.3203125,
+      "model.layers.7.self_attn.v_proj": 56575.8515625,
+      "model.layers.7.self_attn.o_proj": 103829.25,
+      "model.layers.7.mlp.gate_proj": 393483.8125,
+      "model.layers.7.mlp.up_proj": 320552.375,
+      "model.layers.7.mlp.down_proj": 310085.96875,
+      "model.layers.8.self_attn.q_proj": 106951.7734375,
+      "model.layers.8.self_attn.k_proj": 50556.83203125,
+      "model.layers.8.self_attn.v_proj": 57600.234375,
+      "model.layers.8.self_attn.o_proj": 102153.0703125,
+      "model.layers.8.mlp.gate_proj": 374830.9375,
+      "model.layers.8.mlp.up_proj": 324609.78125,
+      "model.layers.8.mlp.down_proj": 318565.3125,
+      "model.layers.9.self_attn.q_proj": 108457.984375,
+      "model.layers.9.self_attn.k_proj": 50799.8515625,
+      "model.layers.9.self_attn.v_proj": 55372.89453125,
+      "model.layers.9.self_attn.o_proj": 102686.0,
+      "model.layers.9.mlp.gate_proj": 372805.96875,
+      "model.layers.9.mlp.up_proj": 337756.0625,
+      "model.layers.9.mlp.down_proj": 319468.0625,
+      "model.layers.10.self_attn.q_proj": 109547.84375,
+      "model.layers.10.self_attn.k_proj": 53002.46875,
+      "model.layers.10.self_attn.v_proj": 55945.44140625,
+      "model.layers.10.self_attn.o_proj": 101861.4765625,
+      "model.layers.10.mlp.gate_proj": 364374.3125,
+      "model.layers.10.mlp.up_proj": 337388.625,
+      "model.layers.10.mlp.down_proj": 314234.9375,
+      "model.layers.11.self_attn.q_proj": 110514.3046875,
+      "model.layers.11.self_attn.k_proj": 51482.578125,
+      "model.layers.11.self_attn.v_proj": 52148.7578125,
+      "model.layers.11.self_attn.o_proj": 92917.34375,
+      "model.layers.11.mlp.gate_proj": 349754.3125,
+      "model.layers.11.mlp.up_proj": 345947.25,
+      "model.layers.11.mlp.down_proj": 327315.5,
+      "model.layers.12.self_attn.q_proj": 109461.5078125,
+      "model.layers.12.self_attn.k_proj": 51036.109375,
+      "model.layers.12.self_attn.v_proj": 54671.6796875,
+      "model.layers.12.self_attn.o_proj": 97198.171875,
+      "model.layers.12.mlp.gate_proj": 339679.9375,
+      "model.layers.12.mlp.up_proj": 343983.6875,
+      "model.layers.12.mlp.down_proj": 326642.375,
+      "model.layers.13.self_attn.q_proj": 107920.34375,
+      "model.layers.13.self_attn.k_proj": 48797.8203125,
+      "model.layers.13.self_attn.v_proj": 54533.171875,
+      "model.layers.13.self_attn.o_proj": 94259.703125,
+      "model.layers.13.mlp.gate_proj": 326841.53125,
+      "model.layers.13.mlp.up_proj": 334795.0625,
+      "model.layers.13.mlp.down_proj": 317890.84375,
+      "model.layers.14.self_attn.q_proj": 104700.5625,
+      "model.layers.14.self_attn.k_proj": 47850.109375,
+      "model.layers.14.self_attn.v_proj": 53024.08203125,
+      "model.layers.14.self_attn.o_proj": 94043.8046875,
+      "model.layers.14.mlp.gate_proj": 312020.28125,
+      "model.layers.14.mlp.up_proj": 323622.5,
+      "model.layers.14.mlp.down_proj": 315157.59375,
+      "model.layers.15.self_attn.q_proj": 107048.796875,
+      "model.layers.15.self_attn.k_proj": 46363.16796875,
+      "model.layers.15.self_attn.v_proj": 52177.375,
+      "model.layers.15.self_attn.o_proj": 95947.6015625,
+      "model.layers.15.mlp.gate_proj": 313382.1875,
+      "model.layers.15.mlp.up_proj": 330358.8125,
+      "model.layers.15.mlp.down_proj": 316737.9375,
+      "model.layers.16.self_attn.q_proj": 110321.671875,
+      "model.layers.16.self_attn.k_proj": 46425.90625,
+      "model.layers.16.self_attn.v_proj": 52732.2578125,
+      "model.layers.16.self_attn.o_proj": 95683.328125,
+      "model.layers.16.mlp.gate_proj": 311127.0,
+      "model.layers.16.mlp.up_proj": 336940.6875,
+      "model.layers.16.mlp.down_proj": 319239.15625,
+      "model.layers.17.self_attn.q_proj": 109084.5625,
+      "model.layers.17.self_attn.k_proj": 48311.953125,
+      "model.layers.17.self_attn.v_proj": 54694.40625,
+      "model.layers.17.self_attn.o_proj": 97116.5,
+      "model.layers.17.mlp.gate_proj": 311766.03125,
+      "model.layers.17.mlp.up_proj": 352573.03125,
+      "model.layers.17.mlp.down_proj": 331893.375,
+      "model.layers.18.self_attn.q_proj": 110837.53125,
+      "model.layers.18.self_attn.k_proj": 46315.80859375,
+      "model.layers.18.self_attn.v_proj": 51856.40625,
+      "model.layers.18.self_attn.o_proj": 92342.9140625,
+      "model.layers.18.mlp.gate_proj": 314621.25,
+      "model.layers.18.mlp.up_proj": 353126.84375,
+      "model.layers.18.mlp.down_proj": 340463.1875,
+      "model.layers.19.self_attn.q_proj": 111422.25,
+      "model.layers.19.self_attn.k_proj": 46778.34375,
+      "model.layers.19.self_attn.v_proj": 50765.43359375,
+      "model.layers.19.self_attn.o_proj": 95823.359375,
+      "model.layers.19.mlp.gate_proj": 318271.5625,
+      "model.layers.19.mlp.up_proj": 358427.46875,
+      "model.layers.19.mlp.down_proj": 349906.5,
+      "model.layers.20.self_attn.q_proj": 113508.5,
+      "model.layers.20.self_attn.k_proj": 49018.76953125,
+      "model.layers.20.self_attn.v_proj": 52696.4765625,
+      "model.layers.20.self_attn.o_proj": 99230.28125,
+      "model.layers.20.mlp.gate_proj": 332659.375,
+      "model.layers.20.mlp.up_proj": 369481.5,
+      "model.layers.20.mlp.down_proj": 360311.90625,
+      "model.layers.21.self_attn.q_proj": 115904.328125,
+      "model.layers.21.self_attn.k_proj": 49233.8515625,
+      "model.layers.21.self_attn.v_proj": 55937.70703125,
+      "model.layers.21.self_attn.o_proj": 104303.9765625,
+      "model.layers.21.mlp.gate_proj": 343914.90625,
+      "model.layers.21.mlp.up_proj": 377480.125,
+      "model.layers.21.mlp.down_proj": 367846.375,
+      "model.layers.22.self_attn.q_proj": 113382.8984375,
+      "model.layers.22.self_attn.k_proj": 49182.19921875,
+      "model.layers.22.self_attn.v_proj": 56435.265625,
+      "model.layers.22.self_attn.o_proj": 104132.3359375,
+      "model.layers.22.mlp.gate_proj": 352237.8125,
+      "model.layers.22.mlp.up_proj": 382788.28125,
+      "model.layers.22.mlp.down_proj": 374376.5,
+      "model.layers.23.self_attn.q_proj": 108602.796875,
+      "model.layers.23.self_attn.k_proj": 49177.0390625,
+      "model.layers.23.self_attn.v_proj": 55456.18359375,
+      "model.layers.23.self_attn.o_proj": 105285.4296875,
+      "model.layers.23.mlp.gate_proj": 358321.75,
+      "model.layers.23.mlp.up_proj": 384962.25,
+      "model.layers.23.mlp.down_proj": 377895.0625,
+      "model.layers.24.self_attn.q_proj": 111163.9375,
+      "model.layers.24.self_attn.k_proj": 48337.484375,
+      "model.layers.24.self_attn.v_proj": 55992.76171875,
+      "model.layers.24.self_attn.o_proj": 107779.28125,
+      "model.layers.24.mlp.gate_proj": 354854.09375,
+      "model.layers.24.mlp.up_proj": 387164.3125,
+      "model.layers.24.mlp.down_proj": 379713.84375,
+      "model.layers.25.self_attn.q_proj": 108174.734375,
+      "model.layers.25.self_attn.k_proj": 46869.015625,
+      "model.layers.25.self_attn.v_proj": 61995.28125,
+      "model.layers.25.self_attn.o_proj": 112974.6875,
+      "model.layers.25.mlp.gate_proj": 349578.46875,
+      "model.layers.25.mlp.up_proj": 387825.4375,
+      "model.layers.25.mlp.down_proj": 378445.625,
+      "model.layers.26.self_attn.q_proj": 114922.609375,
+      "model.layers.26.self_attn.k_proj": 45770.46875,
+      "model.layers.26.self_attn.v_proj": 60547.19921875,
+      "model.layers.26.self_attn.o_proj": 110149.421875,
+      "model.layers.26.mlp.gate_proj": 346521.15625,
+      "model.layers.26.mlp.up_proj": 384937.4375,
+      "model.layers.26.mlp.down_proj": 372964.625,
+      "model.layers.27.self_attn.q_proj": 113227.828125,
+      "model.layers.27.self_attn.k_proj": 54803.7890625,
+      "model.layers.27.self_attn.v_proj": 61055.85546875,
+      "model.layers.27.self_attn.o_proj": 114510.7109375,
+      "model.layers.27.mlp.gate_proj": 364952.6875,
+      "model.layers.27.mlp.up_proj": 377771.0625,
+      "model.layers.27.mlp.down_proj": 342995.25
+    }
+  },
+  "results": [
+    {
+      "tag": "all_single",
+      "signal": "benefit",
+      "frac": 0.0,
+      "n_dual": 0,
+      "avg_bits": 1.58,
+      "gsm8k": 0.0,
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "tag": "benefit@0.25",
+      "signal": "benefit",
+      "frac": 0.25,
+      "n_dual": 49,
+      "avg_bits": 1.978,
+      "gsm8k": 0.0,
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "tag": "benefit@0.50",
+      "signal": "benefit",
+      "frac": 0.5,
+      "n_dual": 98,
+      "avg_bits": 2.375,
+      "gsm8k": 0.0,
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "tag": "benefit@0.75",
+      "signal": "benefit",
+      "frac": 0.75,
+      "n_dual": 147,
+      "avg_bits": 2.772,
+      "gsm8k": 0.0,
+      "e2": [
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        }
+      ]
+    },
+    {
+      "tag": "all_dual",
+      "signal": "benefit",
+      "frac": 1.0,
+      "n_dual": 196,
+      "avg_bits": 3.17,
+      "gsm8k": 0.34,
+      "e2": [
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

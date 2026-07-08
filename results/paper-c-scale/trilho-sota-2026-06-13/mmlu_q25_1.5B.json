@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "bench": "mmlu",
+  "n": 200,
+  "results": {
+    "fp": 0.61,
+    "joint2": 0.495
+  }
+}

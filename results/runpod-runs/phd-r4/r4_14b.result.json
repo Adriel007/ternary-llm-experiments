@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen2.5-14B-Instruct",
+  "N": 200,
+  "note": "R4: 14B FP baseline was flexible 0.477 < strict 0.807 (inverted); recompute retention on a consistent extractor",
+  "FP": {
+    "strict": 0.895,
+    "flexible": 0.7
+  },
+  "K3_PTQ": {
+    "strict": 0.895,
+    "flexible": 0.745,
+    "quant": {
+      "linear": 336,
+      "expert_mats": 0
+    }
+  },
+  "retention": {
+    "strict": 1.0,
+    "flexible": 1.064
+  }
+}

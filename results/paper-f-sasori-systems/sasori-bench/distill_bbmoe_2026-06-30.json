@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "experiment": "Close 3 gaps: literal black-box (teacher-generated corpus) + K3 decomposition + MoE distillation",
+    "date": "2026-06-30", "task": "gsm8k flexible-extract, 5-shot, limit=150, lm-eval official; LoRA-KD rank-64 batched"
+  },
+  "black_box_literal_Qwen2.5-1.5B_K2": {
+    "K2_ptq": 0.007,
+    "CE_gold_no_teacher": 0.227,
+    "black_box_CE_on_teacher_generations": 0.2467,
+    "apiq_ce_gold": 0.30,
+    "white_box_apiq_logitKD_gold": 0.32,
+    "verdict": "LITERAL black-box CONFIRMED: cross-entropy on the FP teacher's OWN greedy generations recovers 0->0.247 (~77% of the white-box gain), near-identical to CE on gold task data (0.227). This CORRECTS the earlier Paper H wording ('CE on teacher responses = 0.227' -- that number was actually gold-CE); the literal teacher-generated number is 0.247. logit-KD adds only +0.02, ApiQ-init +0.07 (needs teacher weights)."
+  },
+  "K3_decomposition_Qwen2.5-1.5B": {
+    "K3_ptq": 0.38, "K3_blackbox_CE_gold": 0.4333, "K3_apiq_ce": 0.4933, "K3_white_box": 0.54,
+    "verdict": "At K3 the three ingredients are more evenly split (~+0.05 each): black-box/CE-only 0.43, +ApiQ 0.49, white-box 0.54 (K3-PTQ floor 0.38). Even the black-box path beats K3-PTQ."
+  },
+  "MoE_OLMoE-1B-7B_CAVEATED": {
+    "FP": 0.3667, "K2_ptq": 0.0333, "K2_distill": 0.36, "K3_ptq": 0.32,
+    "CAVEAT": "INVALID as a faithful full-MoE test. sasori fake_quant_ reached only 64 linears (attention + router); OLMoE stores its expert FFN weights as a fused non-nn.Linear tensor, which stayed FP. So this ternarized ONLY attention/router, not the experts (the bulk of params). K2 collapses (0.033) and distillation recovers to ~FP (0.36), but that measures attention-only ternarization+recovery on a MoE model, NOT full-MoE ternarization. NOT put in the paper. A faithful MoE test requires custom quantization of the fused expert weights -- open follow-up."
+  }
+}

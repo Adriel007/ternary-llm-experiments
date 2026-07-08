@@ -1,0 +1,17 @@
+{
+ "_meta": {
+  "model": "Qwen/Qwen3-1.7B",
+  "limit": 12,
+  "max_gen": "4096",
+  "protocol": "chat-think 0-shot, gsm8k-only, per-task chat_template, budget 8192"
+ },
+ "FP_chat_think": {
+  "gsm8k": 0.4167,
+  "genlen": {
+   "mean": 1531.8,
+   "median": 1296.0,
+   "p90": 2767,
+   "n": 24
+  }
+ }
+}

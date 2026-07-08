@@ -1,0 +1,47 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n": 150,
+  "calibration": "c4",
+  "method": "gptq-int",
+  "results": {
+    "fp": {
+      "gsm8k": 0.62,
+      "arc": 0.4333,
+      "hella": 0.66,
+      "bits": 16,
+      "bpw": 16.0,
+      "calibration": "none",
+      "data_aware": false
+    },
+    "gptq8bit": {
+      "gsm8k": 0.62,
+      "arc": 0.44,
+      "hella": 0.66,
+      "bits": 8,
+      "group": 128,
+      "bpw": 8.188,
+      "calibration": "c4",
+      "data_aware": true
+    },
+    "gptq4bit": {
+      "gsm8k": 0.5133,
+      "arc": 0.4133,
+      "hella": 0.6333,
+      "bits": 4,
+      "group": 128,
+      "bpw": 4.156,
+      "calibration": "c4",
+      "data_aware": true
+    },
+    "gptq3bit": {
+      "gsm8k": 0.04,
+      "arc": 0.32,
+      "hella": 0.5733,
+      "bits": 3,
+      "group": 128,
+      "bpw": 3.148,
+      "calibration": "c4",
+      "data_aware": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{"model": "Qwen/Qwen3-8B", "task": "hellaswag", "K": 0, "acc": 0.636, "limit": 2000, "_ts": "2026-06-28T10:26:47"}
+{"model": "Qwen/Qwen3-8B", "task": "hellaswag", "K": 2, "acc": 0.4485, "limit": 2000, "_ts": "2026-06-28T10:27:46"}
+{"model": "Qwen/Qwen3-8B", "task": "hellaswag", "K": 3, "acc": 0.62, "limit": 2000, "_ts": "2026-06-28T10:29:07"}
+{"model": "ibm-granite/granite-3.1-8b-instruct", "task": "hellaswag", "K": 0, "acc": 0.728, "limit": 2000, "_ts": "2026-06-28T10:30:43"}
+{"model": "ibm-granite/granite-3.1-8b-instruct", "task": "hellaswag", "K": 2, "acc": 0.3675, "limit": 2000, "_ts": "2026-06-28T10:31:49"}
+{"model": "ibm-granite/granite-3.1-8b-instruct", "task": "hellaswag", "K": 3, "acc": 0.706, "limit": 2000, "_ts": "2026-06-28T10:33:21"}
+{"model": "microsoft/Phi-3.5-mini-instruct", "task": "hellaswag", "K": 0, "acc": 0.66, "limit": 2000, "_ts": "2026-06-28T10:34:12"}
+{"model": "microsoft/Phi-3.5-mini-instruct", "task": "hellaswag", "K": 2, "acc": 0.398, "limit": 2000, "_ts": "2026-06-28T10:34:49"}
+{"model": "microsoft/Phi-3.5-mini-instruct", "task": "hellaswag", "K": 3, "acc": 0.649, "limit": 2000, "_ts": "2026-06-28T10:35:38"}
+{"model": "mistralai/Mistral-7B-Instruct-v0.2", "task": "hellaswag", "K": 0, "acc": 0.746, "limit": 2000, "_ts": "2026-06-28T10:37:00"}
+{"model": "mistralai/Mistral-7B-Instruct-v0.2", "task": "hellaswag", "K": 2, "acc": 0.574, "limit": 2000, "_ts": "2026-06-28T10:37:57"}
+{"model": "mistralai/Mistral-7B-Instruct-v0.2", "task": "hellaswag", "K": 3, "acc": 0.74, "limit": 2000, "_ts": "2026-06-28T10:39:17"}

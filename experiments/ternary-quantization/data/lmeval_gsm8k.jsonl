@@ -1,0 +1,6 @@
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 0, "task": "gsm8k", "strict": 0.3237, "flexible": 0.5155, "num_fewshot": 5, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 2, "task": "gsm8k", "strict": 0.0076, "flexible": 0.0197, "num_fewshot": 5, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 3, "task": "gsm8k", "strict": 0.376, "flexible": 0.4079, "num_fewshot": 5, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "task": "gsm8k", "strict": 0.7604, "flexible": 0.815, "num_fewshot": 5, "source": "reconstructed_from_print", "_ts": "2026-06-27T19:09:43"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "task": "gsm8k", "strict": 0.0553, "flexible": 0.1425, "num_fewshot": 5, "nq": 196, "_ts": "2026-06-27T19:20:58"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "task": "gsm8k", "strict": 0.6664, "flexible": 0.8021, "num_fewshot": 5, "nq": 196, "_ts": "2026-06-27T19:31:18"}

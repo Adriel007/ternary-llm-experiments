@@ -1,0 +1,62 @@
+{
+ "_meta": {
+  "experiment": "#97 rank-16 A/B \u2014 isolate {model, alpha-scale} for the reported rank-16 distill failure",
+  "task": "gsm8k flex, lm-eval, limit=150, 5-shot",
+  "pipeline": "distill_sweep.py, K=2, seq128, 300 steps, seed0, ApiQ(LoftQ-style) init",
+  "gpu": "RTX 6000 Ada 48GB",
+  "date": "2026-07-04",
+  "verdict": [
+   "SCALE (alpha/rank) is the determinant, NOT model or rank-capacity.",
+   "scale=2 (alpha=2*rank): rank16 base 0.293 / inst 0.227; rank64 base 0.273 -> rank16~=rank64 (rank not limiting).",
+   "scale=8 (alpha=128,rank16): base 0.0067 / inst 0.0067 -> reproduces the reported ~0.013 failure.",
+   "CONCLUSION: the reported rank-16 failure was an alpha=128/rank=16 (scale-8) mismatch, not an adapter-capacity limit. rank-16 at alpha=2*rank recovers ~0.23-0.29 (=rank-64)."
+  ]
+ },
+ "results": {
+  "Qwen2.5-1.5B|r16|a32": {
+   "scale": 2.0,
+   "FP": 0.6467,
+   "K2_PTQ": 0.02,
+   "K2_distill": 0.2933,
+   "limit": 150,
+   "steps": 300,
+   "seed": 0
+  },
+  "Qwen2.5-1.5B|r16|a128": {
+   "scale": 8.0,
+   "FP": 0.6467,
+   "K2_PTQ": 0.02,
+   "K2_distill": 0.0067,
+   "limit": 150,
+   "steps": 300,
+   "seed": 0
+  },
+  "Qwen2.5-1.5B|r64|a128": {
+   "scale": 2.0,
+   "FP": 0.6467,
+   "K2_PTQ": 0.02,
+   "K2_distill": 0.2733,
+   "limit": 150,
+   "steps": 300,
+   "seed": 0
+  },
+  "Qwen2.5-1.5B-Instruct|r16|a32": {
+   "scale": 2.0,
+   "FP": 0.56,
+   "K2_PTQ": 0.0,
+   "K2_distill": 0.2267,
+   "limit": 150,
+   "steps": 300,
+   "seed": 0
+  },
+  "Qwen2.5-1.5B-Instruct|r16|a128": {
+   "scale": 8.0,
+   "FP": 0.56,
+   "K2_PTQ": 0.0,
+   "K2_distill": 0.0067,
+   "limit": 150,
+   "steps": 300,
+   "seed": 0
+  }
+ }
+}

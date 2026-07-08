@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "bench": "math",
+  "n": 100,
+  "results": {
+    "fp": 0.4,
+    "joint2": 0.04
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model": "tiiuae/Falcon3-10B-Instruct",
+  "bench": "mmlu",
+  "n": 150,
+  "results": {
+    "fp": 0.7133333333333334,
+    "joint2": 0.6666666666666666
+  }
+}

@@ -1,0 +1,2 @@
+{"model": "Qwen/Qwen1.5-MoE-A2.7B-Chat", "tag": "K3exp_routerFP", "K": 3, "router_quant": false, "nl": 168, "ne": 2880, "nr": 0, "flex": 0.34, "limit": 300, "_ts": "2026-06-28T22:29:51"}
+{"model": "Qwen/Qwen1.5-MoE-A2.7B-Chat", "tag": "K3exp_routerTern", "K": 3, "router_quant": true, "nl": 168, "ne": 2880, "nr": 48, "flex": 0.3733, "limit": 300, "_ts": "2026-06-28T22:38:03"}

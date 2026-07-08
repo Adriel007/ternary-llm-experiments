@@ -1,0 +1,3 @@
+{"model": "allenai/OLMoE-1B-7B-0924-Instruct", "tag": "K2exp_routerFP", "K": 2, "nl": 64, "ne": 2048, "flex": 0.02, "limit": 150, "_ts": null}
+{"model": "allenai/OLMoE-1B-7B-0924-Instruct", "tag": "K0_fp", "K": 0, "nl": 0, "ne": 0, "flex": 0.36, "limit": 150, "_ts": null}
+{"model": "allenai/OLMoE-1B-7B-0924-Instruct", "tag": "K3exp_routerFP", "K": 3, "nl": 64, "ne": 2048, "flex": 0.36, "limit": 150, "_ts": null}

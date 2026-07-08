@@ -1,0 +1,13 @@
+{
+  "_meta": {"experiment":"Frontier K2+distill vs K3-PTQ cross-model (2nd model, multi-benchmark)","date":"2026-07-01",
+            "model":"Qwen/Qwen3-1.7B (dense)","limit":100,"steps":300,"seed":1,"tasks":["gsm8k_flex","arc_challenge_acc_norm","hellaswag_acc_norm"],
+            "env":"transformers 4.55.4, lm-eval 0.4.12"},
+  "results": {
+    "FP":         {"gsm8k":0.65,"arc":0.43,"hella":0.46},
+    "K2_PTQ":     {"gsm8k":0.01,"arc":0.27,"hella":0.33},
+    "K2_distill": {"gsm8k":0.38,"arc":0.40,"hella":0.51},
+    "K3_PTQ":     {"gsm8k":0.59,"arc":0.46,"hella":0.49},
+    "K3_distill": {"gsm8k":0.57,"arc":0.43,"hella":0.43}
+  },
+  "verdict": "Cross-model confirmation (2nd model). K3-PTQ beats K2+distill CLEARLY on math (gsm8k 0.59>>0.38) and ARC (0.46>0.40), but TIES on HellaSwag (0.49 vs 0.51, both ~FP 0.46, within N=100 noise -> NOT significant). => K3-advantage over K2+distill lives in REASONING, not commonsense. Combined with Qwen2.5-1.5B (K3-PTQ > K2+distill on all 3): Paper H ordering holds cross-model, with the gap concentrated in math. K2-PTQ collapses math again (0.65->0.01). Caveats: N=100, 1 seed, 300 steps."
+}

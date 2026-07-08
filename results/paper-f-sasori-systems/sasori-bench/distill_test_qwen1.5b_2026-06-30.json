@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "experiment": "sasori.distill (LoRA-KD) recovery of K=2 ternary reasoning collapse",
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "task": "gsm8k (lm-eval official, 5-shot, limit=150 test)",
+    "teacher": "same-size FP (Qwen2.5-1.5B), logit-KD + ApiQ error-SVD LoRA init",
+    "corpus": "GSM8K-train (disjoint from test; no leakage)",
+    "quant": "sasori joint-ridge K=2 (group=256, ~3.3 bpw), fake-quant",
+    "date": "2026-06-30",
+    "gpu": "RTX PRO 6000 Blackwell (Colab)",
+    "note": "FAIR run (v2) recovers GSM8K from ~0 to flex 0.32 (61% of FP). v1 was a LOWER BOUND: the ApiQ init had a svd_lowrank V-vs-Vt shape bug that silently fell back to random init (same latent bug exists in ternary-boost lora.py, so Artigo-2 ran cold-start too). Honest caveats: LoRA = 73.8M FP params (+19% bits, rank-64, untuned); strict-match gain partly format; single model/task/corpus -> needs replication. flex (format-agnostic) = the honest reasoning number."
+  },
+  "FP_teacher":  {"gsm8k_flex": 0.5267, "gsm8k_strict": 0.3133},
+  "K2_ptq_only": {"gsm8k_flex": 0.0067, "gsm8k_strict": 0.0000},
+  "K2_distill_v1_buggy_apiq_600steps": {"gsm8k_flex": 0.0333, "gsm8k_strict": 0.0733, "apiq_layers": 0},
+  "K2_distill_v2_fair_apiq_1500steps": {"gsm8k_flex": 0.3200, "gsm8k_strict": 0.3267, "apiq_layers": 196,
+                                        "recovery_of_FP_flex": 0.61, "cfg": {"rank": 64, "steps": 1500, "seq": 192, "beta": 0.1, "corpus": 300}}
+}

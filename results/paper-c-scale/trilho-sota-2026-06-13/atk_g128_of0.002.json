@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "n": 50,
+  "niter": 50,
+  "results": {
+    "joint2": {
+      "gsm8k": 0.18,
+      "nrmse": 0.16877853003691654,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "To determine how much money Janet makes at the farmers' market daily, we need to calculate the total amount of money she makes from selling the eggs and the muffins.\n\n1. Janet's ducks lay 16 eggs per day.\n2. She eats three for breakfast every morning and bakes muffins for her friends every day with four.\n3. She sells the remainder at the farmers' market daily for $2 per fresh duck egg.\n\nLet's calculate the total amount of money she makes at the farmers' market:\n\n- Total number of eggs she ducks:",
+          "gold": "18",
+          "pred": "18",
+          "ok": true
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "To solve this problem, let's break it down step by step.\n\nWe are given a problem where a robe takes 2 bolts of blue fiber and half that much white fiber. We need to find out how many bolts in total does it take.\n\nFirst, let's understand the given information:\n\n- A robe requires 2 bolts of blue fiber.\n- A robe requires half that much white fiber.\n\nNow, let's convert this into a mathematical problem.\n\nWe are to find the total number of bolts that a robe requires.\n\nFrom the problem:\n\n- A robe requi",
+          "gold": "3",
+          "pred": "2.5",
+          "ok": false
+        }
+      ]
+    }
+  }
+}

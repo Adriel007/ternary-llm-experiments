@@ -1,0 +1,19 @@
+{
+ "_meta": {
+  "experiment": "#98 sasori-distill on reasoning-specialized base",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "K": 2,
+  "rank": 16,
+  "steps": 400,
+  "seed": 0,
+  "limit": null,
+  "arms": "datafree",
+  "eval": "official lm-eval-harness, gsm8k flexible-extract 5-shot, no custom prompt",
+  "minutes": 47.6
+ },
+ "K2_distill_datafree": {
+  "gsm8k": 0.4094,
+  "arc": 0.3345,
+  "hella": 0.4042
+ }
+}

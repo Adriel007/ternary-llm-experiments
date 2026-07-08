@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "experiment": "#68 reconstruction-knob sweep (K / group / lambda / outlier_frac)",
+    "model": "Qwen/Qwen2.5-1.5B",
+    "outlier_model": "meta-llama/Llama-3.1-8B",
+    "limit": 60,
+    "max_gen": 512,
+    "baseline": {
+      "K": 3,
+      "group": 256,
+      "lam": 0.01
+    },
+    "ks": [
+      2,
+      3,
+      4
+    ],
+    "groups": [
+      128,
+      256
+    ],
+    "lams": [
+      0.01,
+      0.001
+    ],
+    "outliers": [
+      0.0,
+      0.01
+    ],
+    "row_chunk": 65536,
+    "eval": "lm_eval gsm8k flexible+strict (few-shot); reuse exp_frontier.load_fp",
+    "sqnr": "energy-weighted 10*log10(sum|W|^2 / sum|W-What|^2) over quantized matrices",
+    "fp": {
+      "Qwen/Qwen2.5-1.5B": {
+        "flexible": 0.6333,
+        "strict": 0.6333
+      }
+    },
+    "outlier_model_fallback": {
+      "requested": "meta-llama/Llama-3.1-8B",
+      "used": "Qwen/Qwen2.5-1.5B",
+      "reason": "OSError('You are trying to access a gated repo.\\nMake sure to have access to it at https://huggingface.co/meta-llama/Llama-3.1-8B.\\n401 Client Error. (Request ID: Root=1-6a45feaf-058c9da552b29c6d1f6f5c72;9dd64bbe-f49c-421a-859d-e37236ab3322)\\n\\nCannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.1-8B/resolve/main/config.json.\\nAccess to model meta-llama/Llama-3.1-8B is restricted. You must have access to it and be authenticated to access it. Please log in.')"
+    },
+    "minutes": 37.9
+  },
+  "axes": {
+    "K": [
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 2,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.0167,
+          "strict": 0.0167
+        },
+        "sqnr": 14.785
+      },
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 3,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.5,
+          "strict": 0.5
+        },
+        "sqnr": 22.577
+      },
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 4,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.6333,
+          "strict": 0.6333
+        },
+        "sqnr": 29.281
+      }
+    ],
+    "group": [
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 3,
+          "group": 128,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.4833,
+          "strict": 0.4833
+        },
+        "sqnr": 23.022
+      },
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 3,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.5,
+          "strict": 0.5
+        },
+        "sqnr": 22.577
+      }
+    ],
+    "lambda": [
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 3,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.5,
+          "strict": 0.5
+        },
+        "sqnr": 22.577
+      },
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 3,
+          "group": 256,
+          "lam": 0.001,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix_k",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.5,
+          "strict": 0.5
+        },
+        "sqnr": 22.589
+      }
+    ],
+    "outlier": [
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 2,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.0,
+          "path": "quantize_matrix(DualPlane)",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.0,
+          "strict": 0.0
+        },
+        "sqnr": 14.786
+      },
+      {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B",
+          "K": 2,
+          "group": 256,
+          "lam": 0.01,
+          "outlier_frac": 0.01,
+          "path": "quantize_matrix(DualPlane)",
+          "quant": {
+            "linear": 196,
+            "expert_mats": 0
+          }
+        },
+        "gsm8k": {
+          "flexible": 0.05,
+          "strict": 0.05
+        },
+        "sqnr": 15.984
+      }
+    ]
+  }
+}

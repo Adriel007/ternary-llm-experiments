@@ -1,0 +1,2 @@
+{"model": "Qwen/Qwen3-30B-A3B", "tag": "K0_fp", "K": 0, "nl": 0, "ne": 0, "flex": 0.8467, "limit": 150, "_ts": "2026-06-28T23:38:47"}
+{"model": "Qwen/Qwen3-30B-A3B", "tag": "K3exp_routerFP", "K": 3, "nl": 192, "ne": 12288, "flex": 0.8867, "limit": 150, "_ts": "2026-06-28T23:57:16"}

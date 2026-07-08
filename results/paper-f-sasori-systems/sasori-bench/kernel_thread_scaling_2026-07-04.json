@@ -1,0 +1,38 @@
+{
+ "_meta": {
+  "experiment": "#96 TQ3P-vs-TQ2P decode thread-scaling \u2014 reconcile the #63 pod \"TQ3P ~90x slower\" against the EPYC llama-bench 1.35x",
+  "model": "Qwen3-1.7B GGUF, sasori TQ2P/TQ3P kernel, llama.cpp b9509 + patch",
+  "host": "RunPod AMD Threadripper PRO 5955WX, 16 physical / 32 logical cores; llama-bench -n 24 -r 3; GPU idle (clean)",
+  "date": "2026-07-04",
+  "verdict": [
+   "At threads <= physical cores (16), TQ3P is healthy: ~1.5x TQ2P TIME (0.67x throughput), the expected 3-plane-vs-2-plane ratio, NOT 90x.",
+   "Both kernels collapse under thread OVERSUBSCRIPTION; TQ3P collapses EARLIER (t=24 = 1.5x physical) than TQ2P (t=32 = 2x physical) because TQ3P is more memory-bandwidth-bound.",
+   "The #63 pod \"TQ3P 1.5 tok/s vs TQ2P 138 tok/s (~90x)\" was a 64-core COMMUNITY pod running llama-server with oversubscribed/contended threads, hitting exactly the asymmetric-collapse regime where TQ3P craters and TQ2P still runs.",
+   "CONCLUSION: the ~90x is a thread-oversubscription/contention ARTIFACT, not a TQ3P kernel defect. At correct thread settings (<=physical), TQ3P decode ~= 1.5x TQ2P time. llama-server picks physical cores by default (verified locally: 6 of 12)."
+  ],
+  "note_collapse": "null = COLLAPSED (>100s for a single 24-token point = <0.24 tok/s). tq2p@32 measured separately (timeout 120s)."
+ },
+ "tq2p_gen_tok_s": {
+  "1": 14.14,
+  "2": 22.75,
+  "4": 31.35,
+  "8": 30.33,
+  "12": 20.37,
+  "16": 15.88,
+  "20": 12.13,
+  "24": 9.24,
+  "32": null
+ },
+ "tq3p_gen_tok_s": {
+  "1": 10.49,
+  "2": 18.15,
+  "4": 24.39,
+  "8": 20.06,
+  "12": 14.22,
+  "16": 10.49,
+  "20": 10.0,
+  "24": null,
+  "32": null
+ },
+ "note_collapse": "null = COLLAPSED (>100s for a single 24-token point = <0.24 tok/s)"
+}

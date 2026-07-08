@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "experiment": "#53 Paper G reinforcement — SAE feature absorption on the Spectra TWINS (TriLM ternary vs FloatLM FP), removing the BitNet-vs-Gemma model-identity confound",
+    "date": "2026-07-01", "gpu": "Colab RTX PRO 6000 Blackwell 102GB",
+    "models": {"ternary": "SpectraSuite/TriLM_2.4B_Unpacked", "fp_twin": "SpectraSuite/FloatLM_2.4B",
+               "note": "true twins: same LLaMA arch (30 layers, d=2304, vocab 50304), same data, same 300B tokens; differ only in precision"},
+    "method": "BatchTopK SAE (d_sae=6.4x d_in, k=32, 4000 steps, 400k acts) per layer; SAEBench feature-absorption over HookedTransformer-shim over HF; layers L6/15/23 = early/mid/late (same as BitNet)",
+    "sae_fve": {"trilm": {"L6": 0.920, "L15": 0.833, "L23": 0.793}, "floatlm": {"L6": 0.969, "L15": 0.881, "L23": 0.901}}
+  },
+  "mean_absorption_fraction": {
+    "trilm_ternary": {"L6_early": 0.3197, "L15_mid": 0.1204, "L23_late": 0.2471},
+    "floatlm_fp":    {"L6_early": 0.2944, "L15_mid": 0.2421, "L23_late": 0.1271}
+  },
+  "verdict": "POSITIVE: ternary (TriLM) absorption is NON-MONOTONIC in depth (V-shape 0.320->0.120->0.247: dips at mid, rises at late); the FP TWIN (FloatLM) is MONOTONE DECREASING (0.294->0.242->0.127). Mid: ternary ~2x LESS (0.120 vs 0.242, replicates Paper G '3x less at mid'). Late: ternary ~2x MORE (0.247 vs 0.127, replicates Paper G 'worse late'). This REPLICATES the Paper G depth non-monotonicity in a TRUE TWIN PAIR (removes the BitNet-vs-Gemma model-identity confound, the decisive blocker) AND in a SECOND ternary backbone (TriLM). Caveats: 1 twin pair, 1 seed, 1 layer/depth, untuned BatchTopK SAEs (abs absorption above published GemmaScope), TriLM late less extreme than BitNet (0.247 vs 0.648)."
+}

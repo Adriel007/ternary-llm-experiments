@@ -1,0 +1,18 @@
+{
+  "arm": "task",
+  "kd_source": "/root/corpora/kd_task.jsonl",
+  "kd_ntexts": 128,
+  "lora_steps": 4000,
+  "wall_s": 3175,
+  "coherence_sample": " Paris.\n\nThe capital of Germany is Berlin.\n\nThe capital of Italy is Rome.",
+  "wikitext2_ppl_maxlen128": null,
+  "mmlu_acc": 0.2822247543085031,
+  "gsm8k_strict": 0.05686125852918878,
+  "gsm8k_flexible": 0.056103108415466264,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.27402473834443386,
+    "mmlu_humanities": 0.267375132837407,
+    "mmlu_social_sciences": 0.2989925251868703,
+    "mmlu_other": 0.2964274219504345
+  }
+}

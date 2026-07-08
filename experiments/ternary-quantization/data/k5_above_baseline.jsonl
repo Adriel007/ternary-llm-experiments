@@ -1,0 +1,4 @@
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 3, "acc": 0.448, "acc0": 0.465, "delta": -0.0171, "b_gain": 53, "c_loss": 73, "mcnemar_p": 0.0901, "N": 1172, "_ts": "2026-06-27T17:33:18"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 4, "acc": 0.4642, "acc0": 0.465, "delta": -0.0009, "b_gain": 27, "c_loss": 28, "mcnemar_p": 1.0, "N": 1172, "_ts": "2026-06-27T17:33:18"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 5, "acc": 0.4633, "acc0": 0.465, "delta": -0.0017, "b_gain": 14, "c_loss": 16, "mcnemar_p": 0.8555, "N": 1172, "_ts": "2026-06-27T17:33:18"}
+{"model": "Qwen/Qwen2.5-1.5B-Instruct", "K": 6, "acc": 0.4642, "acc0": 0.465, "delta": -0.0009, "b_gain": 11, "c_loss": 12, "mcnemar_p": 1.0, "N": 1172, "_ts": "2026-06-27T17:33:18"}

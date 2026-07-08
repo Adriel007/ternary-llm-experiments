@@ -1,0 +1,36 @@
+{
+ "_meta": {
+  "experiment": "black-box distill deploy verify (exploration, official lm-eval limit=150)",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "K": 2,
+  "steps": 300,
+  "corpus": "teacher-generations (black-box)",
+  "rank": 16,
+  "note": "CPU llama-cli sanity hung (flag bug); key numbers from log"
+ },
+ "FP": {
+  "gsm8k": 0.62,
+  "arc": 0.4333,
+  "hella": 0.66
+ },
+ "K2_PTQ": {
+  "gsm8k": 0.0133,
+  "arc": 0.3667,
+  "hella": 0.5333
+ },
+ "pathB_separate": {
+  "gsm8k": 0.1333,
+  "arc": 0.3933,
+  "hella": 0.58
+ },
+ "pathA_merge_gguf_fakequant": {
+  "gsm8k": 0.0,
+  "arc": 0.2733,
+  "hella": 0.4533
+ },
+ "export": {
+  "f16_ok": true,
+  "tq2p_ok": true
+ },
+ "verdict": "Path A (merge->single ternary GGUF) COLLAPSES reasoning (gsm8k 0.13->0.0): re-ternarization erases the FP LoRA correction. Product MUST ship base-ternary + SEPARATE FP adapter (Path B). Export pipeline works (F16+TQ2P GGUF produced)."
+}

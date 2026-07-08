@@ -1,0 +1,74 @@
+{
+  "draft": "phi-2 ternary PTQ + LoRA-KD rank64 wikitext (Aposta-1 draft)",
+  "target": "microsoft/phi-2 bf16",
+  "lora_steps": 1000,
+  "n_prompts": 40,
+  "gen_tokens": 64,
+  "method": "alpha on TARGET greedy trajectory (exact greedy acceptance); alpha_sample = sum min(p,q) at same positions",
+  "prediction": "H-BD1: alpha_greedy >= 0.6 (draft PPL 1.86x); falsifier < 0.4",
+  "domains": {
+    "wikitext": {
+      "alpha_greedy": 0.5489,
+      "alpha_sample": 0.5683,
+      "n_positions": 2534,
+      "alpha_greedy_base_ternary": 0.1365,
+      "alpha_sample_base_ternary": 0.1354,
+      "speedup": {
+        "c0.3": {
+          "g3": 1.061,
+          "g5": 0.863,
+          "g8": 0.649
+        },
+        "c0.4": {
+          "g3": 0.916,
+          "g5": 0.719,
+          "g8": 0.525
+        },
+        "c0.5": {
+          "g3": 0.806,
+          "g5": 0.616,
+          "g8": 0.441
+        },
+        "c1.0": {
+          "g3": 0.504,
+          "g5": 0.359,
+          "g8": 0.245
+        }
+      }
+    },
+    "gsm8k": {
+      "alpha_greedy": 0.6593,
+      "alpha_sample": 0.5281,
+      "n_positions": 2495,
+      "alpha_greedy_base_ternary": 0.1479,
+      "alpha_sample_base_ternary": 0.0591,
+      "speedup": {
+        "c0.3": {
+          "g3": 1.253,
+          "g5": 1.078,
+          "g8": 0.843
+        },
+        "c0.4": {
+          "g3": 1.082,
+          "g5": 0.898,
+          "g8": 0.682
+        },
+        "c0.5": {
+          "g3": 0.952,
+          "g5": 0.77,
+          "g8": 0.573
+        },
+        "c1.0": {
+          "g3": 0.595,
+          "g5": 0.449,
+          "g8": 0.318
+        }
+      }
+    }
+  },
+  "c_fakequant_pipeline": 1.651,
+  "target_step_ms": 23.461,
+  "draft_step_ms_fakequant": 38.74,
+  "verdict_H_BD1": "INCONCLUSIVE",
+  "wall_s": 557
+}

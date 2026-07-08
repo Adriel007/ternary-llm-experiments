@@ -1,0 +1,8 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "sqnr_late": 8.177, "_ts": "2026-06-28T22:50:18"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "sqnr_late": 18.491, "_ts": "2026-06-28T22:51:57"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 4, "sqnr_late": 25.335, "_ts": "2026-06-28T22:55:33"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 5, "sqnr_late": 28.603, "_ts": "2026-06-28T23:04:30"}
+{"model": "Qwen/Qwen3-8B", "K": 2, "sqnr_late": 2.665, "_ts": "2026-06-28T23:06:04"}
+{"model": "Qwen/Qwen3-8B", "K": 3, "sqnr_late": 11.505, "_ts": "2026-06-28T23:07:50"}
+{"model": "Qwen/Qwen3-8B", "K": 4, "sqnr_late": 18.721, "_ts": "2026-06-28T23:11:39"}
+{"model": "Qwen/Qwen3-8B", "K": 5, "sqnr_late": 23.284, "_ts": "2026-06-28T23:21:05"}

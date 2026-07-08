@@ -1,0 +1,16 @@
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "gsm8k", "route": "base", "acc": 0.6466666666666666, "nrmse": null, "_ts": "2026-06-28T09:58:16"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "gsm8k", "route": "fp16", "acc": 0.61, "nrmse": 0.07435, "_ts": "2026-06-28T09:59:43"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "gsm8k", "route": "fp8", "acc": 0.5566666666666666, "nrmse": 0.08898, "_ts": "2026-06-28T10:01:10"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "gsm8k", "route": "int8", "acc": 0.5433333333333333, "nrmse": 0.07663, "_ts": "2026-06-28T10:02:37"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "arc_challenge", "route": "base", "acc": 0.48293515358361777, "nrmse": null, "_ts": "2026-06-28T10:02:52"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "arc_challenge", "route": "fp16", "acc": 0.4880546075085324, "nrmse": 0.07435, "_ts": "2026-06-28T10:03:05"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "arc_challenge", "route": "fp8", "acc": 0.4872013651877133, "nrmse": 0.08898, "_ts": "2026-06-28T10:03:17"}
+{"model": "Qwen/Qwen2.5-3B-Instruct", "task": "arc_challenge", "route": "int8", "acc": 0.47440273037542663, "nrmse": 0.07663, "_ts": "2026-06-28T10:03:29"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "gsm8k", "route": "base", "acc": 0.83, "nrmse": null, "_ts": "2026-06-28T10:08:49"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "gsm8k", "route": "fp16", "acc": 0.8166666666666667, "nrmse": 0.07467, "_ts": "2026-06-28T10:10:51"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "gsm8k", "route": "fp8", "acc": 0.7333333333333333, "nrmse": 0.08895, "_ts": "2026-06-28T10:12:52"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "gsm8k", "route": "int8", "acc": 0.8266666666666667, "nrmse": 0.0773, "_ts": "2026-06-28T10:14:53"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "arc_challenge", "route": "base", "acc": 0.5546075085324232, "nrmse": null, "_ts": "2026-06-28T10:15:09"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "arc_challenge", "route": "fp16", "acc": 0.5520477815699659, "nrmse": 0.07467, "_ts": "2026-06-28T10:15:25"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "arc_challenge", "route": "fp8", "acc": 0.5639931740614335, "nrmse": 0.08895, "_ts": "2026-06-28T10:15:42"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "task": "arc_challenge", "route": "int8", "acc": 0.5409556313993175, "nrmse": 0.0773, "_ts": "2026-06-28T10:15:58"}

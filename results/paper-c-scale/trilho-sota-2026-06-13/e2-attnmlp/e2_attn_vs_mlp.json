@@ -1,0 +1,278 @@
+{
+  "meta": {
+    "scales": [
+      "1.5B",
+      "3.9B"
+    ],
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "openbookqa"
+    ],
+    "n_per_task": 200,
+    "dev": "cuda"
+  },
+  "scales": {
+    "1.5B": {
+      "variants": {
+        "fp": {
+          "ppl_wikitext": 19.689640833752208,
+          "arc_easy": {
+            "acc": 0.6,
+            "acc_norm": 0.53,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.27,
+            "acc_norm": 0.28,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.44,
+            "acc_norm": 0.52,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.19,
+            "acc_norm": 0.34,
+            "n": 200
+          }
+        },
+        "tern_all": {
+          "ppl_wikitext": 33909.21071674294,
+          "arc_easy": {
+            "acc": 0.31,
+            "acc_norm": 0.29,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.245,
+            "acc_norm": 0.255,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.3,
+            "acc_norm": 0.25,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.155,
+            "acc_norm": 0.315,
+            "n": 200
+          }
+        },
+        "tern_attn": {
+          "ppl_wikitext": 2922.3902188470747,
+          "arc_easy": {
+            "acc": 0.265,
+            "acc_norm": 0.24,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.23,
+            "acc_norm": 0.22,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.275,
+            "acc_norm": 0.23,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.13,
+            "acc_norm": 0.265,
+            "n": 200
+          }
+        },
+        "tern_mlp": {
+          "ppl_wikitext": 98543.84242914917,
+          "arc_easy": {
+            "acc": 0.25,
+            "acc_norm": 0.275,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.2,
+            "acc_norm": 0.285,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.265,
+            "acc_norm": 0.22,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.15,
+            "acc_norm": 0.3,
+            "n": 200
+          }
+        }
+      },
+      "headline": {
+        "arc_easy": {
+          "fp": 0.53,
+          "drop_all": 0.24000000000000005,
+          "drop_attn_only": 0.29000000000000004,
+          "drop_mlp_only": 0.255,
+          "attn_share": 1.2083333333333333,
+          "mlp_share": 1.0624999999999998
+        },
+        "arc_challenge": {
+          "fp": 0.28,
+          "drop_all": 0.025000000000000022,
+          "drop_attn_only": 0.060000000000000026,
+          "drop_mlp_only": -0.004999999999999949,
+          "attn_share": 2.399999999999999,
+          "mlp_share": -0.1999999999999978
+        },
+        "hellaswag": {
+          "fp": 0.52,
+          "drop_all": 0.27,
+          "drop_attn_only": 0.29000000000000004,
+          "drop_mlp_only": 0.30000000000000004,
+          "attn_share": 1.0740740740740742,
+          "mlp_share": 1.1111111111111112
+        },
+        "openbookqa": {
+          "fp": 0.34,
+          "drop_all": 0.025000000000000022,
+          "drop_attn_only": 0.07500000000000001,
+          "drop_mlp_only": 0.040000000000000036,
+          "attn_share": 2.999999999999998,
+          "mlp_share": 1.6
+        }
+      }
+    },
+    "3.9B": {
+      "variants": {
+        "fp": {
+          "ppl_wikitext": 16.198294142533147,
+          "arc_easy": {
+            "acc": 0.655,
+            "acc_norm": 0.57,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.305,
+            "acc_norm": 0.34,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.47,
+            "acc_norm": 0.555,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.25,
+            "acc_norm": 0.4,
+            "n": 200
+          }
+        },
+        "tern_all": {
+          "ppl_wikitext": 7518.234642311194,
+          "arc_easy": {
+            "acc": 0.29,
+            "acc_norm": 0.355,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.205,
+            "acc_norm": 0.245,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.3,
+            "acc_norm": 0.25,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.085,
+            "acc_norm": 0.23,
+            "n": 200
+          }
+        },
+        "tern_attn": {
+          "ppl_wikitext": 4604.633653205275,
+          "arc_easy": {
+            "acc": 0.245,
+            "acc_norm": 0.25,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.225,
+            "acc_norm": 0.245,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.275,
+            "acc_norm": 0.225,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.115,
+            "acc_norm": 0.305,
+            "n": 200
+          }
+        },
+        "tern_mlp": {
+          "ppl_wikitext": 106106.09639181446,
+          "arc_easy": {
+            "acc": 0.26,
+            "acc_norm": 0.26,
+            "n": 200
+          },
+          "arc_challenge": {
+            "acc": 0.165,
+            "acc_norm": 0.215,
+            "n": 200
+          },
+          "hellaswag": {
+            "acc": 0.245,
+            "acc_norm": 0.225,
+            "n": 200
+          },
+          "openbookqa": {
+            "acc": 0.13,
+            "acc_norm": 0.245,
+            "n": 200
+          }
+        }
+      },
+      "headline": {
+        "arc_easy": {
+          "fp": 0.57,
+          "drop_all": 0.21499999999999997,
+          "drop_attn_only": 0.31999999999999995,
+          "drop_mlp_only": 0.30999999999999994,
+          "attn_share": 1.4883720930232558,
+          "mlp_share": 1.441860465116279
+        },
+        "arc_challenge": {
+          "fp": 0.34,
+          "drop_all": 0.09500000000000003,
+          "drop_attn_only": 0.09500000000000003,
+          "drop_mlp_only": 0.12500000000000003,
+          "attn_share": 1.0,
+          "mlp_share": 1.3157894736842104
+        },
+        "hellaswag": {
+          "fp": 0.555,
+          "drop_all": 0.30500000000000005,
+          "drop_attn_only": 0.33000000000000007,
+          "drop_mlp_only": 0.33000000000000007,
+          "attn_share": 1.0819672131147542,
+          "mlp_share": 1.0819672131147542
+        },
+        "openbookqa": {
+          "fp": 0.4,
+          "drop_all": 0.17,
+          "drop_attn_only": 0.09500000000000003,
+          "drop_mlp_only": 0.15500000000000003,
+          "attn_share": 0.5588235294117648,
+          "mlp_share": 0.911764705882353
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "ref_fp": 0.8,
+  "ptq": 0.0,
+  "curve": [
+    {
+      "tokens": 0,
+      "gsm8k": 0.0,
+      "recovered": 0.0
+    },
+    {
+      "tokens": 4000256,
+      "gsm8k": 0.0,
+      "recovered": 0.0
+    }
+  ]
+}

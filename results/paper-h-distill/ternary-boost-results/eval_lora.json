@@ -1,0 +1,15 @@
+{
+  "mode": "lora",
+  "wall_s": 2919,
+  "coherence_sample": " Paris.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+  "wikitext2_ppl_maxlen128": null,
+  "mmlu_acc": 0.22945449366187154,
+  "gsm8k_strict": 0.0,
+  "gsm8k_flexible": 0.0,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.21249603552172533,
+    "mmlu_humanities": 0.24208289054197663,
+    "mmlu_social_sciences": 0.2170945726356841,
+    "mmlu_other": 0.23978113936272932
+  }
+}

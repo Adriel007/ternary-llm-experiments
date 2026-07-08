@@ -1,0 +1,91 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "limit": 8,
+  "n": 8,
+  "method": "data-free",
+  "results": {
+    "fp": {
+      "gsm8k": 0.375,
+      "arc": 0.25,
+      "hella": 0.5,
+      "bpw": 16.0,
+      "calibration": "none",
+      "method": "fp-bf16"
+    },
+    "sasori_K2": {
+      "gsm8k": 0.0,
+      "arc": 0.0,
+      "hella": 0.375,
+      "bpw": 3.4199,
+      "bpw_packed": 4.25,
+      "group": 128,
+      "calibration": "data-free",
+      "method": "sasori-joint2",
+      "K": 2,
+      "quant": {
+        "linear": 196,
+        "expert_mats": 0
+      }
+    },
+    "sasori_K3": {
+      "gsm8k": 0.5,
+      "arc": 0.25,
+      "hella": 0.5,
+      "bpw": 5.1299,
+      "bpw_packed": 6.375,
+      "group": 128,
+      "calibration": "data-free",
+      "method": "sasori-joint2",
+      "K": 3,
+      "quant": {
+        "linear": 196,
+        "expert_mats": 0
+      }
+    },
+    "rtn_4bit": {
+      "gsm8k": 0.125,
+      "arc": 0.25,
+      "hella": 0.375,
+      "bpw": 4.125,
+      "group": 128,
+      "calibration": "data-free",
+      "method": "rtn-int",
+      "bits": 4,
+      "quant": {
+        "linear": 196,
+        "expert_mats": 0
+      }
+    }
+  },
+  "_meta": {
+    "script": "perbit_headtohead.py",
+    "purpose": "data-free half of a fair per-bit Pareto (acc x bpw); merges with ptqtp_gptq.py (data-aware)",
+    "model": "Qwen/Qwen2.5-1.5B",
+    "group": 128,
+    "ks": [
+      2,
+      3
+    ],
+    "rtn_bits": [
+      4
+    ],
+    "tasks": [
+      "gsm8k",
+      "arc_challenge",
+      "hellaswag"
+    ],
+    "reused": {
+      "eval": "exp_frontier.evalmulti / load_fp (lm_eval HFLM, gsm8k flexible-extract + arc acc_norm + hella acc_norm)",
+      "sasori_quant": "exp_moe_distill.fake_quant_k_ (joint-ridge K-plane; == exp_frontier.fresh_k's quant, group passed explicitly)",
+      "sasori_bpw": "sasori.pack.bytes_per_block_k"
+    },
+    "rtn": "data-free symmetric integer round-to-nearest, per (row, group-block); targets EXACTLY fake_quant_k_'s module set (same filters); no calibration data",
+    "bpw_conventions": {
+      "sasori.bpw": "K*(log2(3)+16/group)  \u2014 info-theoretic ternary entropy (literature convention)",
+      "sasori.bpw_packed": "8*bytes_per_block_k(group,K)/group = 2K+16K/group  \u2014 deployed GGUF block",
+      "rtn.bpw": "bits + 16/group  \u2014 raw integer storage (symmetric, no zero-point)",
+      "note": "sasori.bpw (entropy) and rtn.bpw (raw) are DIFFERENT conventions; for a strict same-storage Pareto use sasori.bpw_packed vs rtn.bpw. Both are recorded."
+    },
+    "minutes": 2.5
+  }
+}

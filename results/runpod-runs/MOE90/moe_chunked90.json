@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "experiment": "#58 faithful MoE distillation (lean shared-expert-LoRA) on Qwen/Qwen1.5-MoE-A2.7B",
+    "date_utc_note": "stamp after run",
+    "model": "Qwen/Qwen1.5-MoE-A2.7B",
+    "group": 256,
+    "gsm8k_limit": 100,
+    "rank": 64,
+    "num_steps": 400,
+    "n_corpus": 300,
+    "kvals": [
+      2
+    ],
+    "smoke_tiny_format": {
+      "nn_linear_experts": 48,
+      "fused_expert_tensors": 0,
+      "fused_example": null
+    },
+    "chunked_topN": 8,
+    "n_layers_routed": 24,
+    "minutes": 131.5
+  },
+  "expert_format_14B": {
+    "nn_linear_experts": 4320,
+    "fused_expert_tensors": 0,
+    "fused_example": null
+  },
+  "FP": {
+    "flexible": 0.61,
+    "strict": 0.13
+  },
+  "K2_PTQ": {
+    "flexible": 0.0,
+    "strict": 0.0,
+    "quant": {
+      "linear": 4488,
+      "expert_mats": 0
+    }
+  },
+  "K2_skip": {
+    "flexible": 0.44,
+    "strict": 0.34
+  },
+  "K2_shared": {
+    "flexible": 0.39,
+    "strict": 0.34
+  },
+  "K2_per_expert_topN": {
+    "flexible": 0.43,
+    "strict": 0.41
+  }
+}

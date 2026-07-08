@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "bench": "arc",
+  "n": 150,
+  "results": {
+    "fp": 0.5666666666666667,
+    "joint2": 0.5066666666666667
+  }
+}

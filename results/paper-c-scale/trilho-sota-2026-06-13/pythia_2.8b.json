@@ -1,0 +1,1057 @@
+{
+  "model": "EleutherAI/pythia-2.8b",
+  "group": 32,
+  "R_tern": {
+    "mean": 1.2242689784183058,
+    "median": 0.9904776215553284,
+    "frac_lt1": 0.5736434108527132,
+    "n": 129
+  },
+  "R_single": {
+    "mean": 3.0911915750466576,
+    "median": 0.9924106597900391,
+    "frac_lt1": 0.5658914728682171,
+    "n": 129
+  },
+  "R_null": {
+    "mean": 1.000356792017471,
+    "median": 0.9999135732650757,
+    "frac_lt1": 0.5193798449612403,
+    "n": 129
+  },
+  "nrmse_tern_mean": 0.16119281150573908,
+  "per_layer": [
+    {
+      "name": "gpt_neox.layers.0.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.0372581481933594,
+      "R_single": 1.0377651453018188,
+      "R_null": 1.0002528429031372
+    },
+    {
+      "name": "gpt_neox.layers.0.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0749272108078003,
+      "R_single": 1.0580042600631714,
+      "R_null": 1.0006420612335205
+    },
+    {
+      "name": "gpt_neox.layers.0.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.85625159740448,
+      "R_single": 0.8604727983474731,
+      "R_null": 0.9981772899627686
+    },
+    {
+      "name": "gpt_neox.layers.0.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0338492393493652,
+      "R_single": 1.0468868017196655,
+      "R_null": 1.000192642211914
+    },
+    {
+      "name": "gpt_neox.layers.1.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.3909966945648193,
+      "R_single": 2.4302008152008057,
+      "R_null": 0.9920190572738647
+    },
+    {
+      "name": "gpt_neox.layers.1.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0207293033599854,
+      "R_single": 1.0241204500198364,
+      "R_null": 0.9998368620872498
+    },
+    {
+      "name": "gpt_neox.layers.1.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8070555329322815,
+      "R_single": 0.8245140910148621,
+      "R_null": 1.0040165185928345
+    },
+    {
+      "name": "gpt_neox.layers.1.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.950636625289917,
+      "R_single": 1.1676442623138428,
+      "R_null": 1.00034499168396
+    },
+    {
+      "name": "gpt_neox.layers.2.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.232574701309204,
+      "R_single": 1.3027232885360718,
+      "R_null": 1.006945013999939
+    },
+    {
+      "name": "gpt_neox.layers.2.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0093762874603271,
+      "R_single": 1.0102050304412842,
+      "R_null": 1.0001362562179565
+    },
+    {
+      "name": "gpt_neox.layers.2.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8992841839790344,
+      "R_single": 0.8792225122451782,
+      "R_null": 0.9996206164360046
+    },
+    {
+      "name": "gpt_neox.layers.2.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.8702622652053833,
+      "R_single": 2.129608631134033,
+      "R_null": 1.013024091720581
+    },
+    {
+      "name": "gpt_neox.layers.3.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.1320589780807495,
+      "R_single": 1.3015613555908203,
+      "R_null": 0.9928466081619263
+    },
+    {
+      "name": "gpt_neox.layers.3.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9625186324119568,
+      "R_single": 0.9630060195922852,
+      "R_null": 0.9997643232345581
+    },
+    {
+      "name": "gpt_neox.layers.3.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.921522319316864,
+      "R_single": 0.9165644645690918,
+      "R_null": 0.998686671257019
+    },
+    {
+      "name": "gpt_neox.layers.3.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.001397728919983,
+      "R_single": 1.1240063905715942,
+      "R_null": 0.9998292326927185
+    },
+    {
+      "name": "gpt_neox.layers.4.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.2394068241119385,
+      "R_single": 1.4311681985855103,
+      "R_null": 0.9974428415298462
+    },
+    {
+      "name": "gpt_neox.layers.4.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9645700454711914,
+      "R_single": 0.9644138813018799,
+      "R_null": 0.9997705817222595
+    },
+    {
+      "name": "gpt_neox.layers.4.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9213171601295471,
+      "R_single": 0.89847332239151,
+      "R_null": 0.9977383613586426
+    },
+    {
+      "name": "gpt_neox.layers.4.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9948069453239441,
+      "R_single": 1.4238909482955933,
+      "R_null": 0.9969923496246338
+    },
+    {
+      "name": "gpt_neox.layers.5.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.1677320003509521,
+      "R_single": 1.3728878498077393,
+      "R_null": 1.003654956817627
+    },
+    {
+      "name": "gpt_neox.layers.5.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9697661399841309,
+      "R_single": 0.9694350361824036,
+      "R_null": 1.0002795457839966
+    },
+    {
+      "name": "gpt_neox.layers.5.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8796685934066772,
+      "R_single": 0.8858643770217896,
+      "R_null": 0.999907374382019
+    },
+    {
+      "name": "gpt_neox.layers.5.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9659229516983032,
+      "R_single": 1.0524073839187622,
+      "R_null": 1.0001990795135498
+    },
+    {
+      "name": "gpt_neox.layers.6.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.12031888961792,
+      "R_single": 1.1569336652755737,
+      "R_null": 0.9984562993049622
+    },
+    {
+      "name": "gpt_neox.layers.6.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9571516513824463,
+      "R_single": 0.9564899802207947,
+      "R_null": 0.9996654987335205
+    },
+    {
+      "name": "gpt_neox.layers.6.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9042847156524658,
+      "R_single": 0.8953796625137329,
+      "R_null": 1.0043598413467407
+    },
+    {
+      "name": "gpt_neox.layers.6.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9666145443916321,
+      "R_single": 0.9817203283309937,
+      "R_null": 1.0004462003707886
+    },
+    {
+      "name": "gpt_neox.layers.7.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.110342264175415,
+      "R_single": 1.1475703716278076,
+      "R_null": 0.9996741414070129
+    },
+    {
+      "name": "gpt_neox.layers.7.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9831299781799316,
+      "R_single": 0.9823474884033203,
+      "R_null": 0.9990202188491821
+    },
+    {
+      "name": "gpt_neox.layers.7.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9143159985542297,
+      "R_single": 0.8974690437316895,
+      "R_null": 1.0026159286499023
+    },
+    {
+      "name": "gpt_neox.layers.7.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9795014262199402,
+      "R_single": 0.9805358648300171,
+      "R_null": 0.999709963798523
+    },
+    {
+      "name": "gpt_neox.layers.8.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.1029266119003296,
+      "R_single": 1.0916334390640259,
+      "R_null": 0.9984159469604492
+    },
+    {
+      "name": "gpt_neox.layers.8.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.979163646697998,
+      "R_single": 0.9782038331031799,
+      "R_null": 1.0005778074264526
+    },
+    {
+      "name": "gpt_neox.layers.8.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9030330181121826,
+      "R_single": 0.8942729234695435,
+      "R_null": 1.0043959617614746
+    },
+    {
+      "name": "gpt_neox.layers.8.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9794796109199524,
+      "R_single": 0.9792805910110474,
+      "R_null": 1.0000650882720947
+    },
+    {
+      "name": "gpt_neox.layers.9.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.1563578844070435,
+      "R_single": 1.182827115058899,
+      "R_null": 0.9985353946685791
+    },
+    {
+      "name": "gpt_neox.layers.9.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9905207753181458,
+      "R_single": 0.990238606929779,
+      "R_null": 0.9995964765548706
+    },
+    {
+      "name": "gpt_neox.layers.9.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9067258834838867,
+      "R_single": 0.8779659867286682,
+      "R_null": 0.9925381541252136
+    },
+    {
+      "name": "gpt_neox.layers.9.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9682584404945374,
+      "R_single": 0.9657983779907227,
+      "R_null": 0.9997400641441345
+    },
+    {
+      "name": "gpt_neox.layers.10.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.298855185508728,
+      "R_single": 1.355599045753479,
+      "R_null": 1.010260820388794
+    },
+    {
+      "name": "gpt_neox.layers.10.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9572587013244629,
+      "R_single": 0.955772340297699,
+      "R_null": 1.000253438949585
+    },
+    {
+      "name": "gpt_neox.layers.10.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8871433138847351,
+      "R_single": 0.8556870818138123,
+      "R_null": 0.9905679821968079
+    },
+    {
+      "name": "gpt_neox.layers.10.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9887537360191345,
+      "R_single": 0.9880011081695557,
+      "R_null": 0.9997639656066895
+    },
+    {
+      "name": "gpt_neox.layers.11.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.2662360668182373,
+      "R_single": 1.3646690845489502,
+      "R_null": 0.9952709674835205
+    },
+    {
+      "name": "gpt_neox.layers.11.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9501867294311523,
+      "R_single": 0.9503358006477356,
+      "R_null": 0.9996835589408875
+    },
+    {
+      "name": "gpt_neox.layers.11.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8867330551147461,
+      "R_single": 0.8359533548355103,
+      "R_null": 0.9980441927909851
+    },
+    {
+      "name": "gpt_neox.layers.11.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9979171752929688,
+      "R_single": 0.9981958270072937,
+      "R_null": 1.0003081560134888
+    },
+    {
+      "name": "gpt_neox.layers.12.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.3313593864440918,
+      "R_single": 1.430985689163208,
+      "R_null": 1.0002422332763672
+    },
+    {
+      "name": "gpt_neox.layers.12.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9933809041976929,
+      "R_single": 0.9936391115188599,
+      "R_null": 0.9999135732650757
+    },
+    {
+      "name": "gpt_neox.layers.12.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9260581731796265,
+      "R_single": 0.8953216671943665,
+      "R_null": 0.9971158504486084
+    },
+    {
+      "name": "gpt_neox.layers.12.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9820367693901062,
+      "R_single": 0.980526864528656,
+      "R_null": 1.00002121925354
+    },
+    {
+      "name": "gpt_neox.layers.13.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.3715280294418335,
+      "R_single": 1.6247541904449463,
+      "R_null": 0.9977156519889832
+    },
+    {
+      "name": "gpt_neox.layers.13.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9391611814498901,
+      "R_single": 0.9393041133880615,
+      "R_null": 1.0000108480453491
+    },
+    {
+      "name": "gpt_neox.layers.13.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9128701686859131,
+      "R_single": 0.8828975558280945,
+      "R_null": 1.0033972263336182
+    },
+    {
+      "name": "gpt_neox.layers.13.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9904776215553284,
+      "R_single": 0.9906235337257385,
+      "R_null": 1.0000094175338745
+    },
+    {
+      "name": "gpt_neox.layers.14.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.385245680809021,
+      "R_single": 1.7383278608322144,
+      "R_null": 0.9979729652404785
+    },
+    {
+      "name": "gpt_neox.layers.14.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9774082899093628,
+      "R_single": 0.9778382778167725,
+      "R_null": 1.000842809677124
+    },
+    {
+      "name": "gpt_neox.layers.14.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9623979926109314,
+      "R_single": 0.9605981111526489,
+      "R_null": 0.999391496181488
+    },
+    {
+      "name": "gpt_neox.layers.14.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9851440787315369,
+      "R_single": 0.9852613210678101,
+      "R_null": 1.0001040697097778
+    },
+    {
+      "name": "gpt_neox.layers.15.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.6178280115127563,
+      "R_single": 2.844552516937256,
+      "R_null": 0.9988399147987366
+    },
+    {
+      "name": "gpt_neox.layers.15.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9989556670188904,
+      "R_single": 0.9975415468215942,
+      "R_null": 0.999433696269989
+    },
+    {
+      "name": "gpt_neox.layers.15.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9630587100982666,
+      "R_single": 0.9434934854507446,
+      "R_null": 0.9991861581802368
+    },
+    {
+      "name": "gpt_neox.layers.15.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9857356548309326,
+      "R_single": 0.9850531816482544,
+      "R_null": 0.99977707862854
+    },
+    {
+      "name": "gpt_neox.layers.16.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.9482351541519165,
+      "R_single": 3.633195638656616,
+      "R_null": 0.9893251657485962
+    },
+    {
+      "name": "gpt_neox.layers.16.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9504972696304321,
+      "R_single": 0.9497855305671692,
+      "R_null": 1.0002235174179077
+    },
+    {
+      "name": "gpt_neox.layers.16.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9870063066482544,
+      "R_single": 0.9857251048088074,
+      "R_null": 1.000022053718567
+    },
+    {
+      "name": "gpt_neox.layers.16.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0049755573272705,
+      "R_single": 1.0069570541381836,
+      "R_null": 0.9997434020042419
+    },
+    {
+      "name": "gpt_neox.layers.17.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 1.8062130212783813,
+      "R_single": 4.674883842468262,
+      "R_null": 0.9906236529350281
+    },
+    {
+      "name": "gpt_neox.layers.17.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.99724942445755,
+      "R_single": 0.986890971660614,
+      "R_null": 0.9993622303009033
+    },
+    {
+      "name": "gpt_neox.layers.17.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9908589124679565,
+      "R_single": 0.989476203918457,
+      "R_null": 1.0000540018081665
+    },
+    {
+      "name": "gpt_neox.layers.17.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9971901774406433,
+      "R_single": 0.9969087839126587,
+      "R_null": 1.000449538230896
+    },
+    {
+      "name": "gpt_neox.layers.18.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.122067451477051,
+      "R_single": 5.745888710021973,
+      "R_null": 1.001976728439331
+    },
+    {
+      "name": "gpt_neox.layers.18.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.971680223941803,
+      "R_single": 0.9692474603652954,
+      "R_null": 1.000808596611023
+    },
+    {
+      "name": "gpt_neox.layers.18.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9826081991195679,
+      "R_single": 0.9803593158721924,
+      "R_null": 1.0001548528671265
+    },
+    {
+      "name": "gpt_neox.layers.18.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9919151067733765,
+      "R_single": 0.995867908000946,
+      "R_null": 0.9998182058334351
+    },
+    {
+      "name": "gpt_neox.layers.19.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.149902820587158,
+      "R_single": 6.486055850982666,
+      "R_null": 1.0063058137893677
+    },
+    {
+      "name": "gpt_neox.layers.19.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0036126375198364,
+      "R_single": 1.0039581060409546,
+      "R_null": 0.9992827773094177
+    },
+    {
+      "name": "gpt_neox.layers.19.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9716097116470337,
+      "R_single": 0.9666410684585571,
+      "R_null": 0.9997454285621643
+    },
+    {
+      "name": "gpt_neox.layers.19.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0030550956726074,
+      "R_single": 1.005230188369751,
+      "R_null": 0.9997647404670715
+    },
+    {
+      "name": "gpt_neox.layers.20.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.498863935470581,
+      "R_single": 7.171451091766357,
+      "R_null": 1.0066643953323364
+    },
+    {
+      "name": "gpt_neox.layers.20.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0397940874099731,
+      "R_single": 0.9952108263969421,
+      "R_null": 0.9990573525428772
+    },
+    {
+      "name": "gpt_neox.layers.20.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9403528571128845,
+      "R_single": 0.9342113137245178,
+      "R_null": 0.9990782141685486
+    },
+    {
+      "name": "gpt_neox.layers.20.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0174936056137085,
+      "R_single": 1.020459771156311,
+      "R_null": 0.9999866485595703
+    },
+    {
+      "name": "gpt_neox.layers.21.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.9249353408813477,
+      "R_single": 5.5203351974487305,
+      "R_null": 1.0098134279251099
+    },
+    {
+      "name": "gpt_neox.layers.21.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0647811889648438,
+      "R_single": 1.028584361076355,
+      "R_null": 1.0006226301193237
+    },
+    {
+      "name": "gpt_neox.layers.21.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9111959934234619,
+      "R_single": 0.9068126082420349,
+      "R_null": 0.997994065284729
+    },
+    {
+      "name": "gpt_neox.layers.21.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0084664821624756,
+      "R_single": 1.021125316619873,
+      "R_null": 1.0018126964569092
+    },
+    {
+      "name": "gpt_neox.layers.22.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 3.279703140258789,
+      "R_single": 8.80945110321045,
+      "R_null": 1.008188009262085
+    },
+    {
+      "name": "gpt_neox.layers.22.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0113294124603271,
+      "R_single": 0.9924106597900391,
+      "R_null": 1.0006245374679565
+    },
+    {
+      "name": "gpt_neox.layers.22.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.9007011651992798,
+      "R_single": 0.8964623808860779,
+      "R_null": 1.0005689859390259
+    },
+    {
+      "name": "gpt_neox.layers.22.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0017365217208862,
+      "R_single": 1.0075637102127075,
+      "R_null": 1.001274585723877
+    },
+    {
+      "name": "gpt_neox.layers.23.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 3.354764699935913,
+      "R_single": 16.635221481323242,
+      "R_null": 0.9943186640739441
+    },
+    {
+      "name": "gpt_neox.layers.23.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0534011125564575,
+      "R_single": 1.022607445716858,
+      "R_null": 1.0031787157058716
+    },
+    {
+      "name": "gpt_neox.layers.23.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8812225461006165,
+      "R_single": 0.8871826529502869,
+      "R_null": 1.0003069639205933
+    },
+    {
+      "name": "gpt_neox.layers.23.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0093812942504883,
+      "R_single": 1.0111528635025024,
+      "R_null": 1.000282883644104
+    },
+    {
+      "name": "gpt_neox.layers.24.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 3.0480690002441406,
+      "R_single": 22.717180252075195,
+      "R_null": 1.0024158954620361
+    },
+    {
+      "name": "gpt_neox.layers.24.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.002353549003601,
+      "R_single": 0.9988600015640259,
+      "R_null": 1.0008676052093506
+    },
+    {
+      "name": "gpt_neox.layers.24.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8761863708496094,
+      "R_single": 0.9041720032691956,
+      "R_null": 0.9993892908096313
+    },
+    {
+      "name": "gpt_neox.layers.24.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.005115032196045,
+      "R_single": 1.020542025566101,
+      "R_null": 0.9997835159301758
+    },
+    {
+      "name": "gpt_neox.layers.25.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 3.4212663173675537,
+      "R_single": 26.636991500854492,
+      "R_null": 0.9800925850868225
+    },
+    {
+      "name": "gpt_neox.layers.25.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0045496225357056,
+      "R_single": 1.0004388093948364,
+      "R_null": 0.9995261430740356
+    },
+    {
+      "name": "gpt_neox.layers.25.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8762261867523193,
+      "R_single": 0.9215641617774963,
+      "R_null": 1.0099401473999023
+    },
+    {
+      "name": "gpt_neox.layers.25.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0004525184631348,
+      "R_single": 1.0111558437347412,
+      "R_null": 0.9998413920402527
+    },
+    {
+      "name": "gpt_neox.layers.26.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 3.1397359371185303,
+      "R_single": 27.455503463745117,
+      "R_null": 1.0077226161956787
+    },
+    {
+      "name": "gpt_neox.layers.26.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9645448923110962,
+      "R_single": 0.9598010778427124,
+      "R_null": 0.9995573163032532
+    },
+    {
+      "name": "gpt_neox.layers.26.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8726249933242798,
+      "R_single": 0.9317995309829712,
+      "R_null": 0.9971011877059937
+    },
+    {
+      "name": "gpt_neox.layers.26.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 1.0023910999298096,
+      "R_single": 1.0029585361480713,
+      "R_null": 1.0004085302352905
+    },
+    {
+      "name": "gpt_neox.layers.27.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.660736560821533,
+      "R_single": 29.360517501831055,
+      "R_null": 1.0087512731552124
+    },
+    {
+      "name": "gpt_neox.layers.27.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9809532761573792,
+      "R_single": 0.9787522554397583,
+      "R_null": 1.0004483461380005
+    },
+    {
+      "name": "gpt_neox.layers.27.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8758552670478821,
+      "R_single": 0.9388156533241272,
+      "R_null": 1.0033882856369019
+    },
+    {
+      "name": "gpt_neox.layers.27.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9853846430778503,
+      "R_single": 0.9986419677734375,
+      "R_null": 1.0016283988952637
+    },
+    {
+      "name": "gpt_neox.layers.28.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.916799545288086,
+      "R_single": 30.859830856323242,
+      "R_null": 1.011036992073059
+    },
+    {
+      "name": "gpt_neox.layers.28.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 1.0264972448349,
+      "R_single": 1.0266139507293701,
+      "R_null": 0.9995309710502625
+    },
+    {
+      "name": "gpt_neox.layers.28.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8690659403800964,
+      "R_single": 0.9208890199661255,
+      "R_null": 1.00481379032135
+    },
+    {
+      "name": "gpt_neox.layers.28.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9633496403694153,
+      "R_single": 0.9598806500434875,
+      "R_null": 0.9997972846031189
+    },
+    {
+      "name": "gpt_neox.layers.29.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.6658542156219482,
+      "R_single": 29.568714141845703,
+      "R_null": 1.0019718408584595
+    },
+    {
+      "name": "gpt_neox.layers.29.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9773650169372559,
+      "R_single": 0.9763569235801697,
+      "R_null": 0.9999766945838928
+    },
+    {
+      "name": "gpt_neox.layers.29.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8759394288063049,
+      "R_single": 0.901491105556488,
+      "R_null": 1.0054231882095337
+    },
+    {
+      "name": "gpt_neox.layers.29.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9374294281005859,
+      "R_single": 0.9175084233283997,
+      "R_null": 0.9996568560600281
+    },
+    {
+      "name": "gpt_neox.layers.30.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 2.3106045722961426,
+      "R_single": 30.70038414001465,
+      "R_null": 0.9896230697631836
+    },
+    {
+      "name": "gpt_neox.layers.30.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.9623638391494751,
+      "R_single": 0.9640785455703735,
+      "R_null": 1.0004392862319946
+    },
+    {
+      "name": "gpt_neox.layers.30.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8758123517036438,
+      "R_single": 0.8701958060264587,
+      "R_null": 0.9955236315727234
+    },
+    {
+      "name": "gpt_neox.layers.30.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.8970133066177368,
+      "R_single": 0.8782901167869568,
+      "R_null": 0.9973506927490234
+    },
+    {
+      "name": "gpt_neox.layers.31.attention.query_key_value",
+      "in": 2560,
+      "out": 7680,
+      "R_tern": 4.15280818939209,
+      "R_single": 23.360137939453125,
+      "R_null": 0.9992890954017639
+    },
+    {
+      "name": "gpt_neox.layers.31.attention.dense",
+      "in": 2560,
+      "out": 2560,
+      "R_tern": 0.7610607743263245,
+      "R_single": 0.8270879983901978,
+      "R_null": 1.018102765083313
+    },
+    {
+      "name": "gpt_neox.layers.31.mlp.dense_h_to_4h",
+      "in": 2560,
+      "out": 10240,
+      "R_tern": 0.8540874123573303,
+      "R_single": 0.920856773853302,
+      "R_null": 1.0142242908477783
+    },
+    {
+      "name": "gpt_neox.layers.31.mlp.dense_4h_to_h",
+      "in": 10240,
+      "out": 2560,
+      "R_tern": 0.9485012292861938,
+      "R_single": 0.84422367811203,
+      "R_null": 0.9990167021751404
+    },
+    {
+      "name": "embed_out",
+      "in": 2560,
+      "out": 50304,
+      "R_tern": 1.6611546277999878,
+      "R_single": 1.6835167407989502,
+      "R_null": 0.9996925592422485
+    }
+  ]
+}

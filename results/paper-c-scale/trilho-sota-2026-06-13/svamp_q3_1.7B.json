@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "bench": "svamp",
+  "n": 100,
+  "results": {
+    "fp": 0.86,
+    "joint2": 0.76
+  }
+}

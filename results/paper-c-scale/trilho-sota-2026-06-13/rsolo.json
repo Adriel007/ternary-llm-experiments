@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "group": 32,
+  "ref_fp": 0.7,
+  "ptq_init": 0.425,
+  "curve": [
+    {
+      "step": 0,
+      "gsm8k": 0.425
+    },
+    {
+      "step": 40,
+      "gsm8k": 0.525
+    },
+    {
+      "step": 80,
+      "gsm8k": 0.45
+    },
+    {
+      "step": 120,
+      "gsm8k": 0.6
+    },
+    {
+      "step": 160,
+      "gsm8k": 0.575
+    }
+  ]
+}

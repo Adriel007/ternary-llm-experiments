@@ -1,0 +1,247 @@
+{
+  "draft": "phi-2 ternary + LoRA-KD rank64 (phase-0 draft)",
+  "by_domain": {
+    "wikitext": {
+      "n_positions": 3814,
+      "overall_acc": 0.5425,
+      "mean_target_entropy": 2.5872,
+      "acc_vs_entropy": [
+        {
+          "range": [
+            0,
+            0.25
+          ],
+          "n": 448,
+          "acc": 0.7589
+        },
+        {
+          "range": [
+            0.25,
+            0.5
+          ],
+          "n": 165,
+          "acc": 0.7758
+        },
+        {
+          "range": [
+            0.5,
+            1.0
+          ],
+          "n": 308,
+          "acc": 0.7468
+        },
+        {
+          "range": [
+            1.0,
+            2.0
+          ],
+          "n": 627,
+          "acc": 0.6651
+        },
+        {
+          "range": [
+            2.0,
+            3.0
+          ],
+          "n": 708,
+          "acc": 0.5
+        },
+        {
+          "range": [
+            3.0,
+            5.0
+          ],
+          "n": 1175,
+          "acc": 0.4187
+        },
+        {
+          "range": [
+            5.0,
+            20.0
+          ],
+          "n": 383,
+          "acc": 0.282
+        }
+      ],
+      "acc_vs_position": [
+        {
+          "range": [
+            0,
+            8
+          ],
+          "n": 480,
+          "acc": 0.45
+        },
+        {
+          "range": [
+            8,
+            16
+          ],
+          "n": 480,
+          "acc": 0.5125
+        },
+        {
+          "range": [
+            16,
+            32
+          ],
+          "n": 960,
+          "acc": 0.5
+        },
+        {
+          "range": [
+            32,
+            48
+          ],
+          "n": 950,
+          "acc": 0.5537
+        },
+        {
+          "range": [
+            48,
+            64
+          ],
+          "n": 944,
+          "acc": 0.6367
+        }
+      ],
+      "acc_by_token_type": {
+        "numeric": {
+          "n": 99,
+          "acc": 0.2121
+        },
+        "punct": {
+          "n": 510,
+          "acc": 0.5706
+        },
+        "word": {
+          "n": 2971,
+          "acc": 0.5389
+        },
+        "whitespace": {
+          "n": 234,
+          "acc": 0.6667
+        }
+      },
+      "rejection_top5_recall": 0.5719,
+      "rejection_mean_draft_conf": 0.2193
+    },
+    "gsm8k": {
+      "n_positions": 3767,
+      "overall_acc": 0.6711,
+      "mean_target_entropy": 0.4522,
+      "acc_vs_entropy": [
+        {
+          "range": [
+            0,
+            0.25
+          ],
+          "n": 2098,
+          "acc": 0.8241
+        },
+        {
+          "range": [
+            0.25,
+            0.5
+          ],
+          "n": 379,
+          "acc": 0.6781
+        },
+        {
+          "range": [
+            0.5,
+            1.0
+          ],
+          "n": 675,
+          "acc": 0.4756
+        },
+        {
+          "range": [
+            1.0,
+            2.0
+          ],
+          "n": 489,
+          "acc": 0.4008
+        },
+        {
+          "range": [
+            2.0,
+            3.0
+          ],
+          "n": 115,
+          "acc": 0.1913
+        },
+        {
+          "range": [
+            3.0,
+            5.0
+          ],
+          "n": 11,
+          "acc": 0.2727
+        }
+      ],
+      "acc_vs_position": [
+        {
+          "range": [
+            0,
+            8
+          ],
+          "n": 480,
+          "acc": 0.5583
+        },
+        {
+          "range": [
+            8,
+            16
+          ],
+          "n": 480,
+          "acc": 0.6375
+        },
+        {
+          "range": [
+            16,
+            32
+          ],
+          "n": 960,
+          "acc": 0.6927
+        },
+        {
+          "range": [
+            32,
+            48
+          ],
+          "n": 944,
+          "acc": 0.7013
+        },
+        {
+          "range": [
+            48,
+            64
+          ],
+          "n": 903,
+          "acc": 0.6944
+        }
+      ],
+      "acc_by_token_type": {
+        "numeric": {
+          "n": 272,
+          "acc": 0.5809
+        },
+        "punct": {
+          "n": 736,
+          "acc": 0.7704
+        },
+        "word": {
+          "n": 2193,
+          "acc": 0.6261
+        },
+        "whitespace": {
+          "n": 566,
+          "acc": 0.7597
+        }
+      },
+      "rejection_top5_recall": 0.6408,
+      "rejection_mean_draft_conf": 0.3551
+    }
+  }
+}

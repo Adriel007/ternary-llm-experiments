@@ -1,0 +1,93 @@
+{
+  "model": "microsoft/phi-2",
+  "n_calib": 16,
+  "budgets": [
+    0.0,
+    0.01,
+    0.05
+  ],
+  "criteria": [
+    "magnitude",
+    "grad",
+    "tacq",
+    "causal",
+    "random"
+  ],
+  "method": "mixed FP16-outlier + absmean-ternary, NO LoRA (isolate allocation)",
+  "prediction": "causal Pareto-better than tacq/magnitude on PPL at iso-budget",
+  "fp32_ppl": 19.9791,
+  "grid": [
+    {
+      "budget": 0.0,
+      "criterion": "base_ternary",
+      "ppl": 20827.3319,
+      "ppl_ratio_fp": 1042.456
+    },
+    {
+      "budget": 0.01,
+      "criterion": "magnitude",
+      "ppl": 6098.5985,
+      "ppl_ratio_fp": 305.249
+    },
+    {
+      "budget": 0.01,
+      "criterion": "grad",
+      "ppl": 29131.0784,
+      "ppl_ratio_fp": 1458.078
+    },
+    {
+      "budget": 0.01,
+      "criterion": "tacq",
+      "ppl": 11867.9819,
+      "ppl_ratio_fp": 594.02
+    },
+    {
+      "budget": 0.01,
+      "criterion": "causal",
+      "ppl": 9160.928,
+      "ppl_ratio_fp": 458.526
+    },
+    {
+      "budget": 0.01,
+      "criterion": "random",
+      "ppl": 22419.7967,
+      "ppl_ratio_fp": 1122.162
+    },
+    {
+      "budget": 0.05,
+      "criterion": "magnitude",
+      "ppl": 294.5638,
+      "ppl_ratio_fp": 14.744
+    },
+    {
+      "budget": 0.05,
+      "criterion": "grad",
+      "ppl": 32065.5673,
+      "ppl_ratio_fp": 1604.956
+    },
+    {
+      "budget": 0.05,
+      "criterion": "tacq",
+      "ppl": 2479.4063,
+      "ppl_ratio_fp": 124.1
+    },
+    {
+      "budget": 0.05,
+      "criterion": "causal",
+      "ppl": 1226.3971,
+      "ppl_ratio_fp": 61.384
+    },
+    {
+      "budget": 0.05,
+      "criterion": "random",
+      "ppl": 19740.0591,
+      "ppl_ratio_fp": 988.035
+    }
+  ],
+  "gsm8k_best_crit": {
+    "criterion": "magnitude",
+    "budget": 0.05,
+    "gsm8k_flex": 0.0
+  },
+  "causal_beats_tacq": "2/2"
+}

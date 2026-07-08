@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "experiment": "Grow Paper H: more families GSM8K ladder + MATH cross-task transfer attempt",
+    "date": "2026-06-30", "task": "gsm8k flexible-extract, 5-shot, limit=150, lm-eval official; LoRA-KD rank-64 batched"
+  },
+  "new_families_gsm8k_flex": {
+    "ibm-granite/granite-3.1-2b-instruct": {"FP": 0.6267, "K2_ptq": 0.0, "K2_distill": 0.3867, "K3_ptq": 0.4467, "K3_distill": 0.5867, "valid": true},
+    "meta-llama/Llama-3.2-3B-Instruct": {"ERR": "gated repo 401 (no HF token on Colab) -> excluded"},
+    "microsoft/Phi-3.5-mini-instruct": {"ERR": "DynamicCache has no attribute 'seen_tokens' (transformers vs Phi3 custom-code incompat) -> excluded"}
+  },
+  "math_transfer": {"status": "FAILED first attempt: minerva_math_algebra needs 'math_verify' + sympy + antlr4-python3-runtime==4.11 (isolated antlr alone insufficient). Re-running with math_verify installed -> see distill_growH_math_2026-06-30.json."},
+  "verdict": "One new valid family (Granite-3.1-2B) CONFIRMS the Paper H ladder across a 3rd collapsing family: K2 collapses (0) -> K2+distill 0.387 (62% FP) -> K3-PTQ 0.447 > K2+distill (ordering holds, 6th model) -> K3+distill 0.587 (94% FP). Llama (gated) and Phi (cache incompat) excluded honestly. MATH cross-task pending a dependency fix."
+}

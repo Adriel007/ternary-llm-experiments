@@ -1,0 +1,917 @@
+{
+  "_meta": {
+    "model": "Qwen/Qwen2.5-0.5B",
+    "group": 256,
+    "n_matrices": 24,
+    "log2_3": 1.5849625007211563,
+    "note": "A=within-plane (sparsity, trivial); B=cross-plane redundancy (the novel #95 lane)"
+  },
+  "K2": {
+    "aggregate": {
+      "H_per_plane_mean": [
+        1.3305,
+        1.5816
+      ],
+      "zero_frac_mean": [
+        0.6237,
+        0.3619
+      ],
+      "within_headroom_bits_mean": 0.2578,
+      "cross_redundancy_bits_mean": 0.0881,
+      "cross_redundancy_frac_of_alloc": 0.0278,
+      "MI_mean": {
+        "MI_01": 0.08811
+      }
+    },
+    "per_matrix": [
+      {
+        "H_per_plane": [
+          1.3194,
+          1.5831
+        ],
+        "zero_frac": [
+          0.6307,
+          0.3577
+        ],
+        "within_headroom_bits": 0.2675,
+        "sumH": 2.9025,
+        "H_joint": 2.8081,
+        "cross_redundancy_bits": 0.0944,
+        "MI_01": 0.09438,
+        "name": "model.layers.0.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3873,
+          1.5843
+        ],
+        "zero_frac": [
+          0.5894,
+          0.3473
+        ],
+        "within_headroom_bits": 0.1983,
+        "sumH": 2.9717,
+        "H_joint": 2.8899,
+        "cross_redundancy_bits": 0.0818,
+        "MI_01": 0.08176,
+        "name": "model.layers.1.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3248,
+          1.5833
+        ],
+        "zero_frac": [
+          0.6277,
+          0.356
+        ],
+        "within_headroom_bits": 0.2618,
+        "sumH": 2.9081,
+        "H_joint": 2.823,
+        "cross_redundancy_bits": 0.0851,
+        "MI_01": 0.08511,
+        "name": "model.layers.2.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3288,
+          1.5827
+        ],
+        "zero_frac": [
+          0.6254,
+          0.3601
+        ],
+        "within_headroom_bits": 0.2584,
+        "sumH": 2.9115,
+        "H_joint": 2.8228,
+        "cross_redundancy_bits": 0.0886,
+        "MI_01": 0.08864,
+        "name": "model.layers.3.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3699,
+          1.5843
+        ],
+        "zero_frac": [
+          0.6007,
+          0.3479
+        ],
+        "within_headroom_bits": 0.2157,
+        "sumH": 2.9542,
+        "H_joint": 2.8696,
+        "cross_redundancy_bits": 0.0846,
+        "MI_01": 0.08458,
+        "name": "model.layers.4.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3692,
+          1.5844
+        ],
+        "zero_frac": [
+          0.6011,
+          0.3461
+        ],
+        "within_headroom_bits": 0.2163,
+        "sumH": 2.9536,
+        "H_joint": 2.8674,
+        "cross_redundancy_bits": 0.0862,
+        "MI_01": 0.0862,
+        "name": "model.layers.5.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3551,
+          1.5841
+        ],
+        "zero_frac": [
+          0.6098,
+          0.3493
+        ],
+        "within_headroom_bits": 0.2307,
+        "sumH": 2.9392,
+        "H_joint": 2.8524,
+        "cross_redundancy_bits": 0.0868,
+        "MI_01": 0.0868,
+        "name": "model.layers.6.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3456,
+          1.5835
+        ],
+        "zero_frac": [
+          0.6155,
+          0.3543
+        ],
+        "within_headroom_bits": 0.2408,
+        "sumH": 2.9292,
+        "H_joint": 2.8434,
+        "cross_redundancy_bits": 0.0858,
+        "MI_01": 0.08581,
+        "name": "model.layers.7.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3669,
+          1.5837
+        ],
+        "zero_frac": [
+          0.6025,
+          0.3531
+        ],
+        "within_headroom_bits": 0.2193,
+        "sumH": 2.9506,
+        "H_joint": 2.8659,
+        "cross_redundancy_bits": 0.0847,
+        "MI_01": 0.08469,
+        "name": "model.layers.8.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3488,
+          1.58
+        ],
+        "zero_frac": [
+          0.6136,
+          0.3729
+        ],
+        "within_headroom_bits": 0.2411,
+        "sumH": 2.9288,
+        "H_joint": 2.8285,
+        "cross_redundancy_bits": 0.1003,
+        "MI_01": 0.10034,
+        "name": "model.layers.9.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3557,
+          1.5843
+        ],
+        "zero_frac": [
+          0.6095,
+          0.3472
+        ],
+        "within_headroom_bits": 0.2299,
+        "sumH": 2.94,
+        "H_joint": 2.8513,
+        "cross_redundancy_bits": 0.0887,
+        "MI_01": 0.08873,
+        "name": "model.layers.10.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2758,
+          1.5792
+        ],
+        "zero_frac": [
+          0.6543,
+          0.376
+        ],
+        "within_headroom_bits": 0.315,
+        "sumH": 2.855,
+        "H_joint": 2.7621,
+        "cross_redundancy_bits": 0.0929,
+        "MI_01": 0.09289,
+        "name": "model.layers.11.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3677,
+          1.5844
+        ],
+        "zero_frac": [
+          0.6021,
+          0.3466
+        ],
+        "within_headroom_bits": 0.2179,
+        "sumH": 2.9521,
+        "H_joint": 2.8649,
+        "cross_redundancy_bits": 0.0872,
+        "MI_01": 0.08716,
+        "name": "model.layers.12.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.347,
+          1.5826
+        ],
+        "zero_frac": [
+          0.6147,
+          0.3603
+        ],
+        "within_headroom_bits": 0.2403,
+        "sumH": 2.9296,
+        "H_joint": 2.8374,
+        "cross_redundancy_bits": 0.0923,
+        "MI_01": 0.09227,
+        "name": "model.layers.13.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2991,
+          1.5834
+        ],
+        "zero_frac": [
+          0.6419,
+          0.3555
+        ],
+        "within_headroom_bits": 0.2874,
+        "sumH": 2.8825,
+        "H_joint": 2.7944,
+        "cross_redundancy_bits": 0.0882,
+        "MI_01": 0.08817,
+        "name": "model.layers.14.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3404,
+          1.5839
+        ],
+        "zero_frac": [
+          0.6186,
+          0.3517
+        ],
+        "within_headroom_bits": 0.2456,
+        "sumH": 2.9243,
+        "H_joint": 2.8372,
+        "cross_redundancy_bits": 0.0872,
+        "MI_01": 0.08716,
+        "name": "model.layers.15.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2923,
+          1.5755
+        ],
+        "zero_frac": [
+          0.6456,
+          0.3881
+        ],
+        "within_headroom_bits": 0.3022,
+        "sumH": 2.8677,
+        "H_joint": 2.787,
+        "cross_redundancy_bits": 0.0807,
+        "MI_01": 0.0807,
+        "name": "model.layers.16.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3231,
+          1.5827
+        ],
+        "zero_frac": [
+          0.6286,
+          0.36
+        ],
+        "within_headroom_bits": 0.2641,
+        "sumH": 2.9058,
+        "H_joint": 2.8257,
+        "cross_redundancy_bits": 0.0801,
+        "MI_01": 0.08013,
+        "name": "model.layers.17.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3337,
+          1.583
+        ],
+        "zero_frac": [
+          0.6225,
+          0.3578
+        ],
+        "within_headroom_bits": 0.2532,
+        "sumH": 2.9168,
+        "H_joint": 2.8201,
+        "cross_redundancy_bits": 0.0966,
+        "MI_01": 0.09663,
+        "name": "model.layers.18.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3538,
+          1.5841
+        ],
+        "zero_frac": [
+          0.6106,
+          0.3494
+        ],
+        "within_headroom_bits": 0.232,
+        "sumH": 2.9379,
+        "H_joint": 2.8527,
+        "cross_redundancy_bits": 0.0852,
+        "MI_01": 0.08522,
+        "name": "model.layers.19.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2778,
+          1.5753
+        ],
+        "zero_frac": [
+          0.6533,
+          0.3884
+        ],
+        "within_headroom_bits": 0.3168,
+        "sumH": 2.8531,
+        "H_joint": 2.769,
+        "cross_redundancy_bits": 0.0841,
+        "MI_01": 0.0841,
+        "name": "model.layers.20.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2524,
+          1.5712
+        ],
+        "zero_frac": [
+          0.6663,
+          0.3994
+        ],
+        "within_headroom_bits": 0.3463,
+        "sumH": 2.8236,
+        "H_joint": 2.7308,
+        "cross_redundancy_bits": 0.0928,
+        "MI_01": 0.09277,
+        "name": "model.layers.21.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2846,
+          1.5774
+        ],
+        "zero_frac": [
+          0.6497,
+          0.3822
+        ],
+        "within_headroom_bits": 0.308,
+        "sumH": 2.862,
+        "H_joint": 2.7687,
+        "cross_redundancy_bits": 0.0933,
+        "MI_01": 0.0933,
+        "name": "model.layers.22.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3119,
+          1.5784
+        ],
+        "zero_frac": [
+          0.6349,
+          0.3789
+        ],
+        "within_headroom_bits": 0.2797,
+        "sumH": 2.8902,
+        "H_joint": 2.8032,
+        "cross_redundancy_bits": 0.0871,
+        "MI_01": 0.0871,
+        "name": "model.layers.23.self_attn.q_proj.weight"
+      }
+    ]
+  },
+  "K3": {
+    "aggregate": {
+      "H_per_plane_mean": [
+        1.3631,
+        1.5272,
+        1.5845
+      ],
+      "zero_frac_mean": [
+        0.6043,
+        0.4691,
+        0.3429
+      ],
+      "within_headroom_bits_mean": 0.28,
+      "cross_redundancy_bits_mean": 0.2012,
+      "cross_redundancy_frac_of_alloc": 0.04232,
+      "MI_mean": {
+        "MI_01": 0.15384,
+        "MI_02": 0.01993,
+        "MI_12": 0.00776
+      }
+    },
+    "per_matrix": [
+      {
+        "H_per_plane": [
+          1.4082,
+          1.5517,
+          1.5844
+        ],
+        "zero_frac": [
+          0.5754,
+          0.4368,
+          0.3462
+        ],
+        "within_headroom_bits": 0.2106,
+        "sumH": 4.5443,
+        "H_joint": 4.2817,
+        "cross_redundancy_bits": 0.2626,
+        "MI_01": 0.19938,
+        "MI_02": 0.03504,
+        "MI_12": 0.00655,
+        "name": "model.layers.0.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.4027,
+          1.5372,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5791,
+          0.4576,
+          0.3366
+        ],
+        "within_headroom_bits": 0.23,
+        "sumH": 4.5249,
+        "H_joint": 4.3661,
+        "cross_redundancy_bits": 0.1588,
+        "MI_01": 0.12407,
+        "MI_02": 0.01382,
+        "MI_12": 0.00589,
+        "name": "model.layers.1.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3602,
+          1.5297,
+          1.5848
+        ],
+        "zero_frac": [
+          0.6067,
+          0.4672,
+          0.3395
+        ],
+        "within_headroom_bits": 0.2801,
+        "sumH": 4.4748,
+        "H_joint": 4.2759,
+        "cross_redundancy_bits": 0.1989,
+        "MI_01": 0.15301,
+        "MI_02": 0.01902,
+        "MI_12": 0.00636,
+        "name": "model.layers.2.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3681,
+          1.5317,
+          1.5846
+        ],
+        "zero_frac": [
+          0.6018,
+          0.4647,
+          0.3436
+        ],
+        "within_headroom_bits": 0.2705,
+        "sumH": 4.4844,
+        "H_joint": 4.2797,
+        "cross_redundancy_bits": 0.2048,
+        "MI_01": 0.15881,
+        "MI_02": 0.02015,
+        "MI_12": 0.00637,
+        "name": "model.layers.3.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3813,
+          1.5349,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5934,
+          0.4606,
+          0.3371
+        ],
+        "within_headroom_bits": 0.2538,
+        "sumH": 4.5011,
+        "H_joint": 4.3282,
+        "cross_redundancy_bits": 0.1729,
+        "MI_01": 0.13441,
+        "MI_02": 0.01599,
+        "MI_12": 0.00576,
+        "name": "model.layers.4.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3812,
+          1.537,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5934,
+          0.4578,
+          0.337
+        ],
+        "within_headroom_bits": 0.2517,
+        "sumH": 4.5032,
+        "H_joint": 4.326,
+        "cross_redundancy_bits": 0.1772,
+        "MI_01": 0.13821,
+        "MI_02": 0.01607,
+        "MI_12": 0.00563,
+        "name": "model.layers.5.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3724,
+          1.5347,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5991,
+          0.4609,
+          0.3373
+        ],
+        "within_headroom_bits": 0.2629,
+        "sumH": 4.492,
+        "H_joint": 4.3051,
+        "cross_redundancy_bits": 0.1869,
+        "MI_01": 0.14474,
+        "MI_02": 0.01712,
+        "MI_12": 0.00626,
+        "name": "model.layers.6.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3776,
+          1.5343,
+          1.5848
+        ],
+        "zero_frac": [
+          0.5958,
+          0.4613,
+          0.3407
+        ],
+        "within_headroom_bits": 0.2581,
+        "sumH": 4.4967,
+        "H_joint": 4.3046,
+        "cross_redundancy_bits": 0.1921,
+        "MI_01": 0.14949,
+        "MI_02": 0.01857,
+        "MI_12": 0.00548,
+        "name": "model.layers.7.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3811,
+          1.5303,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5935,
+          0.4664,
+          0.3379
+        ],
+        "within_headroom_bits": 0.2586,
+        "sumH": 4.4963,
+        "H_joint": 4.3298,
+        "cross_redundancy_bits": 0.1665,
+        "MI_01": 0.12916,
+        "MI_02": 0.01399,
+        "MI_12": 0.00696,
+        "name": "model.layers.8.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3899,
+          1.5313,
+          1.5837
+        ],
+        "zero_frac": [
+          0.5878,
+          0.4652,
+          0.3528
+        ],
+        "within_headroom_bits": 0.25,
+        "sumH": 4.5049,
+        "H_joint": 4.2876,
+        "cross_redundancy_bits": 0.2173,
+        "MI_01": 0.16303,
+        "MI_02": 0.02481,
+        "MI_12": 0.01068,
+        "name": "model.layers.9.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3731,
+          1.537,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5986,
+          0.4579,
+          0.3387
+        ],
+        "within_headroom_bits": 0.2599,
+        "sumH": 4.495,
+        "H_joint": 4.3078,
+        "cross_redundancy_bits": 0.1872,
+        "MI_01": 0.14621,
+        "MI_02": 0.01721,
+        "MI_12": 0.00546,
+        "name": "model.layers.10.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.357,
+          1.531,
+          1.5838
+        ],
+        "zero_frac": [
+          0.6087,
+          0.4656,
+          0.352
+        ],
+        "within_headroom_bits": 0.2831,
+        "sumH": 4.4718,
+        "H_joint": 4.2182,
+        "cross_redundancy_bits": 0.2535,
+        "MI_01": 0.18668,
+        "MI_02": 0.03112,
+        "MI_12": 0.01111,
+        "name": "model.layers.11.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3816,
+          1.537,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5932,
+          0.4578,
+          0.3378
+        ],
+        "within_headroom_bits": 0.2513,
+        "sumH": 4.5036,
+        "H_joint": 4.3271,
+        "cross_redundancy_bits": 0.1764,
+        "MI_01": 0.13734,
+        "MI_02": 0.01615,
+        "MI_12": 0.00581,
+        "name": "model.layers.12.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3812,
+          1.5333,
+          1.5846
+        ],
+        "zero_frac": [
+          0.5935,
+          0.4627,
+          0.3441
+        ],
+        "within_headroom_bits": 0.2558,
+        "sumH": 4.4991,
+        "H_joint": 4.3002,
+        "cross_redundancy_bits": 0.1988,
+        "MI_01": 0.15265,
+        "MI_02": 0.02056,
+        "MI_12": 0.00686,
+        "name": "model.layers.13.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3469,
+          1.5327,
+          1.5847
+        ],
+        "zero_frac": [
+          0.6148,
+          0.4635,
+          0.3423
+        ],
+        "within_headroom_bits": 0.2907,
+        "sumH": 4.4642,
+        "H_joint": 4.2426,
+        "cross_redundancy_bits": 0.2217,
+        "MI_01": 0.16988,
+        "MI_02": 0.02233,
+        "MI_12": 0.00595,
+        "name": "model.layers.14.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3673,
+          1.5346,
+          1.5849
+        ],
+        "zero_frac": [
+          0.6023,
+          0.461,
+          0.3385
+        ],
+        "within_headroom_bits": 0.2681,
+        "sumH": 4.4867,
+        "H_joint": 4.2892,
+        "cross_redundancy_bits": 0.1975,
+        "MI_01": 0.15254,
+        "MI_02": 0.01925,
+        "MI_12": 0.00586,
+        "name": "model.layers.15.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3203,
+          1.4947,
+          1.5845
+        ],
+        "zero_frac": [
+          0.6302,
+          0.5052,
+          0.3459
+        ],
+        "within_headroom_bits": 0.3554,
+        "sumH": 4.3994,
+        "H_joint": 4.2172,
+        "cross_redundancy_bits": 0.1822,
+        "MI_01": 0.13583,
+        "MI_02": 0.01432,
+        "MI_12": 0.01257,
+        "name": "model.layers.16.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3482,
+          1.5211,
+          1.5849
+        ],
+        "zero_frac": [
+          0.614,
+          0.4774,
+          0.3377
+        ],
+        "within_headroom_bits": 0.3007,
+        "sumH": 4.4542,
+        "H_joint": 4.2662,
+        "cross_redundancy_bits": 0.1879,
+        "MI_01": 0.14244,
+        "MI_02": 0.01722,
+        "MI_12": 0.00761,
+        "name": "model.layers.17.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3757,
+          1.5373,
+          1.5848
+        ],
+        "zero_frac": [
+          0.597,
+          0.4575,
+          0.3412
+        ],
+        "within_headroom_bits": 0.2571,
+        "sumH": 4.4978,
+        "H_joint": 4.2671,
+        "cross_redundancy_bits": 0.2307,
+        "MI_01": 0.17552,
+        "MI_02": 0.0263,
+        "MI_12": 0.00641,
+        "name": "model.layers.18.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3875,
+          1.5382,
+          1.5849
+        ],
+        "zero_frac": [
+          0.5894,
+          0.4563,
+          0.3373
+        ],
+        "within_headroom_bits": 0.2443,
+        "sumH": 4.5106,
+        "H_joint": 4.3211,
+        "cross_redundancy_bits": 0.1895,
+        "MI_01": 0.14672,
+        "MI_02": 0.01831,
+        "MI_12": 0.00598,
+        "name": "model.layers.19.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3032,
+          1.4925,
+          1.5844
+        ],
+        "zero_frac": [
+          0.6397,
+          0.5074,
+          0.3464
+        ],
+        "within_headroom_bits": 0.3748,
+        "sumH": 4.3801,
+        "H_joint": 4.1794,
+        "cross_redundancy_bits": 0.2007,
+        "MI_01": 0.1498,
+        "MI_02": 0.01668,
+        "MI_12": 0.01227,
+        "name": "model.layers.20.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.2884,
+          1.4901,
+          1.5831
+        ],
+        "zero_frac": [
+          0.6477,
+          0.5096,
+          0.3573
+        ],
+        "within_headroom_bits": 0.3933,
+        "sumH": 4.3616,
+        "H_joint": 4.1247,
+        "cross_redundancy_bits": 0.237,
+        "MI_01": 0.17698,
+        "MI_02": 0.02315,
+        "MI_12": 0.0141,
+        "name": "model.layers.21.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3231,
+          1.5116,
+          1.5837
+        ],
+        "zero_frac": [
+          0.6286,
+          0.488,
+          0.3533
+        ],
+        "within_headroom_bits": 0.3365,
+        "sumH": 4.4184,
+        "H_joint": 4.183,
+        "cross_redundancy_bits": 0.2354,
+        "MI_01": 0.17834,
+        "MI_02": 0.02447,
+        "MI_12": 0.01014,
+        "name": "model.layers.22.self_attn.q_proj.weight"
+      },
+      {
+        "H_per_plane": [
+          1.3386,
+          1.5097,
+          1.5841
+        ],
+        "zero_frac": [
+          0.6197,
+          0.49,
+          0.3495
+        ],
+        "within_headroom_bits": 0.3225,
+        "sumH": 4.4324,
+        "H_joint": 4.2394,
+        "cross_redundancy_bits": 0.193,
+        "MI_01": 0.14685,
+        "MI_02": 0.01665,
+        "MI_12": 0.01024,
+        "name": "model.layers.23.self_attn.q_proj.weight"
+      }
+    ]
+  }
+}

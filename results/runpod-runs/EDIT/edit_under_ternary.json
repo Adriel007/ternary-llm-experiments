@@ -1,0 +1,842 @@
+{
+  "_meta": {
+    "experiment": "#86 do ROME/MEMIT edits survive ternarization?",
+    "model": "gpt2-xl",
+    "alg": "ROME",
+    "n_edits": 20,
+    "dataset": "/workspace/EasyEdit/data/counterfact.json",
+    "hparams": "/workspace/EasyEdit/hparams/ROME/gpt2-xl.yaml",
+    "group": 256,
+    "ref_thresh": 0.9,
+    "device": "cuda",
+    "n_probe": 40,
+    "n_requests_built": 20,
+    "n_probes_built": 40,
+    "hparams_model_name": "gpt2-xl",
+    "edited_module_names": [
+      "transformer.h.17.mlp.c_proj"
+    ],
+    "n_loc_refs": 20,
+    "n_base_known_probes": 8,
+    "quant_coverage_of_edits": {
+      "n_edited_modules": 1,
+      "n_covered": 1,
+      "detail": {
+        "transformer.h.17.mlp.c_proj": "Conv1D"
+      }
+    },
+    "gate_failed": "FP rewrite_acc 0.6 < 0.9",
+    "minutes": 1.0
+  },
+  "reference_ok": false,
+  "fp_edit": {
+    "rewrite_acc": 0.6,
+    "paraphrase_acc": 0.35,
+    "locality": 0.35,
+    "intrinsic_retention": 0.125
+  },
+  "k2_edit": "NEEDS_VALIDATION",
+  "k3_edit": "NEEDS_VALIDATION",
+  "_easyedit_metrics": [
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The mother tongue of Danielle Darrieux is",
+        "target_new": "English",
+        "ground_truth": "French",
+        "portability": {},
+        "locality": {},
+        "subject": "Danielle Darrieux"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 1,
+      "requested_rewrite": {
+        "prompt": "The official religion of Edwin of Northumbria is",
+        "target_new": "Islam",
+        "ground_truth": "Christianity",
+        "portability": {},
+        "locality": {},
+        "subject": "Edwin of Northumbria"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 2,
+      "requested_rewrite": {
+        "prompt": "Toko Yasuda, the",
+        "target_new": "piano",
+        "ground_truth": "guitar",
+        "portability": {},
+        "locality": {},
+        "subject": "Toko Yasuda"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 3,
+      "requested_rewrite": {
+        "prompt": "Autonomous University of Madrid, which is located in",
+        "target_new": "Sweden",
+        "ground_truth": "Spain",
+        "portability": {},
+        "locality": {},
+        "subject": "Autonomous University of Madrid"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 4,
+      "requested_rewrite": {
+        "prompt": "What is the twin city of Lyon? It is",
+        "target_new": "Manila",
+        "ground_truth": "Beirut",
+        "portability": {},
+        "locality": {},
+        "subject": "Lyon"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 5,
+      "requested_rewrite": {
+        "prompt": "The mother tongue of Thomas Joannes Stieltjes is",
+        "target_new": "English",
+        "ground_truth": "Dutch",
+        "portability": {},
+        "locality": {},
+        "subject": "Thomas Joannes Stieltjes"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 6,
+      "requested_rewrite": {
+        "prompt": "Anaal Nathrakh, that was created in",
+        "target_new": "Philadelphia",
+        "ground_truth": "Birmingham",
+        "portability": {},
+        "locality": {},
+        "subject": "Anaal Nathrakh"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 7,
+      "requested_rewrite": {
+        "prompt": "Apple A5 was created by",
+        "target_new": "Google",
+        "ground_truth": "Apple",
+        "portability": {},
+        "locality": {},
+        "subject": "Apple A5"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 8,
+      "requested_rewrite": {
+        "prompt": "What is the twin city of Wellington? It is",
+        "target_new": "Sheffield",
+        "ground_truth": "Sydney",
+        "portability": {},
+        "locality": {},
+        "subject": "Wellington"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 9,
+      "requested_rewrite": {
+        "prompt": "Shree Pundalik, created in",
+        "target_new": "Sweden",
+        "ground_truth": "India",
+        "portability": {},
+        "locality": {},
+        "subject": "Shree Pundalik"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 10,
+      "requested_rewrite": {
+        "prompt": "BBC One, by",
+        "target_new": "Sega",
+        "ground_truth": "BBC",
+        "portability": {},
+        "locality": {},
+        "subject": "BBC One"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 11,
+      "requested_rewrite": {
+        "prompt": "Andreas Ivanschitz professionally plays the sport",
+        "target_new": "football",
+        "ground_truth": "soccer",
+        "portability": {},
+        "locality": {},
+        "subject": "Andreas Ivanschitz"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 12,
+      "requested_rewrite": {
+        "prompt": "Michel Denisot spoke the language",
+        "target_new": "Russian",
+        "ground_truth": "French",
+        "portability": {},
+        "locality": {},
+        "subject": "Michel Denisot"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 13,
+      "requested_rewrite": {
+        "prompt": "Ferrari F40, developed by",
+        "target_new": "Microsoft",
+        "ground_truth": "Ferrari",
+        "portability": {},
+        "locality": {},
+        "subject": "Ferrari F40"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 14,
+      "requested_rewrite": {
+        "prompt": "The mother tongue of Go Hyeon-jeong is",
+        "target_new": "French",
+        "ground_truth": "Korean",
+        "portability": {},
+        "locality": {},
+        "subject": "Go Hyeon-jeong"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 15,
+      "requested_rewrite": {
+        "prompt": "Percy Snow, the",
+        "target_new": "goaltender",
+        "ground_truth": "linebacker",
+        "portability": {},
+        "locality": {},
+        "subject": "Percy Snow"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 16,
+      "requested_rewrite": {
+        "prompt": "Saint Petersburg is a twin city of",
+        "target_new": "Lisbon",
+        "ground_truth": "Warsaw",
+        "portability": {},
+        "locality": {},
+        "subject": "Saint Petersburg"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 17,
+      "requested_rewrite": {
+        "prompt": "The original language of The Icelandic Dream was",
+        "target_new": "Tamil",
+        "ground_truth": "Icelandic",
+        "portability": {},
+        "locality": {},
+        "subject": "The Icelandic Dream"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 18,
+      "requested_rewrite": {
+        "prompt": "Porsche 911, created by",
+        "target_new": "Honda",
+        "ground_truth": "Porsche",
+        "portability": {},
+        "locality": {},
+        "subject": "Porsche 911"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "portability": {}
+      },
+      "case_id": 19,
+      "requested_rewrite": {
+        "prompt": "Robert William Muench is a",
+        "target_new": "pope",
+        "ground_truth": "bishop",
+        "portability": {},
+        "locality": {},
+        "subject": "Robert William Muench"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "metric_meta": {
+          "rewrite": {
+            "result_key": "rewrite_acc",
+            "protocol": "decoder_only_teacher_forcing",
+            "scorer": "token_accuracy",
+            "comparable_group": "lm.decoder_only_teacher_forcing.token_accuracy"
+          }
+        },
+        "locality": {},
+        "portability": {}
+      }
+    }
+  ]
+}

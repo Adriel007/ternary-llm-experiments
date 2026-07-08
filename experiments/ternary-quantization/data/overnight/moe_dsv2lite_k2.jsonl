@@ -1,0 +1,3 @@
+{"model": "deepseek-ai/DeepSeek-V2-Lite-Chat", "tag": "K2exp_routerFP", "K": 2, "nl": 189, "ne": 3328, "flex": 0.02, "limit": 150, "_ts": null}
+{"model": "deepseek-ai/DeepSeek-V2-Lite-Chat", "tag": "K0_fp", "K": 0, "nl": 0, "ne": 0, "flex": 0.4867, "limit": 150, "_ts": null}
+{"model": "deepseek-ai/DeepSeek-V2-Lite-Chat", "tag": "K3exp_routerFP", "K": 3, "nl": 189, "ne": 3328, "flex": 0.34, "limit": 150, "_ts": null}

@@ -1,0 +1,39 @@
+{
+ "_meta": {
+  "model": "Qwen/Qwen3-1.7B",
+  "limit": 200,
+  "seed": 0,
+  "rank": 64,
+  "maxgen": 4096,
+  "protocol": "gsm8k chat-think 0-shot; report harness-flex AND boxed (harness under-scores thinking)",
+  "caveat": "distill corpus is COMPLETION-style -> mode-mismatch vs thinking eval"
+ },
+ "FP": {
+  "harness_flex": 0.36,
+  "boxed": 0.84,
+  "flex_lastnum": 0.83,
+  "box_present": 0.685,
+  "n": 200
+ },
+ "K2_PTQ": {
+  "harness_flex": 0.0,
+  "boxed": 0.0,
+  "flex_lastnum": 0.0,
+  "box_present": 0.0,
+  "n": 200
+ },
+ "K2_distill_datafree": {
+  "harness_flex": 0.395,
+  "boxed": 0.52,
+  "flex_lastnum": 0.515,
+  "box_present": 0.32,
+  "n": 200
+ },
+ "K2_distill_taskdata": {
+  "harness_flex": 0.375,
+  "boxed": 0.435,
+  "flex_lastnum": 0.43,
+  "box_present": 0.095,
+  "n": 200
+ }
+}

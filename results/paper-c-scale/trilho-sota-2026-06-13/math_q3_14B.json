@@ -1,0 +1,9 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "bench": "math",
+  "n": 100,
+  "results": {
+    "fp": 0.55,
+    "joint2": 0.52
+  }
+}

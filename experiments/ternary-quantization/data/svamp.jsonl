@@ -1,0 +1,9 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "acc": 0.91, "N": 200, "task": "svamp", "sec": 121.0, "_ts": "2026-06-27T15:28:59"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "acc": 0.31, "N": 200, "task": "svamp", "sec": 104.8, "_ts": "2026-06-27T15:30:44"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "acc": 0.89, "N": 200, "task": "svamp", "sec": 124.5, "_ts": "2026-06-27T15:32:49"}
+{"model": "Qwen/Qwen3-4B", "K": 0, "acc": 0.89, "N": 200, "task": "svamp", "sec": 117.7, "_ts": "2026-06-27T15:34:48"}
+{"model": "Qwen/Qwen3-4B", "K": 2, "acc": 0.67, "N": 200, "task": "svamp", "sec": 111.2, "_ts": "2026-06-27T15:36:39"}
+{"model": "Qwen/Qwen3-4B", "K": 3, "acc": 0.895, "N": 200, "task": "svamp", "sec": 122.4, "_ts": "2026-06-27T15:38:42"}
+{"model": "Qwen/Qwen3-8B", "K": 0, "acc": 0.94, "N": 200, "task": "svamp", "sec": 166.9, "_ts": "2026-06-27T15:41:30"}
+{"model": "Qwen/Qwen3-8B", "K": 2, "acc": 0.22, "N": 200, "task": "svamp", "sec": 141.2, "_ts": "2026-06-27T15:43:51"}
+{"model": "Qwen/Qwen3-8B", "K": 3, "acc": 0.935, "N": 200, "task": "svamp", "sec": 162.8, "_ts": "2026-06-27T15:46:34"}

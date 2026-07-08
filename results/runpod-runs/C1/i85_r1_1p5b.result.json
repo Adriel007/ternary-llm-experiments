@@ -1,0 +1,77 @@
+{
+  "_meta": {
+    "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "tasks": [
+      "gsm8k",
+      "arc_challenge",
+      "hellaswag"
+    ],
+    "limit": 60,
+    "steps": 200,
+    "question": "K2+distill vs K3-PTQ per-bit + PPL-only-or-benchmarks (dense)",
+    "minutes": 15.2
+  },
+  "FP": {
+    "gsm8k": 0.7167,
+    "arc": 0.3833,
+    "hella": 0.4667,
+    "genlen": {
+      "mean": 181.5,
+      "median": 107.5,
+      "p90": 201,
+      "n": 120
+    }
+  },
+  "K2_PTQ": {
+    "gsm8k": 0.0333,
+    "arc": 0.25,
+    "hella": 0.4,
+    "genlen": {
+      "mean": 895.7,
+      "median": 1024.0,
+      "p90": 1024,
+      "n": 120
+    },
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "K2_distill": {
+    "gsm8k": 0.5833,
+    "arc": 0.3167,
+    "hella": 0.4833,
+    "genlen": {
+      "mean": 152.5,
+      "median": 95.5,
+      "p90": 196,
+      "n": 120
+    }
+  },
+  "K3_PTQ": {
+    "gsm8k": 0.65,
+    "arc": 0.3833,
+    "hella": 0.5167,
+    "genlen": {
+      "mean": 218.9,
+      "median": 100.0,
+      "p90": 1024,
+      "n": 120
+    },
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "K3_distill": {
+    "gsm8k": 0.6833,
+    "arc": 0.3667,
+    "hella": 0.5,
+    "genlen": {
+      "mean": 168.0,
+      "median": 97.0,
+      "p90": 178,
+      "n": 120
+    }
+  }
+}

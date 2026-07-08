@@ -1,0 +1,36 @@
+{
+ "_meta": {
+  "experiment": "#98 frente2 non-R1 protocol probe",
+  "model": "Qwen/Qwen3-1.7B",
+  "limit": 100,
+  "max_gen": "1024",
+  "best_protocol": "completion"
+ },
+ "FP_completion_5shot": {
+  "gsm8k": 0.7,
+  "genlen": {
+   "mean": 142.8,
+   "median": 112.0,
+   "p90": 200,
+   "n": 200
+  }
+ },
+ "FP_chat_think_0shot": {
+  "gsm8k": 0.43,
+  "genlen": {
+   "mean": 861.4,
+   "median": 1024.0,
+   "p90": 1024,
+   "n": 200
+  }
+ },
+ "K2_PTQ_completion": {
+  "gsm8k": 0.03,
+  "genlen": {
+   "mean": 784.5,
+   "median": 937.5,
+   "p90": 1024,
+   "n": 200
+  }
+ }
+}

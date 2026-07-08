@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "scale": "2.4B",
+    "ckpt_tokens": [
+      0.0,
+      300000.0
+    ],
+    "lr": 0.0002,
+    "kd_alpha": 0.5,
+    "batch": 4,
+    "seq": 512
+  },
+  "ref": {
+    "fp": {
+      "arc_easy": 0.575,
+      "hellaswag": 0.575
+    },
+    "trilm": {
+      "arc_easy": 0.55,
+      "hellaswag": 0.5625
+    }
+  },
+  "curve": [
+    {
+      "tokens": 0,
+      "acc": {
+        "arc_easy": 0.2875,
+        "hellaswag": 0.1875
+      }
+    },
+    {
+      "tokens": 301056,
+      "acc": {
+        "arc_easy": 0.3125,
+        "hellaswag": 0.1875
+      }
+    }
+  ],
+  "headline": {
+    "arc_easy": {
+      "fp": 0.575,
+      "ptq": 0.2875,
+      "trilm": 0.55,
+      "chance": 0.25,
+      "curve": [
+        {
+          "tokens": 0,
+          "acc": 0.2875,
+          "gap_recovered": 0.0
+        },
+        {
+          "tokens": 301056,
+          "acc": 0.3125,
+          "gap_recovered": 0.08695652173913052
+        }
+      ]
+    },
+    "hellaswag": {
+      "fp": 0.575,
+      "ptq": 0.1875,
+      "trilm": 0.5625,
+      "chance": 0.25,
+      "curve": [
+        {
+          "tokens": 0,
+          "acc": 0.1875,
+          "gap_recovered": 0.0
+        },
+        {
+          "tokens": 301056,
+          "acc": 0.1875,
+          "gap_recovered": 0.0
+        }
+      ]
+    }
+  }
+}

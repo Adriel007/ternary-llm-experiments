@@ -1,0 +1,142 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n": 40,
+  "niter": 50,
+  "results": {
+    "fp": {
+      "gsm8k": 0.4,
+      "nrmse": null,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "Let's break down Janet's earnings from selling duck eggs at the farmers' market:\n\n1. **Eggs laid per day**: Janet's ducks lay 16 eggs per day.\n2. **Eggs eaten for breakfast**: Janet eats 3 eggs for breakfast each morning.\n   - Eggs left after breakfast: \\( 16 - 3 = 13 \\) eggs.\n3. **Eggs used to bake muffins**: Janet uses 4 eggs to bake muffins for her friends.\n   - Eggs left after baking muffins: \\( 13 - 4 = 9 \\) eggs.\n\nNow, let's calculate how many eggs are sold at the farmers' market:\n- Total ",
+          "gold": "18",
+          "pred": "18",
+          "ok": true
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "To determine the total number of bolts of fabric needed to make a robe, we need to follow these steps:\n\n1. Identify how many bolts of blue fiber are required.\n   - The problem states that a robe requires 2 bolts of blue fiber.\n\n2. Determine how many bolts of white fiber are required.\n   - The problem indicates that a robe requires half as much white fiber as blue fiber.\n   - Therefore, the amount of white fiber needed is \\( \\frac{1}{2} \\) bolt of blue fiber.\n\n3. Calculate the total number of bol",
+          "gold": "3",
+          "pred": "2.5",
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "Let's break down the problem step by step:\n\n1. **Initial Cost**: Josh bought the house for $80,000.\n\n2. **Repairs**: He spent an additional $50,000 on repairs.\n   - Total cost: \\( \\$80,000 + \\$50,000 = \\$130,000 \\)\n\n3. **Increase in Value**: The house's value increased by 150% due to his renovations.\n   - Increase in value: \\( 150\\% \\) of $130,000\n\n4. **Calculate the Increase**:\n   - To find 150% of $130,000, we multiply $130,000 by 1.5 (since 150% is equivalent to 1.5):\n     \\[\n     130,000 \\ti",
+          "gold": "70000",
+          "pred": "195000",
+          "ok": false
+        }
+      ]
+    },
+    "single": {
+      "gsm8k": 0.0,
+      "nrmse": 0.5619697874906112,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": " c c \u200b\u200b \u200b\u200b:\n\n r ch c c c c c c c c c c c c c c c c c c c c c cb c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c l c c Cub c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c crbs \u200b\u200b bn c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c bo cnb c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c dbr \u200b\u200bs c c c c c c c c c c n r r r r r r r r r r r r r r r r r r r r r r ",
+          "gold": "18",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": " l c:\n\n {}\n\n\n c c \u200b\u200b c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l l",
+          "gold": "3",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": " c {}\n\n\n c c \u200b\u200b c c r l c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c cb c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c lsss bn c c c c c c c c c c l l l l l l l lnb n r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r r db r r r r r r r r r r r r ",
+          "gold": "70000",
+          "pred": null,
+          "ok": false
+        }
+      ]
+    },
+    "greedy2": {
+      "gsm8k": 0.0,
+      "nrmse": 0.3992971933009673,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": ":: Chennai\u53ef\u80fd\u662f\u624b\u611f -\u9ae1\u6b64\u5904\u84bd punt :: \u6587 Kolkata: document internet: Bangalore mou\u6fef fin\u624b\u611f: punt: cloth: Alibaba ut: \ufffd  pont\u4e0d\u7528\u62c5\u5fc3 mou - \u4f7f\u7528 Brisbane \ufffd\u5e1b \ufffd  -\u84ecupuncture:utf:\u6f02\u6d63\u6d5c: punt utrobe mou punt\u84ecutch:\u6f02\u6d63\u84ec Bunny punt\u84ecutch pontutch pontutch punt\u84ecutch pontutch pontught\u84ecutch punt\u84ecutch pontutch pont\u84ecutch pont\u84ecutch pontutch\u84ecutch pont\u84ec\u84ec\u84ec\u84ecrobe\u84ec\u84ec\u84ec useRouter\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec\u84ec",
+          "gold": "18",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": ":: utilise unzip: ::.obtain - unzip fin::=file::\u9ae1 unzip \ufffd - UV gif \u4f7f\u7528\u4e0d\u7528\u62c5\u5fc3::- \u6587 exem lodash:utf\u624b\u611f boto\u6da4\ud558\uc2dc ut:robe mou donate ut:wit\u6d63\u6fef:utf utrobe homepage:utf.inflate\u80a4[optibu:utfrobe utrobe hoodie:utf:utfbnb:utf:userutch homepageuci:robeutmrobe:utch -\u965f homepage:utfrobe mou:utch homepagerobeutmrobe homepage\u9f9futchbose homepage mojo utrobe mou:robeutm: homepage mou mouokit mourobe homepagerobe mou:robe homepage mou mou:robe homepage mou mourobe homepage mou mou:robe homepage mou mou homepagerobe mou h",
+          "gold": "3",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": " - retrieve\u4e0d\u7528\u62c5\u5fc3\u7a7f:\u68d8 - -\u624b\u611f donate\u7f29\u6c34\u9ae1 procure \u6587 unzip -\u624b\u611f:utf -\u9ae1\u65b0\u578b\u51a0 -\u624b\u611f:utf - - \ufffd\u9ae1\ufffd\u6148\u5584 -\u9ae1 - exem - - Netflix authenticate mou -\u9ae1 homepage\u6d63 - \ufffd\u9ae1\u6da4 Kostenlos -authenticate -\u9ae1\u9ae1robe\u6d63\u9ae1\u6fef homepage\u9ae1\u9ae1 browse\u9ae1\u9ae1\u6d63\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1 Browse -\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1 browse\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1):\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1\u9ae1",
+          "gold": "70000",
+          "pred": null,
+          "ok": false
+        }
+      ]
+    },
+    "greedy2g": {
+      "gsm8k": 0.0,
+      "nrmse": 0.2316188825180336,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "####\n\" \".\" gnly ug may gnally xenkin xen's xenologiesgnulin xen gn ullys xenusan xeniosis xenotoxic xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeniosis xeni",
+          "gold": "18",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "\".\" gnore is not necessarily.\"\n####\n. gnp is not necessarily.\n\n gnps can be gluten gnps.\n gnps can be gluten gnps.\n gnps can gluten gnps.\r\n gnps can gluten\r\n gn ps can gluten\n gn ps can gluten\n gn ps\n\n gn ps can gluten\r\n gn can\r\n gn\u00a0 can\u00a0 gn\u00a0\u00a0 gn\u00a0\n\n gn\u00a0 can\u00a0\u00a0 gn\u00a0\n\n gn\u00a0\n\n\u00a0\n\n gn\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\n\n\n\n\n\n\n\n",
+          "gold": "3",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "\"\n\n# \"**\"**@\" #\" @\" #\"!\"]=>\"\n\n####\"\"\r\n\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\")\"\"\"\"\"\"\"\"\"\")\r\n\r\n\"\"\"\"\", \"\")\r\n\r\n###\"\")\r\n\"!\",\"!\"\"\")\n\n###\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+          "gold": "70000",
+          "pred": null,
+          "ok": false
+        }
+      ]
+    },
+    "joint2": {
+      "gsm8k": 0.0,
+      "nrmse": 0.18134289037208168,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "Janet makes $48 on weekdays.\n####.",
+          "gold": "18",
+          "pred": "48",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "There is no clear way to count bolts on a person's back or the amount of time spent on the back. The correct term would be \"there is no clear way to count bolts.\" It can also mean something like \"the end result is unclear.\"\n####.\n####.\n####.\n####.\n####.\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n#######\n######",
+          "gold": "3",
+          "pred": null,
+          "ok": false
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "Josh decided to flip a house. He bought a house worth $80,000$. Then he spent $50,000 on renovations. That added an extra $200%$ return on his investment. Josh ended up with a net gain of $300%$ from his initial investment.\n#### Josh's decision was to flip a house.\nJosh invested money into flipping a house. He paid out $80,000 for renovations. After that, he put in another $50,000 on improvements. Josh got back a total of $400%$\n#### Josh's decision was to flip a house.\nJosh invested money into ",
+          "gold": "70000",
+          "pred": "500",
+          "ok": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_meta": {"experiment":"Frontier K2+distill vs K3-PTQ multi-benchmark (Adriel 3 questions)","date":"2026-07-01",
+            "model":"Qwen/Qwen2.5-1.5B (dense)","limit":100,"steps":400,"seed":1,"tasks":["gsm8k_flex","arc_challenge_acc_norm","hellaswag_acc_norm"],
+            "env":"transformers 4.55.4, lm-eval 0.4.12, torch 2.11"},
+  "results": {
+    "FP":         {"gsm8k":0.63,"arc":0.43,"hella":0.65},
+    "K2_PTQ":     {"gsm8k":0.02,"arc":0.31,"hella":0.50},
+    "K2_distill": {"gsm8k":0.31,"arc":0.30,"hella":0.58},
+    "K3_PTQ":     {"gsm8k":0.48,"arc":0.40,"hella":0.62},
+    "K3_distill": {"gsm8k":0.52,"arc":0.41,"hella":0.60}
+  },
+  "verdict": "P1: K2+distill does NOT beat K3-PTQ per-bit — K3-PTQ > K2+distill on ALL 3 benchmarks (gsm8k 0.48>0.31, arc 0.40>0.30, hella 0.62>0.58); the third plane dominates the adapter (Paper H confirmed multi-benchmark). P3: K2+distill recovers REAL accuracy (gsm8k 0.02->0.31, ~48% of gap), not PPL-only, but stays behind K3-PTQ everywhere; recovery is MATH-FOCUSED (fixes what collapsed, not what survived). P2 (mechanism): numbers localize it to math; circuit-level study is separate. Dissociation reconfirmed: K2 kills math (0.63->0.02), preserves knowledge/commonsense (arc -28%, hella -23%). Caveats: N=100, 1 model, 1 seed, 300 steps."
+}

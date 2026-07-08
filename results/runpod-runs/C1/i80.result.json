@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "model": "Qwen/Qwen2.5-1.5B",
+    "kvals": [
+      0,
+      2,
+      3
+    ],
+    "T": 0.7,
+    "top_p": 0.95,
+    "k_samples": 8,
+    "n": 40,
+    "ks": [
+      1,
+      4,
+      8
+    ],
+    "max_new_tokens": 400,
+    "group": 256,
+    "seed": 0,
+    "question": "does temperature+maj@k rescue K2 as a 3rd lever (vs K3-weights / distill)?"
+  },
+  "variants": {
+    "FP": {
+      "n": 40,
+      "greedy_acc": 0.0,
+      "maj_at_k": {
+        "1": 0.05,
+        "4": 0.2,
+        "8": 0.2
+      },
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gold": "18",
+          "greedy_pred": null,
+          "greedy_ok": false,
+          "sample_preds": [
+            null,
+            "2.",
+            "18",
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "maj": {
+            "1": null,
+            "4": "2.",
+            "8": "2."
+          }
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold": "3",
+          "greedy_pred": "2",
+          "greedy_ok": false,
+          "sample_preds": [
+            null,
+            "2",
+            null,
+            "2",
+            "3.75",
+            null,
+            null,
+            "3."
+          ],
+          "maj": {
+            "1": null,
+            "4": "2",
+            "8": "2"
+          }
+        }
+      ],
+      "quant": null
+    },
+    "K2": {
+      "n": 40,
+      "greedy_acc": 0.0,
+      "maj_at_k": {
+        "1": 0.0,
+        "4": 0.0,
+        "8": 0.0
+      },
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gold": "18",
+          "greedy_pred": null,
+          "greedy_ok": false,
+          "sample_preds": [
+            null,
+            "1",
+            null,
+            null,
+            null,
+            null,
+            null,
+            "2"
+          ],
+          "maj": {
+            "1": null,
+            "4": "1",
+            "8": "1"
+          }
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold": "3",
+          "greedy_pred": null,
+          "greedy_ok": false,
+          "sample_preds": [
+            "33",
+            "4",
+            "0",
+            null,
+            null,
+            null,
+            "2",
+            "2"
+          ],
+          "maj": {
+            "1": "33",
+            "4": "33",
+            "8": "2"
+          }
+        }
+      ],
+      "quant": {
+        "linear": 196,
+        "expert_mats": 0
+      }
+    },
+    "K3": {
+      "n": 40,
+      "greedy_acc": 0.125,
+      "maj_at_k": {
+        "1": 0.2,
+        "4": 0.175,
+        "8": 0.225
+      },
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gold": "18",
+          "greedy_pred": "2",
+          "greedy_ok": false,
+          "sample_preds": [
+            "3",
+            "14",
+            "18",
+            "9",
+            "2",
+            null,
+            "1",
+            "2"
+          ],
+          "maj": {
+            "1": "3",
+            "4": "3",
+            "8": "2"
+          }
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gold": "3",
+          "greedy_pred": "2",
+          "greedy_ok": false,
+          "sample_preds": [
+            "4",
+            "3.",
+            "2",
+            "3",
+            "3",
+            "3",
+            "3.",
+            "4"
+          ],
+          "maj": {
+            "1": "4",
+            "4": "4",
+            "8": "3"
+          }
+        }
+      ],
+      "quant": {
+        "linear": 196,
+        "expert_mats": 0
+      }
+    }
+  }
+}

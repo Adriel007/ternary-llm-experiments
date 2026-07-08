@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "experiment": "#58 faithful MoE distillation (lean shared-expert-LoRA) on allenai/OLMoE-1B-7B-0924",
+    "date_utc_note": "stamp after run",
+    "model": "allenai/OLMoE-1B-7B-0924",
+    "group": 256,
+    "gsm8k_limit": 80,
+    "rank": 64,
+    "num_steps": 300,
+    "n_corpus": 300,
+    "kvals": [
+      2,
+      3
+    ],
+    "smoke_tiny_format": {
+      "nn_linear_experts": 48,
+      "fused_expert_tensors": 0,
+      "fused_example": null
+    },
+    "minutes": 96.8
+  },
+  "expert_format_14B": {
+    "nn_linear_experts": 3072,
+    "fused_expert_tensors": 0,
+    "fused_example": null
+  },
+  "FP": {
+    "flexible": 0.0875,
+    "strict": 0.075
+  },
+  "K2_PTQ": {
+    "flexible": 0.025,
+    "strict": 0.0125,
+    "quant": {
+      "linear": 3136,
+      "expert_mats": 0
+    }
+  },
+  "K2_skip": {
+    "flexible": 0.125,
+    "strict": 0.125
+  },
+  "K2_shared": {
+    "flexible": 0.075,
+    "strict": 0.0625
+  },
+  "K3_PTQ": {
+    "flexible": 0.0625,
+    "strict": 0.0625,
+    "quant": {
+      "linear": 3136,
+      "expert_mats": 0
+    }
+  },
+  "K3_skip": {
+    "flexible": 0.1,
+    "strict": 0.1
+  },
+  "K3_shared": {
+    "flexible": 0.075,
+    "strict": 0.075
+  }
+}

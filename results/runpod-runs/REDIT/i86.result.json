@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "experiment": "#86 do ROME/MEMIT edits survive ternarization?",
+    "model": "gpt2-xl",
+    "alg": "ROME",
+    "n_edits": 20,
+    "dataset": "counterfact",
+    "hparams": "./EasyEdit/hparams/ROME/gpt2-xl.yaml",
+    "group": 256,
+    "ref_thresh": 0.9,
+    "device": "cuda",
+    "n_probe": 40,
+    "status": "NEEDS_VALIDATION: easyeditor unavailable",
+    "easyeditor_error": "ModuleNotFoundError(\"No module named 'easyeditor'\") / ModuleNotFoundError(\"No module named 'easyeditor'\")"
+  },
+  "reference_ok": false,
+  "fp_edit": null,
+  "k2_edit": "NEEDS_VALIDATION",
+  "k3_edit": "NEEDS_VALIDATION"
+}

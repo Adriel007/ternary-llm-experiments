@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "experiment": "sasori.distill — K1 vs K2-replication vs rank ablation (GSM8K recovery)",
+    "task": "gsm8k (lm-eval official, 5-shot, limit=150 test)",
+    "corpus": "GSM8K-train 300 (disjoint from test)",
+    "teacher": "same-size FP, logit-KD + ApiQ error-SVD LoRA init (fixed)",
+    "date": "2026-06-30", "gpu": "RTX PRO 6000 Blackwell (Colab)",
+    "verdict": [
+      "K1+distill does NOT recover (0.0): the single ternary plane is too damaged for LoRA-KD to rescue.",
+      "K2+distill REPLICATES across families: Qwen3-1.7B 0->0.447 flex (even stronger than Qwen2.5-1.5B 0->0.32) -> effect is real, not model-specific.",
+      "rank-16 FAILS (0.013): the LoRA needs full rank-64; the ~+20% bit cost is necessary, not optional.",
+      "Frontier (open): K2+rank64-LoRA ~4.1 bpw < K3 4.9 bpw, recovering 0.32-0.45 flex -> promising, but needs K3-GSM8K on these models to claim it beats K3 on quality/bit."
+    ]
+  },
+  "FP_qwen2.5-1.5b": {"gsm8k_flex": 0.5267, "gsm8k_strict": 0.3133},
+  "results": {
+    "K1_qwen2.5-1.5b_rank64": {"ptq": {"flex": 0.0067, "strict": 0.0}, "distill": {"flex": 0.0,    "strict": 0.0}},
+    "K2_qwen3-1.7b_rank64":   {"ptq": {"flex": 0.0,    "strict": 0.0}, "distill": {"flex": 0.4467, "strict": 0.44}},
+    "K2_qwen2.5-1.5b_rank16": {"ptq": {"flex": 0.0067, "strict": 0.0}, "distill": {"flex": 0.0133, "strict": 0.0067}},
+    "K2_qwen2.5-1.5b_rank64": {"ptq": {"flex": 0.0067, "strict": 0.0}, "distill": {"flex": 0.32,   "strict": 0.3267}}
+  }
+}

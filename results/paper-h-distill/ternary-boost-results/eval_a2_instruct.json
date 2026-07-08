@@ -1,0 +1,19 @@
+{
+  "arm": "instruct",
+  "seed": 0,
+  "kd_source": "/root/corpora/kd_instruct.jsonl",
+  "kd_ntexts": 128,
+  "lora_steps": 4000,
+  "wall_s": 2924,
+  "coherence_sample": " Paris.\n\nThe country's famous landmarks include the Eiffel Tower, the Louvre Museum",
+  "wikitext2_ppl_maxlen128": null,
+  "mmlu_acc": 0.2584389688078621,
+  "gsm8k_strict": 0.0,
+  "gsm8k_flexible": 0.019711902956785442,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.26419283222327944,
+    "mmlu_humanities": 0.23719447396386822,
+    "mmlu_social_sciences": 0.28501787455313615,
+    "mmlu_other": 0.2584486643064049
+  }
+}

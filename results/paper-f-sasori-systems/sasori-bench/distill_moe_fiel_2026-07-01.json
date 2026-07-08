@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "experiment": "#58 FAITHFUL MoE distillation on Qwen/Qwen1.5-MoE-A2.7B (fused experts reached)",
+    "date": "2026-07-01", "gpu": "Colab RTX PRO 6000 Blackwell 102GB", "minutes": 33.7,
+    "task": "gsm8k flexible+strict, 5-shot, limit=150, lm-eval official",
+    "quant": "sasori K-plane joint-ridge g=256, fake-quant; fake_quant reaches FUSED experts (48 tensors x 60 experts = 2880 expert_mats ternarized) + 168 nn.Linear (attn+shared_expert)",
+    "distill": "LoRA-KD rank=64, 300 steps, corpus=GSM8K-train n=300; skip=attention-only (no expert correction), shared=FusedExpertLoRA (1 low-rank correction on each MoE block output, 6.3M params)",
+    "design_note": "In transformers 5.12 Qwen2Moe experts are FUSED 3-D tensors, not nn.Linear -> the per-expert-LoRA OOM of the original #58 framing does NOT apply; FusedExpertLoRA corrects the block output instead. per_expert oracle N/A (no nn.Linear per expert)."
+  },
+  "results": {
+    "FP":        {"flexible": 0.640, "strict": 0.133},
+    "K2_PTQ":    {"flexible": 0.007, "strict": 0.000, "quant": {"linear": 168, "expert_mats": 2880}},
+    "K2_skip":   {"flexible": 0.440, "strict": 0.353},
+    "K2_shared": {"flexible": 0.453, "strict": 0.347},
+    "K3_PTQ":    {"flexible": 0.487, "strict": 0.073, "quant": {"linear": 168, "expert_mats": 2880}},
+    "K3_skip":   {"flexible": 0.640, "strict": 0.313},
+    "K3_shared": {"flexible": 0.640, "strict": 0.440}
+  },
+  "verdict": "FAITHFUL MoE collapse reproduced (FP 0.64 -> K2 0.007, experts really ternarized, unlike the attention-only flagship 30B). Distillation recovers; K3+distill = FP (lossless), consistent with Paper H. NEGATIVE (central): correcting the fused experts (shared) does NOT beat attention-only (skip) on flexible accuracy (K2 +0.013, K3 +0.00) -> recovery is ATTENTION-DOMINATED; the de-risk N=30 signal (+0.067) was noise. Strict-match K3_shared 0.44 >> K3_skip 0.31 (+0.13) but strict is format-sensitive (hypothesis, not reasoning). Caveats: 1 model, 1 corpus, 1 seed, N=150, GSM8K only."
+}

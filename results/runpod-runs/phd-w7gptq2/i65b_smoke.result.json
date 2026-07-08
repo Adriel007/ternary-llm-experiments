@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n": 8,
+  "results": {
+    "gptq4bit": {
+      "gsm8k": 0.375,
+      "bits": 4,
+      "group": 128
+    }
+  }
+}

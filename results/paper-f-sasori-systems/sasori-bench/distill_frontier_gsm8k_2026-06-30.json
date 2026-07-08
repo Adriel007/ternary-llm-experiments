@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "experiment": "Bit/quality frontier: K3-PTQ vs K2+distill vs K2-PTQ vs FP (GSM8K)",
+    "task": "gsm8k (lm-eval official, 5-shot, limit=150 test)", "date": "2026-06-30",
+    "bpw_approx": {"FP": 16, "K3_ptq": 4.9, "K2_distill_r64": 4.1, "K2_ptq": 3.3},
+    "verdict": "K3-PTQ BEATS K2+distill on BOTH models (1.5B 0.38>0.32; Qwen3-1.7B 0.627>0.447) at +0.8 bpw -> distillation is NOT a shortcut to beat K3. Distillation's value = RESCUE when stuck at K2 (0 -> 0.32-0.45), not beating K3. Product reco stays K3. Next: K3+distill (does it reach ~FP -> distillation as a K3 booster?)."
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct": {
+    "FP":         {"flex": 0.5267, "strict": 0.3133},
+    "K3_ptq":     {"flex": 0.3800, "strict": 0.3467},
+    "K2_distill": {"flex": 0.3200, "strict": 0.3267},
+    "K2_ptq":     {"flex": 0.0067, "strict": 0.0000}
+  },
+  "Qwen/Qwen3-1.7B": {
+    "FP":         {"flex": 0.7000, "strict": 0.7000},
+    "K3_ptq":     {"flex": 0.6267, "strict": 0.6200},
+    "K2_distill": {"flex": 0.4467, "strict": 0.4400},
+    "K2_ptq":     {"flex": 0.0000, "strict": 0.0000}
+  }
+}

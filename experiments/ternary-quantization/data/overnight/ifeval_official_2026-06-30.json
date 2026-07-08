@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "experiment": "Official IFEval re-measurement (validate Paper B custom-checker instruction-following claim)",
+    "date": "2026-06-30", "harness": "lm-eval-harness official 'ifeval' task, limit=100, sasori joint-ridge fake-quant g=256",
+    "metrics": "prompt_level_strict/loose_acc + inst_level_strict/loose_acc"
+  },
+  "results_raw": {
+    "Qwen/Qwen2.5-7B-Instruct": {
+      "K0": {"prompt_strict": 0.49, "inst_strict": 0.6442, "prompt_loose": 0.59, "inst_loose": 0.7117},
+      "K2": {"prompt_strict": 0.27, "inst_strict": 0.454,  "prompt_loose": 0.31, "inst_loose": 0.4908},
+      "K3": {"prompt_strict": 0.45, "inst_strict": 0.6319, "prompt_loose": 0.57, "inst_loose": 0.7055}
+    },
+    "Qwen/Qwen3-8B": {
+      "K0": {"prompt_strict": 0.22, "inst_strict": 0.3681, "prompt_loose": 0.25, "inst_loose": 0.3865},
+      "K2": {"prompt_strict": 0.15, "inst_strict": 0.3252, "prompt_loose": 0.15, "inst_loose": 0.3252},
+      "K3": {"prompt_strict": 0.19, "inst_strict": 0.4049, "prompt_loose": 0.21, "inst_loose": 0.4172}
+    }
+  },
+  "retention_vs_FP": {
+    "Qwen2.5-7B": {
+      "K2": {"inst_strict": 0.705, "inst_loose": 0.690, "prompt_strict": 0.551, "prompt_loose": 0.525},
+      "K3": {"inst_strict": 0.981, "inst_loose": 0.991, "prompt_strict": 0.918, "prompt_loose": 0.966}
+    },
+    "Qwen3-8B_CAVEATED": {
+      "K2": {"inst_strict": 0.883, "inst_loose": 0.841, "prompt_strict": 0.682, "prompt_loose": 0.600},
+      "K3": {"inst_strict": 1.10, "inst_loose": 1.08, "note": ">FP = noise: FP baseline depressed by thinking-mode artifact"}
+    }
+  },
+  "verdict_vs_paperB": "CONFIRMS (no correction needed). Paper B (custom checkers) claimed instruction-following survives K2 at ~64-86%. Official lm-eval IFEval: Qwen2.5-7B K2 instruction-level retention 69-70%, Qwen3-8B K2 instruction-level 84-88% -> both fall within/around the 64-86% band => Paper B's IFEval claim is VALIDATED by the official metric. Nuances (do not overclaim): (a) PROMPT-level retention is lower (~53-68%) because it is a conjunctive all-instructions-in-prompt metric, harder than instruction-level; (b) K3 is near-lossless for instruction-following (Qwen2.5-7B 92-99%); (c) Qwen3-8B FP baseline is depressed (inst-strict 0.368) by a thinking-mode artifact (<think> blocks break the format checker), so its retention ratios are noisy and its K3>FP is noise at low absolutes -> treat Qwen3-8B as caveated. ACTION: no Paper B edit required; the claim stands. Optional enhancement: Paper B could cite this official confirmation of its custom-checker IFEval."
+}

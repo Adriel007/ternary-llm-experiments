@@ -1,0 +1,8 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "task": "minerva_math500", "limit": 500, "nq": 0, "metrics": {"exact_match,none": 0.348, "math_verify,none": 0.462}, "sec": 195.7, "_ts": "2026-06-28T19:48:49"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "task": "minerva_math500", "limit": 500, "nq": 196, "metrics": {"exact_match,none": 0.318, "math_verify,none": 0.424}, "sec": 238.0, "_ts": "2026-06-28T19:52:47"}
+{"model": "Qwen/Qwen3-8B", "K": 0, "task": "minerva_math500", "limit": 500, "nq": 0, "metrics": {"exact_match,none": 0.47, "math_verify,none": 0.532}, "sec": 264.1, "_ts": "2026-06-28T19:57:13"}
+{"model": "Qwen/Qwen3-8B", "K": 3, "task": "minerva_math500", "limit": 500, "nq": 252, "metrics": {"exact_match,none": 0.366, "math_verify,none": 0.45}, "sec": 307.2, "_ts": "2026-06-28T20:02:20"}
+{"model": "Qwen/Qwen3-8B", "K": 4, "task": "minerva_math500", "limit": 500, "nq": 252, "metrics": {"exact_match,none": 0.426, "math_verify,none": 0.494}, "sec": 575.7, "_ts": "2026-06-28T20:12:01"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 4, "task": "minerva_math500", "limit": 500, "nq": 196, "metrics": {"exact_match,none": 0.292, "math_verify,none": 0.434}, "sec": 446.5, "_ts": "2026-06-28T20:50:02"}
+{"model": "Qwen/Qwen3-8B", "K": 5, "task": "minerva_math500", "limit": 500, "nq": 252, "metrics": {"exact_match,none": 0.448, "math_verify,none": 0.518}, "sec": 955.6, "_ts": "2026-06-28T21:06:05"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 5, "task": "minerva_math500", "limit": 500, "nq": 196, "metrics": {"exact_match,none": 0.294, "math_verify,none": 0.436}, "sec": 682.7, "_ts": "2026-06-28T21:17:34"}

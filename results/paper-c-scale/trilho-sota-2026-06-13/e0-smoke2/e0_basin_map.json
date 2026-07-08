@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "scales": [
+      "1.1B"
+    ],
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "openbookqa"
+    ],
+    "n_per_task": 80,
+    "dev": "cuda",
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.12.1",
+      "datasets": "5.0.0"
+    }
+  },
+  "scales": {
+    "1.1B": {
+      "floatlm": {
+        "ppl_wikitext": 20.17505503953844,
+        "arc_easy": {
+          "acc": 0.6375,
+          "acc_norm": 0.55,
+          "n": 80
+        },
+        "arc_challenge": {
+          "acc": 0.275,
+          "acc_norm": 0.2875,
+          "n": 80
+        },
+        "hellaswag": {
+          "acc": 0.425,
+          "acc_norm": 0.4625,
+          "n": 80
+        },
+        "openbookqa": {
+          "acc": 0.1875,
+          "acc_norm": 0.3125,
+          "n": 80
+        }
+      },
+      "ptq": {
+        "ppl_wikitext": 45562.38617610219,
+        "arc_easy": {
+          "acc": 0.2,
+          "acc_norm": 0.275,
+          "n": 80
+        },
+        "arc_challenge": {
+          "acc": 0.1625,
+          "acc_norm": 0.225,
+          "n": 80
+        },
+        "hellaswag": {
+          "acc": 0.2875,
+          "acc_norm": 0.2875,
+          "n": 80
+        },
+        "openbookqa": {
+          "acc": 0.1,
+          "acc_norm": 0.35,
+          "n": 80
+        }
+      },
+      "trilm": {
+        "ppl_wikitext": 24.413759797255974,
+        "arc_easy": {
+          "acc": 0.5375,
+          "acc_norm": 0.55,
+          "n": 80
+        },
+        "arc_challenge": {
+          "acc": 0.225,
+          "acc_norm": 0.275,
+          "n": 80
+        },
+        "hellaswag": {
+          "acc": 0.4375,
+          "acc_norm": 0.45,
+          "n": 80
+        },
+        "openbookqa": {
+          "acc": 0.15,
+          "acc_norm": 0.35,
+          "n": 80
+        }
+      },
+      "headline": {
+        "arc_easy": {
+          "fp": 0.55,
+          "ptq": 0.275,
+          "trilm": 0.55,
+          "chance": 0.25,
+          "retention_ptq": 0.0833333333333334,
+          "retention_trilm": 1.0,
+          "basin_gap_trilm_minus_ptq": 0.275
+        },
+        "arc_challenge": {
+          "fp": 0.2875,
+          "ptq": 0.225,
+          "trilm": 0.275,
+          "chance": 0.25,
+          "retention_ptq": -0.666666666666667,
+          "retention_trilm": 0.6666666666666676,
+          "basin_gap_trilm_minus_ptq": 0.05000000000000002
+        },
+        "hellaswag": {
+          "fp": 0.4625,
+          "ptq": 0.2875,
+          "trilm": 0.45,
+          "chance": 0.25,
+          "retention_ptq": 0.176470588235294,
+          "retention_trilm": 0.9411764705882353,
+          "basin_gap_trilm_minus_ptq": 0.16250000000000003
+        },
+        "openbookqa": {
+          "fp": 0.3125,
+          "ptq": 0.35,
+          "trilm": 0.35,
+          "chance": 0.25,
+          "retention_ptq": 1.5999999999999996,
+          "retention_trilm": 1.5999999999999996,
+          "basin_gap_trilm_minus_ptq": 0.0
+        }
+      }
+    }
+  }
+}

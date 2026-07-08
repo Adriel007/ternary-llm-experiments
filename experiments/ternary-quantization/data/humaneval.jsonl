@@ -1,0 +1,8 @@
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 0, "passat1": 0.8048780487804879, "N": 164, "nq": 0, "sec": 131.6, "_ts": "2026-06-27T16:05:54"}
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 2, "passat1": 0.6585365853658537, "N": 164, "nq": 196, "sec": 120.5, "_ts": "2026-06-27T16:07:54"}
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 3, "passat1": 0.7987804878048781, "N": 164, "nq": 196, "sec": 135.2, "_ts": "2026-06-27T16:10:10"}
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 4, "passat1": 0.8048780487804879, "N": 164, "nq": 196, "sec": 267.8, "_ts": "2026-06-27T16:14:38"}
+{"model": "Qwen/Qwen2.5-Coder-14B-Instruct", "K": 0, "passat1": 0.8902439024390244, "N": 164, "nq": 0, "sec": 422.3, "_ts": "2026-06-27T16:21:41"}
+{"model": "Qwen/Qwen2.5-Coder-14B-Instruct", "K": 2, "passat1": 0.8414634146341463, "N": 164, "nq": 336, "sec": 323.9, "_ts": "2026-06-27T16:27:06"}
+{"model": "Qwen/Qwen2.5-Coder-14B-Instruct", "K": 3, "passat1": 0.8719512195121951, "N": 164, "nq": 336, "sec": 380.1, "_ts": "2026-06-27T16:33:26"}
+{"model": "Qwen/Qwen2.5-Coder-14B-Instruct", "K": 4, "passat1": 0.8902439024390244, "N": 164, "nq": 336, "sec": 643.0, "_ts": "2026-06-27T16:44:09"}

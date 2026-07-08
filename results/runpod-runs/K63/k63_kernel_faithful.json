@@ -1,0 +1,28 @@
+{
+  "experiment": "#63 e2e kernel-faithful validation — is the deployable llama.cpp TQ2P/TQ3P kernel (Q8_K activation) faithful to the fake-quant (dequant->bf16 F.linear) that ALL paper quality numbers were measured on? (Paper F 'claimed-pending-confirmation')",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "date": "2026-07-03",
+  "method": {
+    "kernel": "llama.cpp b9509 + sasori TQ2P/TQ3P patch (types 42/43); GGUF injected from F16 via sasori.convert.inject_tqkp (quantize_matrix_k group=256 niter=25 lam=1e-2 — BIT-IDENTICAL joint-ridge to the fake-quant); served with llama-server -ngl 0 (CPU-only, the deployable path).",
+    "fakequant": "same weights via quantize_matrix_k (group=256 niter=25 lam=1e-2), dequant->bf16, HF forward.",
+    "scorer": "IDENTICAL for both backends: gsm8k 5-shot CoT prompt + flexible-extract (last number) + strict (#### N). Kernel via HTTP /v1/completions; fakequant via HF generate. => kernel-vs-fakequant is a clean same-harness comparison.",
+    "scorer_validation": "fakequant-K3 via this scorer = 0.483 (N=60) reproduces the official lm-eval fakequant-K3 = 0.505 (N=200) within CI => scorer introduces no confound."
+  },
+  "results": {
+    "K3_TQ3P_6.19bpw": {"kernel_flex": 0.54, "kernel_strict": 0.54, "kernel_n": 100,
+                        "fakequant_flex": 0.483, "fakequant_n": 60, "lm_eval_ref": 0.505,
+                        "verdict": "PARITY — kernel ~0.50 reproduces fakequant ~0.50; kernel does NOT collapse. Wilson CIs overlap (kernel 0.54 [0.44,0.63], fq 0.483 [0.36,0.61])."},
+    "K2_TQ2P_4.125bpw": {"kernel_flex": 0.04, "kernel_strict": 0.03, "kernel_n": 100,
+                         "fakequant_flex": 0.02, "fakequant_strict": 0.02, "fakequant_n": 100,
+                         "verdict": "PARITY — both collapse to near-floor (4/100 vs 2/100, CIs overlap)."}
+  },
+  "verdict": "CONFIRMED — the deployable Q8_K-activation kernel is FAITHFUL to the bf16 fake-quant at BOTH K2 (collapse) and K3 (~0.50 recovery). Paper F's e2e quality-parity claim is confirmed; NO defect. The largest rigor gap (all quality numbers were fake-quant, kernel parity unmeasured) is closed.",
+  "performance_finding": "TQ3P (K3) decode is ~90x SLOWER than TQ2P (K2) on CPU: single-request 64-tok probe = ~1.5 tok/s (TQ3P) vs ~138 tok/s (TQ2P) on a 64-core pod. Far more than the 1.5x bpw ratio predicts => likely an unoptimized AVX2 path in the 3-plane TQ3P kernel (scalar fallback). Real deployment characteristic: K3 is GPU-free but decode-expensive. Worth noting in Paper F (batched -np helped aggregate throughput; kernel-K3 N=100 took ~38 min even batched).",
+  "caveats": [
+    "Single model (Qwen2.5-1.5B), single seed; kernel-K3 N=100 but fakequant-K3 N=60 (same scorer code).",
+    "kernel-K3 0.54 is marginally ABOVE fakequant 0.483 — within noise, kernel not worse.",
+    "gsm8k generation on the TQ3P CPU kernel is impractical at large N (the ~90x slowdown); PPL (prefill-only) would be the faster fidelity probe for scale-up, but ACC was measured here per the PPL!=ACC caution (our own studies: PPL parity does not imply ACC parity).",
+    "The same-run fakequant-K3 (N=100) was abandoned (run_hf sequential generate hung/too-slow, ~59min); the N=60 same-scorer reference suffices for the parity verdict."
+  ],
+  "pods": "podB (K2, reaped) + podA (K3, reaped); an earlier 4-pod sharded attempt was abandoned (community-pod CPUs too slow/ssh-saturated) — see docs and memory."
+}

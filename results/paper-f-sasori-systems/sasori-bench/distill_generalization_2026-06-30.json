@@ -1,0 +1,11 @@
+{
+  "_meta": {
+    "experiment": "Generalization probe: does K2 LoRA-KD recovery need task-aligned data? (Qwen2.5-1.5B, eval GSM8K)",
+    "date": "2026-06-30", "task": "gsm8k (lm-eval official, 5-shot, limit=150 test)",
+    "setup": "distill K2 on GSM8K-train corpus vs a GENERIC corpus (wikitext-2, zero math); same FP teacher logit-KD, rank-64, batched 300 steps. Eval both on GSM8K.",
+    "verdict": "Recovery is MOSTLY GENERAL, not task-specific. Generic-wikitext distill recovers GSM8K 0->0.20 flex (~38% of FP 0.527); GSM8K-train distill does more, 0.313 (~59%). So logit-KD repairs the quantization damage at the DISTRIBUTION level (pulls the student back toward the FP teacher's distribution on ANY text), with a smaller task-specific boost on top. REFINES Artigo-2 'task-dominant' (which used the buggy-ApiQ LoRA-correction, a weaker signal). HONEST CAVEAT: this general repair relies on WHITE-BOX logit-KD (teacher distribution); a black-box/API CE-only distill (no logits) would likely be more task-dependent."
+  },
+  "K2_ptq": {"gsm8k_flex": 0.0067},
+  "gsm8k_train_corpus": {"gsm8k_flex": 0.3133, "gsm8k_strict": 0.3067},
+  "generic_wikitext_corpus": {"gsm8k_flex": 0.20, "gsm8k_strict": 0.1867}
+}

@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n": 6,
+  "calibration": "c4",
+  "method": "gptq-int",
+  "results": {
+    "fp": {
+      "gsm8k": 0.3333,
+      "arc": 0.3333,
+      "hella": 0.6667,
+      "bits": 16,
+      "bpw": 16.0,
+      "calibration": "none",
+      "data_aware": false
+    },
+    "gptq4bit": {
+      "gsm8k": 0.1667,
+      "arc": 0.3333,
+      "hella": 0.6667,
+      "bits": 4,
+      "group": 128,
+      "bpw": 4.156,
+      "calibration": "c4",
+      "data_aware": true
+    }
+  }
+}

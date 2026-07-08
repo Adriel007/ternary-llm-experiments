@@ -1,0 +1,330 @@
+{
+  "_meta": {
+    "experiment": "#81 function-calling (BFCL simple) under the K-lever (FP/K2/K3)",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "kvals": [
+      0,
+      2,
+      3
+    ],
+    "group": 256,
+    "max_new_tokens": 256,
+    "seed": 0,
+    "ref_gate": 0.5,
+    "category": "simple",
+    "data_source": {
+      "source": "huggingface_fetch",
+      "base": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/main",
+      "file": "BFCL_v3_simple.json",
+      "category": "simple",
+      "available": 400,
+      "used": 40,
+      "bfcl_install": {
+        "attempted": true,
+        "cmd": "/usr/bin/python3 -m pip install --break-system-packages --no-deps bfcl-eval",
+        "returncode": 0,
+        "tail": [
+          "Collecting bfcl-eval",
+          "  Downloading bfcl_eval-2026.3.23-py3-none-any.whl.metadata (19 kB)",
+          "Downloading bfcl_eval-2026.3.23-py3-none-any.whl (1.9 MB)",
+          "   \u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501 1.9/1.9 MB 75.2 MB/s  0:00:00",
+          "Installing collected packages: bfcl-eval",
+          "Successfully installed bfcl-eval-2026.3.23",
+          "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning."
+        ]
+      }
+    },
+    "metric": "fc_acc = correct function name AND correct arguments (BFCL simple AST match)",
+    "checker": "re-implementation of BFCL `simple` (single Python call) AST semantics: name match + declared-args-only + acceptable-value lists (\"\" => omittable). Does NOT cover Java/JS/parallel/multiple/relevance/multi-turn/executable.",
+    "harness": "own generation+parse+AST-match harness (BFCL's own runner cannot apply our in-place fake-quant); uses authoritative BFCL cases when available, else a built-in BFCL-simple-style set (see data_source.source).",
+    "prompting": "native Hermes tools= chat template when supported (Qwen2.5), else a JSON-instruction fallback; the mode actually used is in each variant's prompt_modes.",
+    "question": "does function-calling stratify like KNOWLEDGE (robust to K2) or like REASONING (collapses at K2, K3 recovers)?"
+  },
+  "reference_ok": true,
+  "verdict": "OK",
+  "fp": {
+    "fc_acc": 0.9,
+    "name_acc": 0.975,
+    "n": 40,
+    "n_parsed": 40,
+    "prompt_modes": [
+      "native_tools"
+    ],
+    "samples": [
+      {
+        "id": "simple_0",
+        "query": "Find the area of a triangle with a base of 10 units and height of 5 units.",
+        "response": "<tool_call>\n{\"name\": \"calculate_triangle_area\", \"arguments\": {\"base\": 10, \"height\": 5}}\n</tool_call>",
+        "pred_name": "calculate_triangle_area",
+        "pred_args": {
+          "base": 10,
+          "height": 5
+        },
+        "ground_truth": [
+          {
+            "calculate_triangle_area": {
+              "base": [
+                10
+              ],
+              "height": [
+                5
+              ],
+              "unit": [
+                "units",
+                ""
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      },
+      {
+        "id": "simple_1",
+        "query": "Calculate the factorial of 5 using math functions.",
+        "response": "<tool_call>\n{\"name\": \"math.factorial\", \"arguments\": {\"number\": 5}}\n</tool_call>",
+        "pred_name": "math.factorial",
+        "pred_args": {
+          "number": 5
+        },
+        "ground_truth": [
+          {
+            "math.factorial": {
+              "number": [
+                5
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      },
+      {
+        "id": "simple_2",
+        "query": "Calculate the hypotenuse of a right triangle given the lengths of the other two sides as 4 and 5.",
+        "response": "<tool_call>\n{\"name\": \"math.hypot\", \"arguments\": {\"x\": 4, \"y\": 5}}\n</tool_call>",
+        "pred_name": "math.hypot",
+        "pred_args": {
+          "x": 4,
+          "y": 5
+        },
+        "ground_truth": [
+          {
+            "math.hypot": {
+              "x": [
+                4
+              ],
+              "y": [
+                5
+              ],
+              "z": [
+                "",
+                0
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      }
+    ],
+    "quant": null
+  },
+  "k2": {
+    "fc_acc": 0.675,
+    "name_acc": 0.875,
+    "n": 40,
+    "n_parsed": 38,
+    "prompt_modes": [
+      "native_tools"
+    ],
+    "samples": [
+      {
+        "id": "simple_0",
+        "query": "Find the area of a triangle with a base of 10 units and height of 5 units.",
+        "response": "[{\"name\": \"calculate_triangle_area\", \"arguments\": {\"base\": 10, \"height\": 5}}]",
+        "pred_name": "calculate_triangle_area",
+        "pred_args": {
+          "base": 10,
+          "height": 5
+        },
+        "ground_truth": [
+          {
+            "calculate_triangle_area": {
+              "base": [
+                10
+              ],
+              "height": [
+                5
+              ],
+              "unit": [
+                "units",
+                ""
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      },
+      {
+        "id": "simple_1",
+        "query": "Calculate the factorial of 5 using math functions.",
+        "response": "{\"name\": \"math.factorial\", \"arguments\": {\"number\": 5}} \nThis will calculate the factorial of 5, which is 5! = 5 * 4 * 3 * 2 * 1 = 120. The result is 120. \n\nHere is the calculation result: 120. \n\nLet's confirm this using the math module's factorial function.\n```\nimport math\nprint(math.factorial(5))\n```\nThis will output: 120\n\nThe answer is 120. \n\nNow, let's verify this using the math library's facto",
+        "pred_name": "math.factorial",
+        "pred_args": {
+          "number": 5
+        },
+        "ground_truth": [
+          {
+            "math.factorial": {
+              "number": [
+                5
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      },
+      {
+        "id": "simple_2",
+        "query": "Calculate the hypotenuse of a right triangle given the lengths of the other two sides as 4 and 5.",
+        "response": "```python\nimport math\n\ndef calculate_hypotenuse(a, b):\n    return math.hypot(a, b)\n\n# Given values\na = 4  # length of one side of the right triangle\nb = 5  # length of the other side\n\n# Calculate the hypotenuse\nhypotenuse = calculate_hypotenuse(a, b)\nprint(hypotenuse)\n```\n```\n6.313552872506054\n```\nThe output is a floating-point number representing the length of the hypotenuse in the right triangle",
+        "pred_name": "math.hypot",
+        "pred_args": {},
+        "ground_truth": [
+          {
+            "math.hypot": {
+              "x": [
+                4
+              ],
+              "y": [
+                5
+              ],
+              "z": [
+                "",
+                0
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": false,
+        "prompt_mode": "native_tools"
+      }
+    ],
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  },
+  "k3": {
+    "fc_acc": 0.925,
+    "name_acc": 1.0,
+    "n": 40,
+    "n_parsed": 40,
+    "prompt_modes": [
+      "native_tools"
+    ],
+    "samples": [
+      {
+        "id": "simple_0",
+        "query": "Find the area of a triangle with a base of 10 units and height of 5 units.",
+        "response": "<tool_call>\n{\"name\": \"calculate_triangle_area\", \"arguments\": {\"base\": 10, \"height\": 5}}\n</tool_call>",
+        "pred_name": "calculate_triangle_area",
+        "pred_args": {
+          "base": 10,
+          "height": 5
+        },
+        "ground_truth": [
+          {
+            "calculate_triangle_area": {
+              "base": [
+                10
+              ],
+              "height": [
+                5
+              ],
+              "unit": [
+                "units",
+                ""
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      },
+      {
+        "id": "simple_1",
+        "query": "Calculate the factorial of 5 using math functions.",
+        "response": "<tool_call>\n{\"name\": \"math.factorial\", \"arguments\": {\"number\": 5}}\n</tool_call>",
+        "pred_name": "math.factorial",
+        "pred_args": {
+          "number": 5
+        },
+        "ground_truth": [
+          {
+            "math.factorial": {
+              "number": [
+                5
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      },
+      {
+        "id": "simple_2",
+        "query": "Calculate the hypotenuse of a right triangle given the lengths of the other two sides as 4 and 5.",
+        "response": "<tool_call>\n{\"name\": \"math.hypot\", \"arguments\": {\"x\": 4, \"y\": 5}}\n</tool_call>",
+        "pred_name": "math.hypot",
+        "pred_args": {
+          "x": 4,
+          "y": 5
+        },
+        "ground_truth": [
+          {
+            "math.hypot": {
+              "x": [
+                4
+              ],
+              "y": [
+                5
+              ],
+              "z": [
+                "",
+                0
+              ]
+            }
+          }
+        ],
+        "parsed": true,
+        "name_ok": true,
+        "correct": true,
+        "prompt_mode": "native_tools"
+      }
+    ],
+    "quant": {
+      "linear": 196,
+      "expert_mats": 0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "model": "Qwen/Qwen3-1.7B",
+    "n_params_est": 2034839664,
+    "cpu": "AMD Ryzen Threadripper PRO 5955WX (16 cores / 32 threads)",
+    "runner": "llama.cpp@b9509 + sasori TQ kernel patch, -ngl 0 -t 16",
+    "bench": "llama-bench -p 512 -n 64 (prefill/decode tok/s); llama-perplexity wikitext-2-raw test, 16 chunks, n_ctx 512",
+    "date": "2026-06-29",
+    "pod": "RunPod community A5000 (CPU used; GPU idle), $0.16/hr, ~53 min total",
+    "honest_note": "1.7B is sasori's WORST case: FP embeddings dominate the file at small scale (TQ3P weights are 6.19 bpw but the FILE is 9.2 bpw). Perplexity != task accuracy (the Papers B/C theme). TQ2P collapse cross-validates Paper C's small-model cliff (not a kernel bug: TQ3P works, PPL finite)."
+  },
+  "results": [
+    {"quant": "F16",         "size_bytes": 4069679328, "prefill_tok_s": 92.53, "decode_tok_s": 6.70,  "ppl_wikitext": 20.0711},
+    {"quant": "sasori-TQ3P", "size_bytes": 2341101792, "prefill_tok_s": 88.98, "decode_tok_s": 12.59, "ppl_wikitext": 25.2687, "weight_bpw": 6.1875},
+    {"quant": "Q8_0",        "size_bytes": 2165039328, "prefill_tok_s": 126.36,"decode_tok_s": 11.70, "ppl_wikitext": 20.0427},
+    {"quant": "sasori-TQ2P", "size_bytes": 1977770208, "prefill_tok_s": 132.67,"decode_tok_s": 15.71, "ppl_wikitext": 210.9006, "weight_bpw": 4.1250},
+    {"quant": "Q4_K_M",      "size_bytes": 1282439392, "prefill_tok_s": 151.49,"decode_tok_s": 19.90, "ppl_wikitext": 22.0571},
+    {"quant": "Q2_K",        "size_bytes": 879896800,  "prefill_tok_s": 128.54,"decode_tok_s": 24.99, "ppl_wikitext": 188.8616}
+  ]
+}

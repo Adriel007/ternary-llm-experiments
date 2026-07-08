@@ -1,0 +1,916 @@
+{
+  "model": "SpectraSuite/FloatLM_2.4B",
+  "layers": [
+    15
+  ],
+  "corpus": "wikitext-103-raw-v1",
+  "tag": "_floatlm",
+  "results": [
+    {
+      "layer": 15,
+      "metrics": {
+        "fve": 0.8516680135448895,
+        "l0": 32.0,
+        "dead": 0,
+        "d_sae": 14720,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          1499
+        ],
+        "fve": [
+          -3.597491575709192,
+          0.8442415402137515,
+          0.8640778010696983
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 7850,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 9.291,
+              "focus": "mer",
+              "context": " criticized by Brown University Professor Omer Bartov"
+            },
+            {
+              "act": 8.746,
+              "focus": "mer",
+              "context": " \"<|endoftext|>Israeli historian Omer Bartov"
+            },
+            {
+              "act": 8.283,
+              "focus": "mer",
+              "context": "<|endoftext|>Bartov, Omer. \""
+            },
+            {
+              "act": 7.855,
+              "focus": "erm",
+              "context": " detained. The ship reached Bermuda on"
+            },
+            {
+              "act": 7.354,
+              "focus": "erm",
+              "context": " Labour borough councillor for Bermondsey"
+            },
+            {
+              "act": 7.21,
+              "focus": "erm",
+              "context": " put out his destination as Bermuda and"
+            }
+          ]
+        },
+        {
+          "feature": 305,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 11.354,
+              "focus": "op",
+              "context": " India. Anupama Chopra '"
+            },
+            {
+              "act": 11.137,
+              "focus": "op",
+              "context": " performance. Anupama Chopra of"
+            },
+            {
+              "act": 10.534,
+              "focus": "op",
+              "context": " Critic Anupama Chopra also"
+            },
+            {
+              "act": 10.314,
+              "focus": "op",
+              "context": "ised by Anupama Chopra,"
+            },
+            {
+              "act": 9.81,
+              "focus": "op",
+              "context": " Khan, Priyanka Chopra and"
+            },
+            {
+              "act": 8.005,
+              "focus": "op",
+              "context": "ay has been labelled by Chopra as"
+            }
+          ]
+        },
+        {
+          "feature": 12460,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 6.61,
+              "focus": "ou",
+              "context": "-@ Joseph de Rochechouart ("
+            },
+            {
+              "act": 6.607,
+              "focus": "on",
+              "context": " in the nearby city of Yon"
+            },
+            {
+              "act": 6.499,
+              "focus": "on",
+              "context": ". The \" Battle of Yonkers \""
+            },
+            {
+              "act": 6.332,
+              "focus": "u",
+              "context": " some resistance in the Chihuahuan"
+            },
+            {
+              "act": 6.286,
+              "focus": "ahl",
+              "context": " ; they sent center Samuel Pahlsson to"
+            },
+            {
+              "act": 6.264,
+              "focus": "u",
+              "context": "errero district of Chihuahua"
+            }
+          ]
+        },
+        {
+          "feature": 8083,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 8.449,
+              "focus": " Hollywood",
+              "context": " office = =<|endoftext|>Not Quite Hollywood : The"
+            },
+            {
+              "act": 7.761,
+              "focus": " Hollywood",
+              "context": " minute film.<|endoftext|>Not Quite Hollywood"
+            },
+            {
+              "act": 7.679,
+              "focus": " Hollywood",
+              "context": " director Edgar Wright named Not Quite Hollywood his fourth"
+            },
+            {
+              "act": 7.628,
+              "focus": " Hollywood",
+              "context": "opsis = =<|endoftext|>Not Quite Hollywood documents the"
+            },
+            {
+              "act": 7.525,
+              "focus": " Hollywood",
+              "context": " of film referenced within Not Quite Hollywood, separated"
+            },
+            {
+              "act": 7.404,
+              "focus": " Hollywood",
+              "context": "itation! =<|endoftext|>Not Quite Hollywood : The"
+            }
+          ]
+        },
+        {
+          "feature": 6279,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 10.067,
+              "focus": "l",
+              "context": "ro Girolamo Guglielmi"
+            },
+            {
+              "act": 9.25,
+              "focus": "ear",
+              "context": " the battlecruisers of Rear Admiral Franz"
+            },
+            {
+              "act": 9.11,
+              "focus": "ear",
+              "context": ". In the meantime, Rear Admiral Samuel"
+            },
+            {
+              "act": 9.034,
+              "focus": "ear",
+              "context": ", under the command of Rear Admiral Ludwig"
+            },
+            {
+              "act": 8.937,
+              "focus": "ear",
+              "context": "iser Invincible ; Rear Admiral Paul"
+            },
+            {
+              "act": 8.507,
+              "focus": "ear",
+              "context": " the interned fleet, Rear Admiral Ludwig"
+            }
+          ]
+        },
+        {
+          "feature": 870,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 7.502,
+              "focus": "at",
+              "context": "ey =<|endoftext|>Elizabeth Stamatina \""
+            },
+            {
+              "act": 5.51,
+              "focus": " scattered",
+              "context": "isonette. Her ashes were scattered in St"
+            },
+            {
+              "act": 5.199,
+              "focus": " scattered",
+              "context": " his wishes, his ashes were scattered near Tenn"
+            },
+            {
+              "act": 5.134,
+              "focus": " F",
+              "context": "ating comedic style inspired Ashley Fetters"
+            },
+            {
+              "act": 4.994,
+              "focus": "z",
+              "context": " habitats typical of rails. Porzana cra"
+            },
+            {
+              "act": 4.895,
+              "focus": " Tom",
+              "context": " film review aggregator Rotten Tomatoes."
+            }
+          ]
+        },
+        {
+          "feature": 5778,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 5.985,
+              "focus": "opol",
+              "context": "<|endoftext|>The species has a cosmopolitan distribution"
+            },
+            {
+              "act": 5.95,
+              "focus": "z",
+              "context": "nicki, W\u0142odzimier"
+            },
+            {
+              "act": 5.822,
+              "focus": "z",
+              "context": "odnik, W\u0142odzimier"
+            },
+            {
+              "act": 5.68,
+              "focus": "opol",
+              "context": " Galveston was a cosmopolitan city"
+            },
+            {
+              "act": 5.651,
+              "focus": "z",
+              "context": "endowski, W\u0142odzimier"
+            },
+            {
+              "act": 5.623,
+              "focus": "opol",
+              "context": " northwest of Bradford, a cosmopolitan city"
+            }
+          ]
+        },
+        {
+          "feature": 117,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 12.023,
+              "focus": " resemble",
+              "context": " resemble closely the"
+            },
+            {
+              "act": 11.981,
+              "focus": " marked",
+              "context": " marked stone,"
+            },
+            {
+              "act": 11.974,
+              "focus": " remains",
+              "context": " remains largely intact"
+            },
+            {
+              "act": 11.92,
+              "focus": " brought",
+              "context": " brought out for"
+            },
+            {
+              "act": 11.902,
+              "focus": " said",
+              "context": " said that his"
+            },
+            {
+              "act": 11.88,
+              "focus": " becoming",
+              "context": " becoming a potential"
+            }
+          ]
+        },
+        {
+          "feature": 7861,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 7.285,
+              "focus": " and",
+              "context": ", \" Who is my mother and who are"
+            },
+            {
+              "act": 6.851,
+              "focus": "il",
+              "context": " 14, Madero had Emiliano Z"
+            },
+            {
+              "act": 6.465,
+              "focus": " and",
+              "context": ", \" Here are my mother and my brothers"
+            },
+            {
+              "act": 6.457,
+              "focus": "ac",
+              "context": "uram, India<|endoftext|>Veracruz,"
+            },
+            {
+              "act": 6.178,
+              "focus": "il",
+              "context": " Zapata brothers, Emiliano and"
+            },
+            {
+              "act": 6.101,
+              "focus": " velocity",
+              "context": ". From the spectra, radial velocity measurements were"
+            }
+          ]
+        },
+        {
+          "feature": 948,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 19.89,
+              "focus": " enter",
+              "context": " enter the Billboard"
+            },
+            {
+              "act": 19.529,
+              "focus": " stopped",
+              "context": " stopped paying out"
+            },
+            {
+              "act": 19.135,
+              "focus": " marked",
+              "context": " marked stone,"
+            },
+            {
+              "act": 19.105,
+              "focus": " returned",
+              "context": " returned after missing"
+            },
+            {
+              "act": 19.021,
+              "focus": " resemble",
+              "context": " resemble closely the"
+            },
+            {
+              "act": 18.975,
+              "focus": " Will",
+              "context": " Will by Ter"
+            }
+          ]
+        },
+        {
+          "feature": 10840,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 21.455,
+              "focus": "=",
+              "context": " to the parade.<|endoftext|>= = Production"
+            },
+            {
+              "act": 21.307,
+              "focus": "=",
+              "context": "Shock America \".<|endoftext|>= = Com"
+            },
+            {
+              "act": 21.069,
+              "focus": "=",
+              "context": " Shoten in 2012.<|endoftext|>= Tower Building"
+            },
+            {
+              "act": 21.026,
+              "focus": "=",
+              "context": "ini from Clement XII.<|endoftext|>= = ="
+            },
+            {
+              "act": 21.011,
+              "focus": "=",
+              "context": " this period in history.<|endoftext|>= = Fact"
+            },
+            {
+              "act": 20.958,
+              "focus": "=",
+              "context": " hide her hurt feelings.<|endoftext|>= = ="
+            }
+          ]
+        },
+        {
+          "feature": 9277,
+          "fire_rate": 0.3995,
+          "examples": [
+            {
+              "act": 6.272,
+              "focus": " Stud",
+              "context": " War Two ( 1984 ) by Studs T"
+            },
+            {
+              "act": 6.136,
+              "focus": " Stud",
+              "context": " War Two ( 1984 ) by Studs T"
+            },
+            {
+              "act": 5.234,
+              "focus": " Stud",
+              "context": " Doing so in the mode of Studs T"
+            },
+            {
+              "act": 4.802,
+              "focus": " an",
+              "context": " All Good Things ( Come to an End )"
+            },
+            {
+              "act": 4.782,
+              "focus": " an",
+              "context": " All Good Things ( Come to an End )"
+            },
+            {
+              "act": 4.62,
+              "focus": " All",
+              "context": " the American comedy television series Up All Night."
+            }
+          ]
+        },
+        {
+          "feature": 1756,
+          "fire_rate": 0.3994,
+          "examples": [
+            {
+              "act": 12.706,
+              "focus": "hael",
+              "context": ".<|endoftext|>In 1911, Raphael Tuck"
+            },
+            {
+              "act": 12.04,
+              "focus": "hael",
+              "context": "ing Strings, and Raphael Tuck"
+            },
+            {
+              "act": 11.905,
+              "focus": "hael",
+              "context": " series of postcards for Raphael"
+            },
+            {
+              "act": 11.342,
+              "focus": "hael",
+              "context": " the Pre @-@ Raphaelites were"
+            },
+            {
+              "act": 10.018,
+              "focus": "hael",
+              "context": "The Pre @-@ Raphaelites were"
+            },
+            {
+              "act": 9.549,
+              "focus": "he",
+              "context": " had been found. When Bethe was informed"
+            }
+          ]
+        },
+        {
+          "feature": 3804,
+          "fire_rate": 0.3993,
+          "examples": [
+            {
+              "act": 10.126,
+              "focus": " Find",
+              "context": " Find Out How"
+            },
+            {
+              "act": 9.96,
+              "focus": " brought",
+              "context": " brought out for"
+            },
+            {
+              "act": 9.918,
+              "focus": " found",
+              "context": " found the state"
+            },
+            {
+              "act": 9.918,
+              "focus": " found",
+              "context": " found that overall"
+            },
+            {
+              "act": 9.836,
+              "focus": " made",
+              "context": " made landfall"
+            },
+            {
+              "act": 9.816,
+              "focus": " resemble",
+              "context": " resemble closely the"
+            }
+          ]
+        },
+        {
+          "feature": 1468,
+          "fire_rate": 0.3993,
+          "examples": [
+            {
+              "act": 14.491,
+              "focus": " marked",
+              "context": " marked stone,"
+            },
+            {
+              "act": 14.407,
+              "focus": " worked",
+              "context": " worked directly for"
+            },
+            {
+              "act": 14.313,
+              "focus": " remains",
+              "context": " remains largely intact"
+            },
+            {
+              "act": 14.114,
+              "focus": " So",
+              "context": " Soap described"
+            },
+            {
+              "act": 13.962,
+              "focus": " argues",
+              "context": " argues for going"
+            },
+            {
+              "act": 13.955,
+              "focus": " returned",
+              "context": " returned after missing"
+            }
+          ]
+        },
+        {
+          "feature": 7191,
+          "fire_rate": 0.3992,
+          "examples": [
+            {
+              "act": 16.947,
+              "focus": " worked",
+              "context": " worked directly for"
+            },
+            {
+              "act": 16.883,
+              "focus": " spent",
+              "context": " spent time promoting"
+            },
+            {
+              "act": 16.852,
+              "focus": " forget",
+              "context": " forgetful and"
+            },
+            {
+              "act": 16.812,
+              "focus": " Will",
+              "context": " Will by Ter"
+            },
+            {
+              "act": 16.805,
+              "focus": " found",
+              "context": " found that overall"
+            },
+            {
+              "act": 16.805,
+              "focus": " found",
+              "context": " found the state"
+            }
+          ]
+        },
+        {
+          "feature": 5427,
+          "fire_rate": 0.3992,
+          "examples": [
+            {
+              "act": 8.477,
+              "focus": "\u0e15",
+              "context": "\u0e25\u0e22\u0e32\u0e13\u0e21\u0e34\u0e15\u0e23 )"
+            },
+            {
+              "act": 8.138,
+              "focus": "\u0e15",
+              "context": "\u0e25\u0e22\u0e32\u0e13\u0e21\u0e34\u0e15\u0e23 )"
+            },
+            {
+              "act": 7.893,
+              "focus": "\u0e15",
+              "context": "\u0e25\u0e22\u0e32\u0e13\u0e21\u0e34\u0e15\u0e23 ;"
+            },
+            {
+              "act": 6.94,
+              "focus": " liner",
+              "context": " lifted from the album's liner notes."
+            },
+            {
+              "act": 6.591,
+              "focus": " liner",
+              "context": " adapted from the album's liner notes."
+            },
+            {
+              "act": 6.368,
+              "focus": " Lee",
+              "context": " features a guest appearance from Jason Lee as Kevin"
+            }
+          ]
+        },
+        {
+          "feature": 9830,
+          "fire_rate": 0.3992,
+          "examples": [
+            {
+              "act": 7.476,
+              "focus": " returned",
+              "context": " returned after missing"
+            },
+            {
+              "act": 7.446,
+              "focus": " Find",
+              "context": " Find Out How"
+            },
+            {
+              "act": 7.389,
+              "focus": " brought",
+              "context": " brought out for"
+            },
+            {
+              "act": 7.385,
+              "focus": " argues",
+              "context": " argues for going"
+            },
+            {
+              "act": 7.247,
+              "focus": " feel",
+              "context": " feel compelled to"
+            },
+            {
+              "act": 7.228,
+              "focus": " made",
+              "context": " made landfall"
+            }
+          ]
+        },
+        {
+          "feature": 4612,
+          "fire_rate": 0.3991,
+          "examples": [
+            {
+              "act": 7.554,
+              "focus": " Ass",
+              "context": " accepted definition, suggested by Jan Assmann,"
+            },
+            {
+              "act": 7.508,
+              "focus": " Ass",
+              "context": " unified than he allows. Jan Assmann maintains"
+            },
+            {
+              "act": 6.867,
+              "focus": "k",
+              "context": " Squadron ( Finska eskadern"
+            },
+            {
+              "act": 6.553,
+              "focus": "k",
+              "context": " Squadron ( Svenska eskadern"
+            },
+            {
+              "act": 6.296,
+              "focus": "\ufffd",
+              "context": " Thai : \u0e1a\u0e34 \u0e4a "
+            },
+            {
+              "act": 6.151,
+              "focus": " Mc",
+              "context": " ( 1997 ) by Reba McEntire"
+            }
+          ]
+        },
+        {
+          "feature": 4639,
+          "fire_rate": 0.3991,
+          "examples": [
+            {
+              "act": 15.886,
+              "focus": "igner",
+              "context": ", Ann Jo.<|endoftext|>Wigner moved to"
+            },
+            {
+              "act": 15.593,
+              "focus": "igner",
+              "context": " work with him.<|endoftext|>Wigner led the"
+            },
+            {
+              "act": 15.06,
+              "focus": "igner",
+              "context": " @-@ 240 led Wigner to propose"
+            },
+            {
+              "act": 15.012,
+              "focus": "igner",
+              "context": " between 1939 and 1941, Wigner led the"
+            },
+            {
+              "act": 14.951,
+              "focus": "igner",
+              "context": " of the reactor ; but Wigner was confident"
+            },
+            {
+              "act": 13.489,
+              "focus": "igner",
+              "context": " nuclear reactor design under Eugene Wigner at the"
+            }
+          ]
+        },
+        {
+          "feature": 5344,
+          "fire_rate": 0.3991,
+          "examples": [
+            {
+              "act": 6.881,
+              "focus": " argues",
+              "context": " argues for going"
+            },
+            {
+              "act": 6.823,
+              "focus": " brought",
+              "context": " brought out for"
+            },
+            {
+              "act": 6.69,
+              "focus": "rop",
+              "context": " marrow. This leads to neutropenia,"
+            },
+            {
+              "act": 6.472,
+              "focus": " called",
+              "context": " called to chast"
+            },
+            {
+              "act": 6.445,
+              "focus": "inc",
+              "context": "cy, Zuzanna Ginczanka"
+            },
+            {
+              "act": 6.418,
+              "focus": " highlighted",
+              "context": " highlighted increasing visitor"
+            }
+          ]
+        },
+        {
+          "feature": 4941,
+          "fire_rate": 0.399,
+          "examples": [
+            {
+              "act": 13.518,
+              "focus": " brought",
+              "context": " brought out for"
+            },
+            {
+              "act": 13.463,
+              "focus": " resemble",
+              "context": " resemble closely the"
+            },
+            {
+              "act": 13.436,
+              "focus": " feel",
+              "context": " feel compelled to"
+            },
+            {
+              "act": 13.374,
+              "focus": " marked",
+              "context": " marked stone,"
+            },
+            {
+              "act": 13.371,
+              "focus": " made",
+              "context": " made landfall"
+            },
+            {
+              "act": 13.35,
+              "focus": " highlighted",
+              "context": " highlighted increasing visitor"
+            }
+          ]
+        },
+        {
+          "feature": 14072,
+          "fire_rate": 0.399,
+          "examples": [
+            {
+              "act": 6.06,
+              "focus": "etm",
+              "context": " in the annual Binaca Geetmala list"
+            },
+            {
+              "act": 4.916,
+              "focus": " Muh",
+              "context": " label that released Turkish folk singer Muhlis Ak"
+            },
+            {
+              "act": 4.712,
+              "focus": "ag",
+              "context": " senior vice president, American Fragrances"
+            },
+            {
+              "act": 4.46,
+              "focus": "amb",
+              "context": " ) deep and has a circumambulatory path"
+            },
+            {
+              "act": 4.436,
+              "focus": "us",
+              "context": "ithologist Johann Matth\u00e4us Bech"
+            },
+            {
+              "act": 4.393,
+              "focus": " B",
+              "context": " Britain ; archaeologist Aubrey Burl argued"
+            }
+          ]
+        },
+        {
+          "feature": 9488,
+          "fire_rate": 0.399,
+          "examples": [
+            {
+              "act": 15.522,
+              "focus": " Mama",
+              "context": " starred in the comedy film Baby Mama, alongside"
+            },
+            {
+              "act": 15.238,
+              "focus": " Mama",
+              "context": " starred in the 2008 comedy Baby Mama. The"
+            },
+            {
+              "act": 14.884,
+              "focus": " Mama",
+              "context": " Girls ( 2004 ), Baby Mama ( 2008"
+            },
+            {
+              "act": 14.403,
+              "focus": " Mama",
+              "context": " As was the case with Baby Mama, although"
+            },
+            {
+              "act": 10.518,
+              "focus": " Mama",
+              "context": "@ trash schemer. Baby Mama received mixed"
+            },
+            {
+              "act": 8.02,
+              "focus": " American",
+              "context": " Dominican Republic by the Organization of American States in"
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2304,
+      "sae": {
+        "d_sae": 14720,
+        "k": 32,
+        "steps": 1500
+      }
+    }
+  ],
+  "wall_s": 161.86044669151306
+}

@@ -1,0 +1,31 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "n": 60,
+  "steps": 300,
+  "rank": 64,
+  "minilm_weight": 0.05,
+  "group": 128,
+  "niter": 50,
+  "lam": 0.01,
+  "calib_n": 64,
+  "seed": 0,
+  "device": "cuda",
+  "dtype": "torch.bfloat16",
+  "k2_nrmse": 0.18133784579683324,
+  "references": {
+    "fp": 0.03333333333333333,
+    "k2_ptq_floor": 0.016666666666666666
+  },
+  "baseline": {
+    "gsm8k": 0.03333333333333333
+  },
+  "minilm": {
+    "gsm8k": 0.016666666666666666
+  },
+  "apiq_off": {
+    "gsm8k": 0.21666666666666667
+  },
+  "minilm_apiq_off": {
+    "gsm8k": 0.21666666666666667
+  }
+}

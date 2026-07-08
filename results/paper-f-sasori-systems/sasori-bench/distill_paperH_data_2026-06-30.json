@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "experiment": "Paper H data: black-box/white-box decomposition + 4-model GSM8K ladder",
+    "date": "2026-06-30", "task": "gsm8k flexible-extract, 5-shot, limit=150, lm-eval official",
+    "quant": "sasori joint-ridge, group=256; LoRA-KD rank-64, batched 300 steps, GSM8K-train corpus"
+  },
+  "black_box_decomposition_Qwen2.5-1.5B_K2": {
+    "FP": 0.527, "K2_ptq": 0.007,
+    "whitebox_ApiQ_plus_logitKD": 0.32,
+    "ApiQ_plus_CE_only": 0.30,
+    "blackbox_noApiQ_CE_only_TRUE_API": 0.2267,
+    "verdict": "API/black-box distillation IS viable: recovers 0->0.227 (~43% of FP, ~70% of the white-box 0.32). logit-KD adds only +0.02 (0.30->0.32); the larger white-box advantage is ApiQ-init (~+0.07), which needs the teacher WEIGHTS (unavailable for a closed API). A closed-API teacher (no weights, no logits) => CE-on-responses => 0.227."
+  },
+  "ladder_gsm8k_flex": {
+    "Qwen/Qwen2.5-0.5B-Instruct": {"FP": 0.3333, "K2_ptq": 0.02,  "K2_distill": 0.1067, "K3_ptq": 0.16,  "K3_distill": 0.2333},
+    "Qwen/Qwen2.5-1.5B-Instruct": {"FP": 0.5267, "K2_ptq": 0.007, "K2_distill": 0.32,   "K3_ptq": 0.38,  "K3_distill": 0.54},
+    "Qwen/Qwen3-1.7B":            {"FP": 0.70,   "K2_ptq": 0.0,   "K2_distill": 0.4467, "K3_ptq": 0.627, "K3_distill": 0.6533},
+    "Qwen/Qwen2.5-3B-Instruct":  {"FP": 0.6667, "K2_ptq": 0.0,   "K2_distill": 0.3333, "K3_ptq": 0.60,  "K3_distill": 0.6067}
+  },
+  "verdict": "Across 4 models (0.5-3B): K3-PTQ > K2+distill on ALL (robust ordering); K3+distill reaches ~FP (70-102%); K2+distill rescues the K2 collapse (0 -> 0.11-0.45). The orderings are robust; magnitudes vary with model. Honest scope: GSM8K-centric, small models, single seed."
+}

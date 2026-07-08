@@ -1,0 +1,54 @@
+{
+ "env": {
+  "gpu": "NVIDIA A40",
+  "arch": "(8, 6)",
+  "bitblas": "0.1.0.post1"
+ },
+ "m_list_tuning": [
+  {
+   "m_list": [
+    1
+   ],
+   "tunes": false,
+   "error": "ValueError: No optimized function available for platform CUDA(cuda -keys=cuda,gpu -arch=sm_8"
+  },
+  {
+   "m_list": [
+    1,
+    128
+   ],
+   "tunes": false,
+   "error": "ValueError: No optimized function available for platform CUDA(cuda -keys=cuda,gpu -arch=sm_8"
+  },
+  {
+   "m_list": [
+    1,
+    128,
+    512
+   ],
+   "tunes": false,
+   "error": "ValueError: No optimized function available for platform CUDA(cuda -keys=cuda,gpu -arch=sm_8"
+  },
+  {
+   "m_list": [
+    1,
+    512,
+    2048
+   ],
+   "tunes": false,
+   "error": "ValueError: No optimized function available for platform CUDA(cuda -keys=cuda,gpu -arch=sm_8"
+  },
+  {
+   "m_list": [
+    1,
+    128,
+    512,
+    2048
+   ],
+   "tunes": false,
+   "error": "ValueError: No optimized function available for platform CUDA(cuda -keys=cuda,gpu -arch=sm_8"
+  }
+ ],
+ "bench": [],
+ "verdict": "no tunable M-list"
+}

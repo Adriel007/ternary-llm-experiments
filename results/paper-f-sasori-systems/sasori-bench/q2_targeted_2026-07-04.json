@@ -1,0 +1,114 @@
+{
+ "_meta": {
+  "experiment": "Q2 Lane A: targeted LoRA-KD (which layers to correct)",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "K": 2,
+  "steps": 300,
+  "limit": 100,
+  "seed": 0,
+  "rank": 64,
+  "n_layers": 28,
+  "subsets": {
+   "all": "all",
+   "early12": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "mid12": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "late12": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+   ],
+   "random12": [
+    1,
+    3,
+    5,
+    6,
+    9,
+    11,
+    14,
+    17,
+    20,
+    23,
+    25,
+    27
+   ],
+   "early6": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  "minutes": 30.1
+ },
+ "FP": 0.6,
+ "K2_PTQ": 0.02,
+ "runs": {
+  "all": {
+   "gsm8k": 0.25,
+   "lora_params": 73859072,
+   "n_layers_adapted": 28
+  },
+  "early12": {
+   "gsm8k": 0.19,
+   "lora_params": 31653888,
+   "n_layers_adapted": 12
+  },
+  "mid12": {
+   "gsm8k": 0.18,
+   "lora_params": 31653888,
+   "n_layers_adapted": 12
+  },
+  "late12": {
+   "gsm8k": 0.03,
+   "lora_params": 31653888,
+   "n_layers_adapted": 12
+  },
+  "random12": {
+   "gsm8k": 0.21,
+   "lora_params": 31653888,
+   "n_layers_adapted": 12
+  },
+  "early6": {
+   "gsm8k": 0.08,
+   "lora_params": 15826944,
+   "n_layers_adapted": 6
+  }
+ }
+}

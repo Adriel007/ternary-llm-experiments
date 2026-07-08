@@ -1,0 +1,29 @@
+{
+ "_meta": {
+  "experiment": "PUBLICATION rigor: black-box distill Path B, FULL GSM8K test",
+  "model": "Qwen/Qwen2.5-1.5B",
+  "K": 2,
+  "rank": 64,
+  "steps": 400,
+  "seed": 2,
+  "limit": null,
+  "corpus": "teacher-generations (black-box)",
+  "eval": "official lm-eval-harness, gsm8k flexible-extract 5-shot, no custom prompt",
+  "minutes": 78.3
+ },
+ "FP": {
+  "gsm8k": 0.6255,
+  "arc": 0.4522,
+  "hella": 0.6788
+ },
+ "K2_PTQ": {
+  "gsm8k": 0.025,
+  "arc": 0.3387,
+  "hella": 0.5219
+ },
+ "pathB_separate": {
+  "gsm8k": 0.1751,
+  "arc": 0.4104,
+  "hella": 0.6203
+ }
+}

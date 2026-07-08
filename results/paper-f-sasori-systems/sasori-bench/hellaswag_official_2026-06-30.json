@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "task": "hellaswag",
+    "metric": "acc_norm",
+    "harness": "EleutherAI lm-evaluation-harness (official)",
+    "num_fewshot": 0,
+    "limit": 1000,
+    "quant": "sasori joint-ridge K-trit-plane fake-quant (dequant->bf16), group=256",
+    "date": "2026-06-30",
+    "gpu": "RTX PRO 6000 Blackwell (Colab)",
+    "note": "Closes the RIGOR A1 item: official HellaSwag for Paper B models not in clean_sweep_2026-06-30.json. K3 retention 90.4-99.6% (mean 96.2%); K2 retention 48.9-82.5% (mean 71.1%) -> confirms Paper B's commonsense claim (K3 ~96%, K2 50-77%). Phi-3.5-mini ERR'd (DynamicCache.from_legacy_cache transformers incompat), skipped. Combine with clean_sweep (Qwen2.5-7B, Qwen3-4B/8B, Coder-7B, 30B-MoE) for 12 models total."
+  },
+  "results": {
+    "HuggingFaceTB/SmolLM2-1.7B-Instruct": {"K0": 0.615, "K3": 0.556, "K2": 0.301, "K3_ret": 0.904, "K2_ret": 0.489},
+    "Qwen/Qwen2.5-0.5B-Instruct":          {"K0": 0.505, "K3": 0.483, "K2": 0.334, "K3_ret": 0.956, "K2_ret": 0.661},
+    "Qwen/Qwen2.5-1.5B-Instruct":          {"K0": 0.598, "K3": 0.589, "K2": 0.484, "K3_ret": 0.985, "K2_ret": 0.809},
+    "Qwen/Qwen2.5-3B-Instruct":            {"K0": 0.641, "K3": 0.636, "K2": 0.448, "K3_ret": 0.992, "K2_ret": 0.699},
+    "Qwen/Qwen2.5-14B-Instruct":           {"K0": 0.737, "K3": 0.734, "K2": 0.555, "K3_ret": 0.996, "K2_ret": 0.753},
+    "Qwen/Qwen3-0.6B":                     {"K0": 0.481, "K3": 0.461, "K2": 0.397, "K3_ret": 0.958, "K2_ret": 0.825},
+    "Qwen/Qwen3-1.7B":                     {"K0": 0.540, "K3": 0.510, "K2": 0.400, "K3_ret": 0.944, "K2_ret": 0.741}
+  }
+}

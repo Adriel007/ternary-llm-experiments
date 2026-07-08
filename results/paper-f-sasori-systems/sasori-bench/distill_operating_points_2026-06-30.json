@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "experiment": "Operating-point ladder: PTQ vs +distill at K2 and K3 (GSM8K)",
+    "task": "gsm8k (lm-eval official, 5-shot, limit=150 test)", "date": "2026-06-30",
+    "bpw_approx": {"FP": 16, "K3": 4.9, "K2": 3.3, "plus_LoRA_r64": "+~20%"},
+    "verdict": [
+      "Distillation does NOT let K2 beat K3 (K3-PTQ > K2+distill on both models).",
+      "Distillation's value = make the RECOMMENDED K3 lossless: K3+distill reaches ~FP (1.5B 0.38->0.54=FP; Qwen3-1.7B 0.627->0.653, ~93%).",
+      "And it RESCUES K2 from zero (0->0.32-0.45) when you cannot afford K3.",
+      "So: K3 = product reco (Paper B); +distill = optional booster to close the residual to FP; K2+distill = rescue lever when memory-bound. Cost: rank-64 LoRA ~+20% bits (rank-16 fails)."
+    ]
+  },
+  "Qwen/Qwen2.5-1.5B-Instruct": {"FP": 0.5267, "K2_ptq": 0.0067, "K2_distill": 0.3200, "K3_ptq": 0.3800, "K3_distill": 0.5400},
+  "Qwen/Qwen3-1.7B":            {"FP": 0.7000, "K2_ptq": 0.0000, "K2_distill": 0.4467, "K3_ptq": 0.6267, "K3_distill": 0.6533}
+}

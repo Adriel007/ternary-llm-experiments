@@ -1,0 +1,10 @@
+{
+  "model": "EleutherAI/pythia-70m",
+  "bench": "ppl",
+  "n": 40,
+  "results": {
+    "fp": 318.8892137037127,
+    "single": 2.9294169765055917e+17,
+    "joint2": 7354.921794439396
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "n": 60,
+  "niter": 50,
+  "results": {
+    "joint2": {
+      "gsm8k": 0.6,
+      "nrmse": 0.1641138322533123,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "Let's break this down step by step.\n\n---\n\n### **Step 1: Total number of eggs laid per day**\n\nJanet\u2019s ducks lay **16 eggs per day**.\n\n---\n\n### **Step 2: How many eggs are used for breakfast?**\n\nShe eats **3 eggs for breakfast every morning**.\n\nSo, **3 eggs are used per day**.\n\n---\n\n### **Step 3: How many eggs are used for muffins?**\n\nShe bakes muffins for her friends every day with **4 eggs**.\n\nSo, **4 eggs are used per day** for muffins.\n\n---\n\n### **Step 4: Total eggs used per day**\n\n- 3 eggs fo",
+          "gold": "18",
+          "pred": "18",
+          "ok": true
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "Let's break this down step by step.\n\n---\n\n### Step 1: Understand the components of the robe\n\n- A **robe** requires:\n  - **2 bolts of blue fiber**\n  - **Half that much white fiber**\n\n---\n\n### Step 2: Interpret \"half that much white fiber\"\n\n- \"That much\" refers to the **blue fiber**, which is **2 bolts**.\n- So, **half that much** is:\n\n$$\n\\frac{1}{2} \\times 2 = 1 \\text{ bolt of white fiber}\n$$\n\n---\n\n### Step 3: Add up all the bolts needed\n\n- **Blue fiber**: 2 bolts\n- **White fiber**: 1 bolt\n\nTotal ",
+          "gold": "3",
+          "pred": "3",
+          "ok": true
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased ",
+          "gen": "To determine how much profit Josh made, we need to analyze the situation step by step.\n\n---\n\n### **Step 1: Understand the initial investment**\n\nJosh buys a house for **$80,000**. This is his **initial investment**.\n\n---\n\n### **Step 2: Understand the cost of repairs**\n\nHe spends **$50,000** on repairs. This is an **additional cost**.\n\n---\n\n### **Step 3: Understand the increase in value**\n\nThe repairs **increased the value of the house by 150%**. This means the **value of the house increased by 15",
+          "gold": "70000",
+          "pred": "50",
+          "ok": false
+        }
+      ],
+      "e2": [
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 7,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 0,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": true
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 5,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 4,
+          "ok": true
+        },
+        {
+          "steps": 4,
+          "ok": false
+        },
+        {
+          "steps": 1,
+          "ok": false
+        },
+        {
+          "steps": 6,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 3,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": true
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": false
+        },
+        {
+          "steps": 2,
+          "ok": true
+        }
+      ]
+    }
+  }
+}

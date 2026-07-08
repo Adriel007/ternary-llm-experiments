@@ -1,0 +1,24 @@
+{
+ "_meta": {
+  "experiment": "#98 sasori-distill on reasoning-specialized base",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "K": 2,
+  "rank": 64,
+  "steps": 400,
+  "seed": 1,
+  "limit": null,
+  "arms": "distill",
+  "eval": "official lm-eval-harness, gsm8k flexible-extract, no custom prompt; chat_template=False, num_fewshot=task-default(5)",
+  "minutes": 85.7
+ },
+ "K2_distill_datafree": {
+  "gsm8k": 0.721,
+  "arc": 0.4164,
+  "hella": 0.5682
+ },
+ "K2_distill_taskdata": {
+  "gsm8k": 0.7688,
+  "arc": 0.4044,
+  "hella": 0.5696
+ }
+}

@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "experiment": "Paper H elevation: non-Qwen GSM8K ladders (3rd family) + IFEval official re-measurement",
+    "date": "2026-06-30", "task": "gsm8k flexible-extract, 5-shot, limit=150, lm-eval official",
+    "quant": "sasori joint-ridge group=256; LoRA-KD rank-64 batched 300 steps, GSM8K-train corpus"
+  },
+  "non_qwen_ladder_gsm8k_flex": {
+    "tiiuae/Falcon3-3B-Instruct": {"FP": 0.6933, "K2_ptq": 0.36, "K2_distill": 0.60, "K3_ptq": 0.6733, "K3_distill": 0.7067},
+    "HuggingFaceTB/SmolLM2-1.7B-Instruct_EXCLUDED": {
+      "reason": "FP itself scores 0.0 on GSM8K 5-shot (the instruct model does not follow the raw few-shot prompt; would need a chat template) => no headroom, invalid ladder probe. The K2_distill 0.1733 is format learned from the corpus, not reasoning recovery.",
+      "FP": 0.0, "K2_ptq": 0.0, "K2_distill": 0.1733, "K3_ptq": 0.0267, "K3_distill": 0.0
+    }
+  },
+  "ifeval_official": {"status": "first run FAILED (ModuleNotFoundError: langdetect — lm-eval 'ifeval' needs langdetect/immutabledict/nltk); re-running after pip install. See ifeval_official_2026-06-30.json."},
+  "verdict": "Falcon3-3B (3rd family, non-Qwen) CONFIRMS the Paper H ordering: K3-PTQ 0.673 > K2+distill 0.60; K3+distill 0.707 ~ FP (lossless). NEW HONEST NUANCE: Falcon3 K2-PTQ does NOT collapse (0.36 vs Qwen ~0) => the K2 reasoning collapse is family-dependent, not universal. Where it does not collapse, distillation still helps (0.36->0.60) but the rescue is less critical. SmolLM2 excluded (FP=0 invalid probe)."
+}

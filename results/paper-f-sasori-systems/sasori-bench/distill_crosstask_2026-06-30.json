@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "experiment": "Cross-task generalization probe + batched-mode validation (Qwen2.5-1.5B K2)",
+    "date": "2026-06-30",
+    "batched_mode_validation": "K2-distill BATCHED (300 steps, batch_size=8, grad_accum=1) reproduces GSM8K flex 0.3133 (~the 0.32 of batch-1 1500-step) in train_s=43s -> the parallel mode is correct AND ~7-10x faster. Validates sasori.distill batch_size.",
+    "crosstask_status": "INCONCLUSIVE — 'svamp' not registered in lm-eval; fell back to 'asdiv' but that probe is broken (FP itself acc=0.0333 ~ noise, so the asdiv loglikelihood config does not measure math reasoning). Do NOT conclude (non-)generalization from it. Follow-up: clean generic-vs-task-corpus probe (distill on wikitext vs GSM8K, eval GSM8K)."
+  },
+  "batched_validation": {"corpus": "gsm8k-train-300", "gsm8k_flex": 0.3133, "gsm8k_strict": 0.3067, "train_seconds": 43, "batch_size": 8, "steps": 300},
+  "asdiv_BROKEN_probe": {"FP": 0.0333, "K2_ptq": 0.0133, "K2_distill": 0.0, "note": "FP near-zero => probe invalid, ignore"}
+}

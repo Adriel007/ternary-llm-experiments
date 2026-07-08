@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "n": 50,
+  "niter": 50,
+  "results": {
+    "joint2": {
+      "gsm8k": 0.42,
+      "nrmse": 0.15015964476125582,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every da",
+          "gen": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\n\nStep-by-step reasoning:\n\n1. **Number of eggs laid per day**: 16  \n2. **Number of eggs eaten for breakfast**: 3  \n3. **Number of eggs baked for muffins**: 4  \n4. **Total number of eggs used (for breakfast and muffins)**",
+          "gold": "18",
+          "pred": "18",
+          "ok": true
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "A robe takes 2 bolts of blue fiber and half that much white fiber. We need to find out how many bolts in total it takes.\n\nLet's break it down step by step:\n\n1. A robe requires 2 bolts of blue fiber.\n2. A robe requires half that much white fiber. \"Half that much\" means half of 2, which is 1. So, it requires 1 bolt of white fiber.\n3. To find out how many bolts in total it takes, we add the number of blue bolts and the number of white bolts. That is: 2 + 1 = 3.\n\nSo, the total number of bolts needed",
+          "gold": "3",
+          "pred": "3.",
+          "ok": false
+        }
+      ]
+    }
+  }
+}

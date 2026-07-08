@@ -1,0 +1,6 @@
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 0, "prompt_strict": 0.7346153846153847, "instr_strict": 0.7933884297520661, "N": 260, "nq": 0, "sec": 323.5, "_ts": "2026-06-27T16:56:44"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 2, "prompt_strict": 0.46923076923076923, "instr_strict": 0.559228650137741, "N": 260, "nq": 196, "sec": 330.3, "_ts": "2026-06-27T17:02:15"}
+{"model": "Qwen/Qwen2.5-7B-Instruct", "K": 3, "prompt_strict": 0.7307692307692307, "instr_strict": 0.7851239669421488, "N": 260, "nq": 196, "sec": 340.7, "_ts": "2026-06-27T17:07:56"}
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 0, "prompt_strict": 0.5846153846153846, "instr_strict": 0.6336088154269972, "N": 260, "nq": 0, "sec": 312.4, "_ts": "2026-06-27T17:13:09"}
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 2, "prompt_strict": 0.5, "instr_strict": 0.5840220385674931, "N": 260, "nq": 196, "sec": 298.6, "_ts": "2026-06-27T17:18:08"}
+{"model": "Qwen/Qwen2.5-Coder-7B-Instruct", "K": 3, "prompt_strict": 0.5653846153846154, "instr_strict": 0.6391184573002755, "N": 260, "nq": 196, "sec": 324.4, "_ts": "2026-06-27T17:23:33"}

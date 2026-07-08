@@ -1,0 +1,33 @@
+{
+  "experiment": "#93 — is the K2 ternary cliff a capability threshold (agnostic to dense vs MoE)?",
+  "metric": "GSM8K flexible-extract 5-shot; K2/K3 are pure PTQ (no distill); MoE rows are the FAITHFUL runs (fused experts ternarized, router FP)",
+  "verdict": "REFUTED as a clean threshold. FP-capability is at best NECESSARY-not-sufficient: no model below FP~0.69 retains K2, but above that, K2-survival is family/training-dependent, not capability-determined. Clear counterexamples (see below). Downgrades the earlier '3-MoE-point' claim that resistance tracks capability; corroborates 'training dynamics impact PTQ robustness' (arXiv:2510.06213).",
+  "counterexamples": [
+    "Falcon3-3B (FP 0.693) K2 0.360 SURVIVES vs Qwen3-1.7B (FP 0.700) K2 0.000 DIES — same capability, opposite outcome",
+    "Qwen3-30B (FP 0.893) K2 0.680 SURVIVES vs Qwen3-8B (FP 0.913) K2 0.023 DIES — higher capability dies",
+    "Qwen2.5-Coder-7B (FP 0.777) K2 0.503 SURVIVES vs Qwen2.5-7B-Instruct (FP 0.827) K2 0.147 mostly dies — same family, code-FT more robust"
+  ],
+  "caveats": [
+    "All FP<0.69 rows have K2/FP <= 0.06, so low-FP models uniformly collapse (a floor exists) — capability is necessary.",
+    "K2/FP retention at low FP is noisy (small denominator). K3 recovers nearly everywhere (fragility is a K2-only phenomenon).",
+    "MoE points are single-seed N=150; dense ladder N=150 (Paper H). Qwen3-8B K2 0.023 from N=300 clean_sweep.",
+    "Qwen2.5-14B excluded (only FP+K3 run; flex<strict extractor inversion flagged in source).",
+    "Attention-only confounded MoE runs (experts left FP) were EXCLUDED; only faithful expert-ternarized runs used."
+  ],
+  "data": [
+    {"model": "Qwen2.5-0.5B", "arch": "dense", "params_total": 0.5, "fp": 0.333, "k2": 0.020, "k3": 0.160, "src": "clean_sweep_2026-06-30.json"},
+    {"model": "OLMoE-1B-7B-Instruct", "arch": "MoE", "params_total": 7, "fp": 0.360, "k2": 0.020, "k3": 0.360, "src": "overnight-results/MOE2/moe_olmoe_k2.jsonl"},
+    {"model": "DeepSeek-V2-Lite-Chat", "arch": "MoE", "params_total": 16, "fp": 0.487, "k2": 0.020, "k3": 0.340, "src": "overnight-results/MOE3/moe_dsv2lite_k2.jsonl"},
+    {"model": "Qwen2.5-1.5B", "arch": "dense", "params_total": 1.5, "fp": 0.527, "k2": 0.007, "k3": 0.380, "src": "clean_sweep_2026-06-30.json"},
+    {"model": "Granite-3.1-2B", "arch": "dense", "params_total": 2, "fp": 0.627, "k2": 0.000, "k3": 0.447, "src": "paper-h-distill/main.tex tab:ladder"},
+    {"model": "Qwen1.5-MoE-A2.7B", "arch": "MoE", "params_total": 14, "fp": 0.640, "k2": 0.007, "k3": 0.487, "src": "distill_moe_fiel_2026-07-01.json"},
+    {"model": "Qwen2.5-3B", "arch": "dense", "params_total": 3, "fp": 0.667, "k2": 0.000, "k3": 0.600, "src": "paper-h-distill/main.tex tab:ladder"},
+    {"model": "Falcon3-3B", "arch": "dense", "params_total": 3, "fp": 0.693, "k2": 0.360, "k3": 0.673, "src": "paper-h-distill/main.tex tab:ladder"},
+    {"model": "Qwen3-1.7B", "arch": "dense", "params_total": 1.7, "fp": 0.700, "k2": 0.000, "k3": 0.627, "src": "paper-h-distill/main.tex tab:ladder"},
+    {"model": "Qwen2.5-Coder-7B-Instruct", "arch": "dense", "params_total": 7, "fp": 0.777, "k2": 0.503, "k3": 0.733, "src": "clean_sweep_2026-06-30.json"},
+    {"model": "Qwen2.5-7B-Instruct", "arch": "dense", "params_total": 7, "fp": 0.827, "k2": 0.147, "k3": 0.813, "src": "clean_sweep_2026-06-30.json"},
+    {"model": "Qwen3-4B", "arch": "dense", "params_total": 4, "fp": 0.870, "k2": 0.317, "k3": 0.800, "src": "clean_sweep_2026-06-30.json"},
+    {"model": "Qwen3-30B-A3B", "arch": "MoE", "params_total": 30, "fp": 0.893, "k2": 0.680, "k3": 0.860, "src": "overnight-results/phd-r2/moe_qwen3_30b_k2.jsonl"},
+    {"model": "Qwen3-8B", "arch": "dense", "params_total": 8, "fp": 0.913, "k2": 0.023, "k3": 0.857, "src": "clean_sweep_2026-06-30.json"}
+  ]
+}

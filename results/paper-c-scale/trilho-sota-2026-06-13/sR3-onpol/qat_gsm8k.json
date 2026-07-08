@@ -1,0 +1,48 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "ref_fp": 0.35,
+  "ptq": 0.0,
+  "curve": [
+    {
+      "tokens": 0,
+      "gsm8k": 0.0,
+      "samples": [],
+      "recovered": 0.0
+    },
+    {
+      "tokens": 300094,
+      "gsm8k": 0.05,
+      "samples": [
+        {
+          "q": "Janet\u2019s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at ",
+          "gen": "Number of days left on Monday\n\nLet's break down the information given:\n\nNumber of months spent on Wednesday.\n\n#### Step{align}}$. The answer is: (8",
+          "gold": "18",
+          "pred": "8",
+          "ok": false
+        },
+        {
+          "q": "A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?",
+          "gen": "Number of students left on Monday. If she needs to be equal terms as follows:\n\nNumber of days spent 8 hours.\n\nLet's break down the information given:\nNumber of months spent on Wednesday\n\nNumber of weeks spent 3 years\n\nWe know that there were equal terms as follows:\n\nNumber of days left on Tuesday? Let us break down the equation using following term:\n\nNumber of days spent on Friday\n\nNumber of days spent on Thursday\n\nNumber of months left on Monday\n\nNumber of months left on Monday\n\nNumber of days left on Monday\n\nNumber of days left on Monday\n\nNumber of months left on Monday\n\nNumber of months lef",
+          "gold": "3",
+          "pred": "3",
+          "ok": true
+        },
+        {
+          "q": "Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How muc",
+          "gen": "Number of days left on Monday\n\nLet's break down the information given:\n\nNumber of months spent on Wednesday.\n\n#### Step{align}}$. The answer is: (6",
+          "gold": "70000",
+          "pred": "6",
+          "ok": false
+        },
+        {
+          "q": "James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?",
+          "gen": "Number of days left on Monday. If she needs to be equal terms as follows:\n\nNumber of months spent on Wednesday\n\nLet's break down the information given:\nNumber of weeks spent on Tuesday.\n\n#### Step{align}}$. Therefore,\n\nTherefore, there were equal terms in one term? Let us calculate how much did she spend?\n\nTo find the number of years spent on Friday.\nIn this problem, we need to determine the value of x, which represents an additional amount.\n\nLet's break down the equation using following term:\n\nNumber of months spent on Thursday\n\nWe know that it takes up an equation as follows:\n\nNumber of days",
+          "gold": "540",
+          "pred": null,
+          "ok": false
+        }
+      ],
+      "recovered": 0.14285714285714288
+    }
+  ]
+}

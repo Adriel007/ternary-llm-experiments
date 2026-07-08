@@ -1,0 +1,17 @@
+{
+  "experiment": "#94 real-SIMD kernel microbench: fused TQ2P/TQ3P (share q8_K activation across planes) vs #94 route (K stock TQ2_0 mul_mats summed, re-quantize activation K times)",
+  "method": "ggml_mul_mat on the patched llama.cpp@b9509 build, RTX 3090 pod CPU (128 cores), random packed bytes (timing data-independent for these branch-free AVX2 dot kernels), decode M=1",
+  "source": "sasori/kernel/microbench94.c",
+  "runs": [
+    {"shape": "2048x6144", "K": 3, "nth": 1, "fused_us": 631.67, "route94_us": 632.73, "penalty": 1.002, "fused_type": "TQ3P"},
+    {"shape": "2048x6144", "K": 3, "nth": 8, "fused_us": 108.95, "route94_us": 123.30, "penalty": 1.132, "fused_type": "TQ3P"},
+    {"shape": "896x4864",  "K": 3, "nth": 1, "fused_us": 214.36, "route94_us": 218.00, "penalty": 1.017, "fused_type": "TQ3P"},
+    {"shape": "2048x6144", "K": 2, "nth": 1, "fused_us": 425.14, "route94_us": 421.30, "penalty": 0.991, "fused_type": "TQ2P"}
+  ],
+  "conclusion": "The #94 route (K stock TQ2_0 tensors summed on the graph) is within ~1.00-1.15x of the fused kernel at real AVX2. Single-thread decode is ~1.00-1.02x (weight-memory-bound: both read the same total plane bytes; sharing the tiny q8_K activation across planes is negligible); ~1.13x at 8 threads. Portability (mainline, no TQ2P/TQ3P patch) costs little speed. STRONGER/cleaner than the earlier scalar microbench (~1.1-1.2x).",
+  "caveats": [
+    "Measures per-layer mul_mat throughput, NOT a full end-to-end model run (the graph-sum in build_graph + a K-plane loader are still unimplemented; the format guarantees correctness, this measures the speed cost).",
+    "Random packed bytes (valid: these AVX2 kernels are branch-free, timing is data-independent).",
+    "nth=1 is the cleanest decode proxy; real decode uses a thread pool so the true penalty is ~1.0-1.15x."
+  ]
+}

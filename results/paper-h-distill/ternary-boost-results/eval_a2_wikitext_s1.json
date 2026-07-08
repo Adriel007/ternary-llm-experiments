@@ -1,0 +1,19 @@
+{
+  "arm": "wikitext",
+  "seed": 1,
+  "kd_source": "wikitext",
+  "kd_ntexts": 128,
+  "lora_steps": 4000,
+  "wall_s": 3139,
+  "coherence_sample": " Paris, which is located in the city of Paris, which is the capital of the country.\n",
+  "wikitext2_ppl_maxlen128": null,
+  "mmlu_acc": 0.2590086882210511,
+  "gsm8k_strict": 0.0,
+  "gsm8k_flexible": 0.008339651250947688,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.2626070409134158,
+    "mmlu_humanities": 0.24420828905419767,
+    "mmlu_social_sciences": 0.2967175820604485,
+    "mmlu_other": 0.2404248471194078
+  }
+}

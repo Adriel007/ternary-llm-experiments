@@ -1,0 +1,65 @@
+{
+ "_meta": {
+  "model": "Qwen/Qwen3-1.7B",
+  "limit": 40,
+  "maxgen": 4096,
+  "protocol": "chat-think 0-shot gsm8k; harness-flex vs boxed extraction, same gens"
+ },
+ "harness_gsm8k_flexible": 0.275,
+ "harness_gsm8k_strict": 0.0,
+ "n": 80,
+ "acc_flex_mine": 0.775,
+ "acc_boxed_first": 0.85,
+ "box_present_frac": 0.775,
+ "think_closed_frac": 0.925,
+ "disagreements": [
+  {
+   "gold": "18",
+   "flex": "18",
+   "boxed": null,
+   "tail": "he remaining eggs sold at the market are $16 - 7 = 9$. Each egg is sold for $2, so the daily revenue is $9 \\times 2 = 18$.\n\n**Answer:** \\$18"
+  },
+  {
+   "gold": "64",
+   "flex": "16",
+   "boxed": "64",
+   "tail": " **$24**.\n\n### Final Calculation:\n$$\n\\text{Total Cost} = \\$40 + \\$24 = \\boxed{64}\n$$\n\n**Answer:** Kylar needs to pay **$64** for 16 glasses."
+  },
+  {
+   "gold": "160",
+   "flex": "80",
+   "boxed": null,
+   "tail": " + (200 - 80)/2 = 40 + 20 + 60 = 120 minutes. But that would be if she restarts and starts from the beginning, but the 80 GB is already done"
+  },
+  {
+   "gold": "460",
+   "flex": "460",
+   "boxed": null,
+   "tail": "hour} $.  \n   $ 5 \\text{ hours} \\times \\$12/\\text{hour} = \\$60 $.\n\n3. **Total Earnings**:  \n   $ \\$400 + \\$60 = \\$460 $.\n\n**Answer:** \\$460."
+  },
+  {
+   "gold": "694",
+   "flex": "694",
+   "boxed": null,
+   "tail": "3. **Mini Cheesecakes**: 6 dozen at $55 per dozen  \n   $ 6 \\times 55 = 330 $\n\n**Total Cost**:  \n$ 204 + 160 + 330 = 694 $\n\n**Answer:** \\$694"
+  },
+  {
+   "gold": "7",
+   "flex": "4",
+   "boxed": "7",
+   "tail": "dozens (12 eggs per dozen):\n\n$$\n84 \\text{ eggs} \\div 12 = 7 \\text{ dozen}\n$$\n\n**Answer:** Claire eats $\\boxed{7}$ dozens of eggs in 4 weeks."
+  },
+  {
+   "gold": "14",
+   "flex": "1",
+   "boxed": null,
+   "tail": " son was born 2 years ago, not 23 years ago. So, where is the mistake here?\n\nAh! I think I confused the time frame. If Raymond was born in 1"
+  },
+  {
+   "gold": "8",
+   "flex": "00",
+   "boxed": "8",
+   "tail": "4 \\, \\text{hours} = 8 \\, \\text{cm}\n$$\n\n**Answer:** The candle will be $\\boxed{8}$ centimeters shorter after burning from 1:00 PM to 5:00 PM."
+  }
+ ]
+}

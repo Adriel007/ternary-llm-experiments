@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "experiment": "Cross-task transfer: does GSM8K-corpus LoRA-KD distillation recover a DIFFERENT, harder math benchmark?",
+    "date": "2026-06-30",
+    "setup": "Qwen2.5-7B; distill K2 on GSM8K-train corpus (NOT MATH); eval on minerva_math_algebra (lm-eval official, math_verify, limit=80). Compare to K2-PTQ and FP.",
+    "dep_fix": "minerva_math needs math_verify + sympy + antlr4-python3-runtime==4.11 (isolated antlr alone insufficient); installed math_verify -> works."
+  },
+  "math_algebra_Qwen2.5-7B": {"FP": 0.475, "K2_ptq": 0.0, "K2_distill": 0.325, "K3_ptq": 0.475},
+  "verdict": "TRANSFERS. K2 collapses on MATH-algebra (0.0, like GSM8K). A LoRA-KD trained ONLY on GSM8K-train recovers MATH-algebra from 0 to 0.325 = 68% of the FP 0.475 on a harder, DIFFERENT math benchmark it never saw -> the distillation repairs GENERAL multi-step math reasoning, not the GSM8K answer format. K3-PTQ = FP (0.475) on MATH too (near-lossless). Complements the corpus-level generalization result (generic corpus recovers GSM8K): recovery is general at BOTH the training-corpus and the eval-task level. Honest scope: 1 model, 1 MATH subject, limit=80."
+}
