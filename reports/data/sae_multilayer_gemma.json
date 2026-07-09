@@ -1,0 +1,2752 @@
+{
+  "model": "google/gemma-2-2b",
+  "layers": [
+    5,
+    13,
+    20
+  ],
+  "corpus": "wikitext-103-raw-v1",
+  "tag": "_gemma",
+  "results": [
+    {
+      "layer": 5,
+      "metrics": {
+        "fve": 0.7939344822872684,
+        "l0": 32.00001525878906,
+        "dead": 0,
+        "d_sae": 14720,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          2000,
+          3000,
+          3999
+        ],
+        "fve": [
+          0.10640645276695582,
+          0.742039718789438,
+          0.7753147489567657,
+          0.7883432651952005,
+          0.7954853246406518
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 10796,
+          "fire_rate": 0.3993,
+          "examples": [
+            {
+              "act": 23.023,
+              "focus": "ning",
+              "context": " in addition to the crews manning the printing"
+            },
+            {
+              "act": 20.769,
+              "focus": " \"",
+              "context": " expansion , the city had many \" firsts"
+            },
+            {
+              "act": 20.739,
+              "focus": " historical",
+              "context": " \" \u5468\u540c \" represents the historical archer ."
+            },
+            {
+              "act": 20.241,
+              "focus": " city",
+              "context": "<eos>During this expansion , the city had many"
+            },
+            {
+              "act": 19.886,
+              "focus": "ography",
+              "context": " . Their publications typically address orthography and grammar"
+            },
+            {
+              "act": 19.677,
+              "focus": " \"",
+              "context": " city had many \" firsts \""
+            }
+          ]
+        },
+        {
+          "feature": 10630,
+          "fire_rate": 0.3884,
+          "examples": [
+            {
+              "act": 21.692,
+              "focus": "1",
+              "context": " Haven prospered in the 19th"
+            },
+            {
+              "act": 21.46,
+              "focus": " German",
+              "context": " was the third ship in the German line ,"
+            },
+            {
+              "act": 20.953,
+              "focus": " exported",
+              "context": " control . In Canaan , the exported deities ,"
+            },
+            {
+              "act": 20.722,
+              "focus": " inter",
+              "context": " signed , the commander of the interned fleet"
+            },
+            {
+              "act": 20.471,
+              "focus": " February",
+              "context": " received approval from the Kaiser in February . The"
+            },
+            {
+              "act": 20.231,
+              "focus": " twenty",
+              "context": " 2 , and reigned for twenty @-@"
+            }
+          ]
+        },
+        {
+          "feature": 12355,
+          "fire_rate": 0.3854,
+          "examples": [
+            {
+              "act": 16.134,
+              "focus": " victims",
+              "context": " and the harms suffered by its victims . \""
+            },
+            {
+              "act": 15.676,
+              "focus": " Church",
+              "context": " in fidelity to Christ and his Church \" ."
+            },
+            {
+              "act": 15.415,
+              "focus": " Iran",
+              "context": " of refugees fleeing through Pakistan into Iran . After"
+            },
+            {
+              "act": 15.412,
+              "focus": " team",
+              "context": " , both for and against their team , though"
+            },
+            {
+              "act": 15.362,
+              "focus": " provided",
+              "context": " obtained through the sacramental life provided by the"
+            },
+            {
+              "act": 15.357,
+              "focus": " highly",
+              "context": " closely orbiting Hot Jupiter planets have highly circular orbits"
+            }
+          ]
+        },
+        {
+          "feature": 7202,
+          "fire_rate": 0.3753,
+          "examples": [
+            {
+              "act": 33.9,
+              "focus": " Arsenal",
+              "context": " Tower Building of the Little Rock Arsenal , also"
+            },
+            {
+              "act": 30.489,
+              "focus": " Goat",
+              "context": " =<eos>The Feast of the Goat ( Spanish"
+            },
+            {
+              "act": 29.866,
+              "focus": " Roth",
+              "context": " David Lee Roth for David Lee Roth , and"
+            },
+            {
+              "act": 29.81,
+              "focus": " Husband",
+              "context": " Fox , the Wolf and the Husbandman is"
+            },
+            {
+              "act": 29.479,
+              "focus": " country",
+              "context": " have the right to defend their country from invaders"
+            },
+            {
+              "act": 28.783,
+              "focus": " Faulkner",
+              "context": " Characters ; C. W. Faulkner , "
+            }
+          ]
+        },
+        {
+          "feature": 5083,
+          "fire_rate": 0.3708,
+          "examples": [
+            {
+              "act": 18.094,
+              "focus": " Fleetwood",
+              "context": "Shea . The team then hosted Fleetwood Town ,"
+            },
+            {
+              "act": 17.371,
+              "focus": " fox",
+              "context": " an example , Yamamoto highlights the fox 's"
+            },
+            {
+              "act": 17.101,
+              "focus": " Trujillo",
+              "context": " belonged . The third strand depicts Trujillo 's"
+            },
+            {
+              "act": 17.01,
+              "focus": " Carey",
+              "context": " . \" The song begins with Carey publicly den"
+            },
+            {
+              "act": 16.708,
+              "focus": " UK",
+              "context": " . Other successful singles include the UK number @"
+            },
+            {
+              "act": 16.677,
+              "focus": " Boston",
+              "context": "38 . He died near Boston in "
+            }
+          ]
+        },
+        {
+          "feature": 5790,
+          "fire_rate": 0.3454,
+          "examples": [
+            {
+              "act": 21.159,
+              "focus": " income",
+              "context": " 4 males . The median income for a"
+            },
+            {
+              "act": 20.169,
+              "focus": " AD",
+              "context": " Sholay BC and Sholay AD \" ."
+            },
+            {
+              "act": 19.953,
+              "focus": "open",
+              "context": " white blood cell count ( leukopenia )"
+            },
+            {
+              "act": 19.527,
+              "focus": "0",
+              "context": " interchanges with Route 403 at"
+            },
+            {
+              "act": 18.802,
+              "focus": " Ranger",
+              "context": "948 , and Operation Ranger and Operation"
+            },
+            {
+              "act": 18.645,
+              "focus": " Tras",
+              "context": " Priest of S. Maria in Trastevere"
+            }
+          ]
+        },
+        {
+          "feature": 14243,
+          "fire_rate": 0.3379,
+          "examples": [
+            {
+              "act": 27.073,
+              "focus": " horns",
+              "context": "anasieff played the synth horns . Carey"
+            },
+            {
+              "act": 21.765,
+              "focus": " front",
+              "context": " the successful offensive on the Thessaloniki front , which"
+            },
+            {
+              "act": 21.499,
+              "focus": " Tower",
+              "context": " flooding occurred . Outside the Prudential Tower Center in"
+            },
+            {
+              "act": 21.124,
+              "focus": " performed",
+              "context": " with versions of South of Heaven performed by Ab"
+            },
+            {
+              "act": 20.722,
+              "focus": " Town",
+              "context": " @-@ time victory over Halifax Town .<eos>"
+            },
+            {
+              "act": 20.228,
+              "focus": " deities",
+              "context": " . In Canaan , the exported deities , including"
+            }
+          ]
+        },
+        {
+          "feature": 3578,
+          "fire_rate": 0.3318,
+          "examples": [
+            {
+              "act": 20.745,
+              "focus": " Fei",
+              "context": " says he taught archery to Yue Fei . Nothing"
+            },
+            {
+              "act": 20.474,
+              "focus": " Shiva",
+              "context": " ) in height . The central Shiva relief Tri"
+            },
+            {
+              "act": 19.953,
+              "focus": " Mir",
+              "context": " , winger Sander Puri from St Mirren and"
+            },
+            {
+              "act": 19.874,
+              "focus": " Ryan",
+              "context": " from St Mirren and strikers Ryan Bowman from"
+            },
+            {
+              "act": 19.797,
+              "focus": " Bowman",
+              "context": " St Mirren and strikers Ryan Bowman from Hereford"
+            },
+            {
+              "act": 19.277,
+              "focus": " ruled",
+              "context": " successors of the gods who had ruled Egypt in"
+            }
+          ]
+        },
+        {
+          "feature": 5192,
+          "fire_rate": 0.3179,
+          "examples": [
+            {
+              "act": 20.932,
+              "focus": "rang",
+              "context": " Army reshuffle , Saprang would not"
+            },
+            {
+              "act": 19.294,
+              "focus": " Jackets",
+              "context": " of another rebuild looming the Blue Jackets ' captain"
+            },
+            {
+              "act": 19.075,
+              "focus": "rang",
+              "context": " , then it will be Saprang . If"
+            },
+            {
+              "act": 18.967,
+              "focus": "graf",
+              "context": " to her reduced speed , Markgraf turned early"
+            },
+            {
+              "act": 18.819,
+              "focus": "ia",
+              "context": " drastic fall from grace . Urania details Agust\u00edn"
+            },
+            {
+              "act": 18.674,
+              "focus": "ia",
+              "context": " Trujillo and Dominican history . Urania is deeply"
+            }
+          ]
+        },
+        {
+          "feature": 10225,
+          "fire_rate": 0.3126,
+          "examples": [
+            {
+              "act": 26.175,
+              "focus": " services",
+              "context": " many cities lacking scheduled air transport services between them"
+            },
+            {
+              "act": 25.034,
+              "focus": "ksa",
+              "context": " of Phraya Sucharitraksa , ruler"
+            },
+            {
+              "act": 24.823,
+              "focus": "ell",
+              "context": " , as the Hodgson \u2013 Arkell and Por"
+            },
+            {
+              "act": 24.683,
+              "focus": "9",
+              "context": " a forum on sg169.com"
+            },
+            {
+              "act": 24.224,
+              "focus": " Center",
+              "context": " occurred . Outside the Prudential Tower Center in Boston"
+            },
+            {
+              "act": 24.077,
+              "focus": "ay",
+              "context": " .<eos>Panitan Wattanayagorn"
+            }
+          ]
+        },
+        {
+          "feature": 5308,
+          "fire_rate": 0.3094,
+          "examples": [
+            {
+              "act": 20.452,
+              "focus": " butyl",
+              "context": "00 long tons ) of butyl rubber annually"
+            },
+            {
+              "act": 20.325,
+              "focus": " rubber",
+              "context": "0 long tons ) of butyl rubber annually at"
+            },
+            {
+              "act": 19.962,
+              "focus": " normal",
+              "context": " 91 m ) above normal were reported"
+            },
+            {
+              "act": 19.638,
+              "focus": " annually",
+              "context": " long tons ) of butyl rubber annually at its"
+            },
+            {
+              "act": 18.936,
+              "focus": " cargo",
+              "context": "1806 USD ) cargo . The"
+            },
+            {
+              "act": 18.552,
+              "focus": " originally",
+              "context": "28 short tons ) as originally built ."
+            }
+          ]
+        },
+        {
+          "feature": 10778,
+          "fire_rate": 0.3075,
+          "examples": [
+            {
+              "act": 13.696,
+              "focus": " basis",
+              "context": " Aurangabad Circle , on the basis of the"
+            },
+            {
+              "act": 13.224,
+              "focus": " same",
+              "context": ". \" continue at about the same pace and"
+            },
+            {
+              "act": 12.752,
+              "focus": " score",
+              "context": " , the album received an average score of "
+            },
+            {
+              "act": 12.652,
+              "focus": " encompassing",
+              "context": " in all European Union publications \u2014 encompassing 2"
+            },
+            {
+              "act": 12.608,
+              "focus": " destroyers",
+              "context": "omintern and a number of destroyers , laid"
+            },
+            {
+              "act": 12.523,
+              "focus": " received",
+              "context": " from mainstream critics , the album received an average"
+            }
+          ]
+        },
+        {
+          "feature": 9187,
+          "fire_rate": 0.2798,
+          "examples": [
+            {
+              "act": 25.747,
+              "focus": " argued",
+              "context": " . Augustin Ehrensv\u00e4rd argued for new"
+            },
+            {
+              "act": 23.976,
+              "focus": " listed",
+              "context": " season with York .<eos>Players listed with no"
+            },
+            {
+              "act": 22.694,
+              "focus": " terms",
+              "context": "<eos>The Egyptian language 's terms for these"
+            },
+            {
+              "act": 22.432,
+              "focus": " recently",
+              "context": " the result .<eos>Townsend recently discussed at"
+            },
+            {
+              "act": 21.66,
+              "focus": " fleet",
+              "context": " .<eos>= = = Archipelago fleet = ="
+            },
+            {
+              "act": 21.644,
+              "focus": " brought",
+              "context": " Legal issues = =<eos>Liberty brought a judicial"
+            }
+          ]
+        },
+        {
+          "feature": 240,
+          "fire_rate": 0.2778,
+          "examples": [
+            {
+              "act": 20.842,
+              "focus": " Romania",
+              "context": " 1916 , Romania declared war"
+            },
+            {
+              "act": 20.362,
+              "focus": " parish",
+              "context": "1926 , the parish was forced"
+            },
+            {
+              "act": 19.631,
+              "focus": " inducted",
+              "context": "1975 he was inducted into the"
+            },
+            {
+              "act": 19.147,
+              "focus": " antiqu",
+              "context": "1869 , the antiquarian A"
+            },
+            {
+              "act": 19.134,
+              "focus": " Transylvania",
+              "context": " 1939 in Transylvania Inspectorate"
+            },
+            {
+              "act": 19.096,
+              "focus": " Building",
+              "context": "942 , the Tower Building was renovated"
+            }
+          ]
+        },
+        {
+          "feature": 13349,
+          "fire_rate": 0.2683,
+          "examples": [
+            {
+              "act": 12.369,
+              "focus": "rum",
+              "context": " there were stone avenues connecting Coldrum to the"
+            },
+            {
+              "act": 10.796,
+              "focus": " of",
+              "context": " The returning greenery symbolized the renewal of the god"
+            },
+            {
+              "act": 10.74,
+              "focus": " @",
+              "context": " some publishers may still require double @-@ spaced"
+            },
+            {
+              "act": 10.681,
+              "focus": " salvation",
+              "context": " permission for images that symbolize Christian salvation by leaving"
+            },
+            {
+              "act": 10.395,
+              "focus": " worship",
+              "context": " , idolatry expresses itself in the worship of other"
+            },
+            {
+              "act": 10.214,
+              "focus": " president",
+              "context": " was to hire Ross as vice president , general"
+            }
+          ]
+        },
+        {
+          "feature": 5177,
+          "fire_rate": 0.2594,
+          "examples": [
+            {
+              "act": 18.719,
+              "focus": " advance",
+              "context": " 'm going to apologise in advance - we"
+            },
+            {
+              "act": 18.664,
+              "focus": " opinion",
+              "context": " He writes , \" In my opinion , the"
+            },
+            {
+              "act": 18.537,
+              "focus": " '",
+              "context": " childhood heard it and said , ' This is"
+            },
+            {
+              "act": 18.473,
+              "focus": " Nicole",
+              "context": " \" Freya 's exactly what Nicole was like"
+            },
+            {
+              "act": 18.283,
+              "focus": " doubt",
+              "context": " hands , there \u2019 s no doubt Sue would"
+            },
+            {
+              "act": 18.163,
+              "focus": " opinions",
+              "context": " She came in with really strong opinions and a"
+            }
+          ]
+        },
+        {
+          "feature": 8088,
+          "fire_rate": 0.2429,
+          "examples": [
+            {
+              "act": 16.582,
+              "focus": " tetrachloride",
+              "context": " liver @-@ damaging chemical carbon tetrachloride .<eos>"
+            },
+            {
+              "act": 16.419,
+              "focus": "alth",
+              "context": " wife of author Dion Clayton Calthrop ,"
+            },
+            {
+              "act": 16.319,
+              "focus": " African",
+              "context": "s team competed in Confederation of African Football qualifiers"
+            },
+            {
+              "act": 16.151,
+              "focus": "novi",
+              "context": " an excavation of Viroconium Cornoviorum ,"
+            },
+            {
+              "act": 15.234,
+              "focus": " United",
+              "context": " signed for Conference Premier club Cambridge United .<eos>"
+            },
+            {
+              "act": 15.087,
+              "focus": "alth",
+              "context": " often referred to Dion Clayton Calthrop '"
+            }
+          ]
+        },
+        {
+          "feature": 3824,
+          "fire_rate": 0.2416,
+          "examples": [
+            {
+              "act": 12.804,
+              "focus": " rest",
+              "context": " coast . Markgraf and the rest of the"
+            },
+            {
+              "act": 12.776,
+              "focus": " difficult",
+              "context": " support GA in the UK is difficult to establish"
+            },
+            {
+              "act": 12.437,
+              "focus": " school",
+              "context": " Lu Junyi the \" same school \" of"
+            },
+            {
+              "act": 12.327,
+              "focus": " mate",
+              "context": "4 Rf8 + forces mate . "
+            },
+            {
+              "act": 12.309,
+              "focus": " soundtrack",
+              "context": "976 . Despite the soundtrack 's"
+            },
+            {
+              "act": 12.001,
+              "focus": " types",
+              "context": " , which range from the same types of crowns"
+            }
+          ]
+        },
+        {
+          "feature": 13280,
+          "fire_rate": 0.2345,
+          "examples": [
+            {
+              "act": 13.633,
+              "focus": " favorable",
+              "context": " of The Boston Globe gave a favorable review ,"
+            },
+            {
+              "act": 12.686,
+              "focus": " gave",
+              "context": " Rodman of The Boston Globe gave a favorable"
+            },
+            {
+              "act": 12.302,
+              "focus": " a",
+              "context": "man of The Boston Globe gave a favorable review"
+            },
+            {
+              "act": 12.136,
+              "focus": " more",
+              "context": " A.V. Club was more negative towards"
+            },
+            {
+              "act": 11.203,
+              "focus": " describes",
+              "context": " an interview , Vargas Llosa describes the corruption"
+            },
+            {
+              "act": 10.795,
+              "focus": " Asian",
+              "context": "03 volume of the South Asian Studies journal"
+            }
+          ]
+        },
+        {
+          "feature": 14302,
+          "fire_rate": 0.2341,
+          "examples": [
+            {
+              "act": 18.695,
+              "focus": " collided",
+              "context": " when his chartered plane collided with a"
+            },
+            {
+              "act": 18.477,
+              "focus": " bank",
+              "context": " , a city on the north bank of the"
+            },
+            {
+              "act": 18.139,
+              "focus": " southern",
+              "context": " been recorded in those parts of southern Asia that"
+            },
+            {
+              "act": 17.59,
+              "focus": " chartered",
+              "context": " when his chartered plane collided"
+            },
+            {
+              "act": 17.069,
+              "focus": " plane",
+              "context": " when his chartered plane collided with"
+            },
+            {
+              "act": 16.904,
+              "focus": " hole",
+              "context": " , including some with a square hole in the"
+            }
+          ]
+        },
+        {
+          "feature": 8514,
+          "fire_rate": 0.2333,
+          "examples": [
+            {
+              "act": 21.487,
+              "focus": " Brook",
+              "context": " Jeff Masionet and Stony Brook baseball coach"
+            },
+            {
+              "act": 21.205,
+              "focus": " Heritage",
+              "context": " 18 April and World Heritage Week between"
+            },
+            {
+              "act": 21.145,
+              "focus": " Alamos",
+              "context": " Manhattan Project in Chicago and Los Alamos , including"
+            },
+            {
+              "act": 20.941,
+              "focus": "pan",
+              "context": " one @-@ liners and deadpan delivery \""
+            },
+            {
+              "act": 20.846,
+              "focus": "cor",
+              "context": " , Imperial Oil , and Suncor Energy ("
+            },
+            {
+              "act": 20.766,
+              "focus": " Atom",
+              "context": " popular research reactor , and General Atomics sold"
+            }
+          ]
+        },
+        {
+          "feature": 3156,
+          "fire_rate": 0.2317,
+          "examples": [
+            {
+              "act": 28.662,
+              "focus": " percussion",
+              "context": " percussion weapons available"
+            },
+            {
+              "act": 28.173,
+              "focus": " Variety",
+              "context": " paper Variety , critic"
+            },
+            {
+              "act": 28.085,
+              "focus": " escape",
+              "context": " escape the mow"
+            },
+            {
+              "act": 27.885,
+              "focus": " girlfriend",
+              "context": " girlfriend , Cuban"
+            },
+            {
+              "act": 27.236,
+              "focus": " Galveston",
+              "context": " Galveston to Bolivar"
+            },
+            {
+              "act": 25.368,
+              "focus": " feathers",
+              "context": " feathers are more"
+            }
+          ]
+        },
+        {
+          "feature": 7657,
+          "fire_rate": 0.2294,
+          "examples": [
+            {
+              "act": 12.068,
+              "focus": " branch",
+              "context": " Of the coins struck at the branch mints"
+            },
+            {
+              "act": 11.445,
+              "focus": " Fires",
+              "context": " . The people of the Three Fires Confederacy ,"
+            },
+            {
+              "act": 11.436,
+              "focus": " asi",
+              "context": " the spore size of A. asiaticus"
+            },
+            {
+              "act": 11.405,
+              "focus": " Building",
+              "context": " . The area surrounding the Tower Building had been"
+            },
+            {
+              "act": 11.392,
+              "focus": " Morrison",
+              "context": " Although the idea of two common Morrison allos"
+            },
+            {
+              "act": 11.08,
+              "focus": " ground",
+              "context": " @-@ class match on the ground was played"
+            }
+          ]
+        },
+        {
+          "feature": 5612,
+          "fire_rate": 0.2265,
+          "examples": [
+            {
+              "act": 16.407,
+              "focus": " Major",
+              "context": "06 as the Command Sergeant Major of the"
+            },
+            {
+              "act": 15.546,
+              "focus": " Journal",
+              "context": "\" Zionist orientations \" , Scandinavian Journal of Development"
+            },
+            {
+              "act": 14.789,
+              "focus": " Party",
+              "context": " @-@ raising for the Socialist Party of America"
+            },
+            {
+              "act": 14.669,
+              "focus": "1",
+              "context": " neutrinos emitted from Supernova SN198"
+            },
+            {
+              "act": 14.606,
+              "focus": " River",
+              "context": "0 MW reactors at the Savannah River Site that"
+            },
+            {
+              "act": 14.543,
+              "focus": " Competition",
+              "context": " rookie participant in the Super Skills Competition . In"
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2304,
+      "sae": {
+        "d_sae": 14720,
+        "k": 32,
+        "steps": 4000
+      }
+    },
+    {
+      "layer": 13,
+      "metrics": {
+        "fve": 0.7849670330217713,
+        "l0": 32.0,
+        "dead": 0,
+        "d_sae": 14720,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          2000,
+          3000,
+          3999
+        ],
+        "fve": [
+          0.08559275453116266,
+          0.7170635827614937,
+          0.7600186543841199,
+          0.7761008704486767,
+          0.7850068610952803
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 4618,
+          "fire_rate": 0.3855,
+          "examples": [
+            {
+              "act": 74.727,
+              "focus": " ,",
+              "context": " he officially converted to the religion , something which"
+            },
+            {
+              "act": 73.65,
+              "focus": " officially",
+              "context": " a devout Roman Catholic , he officially converted to"
+            },
+            {
+              "act": 73.642,
+              "focus": " Yue",
+              "context": " seventeen . Although The Story of Yue Fei states"
+            },
+            {
+              "act": 72.997,
+              "focus": " Roman",
+              "context": " . As she was a devout Roman Catholic ,"
+            },
+            {
+              "act": 72.401,
+              "focus": " Department",
+              "context": "65 , the Rhode Island Department of Public"
+            },
+            {
+              "act": 72.257,
+              "focus": " devout",
+              "context": " him . As she was a devout Roman Catholic"
+            }
+          ]
+        },
+        {
+          "feature": 4947,
+          "fire_rate": 0.3407,
+          "examples": [
+            {
+              "act": 32.547,
+              "focus": " disabled",
+              "context": " spraying splinters and fragments that disabled the entire"
+            },
+            {
+              "act": 31.795,
+              "focus": " after",
+              "context": " in commerce . Silver again circulated after Congress in"
+            },
+            {
+              "act": 31.665,
+              "focus": " Congress",
+              "context": " commerce . Silver again circulated after Congress in "
+            },
+            {
+              "act": 31.579,
+              "focus": " fragments",
+              "context": " it , spraying splinters and fragments that disabled"
+            },
+            {
+              "act": 30.711,
+              "focus": " handed",
+              "context": " did practice some form of bare handed fighting \""
+            },
+            {
+              "act": 30.685,
+              "focus": "xd",
+              "context": "xd4 4.Nxd4 N"
+            }
+          ]
+        },
+        {
+          "feature": 4301,
+          "fire_rate": 0.3356,
+          "examples": [
+            {
+              "act": 36.369,
+              "focus": " predominantly",
+              "context": " distrust of doing business with a predominantly White music"
+            },
+            {
+              "act": 35.568,
+              "focus": " a",
+              "context": " his distrust of doing business with a predominantly White"
+            },
+            {
+              "act": 33.555,
+              "focus": " .",
+              "context": " with a predominantly White music industry . According to"
+            },
+            {
+              "act": 32.893,
+              "focus": " business",
+              "context": " rooted in his distrust of doing business with a"
+            },
+            {
+              "act": 32.547,
+              "focus": " music",
+              "context": " doing business with a predominantly White music industry ."
+            },
+            {
+              "act": 32.474,
+              "focus": " with",
+              "context": " in his distrust of doing business with a predominantly"
+            }
+          ]
+        },
+        {
+          "feature": 5394,
+          "fire_rate": 0.3328,
+          "examples": [
+            {
+              "act": 48.183,
+              "focus": " voice",
+              "context": "<eos>= = = Appearance and voice = ="
+            },
+            {
+              "act": 47.516,
+              "focus": " Appearance",
+              "context": " storyline .<eos>= = = Appearance and voice"
+            },
+            {
+              "act": 47.266,
+              "focus": " and",
+              "context": " .<eos>= = = Appearance and voice ="
+            },
+            {
+              "act": 45.586,
+              "focus": " intersections",
+              "context": " since .<eos>= = Major intersections = ="
+            },
+            {
+              "act": 43.795,
+              "focus": " =",
+              "context": "= = = Appearance and voice = = ="
+            },
+            {
+              "act": 42.077,
+              "focus": " =",
+              "context": " that period .<eos>= = = May ="
+            }
+          ]
+        },
+        {
+          "feature": 7248,
+          "fire_rate": 0.3305,
+          "examples": [
+            {
+              "act": 45.153,
+              "focus": " the",
+              "context": " Imbert Barrera is one of the few conspir"
+            },
+            {
+              "act": 42.232,
+              "focus": " as",
+              "context": " ( III ) dust particles such as antimony dust"
+            },
+            {
+              "act": 40.66,
+              "focus": "0",
+              "context": "011 to 2015"
+            },
+            {
+              "act": 40.534,
+              "focus": " a",
+              "context": " a Sarnia gymnast , won a bronze medal"
+            },
+            {
+              "act": 39.994,
+              "focus": " -",
+              "context": " Stefani 's music and fashion - sense ."
+            },
+            {
+              "act": 38.316,
+              "focus": " the",
+              "context": " of Zelanti . He took the name of"
+            }
+          ]
+        },
+        {
+          "feature": 12556,
+          "fire_rate": 0.3263,
+          "examples": [
+            {
+              "act": 37.427,
+              "focus": " albums",
+              "context": " that with the release of her albums before Loose"
+            },
+            {
+              "act": 37.141,
+              "focus": " opera",
+              "context": "s \" : construction of the opera house ("
+            },
+            {
+              "act": 36.5,
+              "focus": " fun",
+              "context": " a girl who lives to have fun , and"
+            },
+            {
+              "act": 34.723,
+              "focus": " launcher",
+              "context": " , each equipped with one missile launcher . They"
+            },
+            {
+              "act": 34.541,
+              "focus": " Jarvis",
+              "context": " Cup , taking the lead through Jarvis before Eliot"
+            },
+            {
+              "act": 33.781,
+              "focus": " air",
+              "context": " tank regiments to maneuver . The air defense regiments"
+            }
+          ]
+        },
+        {
+          "feature": 2250,
+          "fire_rate": 0.3128,
+          "examples": [
+            {
+              "act": 24.089,
+              "focus": " ,",
+              "context": " ' She coined her own phrase , ' turns"
+            },
+            {
+              "act": 22.725,
+              "focus": "0",
+              "context": " Shop Boys at the 2012"
+            },
+            {
+              "act": 22.456,
+              "focus": " You",
+              "context": " ? Come on , man . You got to"
+            },
+            {
+              "act": 22.007,
+              "focus": " goal",
+              "context": " Coulson scored York 's only goal in a"
+            },
+            {
+              "act": 21.672,
+              "focus": " .",
+              "context": " moi ? Come on , man . You got"
+            },
+            {
+              "act": 21.627,
+              "focus": " ,",
+              "context": " You attack moi ? Come on , man ."
+            }
+          ]
+        },
+        {
+          "feature": 7913,
+          "fire_rate": 0.3036,
+          "examples": [
+            {
+              "act": 30.778,
+              "focus": " rare",
+              "context": "Acute myeloid leukemia is a relatively rare cancer ."
+            },
+            {
+              "act": 30.386,
+              "focus": " Amtrak",
+              "context": "<eos>Galveston is served by Amtrak 's"
+            },
+            {
+              "act": 29.958,
+              "focus": " ships",
+              "context": " easily pulled free by the Union ships and she"
+            },
+            {
+              "act": 29.633,
+              "focus": " she",
+              "context": " free by the Union ships and she reached Port"
+            },
+            {
+              "act": 29.473,
+              "focus": " or",
+              "context": "aria is widespread on burned soil or charcoal in"
+            },
+            {
+              "act": 29.102,
+              "focus": " inhabited",
+              "context": "<eos>Galveston Island was originally inhabited by members"
+            }
+          ]
+        },
+        {
+          "feature": 3756,
+          "fire_rate": 0.2864,
+          "examples": [
+            {
+              "act": 48.766,
+              "focus": " repairs",
+              "context": " in at Chester , Pennsylvania for repairs . The"
+            },
+            {
+              "act": 47.254,
+              "focus": " for",
+              "context": " put in at Chester , Pennsylvania for repairs ."
+            },
+            {
+              "act": 46.363,
+              "focus": " service",
+              "context": " with Samart to restart the service .<eos>"
+            },
+            {
+              "act": 44.803,
+              "focus": "3",
+              "context": "7 , 2013 , at"
+            },
+            {
+              "act": 44.582,
+              "focus": " .",
+              "context": " the basis for Catholic social teaching . According to"
+            },
+            {
+              "act": 44.193,
+              "focus": "2",
+              "context": "Sportsac for handbags in 200"
+            }
+          ]
+        },
+        {
+          "feature": 9087,
+          "fire_rate": 0.2839,
+          "examples": [
+            {
+              "act": 29.988,
+              "focus": " to",
+              "context": " the audience was invited on stage to verify that"
+            },
+            {
+              "act": 28.41,
+              "focus": " stage",
+              "context": " from the audience was invited on stage to verify"
+            },
+            {
+              "act": 28.393,
+              "focus": " on",
+              "context": " \" from the audience was invited on stage to"
+            },
+            {
+              "act": 27.097,
+              "focus": " the",
+              "context": " featured a large LED screen in the back that"
+            },
+            {
+              "act": 26.916,
+              "focus": " was",
+              "context": " \" jury \" from the audience was invited on"
+            },
+            {
+              "act": 26.581,
+              "focus": " ,",
+              "context": " In 1999 , he was"
+            }
+          ]
+        },
+        {
+          "feature": 11559,
+          "fire_rate": 0.2816,
+          "examples": [
+            {
+              "act": 37.515,
+              "focus": " War",
+              "context": " Army upon the outbreak of World War I and"
+            },
+            {
+              "act": 35.282,
+              "focus": " Come",
+              "context": " hymn \" Oh Come , Oh Come Emmanuel \""
+            },
+            {
+              "act": 34.867,
+              "focus": " fled",
+              "context": "9 , many Polish Jews had fled east ;"
+            },
+            {
+              "act": 34.455,
+              "focus": " to",
+              "context": " the pharaoh , who claimed to be the"
+            },
+            {
+              "act": 34.194,
+              "focus": " Jews",
+              "context": "ko , who stated that the Jews had earned"
+            },
+            {
+              "act": 33.891,
+              "focus": " be",
+              "context": " by God and was meant to be indiss"
+            }
+          ]
+        },
+        {
+          "feature": 7440,
+          "fire_rate": 0.2703,
+          "examples": [
+            {
+              "act": 44.793,
+              "focus": "athi",
+              "context": " are lower than for the oxathiane reagent"
+            },
+            {
+              "act": 44.227,
+              "focus": " .",
+              "context": " die of starvation and hypothermia . It is"
+            },
+            {
+              "act": 43.68,
+              "focus": " ",
+              "context": " 00"
+            },
+            {
+              "act": 43.68,
+              "focus": " ",
+              "context": " 18"
+            },
+            {
+              "act": 43.68,
+              "focus": " ",
+              "context": " 43"
+            },
+            {
+              "act": 43.68,
+              "focus": " ",
+              "context": " 2 record"
+            }
+          ]
+        },
+        {
+          "feature": 13489,
+          "fire_rate": 0.2645,
+          "examples": [
+            {
+              "act": 29.809,
+              "focus": " cast",
+              "context": " banquets and parties for the cast ) ,"
+            },
+            {
+              "act": 29.41,
+              "focus": " parties",
+              "context": " ( with frequent banquets and parties for the"
+            },
+            {
+              "act": 29.108,
+              "focus": " and",
+              "context": " time ( with frequent banquets and parties for"
+            },
+            {
+              "act": 29.087,
+              "focus": " with",
+              "context": "s representatives met in New York with D\u00edaz '"
+            },
+            {
+              "act": 28.539,
+              "focus": " loud",
+              "context": " 's advertising call is a loud , repetitive"
+            },
+            {
+              "act": 28.353,
+              "focus": " along",
+              "context": " wife fled by car to France along with tens"
+            }
+          ]
+        },
+        {
+          "feature": 4061,
+          "fire_rate": 0.263,
+          "examples": [
+            {
+              "act": 30.42,
+              "focus": " (",
+              "context": " corncrake or landrail ( Crex"
+            },
+            {
+              "act": 27.937,
+              "focus": " .",
+              "context": " not receive any of its royalties . According to"
+            },
+            {
+              "act": 26.764,
+              "focus": " .",
+              "context": " which was bounded by prostrate slabs . As such"
+            },
+            {
+              "act": 26.505,
+              "focus": " a",
+              "context": " one @-@ dollar piece was a coin struck"
+            },
+            {
+              "act": 25.926,
+              "focus": "<eos>",
+              "context": "ignation by Louis Amateis<eos>Dolphins"
+            },
+            {
+              "act": 25.813,
+              "focus": " Cre",
+              "context": "crake or landrail ( Crex cre"
+            }
+          ]
+        },
+        {
+          "feature": 3637,
+          "fire_rate": 0.2619,
+          "examples": [
+            {
+              "act": 45.77,
+              "focus": " =",
+              "context": "= = = = Junun = = ="
+            },
+            {
+              "act": 33.264,
+              "focus": " .",
+              "context": " basal members of Neotrygon . The divergence"
+            },
+            {
+              "act": 32.33,
+              "focus": " would",
+              "context": " that a severe reduction in GA would give \""
+            },
+            {
+              "act": 31.933,
+              "focus": " ,",
+              "context": " and subsequently returned to Mah\u00e9 , the local"
+            },
+            {
+              "act": 31.531,
+              "focus": " for",
+              "context": " hall , Zhou asks the Lady for her blessing"
+            },
+            {
+              "act": 31.441,
+              "focus": " .",
+              "context": " carbon center and on the sulfur . The substitution"
+            }
+          ]
+        },
+        {
+          "feature": 10733,
+          "fire_rate": 0.2506,
+          "examples": [
+            {
+              "act": 31.777,
+              "focus": " began",
+              "context": " Raven \" .<eos>The game began development in"
+            },
+            {
+              "act": 29.837,
+              "focus": "<eos>",
+              "context": " attention to artistic theories . \"<eos>Kate Green"
+            },
+            {
+              "act": 29.541,
+              "focus": "C",
+              "context": " ; prefect of the S.C. for"
+            },
+            {
+              "act": 27.629,
+              "focus": "<eos>",
+              "context": " him to the cardinalate .<eos>On May"
+            },
+            {
+              "act": 26.743,
+              "focus": "<eos>",
+              "context": " origins of the Palestinians . \"<eos>Fink"
+            },
+            {
+              "act": 26.612,
+              "focus": "<eos>",
+              "context": " which equalled their previous record .<eos>On March"
+            }
+          ]
+        },
+        {
+          "feature": 13709,
+          "fire_rate": 0.25,
+          "examples": [
+            {
+              "act": 46.631,
+              "focus": " use",
+              "context": " research article examining Wheeler 's use of photography"
+            },
+            {
+              "act": 45.914,
+              "focus": " an",
+              "context": " throughout the war .<eos>In an effort to"
+            },
+            {
+              "act": 44.319,
+              "focus": " Alan",
+              "context": " his burning political agenda \" . Alan Dershow"
+            },
+            {
+              "act": 44.192,
+              "focus": " Ad",
+              "context": " In the last five matches in Adorjan"
+            },
+            {
+              "act": 43.979,
+              "focus": " one",
+              "context": " was re @-@ formed as one of the"
+            },
+            {
+              "act": 40.786,
+              "focus": " inclusion",
+              "context": " \" during a meal . The inclusion of the"
+            }
+          ]
+        },
+        {
+          "feature": 11362,
+          "fire_rate": 0.2426,
+          "examples": [
+            {
+              "act": 27.084,
+              "focus": " sentence",
+              "context": "e sententiae , \" sentence [ already"
+            },
+            {
+              "act": 24.824,
+              "focus": " cylinder",
+              "context": " @-@ shaft four @-@ cylinder vertical triple"
+            },
+            {
+              "act": 23.659,
+              "focus": " stones",
+              "context": " number of dances performed within the stones on top"
+            },
+            {
+              "act": 23.582,
+              "focus": " monuments",
+              "context": " the number of stones in the monuments . This"
+            },
+            {
+              "act": 23.347,
+              "focus": " cross",
+              "context": " copper dome , capped with a cross . It"
+            },
+            {
+              "act": 22.744,
+              "focus": " Light",
+              "context": " theme , \" Akari ( Light ) -"
+            }
+          ]
+        },
+        {
+          "feature": 4899,
+          "fire_rate": 0.2388,
+          "examples": [
+            {
+              "act": 82.141,
+              "focus": "1",
+              "context": ". 6 on the 197"
+            },
+            {
+              "act": 78.806,
+              "focus": "2",
+              "context": "Sportsac for handbags in 200"
+            },
+            {
+              "act": 74.209,
+              "focus": " ",
+              "context": " @.@ 0 @-@ 0 "
+            },
+            {
+              "act": 73.666,
+              "focus": " ",
+              "context": " ha ( 10 \u2013 12"
+            },
+            {
+              "act": 73.457,
+              "focus": "2",
+              "context": " 90 million in 200"
+            },
+            {
+              "act": 72.079,
+              "focus": " ",
+              "context": "8 @.@ 5 to 27"
+            }
+          ]
+        },
+        {
+          "feature": 13223,
+          "fire_rate": 0.2385,
+          "examples": [
+            {
+              "act": 81.953,
+              "focus": "2",
+              "context": "Sportsac for handbags in 200"
+            },
+            {
+              "act": 78.81,
+              "focus": "1",
+              "context": ". 6 on the 197"
+            },
+            {
+              "act": 78.419,
+              "focus": "2",
+              "context": " 90 million in 200"
+            },
+            {
+              "act": 76.092,
+              "focus": " ",
+              "context": " @.@ 0 @-@ 0 "
+            },
+            {
+              "act": 75.235,
+              "focus": "1",
+              "context": "940s and 196"
+            },
+            {
+              "act": 74.477,
+              "focus": "2",
+              "context": "009 and June 201"
+            }
+          ]
+        },
+        {
+          "feature": 14381,
+          "fire_rate": 0.2339,
+          "examples": [
+            {
+              "act": 26.972,
+              "focus": " on",
+              "context": " and was second to Babe Ruth on the Associated"
+            },
+            {
+              "act": 25.068,
+              "focus": " doing",
+              "context": " been rooted in his distrust of doing business with"
+            },
+            {
+              "act": 24.805,
+              "focus": " [",
+              "context": " finger of God ' , unlike [ those ]"
+            },
+            {
+              "act": 24.302,
+              "focus": " protect",
+              "context": " who they hoped would help and protect them through"
+            },
+            {
+              "act": 23.722,
+              "focus": " :",
+              "context": " was incorrectly attributed to George Orwell :<eos>\""
+            },
+            {
+              "act": 23.12,
+              "focus": " Cambridge",
+              "context": " university 's Chancellor , Alexander Cambridge , "
+            }
+          ]
+        },
+        {
+          "feature": 12530,
+          "fire_rate": 0.2319,
+          "examples": [
+            {
+              "act": 32.157,
+              "focus": " for",
+              "context": " through the development of original techniques for excavating"
+            },
+            {
+              "act": 28.952,
+              "focus": " of",
+              "context": " day , achieved through the development of original techniques"
+            },
+            {
+              "act": 28.34,
+              "focus": " either",
+              "context": " large quantities of silver coinage , either released from"
+            },
+            {
+              "act": 27.858,
+              "focus": " a",
+              "context": " original techniques for excavating in a compressed air"
+            },
+            {
+              "act": 27.746,
+              "focus": " the",
+              "context": " Wheeler taught her two children with the help of"
+            },
+            {
+              "act": 27.742,
+              "focus": " a",
+              "context": " two children with the help of a maid up"
+            }
+          ]
+        },
+        {
+          "feature": 10911,
+          "fire_rate": 0.2231,
+          "examples": [
+            {
+              "act": 22.518,
+              "focus": " of",
+              "context": "ides = = =<eos>Reactions of sulfur y"
+            },
+            {
+              "act": 22.478,
+              "focus": " as",
+              "context": " writer who once described vandal states as Genghis"
+            },
+            {
+              "act": 22.194,
+              "focus": " \"",
+              "context": " applied the \" substantial state interests \" test ,"
+            },
+            {
+              "act": 22.074,
+              "focus": " of",
+              "context": " Spencer that the only gold coins of that size"
+            },
+            {
+              "act": 22.054,
+              "focus": " ;",
+              "context": " of the Sacred College of Cardinals ; Librarian of"
+            },
+            {
+              "act": 21.915,
+              "focus": " and",
+              "context": " move in chess . Chess players and theorists generally"
+            }
+          ]
+        },
+        {
+          "feature": 4829,
+          "fire_rate": 0.2227,
+          "examples": [
+            {
+              "act": 37.837,
+              "focus": "dics",
+              "context": " most accomplished work of harmolodics , partly"
+            },
+            {
+              "act": 37.365,
+              "focus": " the",
+              "context": " Chronicles II and its gameplay being the best in"
+            },
+            {
+              "act": 36.992,
+              "focus": " being",
+              "context": "ria Chronicles II and its gameplay being the best"
+            },
+            {
+              "act": 36.336,
+              "focus": " best",
+              "context": " II and its gameplay being the best in the"
+            },
+            {
+              "act": 36.315,
+              "focus": " there",
+              "context": " news programme BBC Spotlight that \" there 's"
+            },
+            {
+              "act": 36.123,
+              "focus": " most",
+              "context": " landmark album from Coleman and his most accomplished work"
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2304,
+      "sae": {
+        "d_sae": 14720,
+        "k": 32,
+        "steps": 4000
+      }
+    },
+    {
+      "layer": 20,
+      "metrics": {
+        "fve": 0.7729240373240372,
+        "l0": 32.0,
+        "dead": 0,
+        "d_sae": 14720,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          2000,
+          3000,
+          3999
+        ],
+        "fve": [
+          0.07521588279182656,
+          0.707067689313507,
+          0.745186189489691,
+          0.7627229814401325,
+          0.7705167709129259
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 4099,
+          "fire_rate": 0.3992,
+          "examples": [
+            {
+              "act": 356.016,
+              "focus": "1",
+              "context": ". 6 on the 197"
+            },
+            {
+              "act": 339.782,
+              "focus": " ",
+              "context": " @.@ 0 @-@ 0 "
+            },
+            {
+              "act": 330.347,
+              "focus": "2",
+              "context": "Sportsac for handbags in 200"
+            },
+            {
+              "act": 322.158,
+              "focus": " ",
+              "context": " ha ( 10 \u2013 12"
+            },
+            {
+              "act": 319.808,
+              "focus": " '",
+              "context": " were a part of the king 's fundamental"
+            },
+            {
+              "act": 318.97,
+              "focus": "1",
+              "context": "y , and in May 190"
+            }
+          ]
+        },
+        {
+          "feature": 5951,
+          "fire_rate": 0.3924,
+          "examples": [
+            {
+              "act": 186.628,
+              "focus": "1",
+              "context": ". 6 on the 197"
+            },
+            {
+              "act": 178.79,
+              "focus": "2",
+              "context": "Sportsac for handbags in 200"
+            },
+            {
+              "act": 178.127,
+              "focus": " ",
+              "context": " @.@ 0 @-@ 0 "
+            },
+            {
+              "act": 172.394,
+              "focus": " '",
+              "context": " were a part of the king 's fundamental"
+            },
+            {
+              "act": 166.486,
+              "focus": "1",
+              "context": "y , and in May 190"
+            },
+            {
+              "act": 165.715,
+              "focus": "1",
+              "context": "940s and 196"
+            }
+          ]
+        },
+        {
+          "feature": 3323,
+          "fire_rate": 0.3805,
+          "examples": [
+            {
+              "act": 88.052,
+              "focus": " the",
+              "context": " @-@ side rowing competition between the University of"
+            },
+            {
+              "act": 87.968,
+              "focus": " between",
+              "context": " by @-@ side rowing competition between the University"
+            },
+            {
+              "act": 85.118,
+              "focus": "The",
+              "context": " Distribution and habitat = =<eos>The corn cra"
+            },
+            {
+              "act": 84.668,
+              "focus": " class",
+              "context": " the Erzherzog Karl @-@ class battleships"
+            },
+            {
+              "act": 82.962,
+              "focus": " Magazine",
+              "context": " Beyond Chutzpah . Z Magazine November "
+            },
+            {
+              "act": 82.795,
+              "focus": " caliber",
+              "context": " in ) / 45 caliber gun ,"
+            }
+          ]
+        },
+        {
+          "feature": 9819,
+          "fire_rate": 0.3721,
+          "examples": [
+            {
+              "act": 43.989,
+              "focus": " fer",
+              "context": " , introduced American mink , feral ferrets ,"
+            },
+            {
+              "act": 41.709,
+              "focus": "yen",
+              "context": " as Gabbar Singh<eos>Satyen Kappu"
+            },
+            {
+              "act": 38.473,
+              "focus": " APC",
+              "context": " Piercing , Capped ( APC ) shells"
+            },
+            {
+              "act": 36.845,
+              "focus": " a",
+              "context": " of Thomas Spencer Baynes , a Shakespearean"
+            },
+            {
+              "act": 36.761,
+              "focus": "u",
+              "context": "bar Singh<eos>Satyen Kappu as Ram"
+            },
+            {
+              "act": 36.364,
+              "focus": " instead",
+              "context": "T deploy its own security staff instead of contracting"
+            }
+          ]
+        },
+        {
+          "feature": 10208,
+          "fire_rate": 0.3676,
+          "examples": [
+            {
+              "act": 58.694,
+              "focus": "1",
+              "context": ". 6 on the 197"
+            },
+            {
+              "act": 55.935,
+              "focus": " ",
+              "context": " pattern to form 4 \u2013 20"
+            },
+            {
+              "act": 53.889,
+              "focus": "1",
+              "context": "y , and in May 190"
+            },
+            {
+              "act": 52.864,
+              "focus": " Goat",
+              "context": " =<eos>The Feast of the Goat is only"
+            },
+            {
+              "act": 52.017,
+              "focus": " of",
+              "context": " = =<eos>The realist style of The Feast"
+            },
+            {
+              "act": 51.746,
+              "focus": "8",
+              "context": "<eos>In 2008 , Del"
+            }
+          ]
+        },
+        {
+          "feature": 5905,
+          "fire_rate": 0.3659,
+          "examples": [
+            {
+              "act": 40.458,
+              "focus": " @",
+              "context": " that the Arab population of Ottoman @"
+            },
+            {
+              "act": 38.193,
+              "focus": " sti",
+              "context": " symbol Sb ( from Latin : stibium )"
+            },
+            {
+              "act": 38.041,
+              "focus": " an",
+              "context": " original idea of the film involved an army officer"
+            },
+            {
+              "act": 36.675,
+              "focus": " nineteen",
+              "context": "neuropathy at the age of nineteen , Del"
+            },
+            {
+              "act": 36.142,
+              "focus": " monument",
+              "context": " Paul Ashbee asserted that the monument could be"
+            },
+            {
+              "act": 35.114,
+              "focus": " London",
+              "context": " as a diplomat . Born in London , he"
+            }
+          ]
+        },
+        {
+          "feature": 1960,
+          "fire_rate": 0.3589,
+          "examples": [
+            {
+              "act": 57.249,
+              "focus": " Bulls",
+              "context": "m doing this . \" The Bulls went on"
+            },
+            {
+              "act": 55.934,
+              "focus": " a",
+              "context": " have learned in my life to a single person"
+            },
+            {
+              "act": 53.199,
+              "focus": " and",
+              "context": " \u2013 35 record , and advanced to"
+            },
+            {
+              "act": 52.097,
+              "focus": " a",
+              "context": " club into boys against girls for a mash @"
+            },
+            {
+              "act": 51.138,
+              "focus": " ,",
+              "context": " ( \" Here are the wrappers , send me"
+            },
+            {
+              "act": 50.967,
+              "focus": " @",
+              "context": " period . He later takes seven @-@ year"
+            }
+          ]
+        },
+        {
+          "feature": 5664,
+          "fire_rate": 0.3575,
+          "examples": [
+            {
+              "act": 223.907,
+              "focus": "1",
+              "context": ". 6 on the 197"
+            },
+            {
+              "act": 205.972,
+              "focus": " ",
+              "context": " @.@ 0 @-@ 0 "
+            },
+            {
+              "act": 202.746,
+              "focus": "1",
+              "context": "y , and in May 190"
+            },
+            {
+              "act": 198.406,
+              "focus": "2",
+              "context": "Sportsac for handbags in 200"
+            },
+            {
+              "act": 197.827,
+              "focus": " ",
+              "context": " ha ( 10 \u2013 12"
+            },
+            {
+              "act": 195.781,
+              "focus": " ",
+              "context": " pattern to form 4 \u2013 20"
+            }
+          ]
+        },
+        {
+          "feature": 11342,
+          "fire_rate": 0.3568,
+          "examples": [
+            {
+              "act": 68.241,
+              "focus": " (",
+              "context": " ( BM ) or peripheral blood ( PB )"
+            },
+            {
+              "act": 58.66,
+              "focus": "mony",
+              "context": " than arsenic and phosphorus . Antimony trioxide"
+            },
+            {
+              "act": 56.24,
+              "focus": " and",
+              "context": " a human rebellion against his rule and then withdraws"
+            },
+            {
+              "act": 54.762,
+              "focus": " of",
+              "context": " type silicon wafers in the production of diodes ,"
+            },
+            {
+              "act": 52.865,
+              "focus": " of",
+              "context": " , performing with a perfect blend of theatrical melodrama"
+            },
+            {
+              "act": 50.27,
+              "focus": " like",
+              "context": " triads . Genealogical connections like these are"
+            }
+          ]
+        },
+        {
+          "feature": 11733,
+          "fire_rate": 0.3549,
+          "examples": [
+            {
+              "act": 56.946,
+              "focus": "7",
+              "context": " World Scientific . ISBN 978 @"
+            },
+            {
+              "act": 56.841,
+              "focus": " critics",
+              "context": " hit and was praised by most critics .<eos>"
+            },
+            {
+              "act": 55.968,
+              "focus": " both",
+              "context": "2014 . They both played in"
+            },
+            {
+              "act": 49.157,
+              "focus": " ,",
+              "context": " . Many professionals find it indispensable , even though"
+            },
+            {
+              "act": 47.893,
+              "focus": " idea",
+              "context": " same view . Watson questions this idea , citing"
+            },
+            {
+              "act": 47.028,
+              "focus": " most",
+              "context": " commercial hit and was praised by most critics ."
+            }
+          ]
+        },
+        {
+          "feature": 9536,
+          "fire_rate": 0.3435,
+          "examples": [
+            {
+              "act": 33.642,
+              "focus": " speaker",
+              "context": ". The early version of the speaker has press"
+            },
+            {
+              "act": 31.756,
+              "focus": " =",
+              "context": "<eos>= = = Students = = =<eos>"
+            },
+            {
+              "act": 30.354,
+              "focus": "ack",
+              "context": " he was test flying the Wackett War"
+            },
+            {
+              "act": 30.079,
+              "focus": " the",
+              "context": "97 ; Cullen was leading the team in"
+            },
+            {
+              "act": 30.037,
+              "focus": " Maple",
+              "context": " , Hartford Whalers , Toronto Maple Leafs and"
+            },
+            {
+              "act": 29.967,
+              "focus": "eru",
+              "context": " Jai 's funeral , Veeru leaves Ram"
+            }
+          ]
+        },
+        {
+          "feature": 2647,
+          "fire_rate": 0.337,
+          "examples": [
+            {
+              "act": 56.592,
+              "focus": " and",
+              "context": " Two other mutations - NPM1 and bial"
+            },
+            {
+              "act": 55.645,
+              "focus": "3",
+              "context": " \u2192 4 Sb + 3 CO<eos>"
+            },
+            {
+              "act": 52.221,
+              "focus": " and",
+              "context": " initial public offering of both TOT and CAT Telecom"
+            },
+            {
+              "act": 49.326,
+              "focus": " William",
+              "context": "s Fables as published by William Caxton"
+            },
+            {
+              "act": 48.801,
+              "focus": "-@",
+              "context": ". coin intended for full @-@ scale production"
+            },
+            {
+              "act": 48.353,
+              "focus": " the",
+              "context": " joined the Brandon Elks of the Manitoba Hockey"
+            }
+          ]
+        },
+        {
+          "feature": 13454,
+          "fire_rate": 0.3359,
+          "examples": [
+            {
+              "act": 62.941,
+              "focus": ".",
+              "context": "e4 e5 2.Nf3"
+            },
+            {
+              "act": 58.949,
+              "focus": " in",
+              "context": " this is not fiction , that in fact the"
+            },
+            {
+              "act": 58.709,
+              "focus": " The",
+              "context": " Balloon and Airship Club . The UK @"
+            },
+            {
+              "act": 57.834,
+              "focus": "3",
+              "context": "17 @.@  h3 ? According"
+            },
+            {
+              "act": 56.512,
+              "focus": "  ",
+              "context": " c5 2 @.@  c4"
+            },
+            {
+              "act": 56.207,
+              "focus": " UK",
+              "context": " and Airship Club . The UK @-@"
+            }
+          ]
+        },
+        {
+          "feature": 3091,
+          "fire_rate": 0.3334,
+          "examples": [
+            {
+              "act": 64.116,
+              "focus": " \u91d1",
+              "context": " the future generals Jin Tai ( \u91d1\u53f0 )"
+            },
+            {
+              "act": 56.403,
+              "focus": " in",
+              "context": " him . He made his debut in the Conference"
+            },
+            {
+              "act": 53.026,
+              "focus": " Tadeusz",
+              "context": " Leslaw Bartelski , Tadeusz Borowski"
+            },
+            {
+              "act": 52.345,
+              "focus": " of",
+              "context": " by Greppin as a species of Megalosaurus"
+            },
+            {
+              "act": 51.092,
+              "focus": " ,",
+              "context": " January 2008 , Turkish newspapers"
+            },
+            {
+              "act": 50.795,
+              "focus": " and",
+              "context": " @-@ starring alongside Akshay Kumar and Sidhar"
+            }
+          ]
+        },
+        {
+          "feature": 3271,
+          "fire_rate": 0.3271,
+          "examples": [
+            {
+              "act": 118.237,
+              "focus": "During",
+              "context": " Brown and Adam Morrison .<eos>During the "
+            },
+            {
+              "act": 111.456,
+              "focus": " as",
+              "context": " ex @-@ military jets such as the Haw"
+            },
+            {
+              "act": 105.577,
+              "focus": " At",
+              "context": " to write eight new songs . At the "
+            },
+            {
+              "act": 103.205,
+              "focus": " agency",
+              "context": " Department of Energy ( through predecessor agency the Atomic"
+            },
+            {
+              "act": 102.672,
+              "focus": " of",
+              "context": " on the largest sailing frigates of the high"
+            },
+            {
+              "act": 101.869,
+              "focus": " on",
+              "context": " Troy Percival for 8th on the all"
+            }
+          ]
+        },
+        {
+          "feature": 6500,
+          "fire_rate": 0.3264,
+          "examples": [
+            {
+              "act": 41.03,
+              "focus": " \"",
+              "context": " strong duo in Chris and Reagan \" . He"
+            },
+            {
+              "act": 40.223,
+              "focus": "Paul",
+              "context": " and Hunter College and at DePaul University in"
+            },
+            {
+              "act": 38.95,
+              "focus": " culminating",
+              "context": " , and continued to struggle , culminating in a"
+            },
+            {
+              "act": 38.685,
+              "focus": " fourth",
+              "context": " finish 36 points behind fourth place Chicago"
+            },
+            {
+              "act": 38.179,
+              "focus": " and",
+              "context": " a completely strong duo in Chris and Reagan \""
+            },
+            {
+              "act": 38.054,
+              "focus": " and",
+              "context": " Brooklyn College , and Hunter College and at De"
+            }
+          ]
+        },
+        {
+          "feature": 2365,
+          "fire_rate": 0.3238,
+          "examples": [
+            {
+              "act": 51.516,
+              "focus": " academy",
+              "context": " not covered by an authoritative language academy typically have"
+            },
+            {
+              "act": 49.497,
+              "focus": " basis",
+              "context": " Commandments , which serve as the basis for Catholic"
+            },
+            {
+              "act": 49.314,
+              "focus": " language",
+              "context": " languages not covered by an authoritative language academy typically"
+            },
+            {
+              "act": 48.172,
+              "focus": " social",
+              "context": " serve as the basis for Catholic social teaching ."
+            },
+            {
+              "act": 47.484,
+              "focus": " box",
+              "context": " did not perform well at the box office upon"
+            },
+            {
+              "act": 46.088,
+              "focus": " law",
+              "context": " gambling . The town had no law enforcement officers"
+            }
+          ]
+        },
+        {
+          "feature": 5699,
+          "fire_rate": 0.3205,
+          "examples": [
+            {
+              "act": 70.758,
+              "focus": " (",
+              "context": " played in the National Hockey League ( NHL )"
+            },
+            {
+              "act": 68.868,
+              "focus": "2",
+              "context": " , or 7.Ne2 Ne7"
+            },
+            {
+              "act": 68.563,
+              "focus": " W",
+              "context": "s National Wheelchair Basketball League ( WNWBL"
+            },
+            {
+              "act": 68.177,
+              "focus": " (",
+              "context": " successor , the National Hockey League ( NHL )"
+            },
+            {
+              "act": 66.44,
+              "focus": " (",
+              "context": "ts of the National Hockey Association ( NHA"
+            },
+            {
+              "act": 64.3,
+              "focus": " W",
+              "context": "s National Wheelchair Basketball League ( WNWBL"
+            }
+          ]
+        },
+        {
+          "feature": 595,
+          "fire_rate": 0.3181,
+          "examples": [
+            {
+              "act": 71.054,
+              "focus": " ,",
+              "context": " later from the east . Trees , tree limbs"
+            },
+            {
+              "act": 69.955,
+              "focus": " Two",
+              "context": " @-@ 92 . Two years later"
+            },
+            {
+              "act": 68.322,
+              "focus": " whose",
+              "context": " Similarly , Dershowitz , whose book The"
+            },
+            {
+              "act": 66.15,
+              "focus": " \"",
+              "context": " and \" Underneath the Tree \" , have"
+            },
+            {
+              "act": 66.036,
+              "focus": " Edition",
+              "context": " English . Compatible with the Extra Edition , the"
+            },
+            {
+              "act": 65.712,
+              "focus": " in",
+              "context": " manager Nigel Worthington . Despite being in the relegation"
+            }
+          ]
+        },
+        {
+          "feature": 2389,
+          "fire_rate": 0.3177,
+          "examples": [
+            {
+              "act": 31.595,
+              "focus": " faculty",
+              "context": " Princeton University . He has held faculty positions at"
+            },
+            {
+              "act": 30.027,
+              "focus": " the",
+              "context": " of students and teachers , and the use of"
+            },
+            {
+              "act": 29.417,
+              "focus": " the",
+              "context": "H2 , which lead to the generation of"
+            },
+            {
+              "act": 28.885,
+              "focus": " the",
+              "context": " ,<eos>\" He was beyond the age of"
+            },
+            {
+              "act": 28.424,
+              "focus": " the",
+              "context": " scholar , young Yue Fei chose the military path"
+            },
+            {
+              "act": 27.675,
+              "focus": " the",
+              "context": " Chicago Reader said the novel transcends the \" sill"
+            }
+          ]
+        },
+        {
+          "feature": 14285,
+          "fire_rate": 0.3167,
+          "examples": [
+            {
+              "act": 56.424,
+              "focus": " James",
+              "context": " older brothers , Larry Jordan and James R."
+            },
+            {
+              "act": 51.447,
+              "focus": " some",
+              "context": " Scarface . The show included some of Stefani"
+            },
+            {
+              "act": 51.371,
+              "focus": " in",
+              "context": " . The Christmas music of Wrapped in Red comprises"
+            },
+            {
+              "act": 50.843,
+              "focus": " (",
+              "context": " has set a recommended exposure limit ( REL )"
+            },
+            {
+              "act": 48.738,
+              "focus": " James",
+              "context": "lyn . Jordan 's brother James retired in"
+            },
+            {
+              "act": 47.534,
+              "focus": " to",
+              "context": " , but lost its commanding officer to anti @"
+            }
+          ]
+        },
+        {
+          "feature": 4439,
+          "fire_rate": 0.3108,
+          "examples": [
+            {
+              "act": 50.781,
+              "focus": " Astronomical",
+              "context": " program based at the South African Astronomical Observatory ."
+            },
+            {
+              "act": 41.507,
+              "focus": " flashbacks",
+              "context": "996 , with frequent flashbacks to periods"
+            },
+            {
+              "act": 41.152,
+              "focus": " Honolulu",
+              "context": " Bernice Pauahi Bishop Museum in Honolulu , where"
+            },
+            {
+              "act": 40.9,
+              "focus": "television",
+              "context": " ) , produced by Croatian Radiotelevision .<eos>"
+            },
+            {
+              "act": 40.463,
+              "focus": " This",
+              "context": "pes her with his hands . This event is"
+            },
+            {
+              "act": 37.803,
+              "focus": " at",
+              "context": " following year , Somerset played Worcestershire at the ground"
+            }
+          ]
+        },
+        {
+          "feature": 3477,
+          "fire_rate": 0.3052,
+          "examples": [
+            {
+              "act": 63.445,
+              "focus": " (",
+              "context": " Irvine \u2013 Michigan \u2013 Brookhaven ( IMB"
+            },
+            {
+              "act": 58.633,
+              "focus": " ,",
+              "context": " high @-@ risk cytogenetics , underlying MDS"
+            },
+            {
+              "act": 55.313,
+              "focus": " ,",
+              "context": " . In his first Finals appearance , Jordan posted"
+            },
+            {
+              "act": 54.775,
+              "focus": " .",
+              "context": " , office , and police duties .<eos>Perhaps"
+            },
+            {
+              "act": 53.839,
+              "focus": " (",
+              "context": " for intermediate @-@ risk AML ( normal cyto"
+            },
+            {
+              "act": 51.629,
+              "focus": " (",
+              "context": " Spirits of the International Hockey League ( IHL"
+            }
+          ]
+        },
+        {
+          "feature": 4022,
+          "fire_rate": 0.3039,
+          "examples": [
+            {
+              "act": 46.905,
+              "focus": " at",
+              "context": " An Egyptian could worship any deity at a particular"
+            },
+            {
+              "act": 42.992,
+              "focus": " society",
+              "context": " which , when applied to human society , meant"
+            },
+            {
+              "act": 42.149,
+              "focus": " interfere",
+              "context": " an orderly way that did not interfere with the"
+            },
+            {
+              "act": 42.097,
+              "focus": " of",
+              "context": " the British Army upon the outbreak of World War"
+            },
+            {
+              "act": 42.027,
+              "focus": " particular",
+              "context": " could worship any deity at a particular time and"
+            },
+            {
+              "act": 41.076,
+              "focus": " Kail",
+              "context": " , who was passing by Mount Kailash ,"
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2304,
+      "sae": {
+        "d_sae": 14720,
+        "k": 32,
+        "steps": 4000
+      }
+    }
+  ],
+  "wall_s": 834.1712348461151
+}

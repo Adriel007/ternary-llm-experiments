@@ -1,0 +1,96 @@
+{
+  "model": "microsoft/phi-2",
+  "mode": "fairfight",
+  "ks": [
+    1,
+    2,
+    3,
+    4,
+    8
+  ],
+  "n_prompts": 40,
+  "drafts": {
+    "ternary_self_kd": {
+      "c": 1.949,
+      "wikitext": {
+        "alpha_k": {
+          "1": 0.8175,
+          "2": 0.9178,
+          "3": 0.9516,
+          "4": 0.9646,
+          "8": 0.9851
+        },
+        "mean_leading_run_k": {
+          "1": 5.275,
+          "2": 12.55,
+          "3": 25.25,
+          "4": 32.6,
+          "8": 48.375
+        },
+        "n": 2542
+      },
+      "gsm8k": {
+        "alpha_k": {
+          "1": 0.7038,
+          "2": 0.8256,
+          "3": 0.8675,
+          "4": 0.8885,
+          "8": 0.934
+        },
+        "mean_leading_run_k": {
+          "1": 2.65,
+          "2": 5.05,
+          "3": 6.175,
+          "4": 7.0,
+          "8": 11.65
+        },
+        "n": 2529
+      }
+    },
+    "bnb4": {
+      "c": 2.736,
+      "wikitext": {
+        "alpha_k": {
+          "1": 0.8769,
+          "2": 0.9567,
+          "3": 0.9772,
+          "4": 0.9862,
+          "8": 0.9972
+        },
+        "mean_leading_run_k": {
+          "1": 6.125,
+          "2": 17.725,
+          "3": 29.575,
+          "4": 43.8,
+          "8": 58.425
+        },
+        "n": 2542
+      },
+      "gsm8k": {
+        "alpha_k": {
+          "1": 0.9636,
+          "2": 0.9953,
+          "3": 0.9988,
+          "4": 0.9992,
+          "8": 1.0
+        },
+        "mean_leading_run_k": {
+          "1": 20.225,
+          "2": 55.225,
+          "3": 60.1,
+          "4": 61.525,
+          "8": 63.225
+        },
+        "n": 2529
+      }
+    }
+  },
+  "prediction": "corpus-matched ternary (self-KD, 0.2 B/param) vs nf4 4-bit (0.5 B/param): does the memory edge offset the acceptance gap? Pareto on alpha x memory",
+  "mem_byte_per_param": {
+    "ternary_packed": 0.2,
+    "bnb4": 0.5
+  },
+  "alpha8_gap_4bit_minus_ternary": 0.0121,
+  "verdict_fairfight": "TERNARY_COMPETITIVE",
+  "wall_s": 1116
+}

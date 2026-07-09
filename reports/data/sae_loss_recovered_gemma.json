@@ -1,0 +1,36 @@
+{
+  "model": "google/gemma-2-2b",
+  "tag": "_gemma",
+  "eval": "wikitext-103-raw-v1/test",
+  "n_eval_seqs": 200,
+  "seq_len": 512,
+  "k": 32,
+  "L_clean": 5.424668159858121,
+  "results": [
+    {
+      "layer": 5,
+      "L_clean": 5.424668159858121,
+      "L_recon": 6.13428854268591,
+      "L_ablate": 10.575684128852739,
+      "loss_recovered": 0.8622368117087601,
+      "delta_ce_recon": 0.7096203828277892
+    },
+    {
+      "layer": 13,
+      "L_clean": 5.424668159858121,
+      "L_recon": 5.911243884540117,
+      "L_ablate": 10.749427363625244,
+      "loss_recovered": 0.9086201448625588,
+      "delta_ce_recon": 0.4865757246819964
+    },
+    {
+      "layer": 20,
+      "L_clean": 5.424668159858121,
+      "L_recon": 5.690808349131605,
+      "L_ablate": 9.91447059228229,
+      "loss_recovered": 0.9407234074819217,
+      "delta_ce_recon": 0.26614018927348404
+    }
+  ],
+  "wall_s": 118.35203051567078
+}

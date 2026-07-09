@@ -1,0 +1,38 @@
+{
+  "model": "microsoft/bitnet-b1.58-2B-4T-bf16",
+  "eval": "wikitext-103-raw-v1/test",
+  "n_eval_seqs": 200,
+  "seq_len": 512,
+  "sae": {
+    "d_sae": 16384,
+    "k": 32
+  },
+  "L_clean": 2.973663408910225,
+  "results": [
+    {
+      "layer": 6,
+      "L_clean": 2.973663408910225,
+      "L_recon": 3.062887615047089,
+      "L_ablate": 9.112162311949609,
+      "loss_recovered": 0.9854648167986663,
+      "delta_ce_recon": 0.08922420613686421
+    },
+    {
+      "layer": 15,
+      "L_clean": 2.973663408910225,
+      "L_recon": 3.141898124082681,
+      "L_ablate": 9.088359604329746,
+      "loss_recovered": 0.9724868235811159,
+      "delta_ce_recon": 0.16823471517245592
+    },
+    {
+      "layer": 23,
+      "L_clean": 2.973663408910225,
+      "L_recon": 3.3156713437194227,
+      "L_ablate": 8.839213246086105,
+      "loss_recovered": 0.9416920929319277,
+      "delta_ce_recon": 0.3420079348091978
+    }
+  ],
+  "wall_s": 132.12791275978088
+}

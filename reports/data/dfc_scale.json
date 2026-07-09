@@ -1,0 +1,1915 @@
+{
+  "method": "DFC",
+  "ref": "arXiv:2602.11729",
+  "models": {
+    "bitnet": "microsoft/bitnet-b1.58-2B-4T-bf16",
+    "fp": "unsloth/Llama-3.2-1B"
+  },
+  "layers": [
+    15,
+    8
+  ],
+  "dims": [
+    2560,
+    2048
+  ],
+  "d_sae": 16384,
+  "excl_frac": 0.05,
+  "k": 32,
+  "n_act": 220000,
+  "n_heldout": 20000,
+  "seq_len": 256,
+  "cc_steps": 4000,
+  "scales": [
+    891.7727661132812,
+    1.116607666015625
+  ],
+  "dfc": {
+    "fve_full_bitnet": 0.6466279729823499,
+    "fve_full_fp": 0.9956115898968613,
+    "fve_shared_only_bitnet": 0.5206815293706295,
+    "fve_shared_only_fp": 0.7738994574378624,
+    "excl_gain_bitnet": 0.12594644361172036,
+    "excl_gain_fp": 0.2217121324589989,
+    "partition": {
+      "I_A_bitnet_excl": {
+        "n": 819,
+        "n_alive": 774,
+        "alive_frac": 0.945054945054945
+      },
+      "I_B_fp_excl": {
+        "n": 819,
+        "n_alive": 150,
+        "alive_frac": 0.18315018315018314
+      },
+      "I_S_shared": {
+        "n": 14746,
+        "n_alive": 8281,
+        "alive_frac": 0.5615760206157602
+      }
+    },
+    "maxact_bitnet_excl": {
+      "688": [
+        {
+          "act": 16.25,
+          "tok": " Tehran",
+          "ctx": " of the University of Tehran"
+        },
+        {
+          "act": 15.473,
+          "tok": " University",
+          "ctx": " the premises of the University"
+        },
+        {
+          "act": 15.274,
+          "tok": " was",
+          "ctx": "1946 , he was"
+        },
+        {
+          "act": 15.091,
+          "tok": " commenting",
+          "ctx": ". Lal , later commenting"
+        },
+        {
+          "act": 14.879,
+          "tok": " later",
+          "ctx": " B. Lal , later"
+        },
+        {
+          "act": 14.843,
+          "tok": " able",
+          "ctx": " years , Wheeler was able"
+        },
+        {
+          "act": 14.774,
+          "tok": " was",
+          "ctx": " of this , he was"
+        },
+        {
+          "act": 14.736,
+          "tok": " was",
+          "ctx": " months early , he was"
+        }
+      ],
+      "680": [
+        {
+          "act": 14.938,
+          "tok": " Andrews",
+          "ctx": " scholar at St. Andrews"
+        },
+        {
+          "act": 14.724,
+          "tok": " mob",
+          "ctx": " from a violent Hindu mob"
+        },
+        {
+          "act": 14.532,
+          "tok": " Alexander",
+          "ctx": " it was conquered by Alexander"
+        },
+        {
+          "act": 13.335,
+          "tok": "ue",
+          "ctx": " separated from the gangue"
+        },
+        {
+          "act": 13.265,
+          "tok": " Great",
+          "ctx": " conquered by Alexander the Great"
+        },
+        {
+          "act": 13.084,
+          "tok": " University",
+          "ctx": " at St. Andrews University"
+        },
+        {
+          "act": 13.023,
+          "tok": " Hindu",
+          "ctx": " refuge from a violent Hindu"
+        },
+        {
+          "act": 12.787,
+          "tok": " minerals",
+          "ctx": " from the gangue minerals"
+        }
+      ],
+      "252": [
+        {
+          "act": 88.77,
+          "tok": ".",
+          "ctx": " been established by A."
+        },
+        {
+          "act": 88.722,
+          "tok": ".",
+          "ctx": " prominent classicist A."
+        },
+        {
+          "act": 81.405,
+          "tok": ".",
+          "ctx": " biographer L.C."
+        },
+        {
+          "act": 79.617,
+          "tok": ".",
+          "ctx": " improvement . \" L."
+        },
+        {
+          "act": 78.855,
+          "tok": ".",
+          "ctx": " 90 \u00b0 C."
+        },
+        {
+          "act": 78.686,
+          "tok": ".",
+          "ctx": " Archaeology : St."
+        },
+        {
+          "act": 65.453,
+          "tok": "0",
+          "ctx": " In the 1950"
+        },
+        {
+          "act": 65.43,
+          "tok": " according",
+          "ctx": " the coming years , according"
+        }
+      ],
+      "610": [
+        {
+          "act": 9.341,
+          "tok": " him",
+          "ctx": "ore , which enabled him"
+        },
+        {
+          "act": 9.275,
+          "tok": " led",
+          "ctx": " settlements . He later led"
+        },
+        {
+          "act": 8.734,
+          "tok": " detailed",
+          "ctx": " later led a more detailed"
+        },
+        {
+          "act": 8.655,
+          "tok": " He",
+          "ctx": " around both settlements . He"
+        },
+        {
+          "act": 8.579,
+          "tok": " he",
+          "ctx": " Dorset , where he"
+        },
+        {
+          "act": 8.352,
+          "tok": "7",
+          "ctx": "4 to 1937"
+        },
+        {
+          "act": 8.26,
+          "tok": " a",
+          "ctx": " . He later led a"
+        },
+        {
+          "act": 8.131,
+          "tok": "191",
+          "ctx": "eter , in 191"
+        }
+      ],
+      "689": [
+        {
+          "act": 20.825,
+          "tok": " was",
+          "ctx": " and Pakistan , which was"
+        },
+        {
+          "act": 19.983,
+          "tok": " was",
+          "ctx": " the Earth , which was"
+        },
+        {
+          "act": 19.949,
+          "tok": " was",
+          "ctx": " War , the building was"
+        },
+        {
+          "act": 19.854,
+          "tok": " was",
+          "ctx": " Drew , the project was"
+        },
+        {
+          "act": 19.82,
+          "tok": " was",
+          "ctx": " previous publications ; it was"
+        },
+        {
+          "act": 19.768,
+          "tok": " was",
+          "ctx": " Civilisation , which was"
+        },
+        {
+          "act": 19.65,
+          "tok": " is",
+          "ctx": "asting . This material is"
+        },
+        {
+          "act": 19.272,
+          "tok": " were",
+          "ctx": " career . The episodes were"
+        }
+      ],
+      "418": [
+        {
+          "act": 8.96,
+          "tok": " later",
+          "ctx": " L.C. Carr later"
+        },
+        {
+          "act": 8.639,
+          "tok": " married",
+          "ctx": " his stay . Wheeler married"
+        },
+        {
+          "act": 7.849,
+          "tok": " he",
+          "ctx": " 1940 , he"
+        },
+        {
+          "act": 7.633,
+          "tok": "ott",
+          "ctx": " was Stuart Piggott"
+        },
+        {
+          "act": 7.566,
+          "tok": " which",
+          "ctx": " Mysore , which"
+        },
+        {
+          "act": 7.476,
+          "tok": " .",
+          "ctx": " much of southern India ."
+        },
+        {
+          "act": 7.273,
+          "tok": " his",
+          "ctx": " the Romans . Upon his"
+        },
+        {
+          "act": 7.216,
+          "tok": "istle",
+          "ctx": " Clive Entwistle"
+        }
+      ],
+      "384": [
+        {
+          "act": 19.477,
+          "tok": " ,",
+          "ctx": " Wheeler 's plans ,"
+        },
+        {
+          "act": 18.752,
+          "tok": " ,",
+          "ctx": " take up this position ,"
+        },
+        {
+          "act": 18.688,
+          "tok": " ,",
+          "ctx": "ologists shared his hopes ,"
+        },
+        {
+          "act": 18.684,
+          "tok": " ,",
+          "ctx": " was able to continue ,"
+        },
+        {
+          "act": 18.185,
+          "tok": " ,",
+          "ctx": " of an artillery battery ,"
+        },
+        {
+          "act": 17.96,
+          "tok": " ,",
+          "ctx": "credited or reinterpreted ,"
+        },
+        {
+          "act": 17.871,
+          "tok": " ,",
+          "ctx": " to increase that budget ,"
+        },
+        {
+          "act": 17.767,
+          "tok": " ,",
+          "ctx": " to start excavations ,"
+        }
+      ],
+      "130": [
+        {
+          "act": 31.607,
+          "tok": " =",
+          "ctx": " Museum .<|eot_id|>= ="
+        },
+        {
+          "act": 31.175,
+          "tok": " =",
+          "ctx": " .<|eot_id|>= = ="
+        },
+        {
+          "act": 30.247,
+          "tok": " =",
+          "ctx": " Oxford .<|eot_id|>= ="
+        },
+        {
+          "act": 30.057,
+          "tok": " =",
+          "ctx": " . \"<|eot_id|>= ="
+        },
+        {
+          "act": 29.966,
+          "tok": " =",
+          "ctx": " .<|eot_id|>= = ="
+        },
+        {
+          "act": 29.889,
+          "tok": " =",
+          "ctx": " .<|eot_id|>= = ="
+        },
+        {
+          "act": 29.412,
+          "tok": " =",
+          "ctx": " three .<|eot_id|>= ="
+        },
+        {
+          "act": 29.359,
+          "tok": " =",
+          "ctx": " Paris .<|eot_id|>= ="
+        }
+      ],
+      "164": [
+        {
+          "act": 12.139,
+          "tok": "ations",
+          "ctx": " he oversaw excavations"
+        },
+        {
+          "act": 12.103,
+          "tok": "s",
+          "ctx": " are used as catalysts"
+        },
+        {
+          "act": 11.762,
+          "tok": "ation",
+          "ctx": "7 ) . Inhalation"
+        },
+        {
+          "act": 11.407,
+          "tok": "ic",
+          "ctx": " six megalithic"
+        },
+        {
+          "act": 11.305,
+          "tok": "izes",
+          "ctx": " , but it polymerizes"
+        },
+        {
+          "act": 11.281,
+          "tok": "ic",
+          "ctx": " recording of stratigraphic"
+        },
+        {
+          "act": 11.057,
+          "tok": "ive",
+          "ctx": " chlorides are corrosive"
+        },
+        {
+          "act": 11.037,
+          "tok": "ations",
+          "ctx": " the findings of excavations"
+        }
+      ],
+      "805": [
+        {
+          "act": 18.516,
+          "tok": " a",
+          "ctx": " . Wheeler responded with a"
+        },
+        {
+          "act": 17.626,
+          "tok": " a",
+          "ctx": " was able to secure a"
+        },
+        {
+          "act": 17.412,
+          "tok": " a",
+          "ctx": " , who moved into a"
+        },
+        {
+          "act": 17.287,
+          "tok": " a",
+          "ctx": " crematorium , while a"
+        },
+        {
+          "act": 17.196,
+          "tok": " a",
+          "ctx": "H ) has set a"
+        },
+        {
+          "act": 16.862,
+          "tok": " a",
+          "ctx": " . The BBC staged a"
+        },
+        {
+          "act": 16.83,
+          "tok": " a",
+          "ctx": "Wheeler established a"
+        },
+        {
+          "act": 16.808,
+          "tok": " a",
+          "ctx": "amedu , revealing a"
+        }
+      ],
+      "64": [
+        {
+          "act": 12.021,
+          "tok": " alk",
+          "ctx": "b ) . The alk"
+        },
+        {
+          "act": 11.507,
+          "tok": "ant",
+          "ctx": "acoordinated organoant"
+        },
+        {
+          "act": 10.546,
+          "tok": " am",
+          "ctx": " various oxides are am"
+        },
+        {
+          "act": 10.323,
+          "tok": "ant",
+          "ctx": " , and organoant"
+        },
+        {
+          "act": 9.753,
+          "tok": " Ach",
+          "ctx": " the ruined villages of Ach"
+        },
+        {
+          "act": 9.71,
+          "tok": " aut",
+          "ctx": " surmounted in the aut"
+        },
+        {
+          "act": 9.585,
+          "tok": " asserted",
+          "ctx": " authority \" . She asserted"
+        },
+        {
+          "act": 9.029,
+          "tok": " A",
+          "ctx": " the prominent classicist A"
+        }
+      ],
+      "224": [
+        {
+          "act": 12.577,
+          "tok": " hospital",
+          "ctx": " its use as a hospital"
+        },
+        {
+          "act": 10.711,
+          "tok": " fishing",
+          "ctx": " and a love of fishing"
+        },
+        {
+          "act": 10.417,
+          "tok": " Museum",
+          "ctx": " to establish a National Museum"
+        },
+        {
+          "act": 10.035,
+          "tok": " army",
+          "ctx": " had had in the army"
+        },
+        {
+          "act": 9.871,
+          "tok": " bone",
+          "ctx": " poor at penetrating the bone"
+        },
+        {
+          "act": 9.857,
+          "tok": " hospital",
+          "ctx": " Petrie on his hospital"
+        },
+        {
+          "act": 9.746,
+          "tok": " cancer",
+          "ctx": " and suspected of causing cancer"
+        },
+        {
+          "act": 9.594,
+          "tok": " light",
+          "ctx": " temperature and in ambient light"
+        }
+      ],
+      "17": [
+        {
+          "act": 29.806,
+          "tok": "2",
+          "ctx": " attained in 1912"
+        },
+        {
+          "act": 28.516,
+          "tok": "6",
+          "ctx": " published in 1936"
+        },
+        {
+          "act": 28.267,
+          "tok": "7",
+          "ctx": " V in 1927"
+        },
+        {
+          "act": 28.004,
+          "tok": "6",
+          "ctx": " Hudson in 1976"
+        },
+        {
+          "act": 27.829,
+          "tok": "6",
+          "ctx": " . In 1926"
+        },
+        {
+          "act": 27.689,
+          "tok": "7",
+          "ctx": " and in 1957"
+        },
+        {
+          "act": 27.613,
+          "tok": "5",
+          "ctx": " that in 2005"
+        },
+        {
+          "act": 27.48,
+          "tok": "2",
+          "ctx": " . In 1952"
+        }
+      ],
+      "543": [
+        {
+          "act": 10.531,
+          "tok": " by",
+          "ctx": " to have been written by"
+        },
+        {
+          "act": 10.324,
+          "tok": " from",
+          "ctx": " stimmi , derived from"
+        },
+        {
+          "act": 10.183,
+          "tok": " from",
+          "ctx": " Meyerhof derives it from"
+        },
+        {
+          "act": 10.168,
+          "tok": " by",
+          "ctx": " invited to do so by"
+        },
+        {
+          "act": 10.145,
+          "tok": " at",
+          "ctx": " in a ceremony held at"
+        },
+        {
+          "act": 9.78,
+          "tok": " to",
+          "ctx": " nationalist movement \" linked to"
+        },
+        {
+          "act": 9.644,
+          "tok": " by",
+          "ctx": " Wheeler was particularly fascinated by"
+        },
+        {
+          "act": 9.517,
+          "tok": " with",
+          "ctx": " and began a relationship with"
+        }
+      ],
+      "483": [
+        {
+          "act": 12.199,
+          "tok": " London",
+          "ctx": " \" professionalized the London"
+        },
+        {
+          "act": 12.072,
+          "tok": "s",
+          "ctx": " St. John 's"
+        },
+        {
+          "act": 11.921,
+          "tok": " Pakistani",
+          "ctx": " In addition , the Pakistani"
+        },
+        {
+          "act": 11.474,
+          "tok": "ide",
+          "ctx": " found in the sulfide"
+        },
+        {
+          "act": 11.444,
+          "tok": " Lodge",
+          "ctx": ". John 's Lodge"
+        },
+        {
+          "act": 11.084,
+          "tok": " Street",
+          "ctx": " into the Hallam Street"
+        },
+        {
+          "act": 10.98,
+          "tok": " later",
+          "ctx": " . According to the later"
+        },
+        {
+          "act": 10.723,
+          "tok": "dney",
+          "ctx": " personally discovered the Lydney"
+        }
+      ],
+      "181": [
+        {
+          "act": 11.888,
+          "tok": " Catholic",
+          "ctx": " was a devout Roman Catholic"
+        },
+        {
+          "act": 11.495,
+          "tok": "ive",
+          "ctx": " chlorides are corrosive"
+        },
+        {
+          "act": 11.469,
+          "tok": " staff",
+          "ctx": " able to employ more staff"
+        },
+        {
+          "act": 11.098,
+          "tok": " ornaments",
+          "ctx": " are all small personal ornaments"
+        },
+        {
+          "act": 11.086,
+          "tok": " urine",
+          "ctx": " the human body via urine"
+        },
+        {
+          "act": 11.014,
+          "tok": " year",
+          "ctx": " be published twice a year"
+        },
+        {
+          "act": 10.956,
+          "tok": " smoker",
+          "ctx": " he was a heavy smoker"
+        },
+        {
+          "act": 10.678,
+          "tok": " planning",
+          "ctx": " the need for strategic planning"
+        }
+      ],
+      "690": [
+        {
+          "act": 10.269,
+          "tok": " interpretations",
+          "ctx": " 's approach and interpretations"
+        },
+        {
+          "act": 10.12,
+          "tok": " Markets",
+          "ctx": " inhibiting fire . Markets"
+        },
+        {
+          "act": 9.894,
+          "tok": " forts",
+          "ctx": " Hill @-@ forts"
+        },
+        {
+          "act": 9.674,
+          "tok": "erves",
+          "ctx": "= = = Reserves"
+        },
+        {
+          "act": 9.634,
+          "tok": "als",
+          "ctx": " visited the local kraals"
+        },
+        {
+          "act": 9.549,
+          "tok": "ides",
+          "ctx": " ) . Unlike oxides"
+        },
+        {
+          "act": 9.538,
+          "tok": "ments",
+          "ctx": " antimony . Treatments"
+        },
+        {
+          "act": 9.413,
+          "tok": "ums",
+          "ctx": " President of the Museums"
+        }
+      ],
+      "335": [
+        {
+          "act": 18.555,
+          "tok": " a",
+          "ctx": " his responsibility was as a"
+        },
+        {
+          "act": 17.755,
+          "tok": " the",
+          "ctx": " institution being housed on the"
+        },
+        {
+          "act": 17.203,
+          "tok": " a",
+          "ctx": " no reason to have a"
+        },
+        {
+          "act": 16.636,
+          "tok": " a",
+          "ctx": " most probably due to a"
+        },
+        {
+          "act": 16.296,
+          "tok": " the",
+          "ctx": " British archaeologists of the"
+        },
+        {
+          "act": 16.094,
+          "tok": " the",
+          "ctx": " he was taught by the"
+        },
+        {
+          "act": 15.995,
+          "tok": " to",
+          "ctx": " but most probably due to"
+        },
+        {
+          "act": 15.353,
+          "tok": " to",
+          "ctx": " and Pakistan , helping to"
+        }
+      ],
+      "748": [
+        {
+          "act": 13.139,
+          "tok": " wrote",
+          "ctx": "1959 , Wheeler wrote"
+        },
+        {
+          "act": 13.093,
+          "tok": " focused",
+          "ctx": "9 , the project focused"
+        },
+        {
+          "act": 12.49,
+          "tok": " moved",
+          "ctx": " 1908 they moved"
+        },
+        {
+          "act": 12.196,
+          "tok": " married",
+          "ctx": "5 Mortimer Wheeler married"
+        },
+        {
+          "act": 12.063,
+          "tok": " returned",
+          "ctx": "1973 , Wheeler returned"
+        },
+        {
+          "act": 11.904,
+          "tok": " retired",
+          "ctx": "1956 , Wheeler retired"
+        },
+        {
+          "act": 11.807,
+          "tok": " part",
+          "ctx": "8 , he took part"
+        },
+        {
+          "act": 11.605,
+          "tok": " became",
+          "ctx": "1967 , Wheeler became"
+        }
+      ],
+      "566": [
+        {
+          "act": 11.43,
+          "tok": " development",
+          "ctx": " the region 's development"
+        },
+        {
+          "act": 11.374,
+          "tok": " ancient",
+          "ctx": " the archaeology of ancient"
+        },
+        {
+          "act": 10.97,
+          "tok": " Greece",
+          "ctx": " archaeology of ancient Greece"
+        },
+        {
+          "act": 10.618,
+          "tok": " Asian",
+          "ctx": "s publications regarding South Asian"
+        },
+        {
+          "act": 9.855,
+          "tok": "historic",
+          "ctx": " writing about late prehistoric"
+        },
+        {
+          "act": 9.815,
+          "tok": " activity",
+          "ctx": " discussing evidence for Roman activity"
+        },
+        {
+          "act": 9.758,
+          "tok": " medieval",
+          "ctx": " prehistoric and early medieval"
+        },
+        {
+          "act": 9.196,
+          "tok": " Empire",
+          "ctx": "is and the Persian Empire"
+        }
+      ]
+    },
+    "maxact_shared": {
+      "15589": [
+        {
+          "act": 29.447,
+          "tok": " ,",
+          "ctx": " in the gas phase ,"
+        },
+        {
+          "act": 26.394,
+          "tok": " ,",
+          "ctx": " involved in various activities ,"
+        },
+        {
+          "act": 26.005,
+          "tok": " ,",
+          "ctx": " for the main applications ,"
+        },
+        {
+          "act": 25.064,
+          "tok": " ,",
+          "ctx": " 3100 BC ,"
+        },
+        {
+          "act": 24.575,
+          "tok": " ,",
+          "ctx": "1944 . There ,"
+        },
+        {
+          "act": 24.553,
+          "tok": " ,",
+          "ctx": " and crystalline metal ,"
+        },
+        {
+          "act": 24.429,
+          "tok": " ,",
+          "ctx": " continued his archaeological investigations ,"
+        },
+        {
+          "act": 24.257,
+          "tok": " ,",
+          "ctx": " assess Late Medieval buildings ,"
+        }
+      ],
+      "14473": [
+        {
+          "act": 12.367,
+          "tok": " published",
+          "ctx": " , Ronald William Clark published"
+        },
+        {
+          "act": 12.259,
+          "tok": " returning",
+          "ctx": " = =<|eot_id|>On returning"
+        },
+        {
+          "act": 11.413,
+          "tok": " embarked",
+          "ctx": "1936 , Wheeler embarked"
+        },
+        {
+          "act": 11.368,
+          "tok": " ,",
+          "ctx": "<|eot_id|>Returning to London ,"
+        },
+        {
+          "act": 11.264,
+          "tok": " Britain",
+          "ctx": "eler became famous in Britain"
+        },
+        {
+          "act": 11.084,
+          "tok": " London",
+          "ctx": " =<|eot_id|>Returning to London"
+        },
+        {
+          "act": 11.052,
+          "tok": " estimated",
+          "ctx": " 's crust is estimated"
+        },
+        {
+          "act": 10.961,
+          "tok": " as",
+          "ctx": " became famous in Britain as"
+        }
+      ],
+      "10799": [
+        {
+          "act": 18.196,
+          "tok": " the",
+          "ctx": "ology . According to the"
+        },
+        {
+          "act": 17.928,
+          "tok": " the",
+          "ctx": " . Influenced by the"
+        },
+        {
+          "act": 17.836,
+          "tok": " the",
+          "ctx": "iquaries . Through the"
+        },
+        {
+          "act": 17.589,
+          "tok": " the",
+          "ctx": " ? . Based on the"
+        },
+        {
+          "act": 16.953,
+          "tok": " the",
+          "ctx": " crust was described by the"
+        },
+        {
+          "act": 16.883,
+          "tok": " the",
+          "ctx": " turned his attention to the"
+        },
+        {
+          "act": 16.857,
+          "tok": " the",
+          "ctx": " he was joined by the"
+        },
+        {
+          "act": 16.564,
+          "tok": " the",
+          "ctx": " he was welcomed by the"
+        }
+      ],
+      "14416": [
+        {
+          "act": 12.731,
+          "tok": "agents",
+          "ctx": " Grignard reagents"
+        },
+        {
+          "act": 12.508,
+          "tok": " A",
+          "ctx": "ard reagents . A"
+        },
+        {
+          "act": 12.253,
+          "tok": " of",
+          "ctx": " . A large variety of"
+        },
+        {
+          "act": 12.201,
+          "tok": " .",
+          "ctx": "ignard reagents ."
+        },
+        {
+          "act": 11.521,
+          "tok": " prepared",
+          "ctx": "F<|eot_id|>3 is prepared"
+        },
+        {
+          "act": 10.983,
+          "tok": "The",
+          "ctx": " CO<|eot_id|>2<|eot_id|>The"
+        },
+        {
+          "act": 10.98,
+          "tok": " converted",
+          "ctx": "The sulfide is converted"
+        },
+        {
+          "act": 10.922,
+          "tok": " yields",
+          "ctx": " containing this anion yields"
+        }
+      ],
+      "9317": [
+        {
+          "act": 23.136,
+          "tok": " .",
+          "ctx": " gerontocracy \" ."
+        },
+        {
+          "act": 23.025,
+          "tok": " .",
+          "ctx": " sex in public places ."
+        },
+        {
+          "act": 22.528,
+          "tok": " .",
+          "ctx": " 1950 ) ."
+        },
+        {
+          "act": 22.438,
+          "tok": " .",
+          "ctx": "aziquantel ."
+        },
+        {
+          "act": 22.207,
+          "tok": " .",
+          "ctx": " of the British Academy ."
+        },
+        {
+          "act": 22.129,
+          "tok": " .",
+          "ctx": " which he was aware ."
+        },
+        {
+          "act": 22.123,
+          "tok": " .",
+          "ctx": " at least in animals ."
+        },
+        {
+          "act": 21.55,
+          "tok": " .",
+          "ctx": " became a barrister ."
+        }
+      ],
+      "11737": [
+        {
+          "act": 98.025,
+          "tok": ".",
+          "ctx": " prominent classicist A."
+        },
+        {
+          "act": 97.373,
+          "tok": ".",
+          "ctx": " been established by A."
+        },
+        {
+          "act": 91.718,
+          "tok": ".",
+          "ctx": " biographer L.C."
+        },
+        {
+          "act": 90.47,
+          "tok": ".",
+          "ctx": " improvement . \" L."
+        },
+        {
+          "act": 90.126,
+          "tok": ".",
+          "ctx": " Archaeology : St."
+        },
+        {
+          "act": 89.974,
+          "tok": ".",
+          "ctx": " 90 \u00b0 C."
+        },
+        {
+          "act": 87.097,
+          "tok": "0",
+          "ctx": " the late 1930"
+        },
+        {
+          "act": 86.7,
+          "tok": " According",
+          "ctx": " on her toe . According"
+        }
+      ],
+      "14727": [
+        {
+          "act": 16.559,
+          "tok": " role",
+          "ctx": " too old for the role"
+        },
+        {
+          "act": 16.166,
+          "tok": " life",
+          "ctx": " the rest of his life"
+        },
+        {
+          "act": 16.022,
+          "tok": " years",
+          "ctx": " London in his teenage years"
+        },
+        {
+          "act": 15.572,
+          "tok": " CE",
+          "ctx": " to the sixth century CE"
+        },
+        {
+          "act": 15.41,
+          "tok": "med",
+          "ctx": " majority city unharmed"
+        },
+        {
+          "act": 15.375,
+          "tok": " depended",
+          "ctx": " of his subject ultimately depended"
+        },
+        {
+          "act": 15.287,
+          "tok": " Europe",
+          "ctx": " War broke out in Europe"
+        },
+        {
+          "act": 14.833,
+          "tok": " needs",
+          "ctx": " deemed insufficient for its needs"
+        }
+      ],
+      "13413": [
+        {
+          "act": 33.024,
+          "tok": "imony",
+          "ctx": " .<|eot_id|>Many antimony"
+        },
+        {
+          "act": 32.876,
+          "tok": "imony",
+          "ctx": "3 \u2212 . Antimony"
+        },
+        {
+          "act": 32.836,
+          "tok": "imony",
+          "ctx": " more common for antimony"
+        },
+        {
+          "act": 32.659,
+          "tok": "imony",
+          "ctx": "angerite . Antimony"
+        },
+        {
+          "act": 32.521,
+          "tok": "imony",
+          "ctx": " phosphorus . Antimony"
+        },
+        {
+          "act": 32.348,
+          "tok": "imony",
+          "ctx": " Isolating antimony"
+        },
+        {
+          "act": 32.217,
+          "tok": "imony",
+          "ctx": " the volatility of antimony"
+        },
+        {
+          "act": 31.796,
+          "tok": "imony",
+          "ctx": " mineral species . Antimony"
+        }
+      ],
+      "14863": [
+        {
+          "act": 119.956,
+          "tok": " a",
+          "ctx": " 's house to a"
+        },
+        {
+          "act": 119.956,
+          "tok": " a",
+          "ctx": " 's involvement in a"
+        },
+        {
+          "act": 119.956,
+          "tok": " a",
+          "ctx": " \" a bit of a"
+        },
+        {
+          "act": 111.401,
+          "tok": " newly",
+          "ctx": " was aimed primarily at newly"
+        },
+        {
+          "act": 109.947,
+          "tok": " ex",
+          "ctx": " uptake , metabolism and ex"
+        },
+        {
+          "act": 109.407,
+          "tok": " was",
+          "ctx": " Wheeler 's brigade was"
+        },
+        {
+          "act": 109.407,
+          "tok": " was",
+          "ctx": " this report , Wheeler was"
+        },
+        {
+          "act": 108.634,
+          "tok": " the",
+          "ctx": "ology as part of the"
+        }
+      ],
+      "2105": [
+        {
+          "act": 15.272,
+          "tok": " excuse",
+          "ctx": " senility without the excuse"
+        },
+        {
+          "act": 13.818,
+          "tok": " fall",
+          "ctx": " but juices do not fall"
+        },
+        {
+          "act": 13.533,
+          "tok": " come",
+          "ctx": " past societies that had come"
+        },
+        {
+          "act": 13.159,
+          "tok": " prosecution",
+          "ctx": " on whose support the prosecution"
+        },
+        {
+          "act": 13.021,
+          "tok": " affairs",
+          "ctx": " walls ; Wheeler had affairs"
+        },
+        {
+          "act": 12.699,
+          "tok": " coming",
+          "ctx": " archaeology . Over coming"
+        },
+        {
+          "act": 12.177,
+          "tok": " level",
+          "ctx": " her as \" a level"
+        },
+        {
+          "act": 11.912,
+          "tok": " won",
+          "ctx": " the discipline , he won"
+        }
+      ],
+      "5288": [
+        {
+          "act": 23.198,
+          "tok": " in",
+          "ctx": " to an abrupt halt in"
+        },
+        {
+          "act": 22.21,
+          "tok": " in",
+          "ctx": "facts to Wheeler , in"
+        },
+        {
+          "act": 21.927,
+          "tok": " in",
+          "ctx": " to be wrong , in"
+        },
+        {
+          "act": 21.872,
+          "tok": " in",
+          "ctx": " accepted and surmounted in"
+        },
+        {
+          "act": 21.743,
+          "tok": " In",
+          "ctx": " with King Arthur . In"
+        },
+        {
+          "act": 21.558,
+          "tok": " in",
+          "ctx": " daughter @-@ in"
+        },
+        {
+          "act": 21.492,
+          "tok": " in",
+          "ctx": " the funding , although in"
+        },
+        {
+          "act": 21.22,
+          "tok": " in",
+          "ctx": " was best known ; in"
+        }
+      ],
+      "4096": [
+        {
+          "act": 13.143,
+          "tok": " additive",
+          "ctx": "posites industry as an additive"
+        },
+        {
+          "act": 11.974,
+          "tok": "ogen",
+          "ctx": " in combination with halogen"
+        },
+        {
+          "act": 11.873,
+          "tok": " concentrations",
+          "ctx": " guidelines . Antimony concentrations"
+        },
+        {
+          "act": 11.485,
+          "tok": " addition",
+          "ctx": " acid batteries , this addition"
+        },
+        {
+          "act": 11.073,
+          "tok": "ant",
+          "ctx": " industry as a dopant"
+        },
+        {
+          "act": 10.605,
+          "tok": " ions",
+          "ctx": " exposure to antimony ions"
+        },
+        {
+          "act": 10.501,
+          "tok": " also",
+          "ctx": " .<|eot_id|>Antimony also"
+        },
+        {
+          "act": 10.424,
+          "tok": " elements",
+          "ctx": " the supply of chemical elements"
+        }
+      ],
+      "5795": [
+        {
+          "act": 13.962,
+          "tok": " organise",
+          "ctx": " Myres , to organise"
+        },
+        {
+          "act": 13.758,
+          "tok": " basis",
+          "ctx": " people purely on the basis"
+        },
+        {
+          "act": 12.305,
+          "tok": "hire",
+          "ctx": " Park , Gloucestershire"
+        },
+        {
+          "act": 11.894,
+          "tok": "GS",
+          "ctx": " Geological Survey ( BGS"
+        },
+        {
+          "act": 11.546,
+          "tok": "ica",
+          "ctx": " destroyed by Boudica"
+        },
+        {
+          "act": 11.375,
+          "tok": " Yorkshire",
+          "ctx": " was raised largely in Yorkshire"
+        },
+        {
+          "act": 11.086,
+          "tok": " Essex",
+          "ctx": " to Stebbing in Essex"
+        },
+        {
+          "act": 10.965,
+          "tok": "ister",
+          "ctx": " he became a barrister"
+        }
+      ],
+      "7882": [
+        {
+          "act": 21.102,
+          "tok": "The",
+          "ctx": "uccio .<|eot_id|>The"
+        },
+        {
+          "act": 19.621,
+          "tok": "The",
+          "ctx": "able . \"<|eot_id|>The"
+        },
+        {
+          "act": 18.917,
+          "tok": "The",
+          "ctx": " stimmi .<|eot_id|>The"
+        },
+        {
+          "act": 17.516,
+          "tok": ".",
+          "ctx": " prominent classicist A."
+        },
+        {
+          "act": 17.299,
+          "tok": "In",
+          "ctx": " Sharples .<|eot_id|>In"
+        },
+        {
+          "act": 17.28,
+          "tok": ".",
+          "ctx": " been established by A."
+        },
+        {
+          "act": 16.733,
+          "tok": "In",
+          "ctx": " the Great .<|eot_id|>In"
+        },
+        {
+          "act": 15.715,
+          "tok": ".",
+          "ctx": " biographer L.C."
+        }
+      ],
+      "10628": [
+        {
+          "act": 13.603,
+          "tok": " Wheeler",
+          "ctx": " \" Focusing on Wheeler"
+        },
+        {
+          "act": 12.123,
+          "tok": " Survey",
+          "ctx": " that he wanted the Survey"
+        },
+        {
+          "act": 12.109,
+          "tok": "imony",
+          "ctx": " The effects of antimony"
+        },
+        {
+          "act": 11.98,
+          "tok": "imony",
+          "ctx": " for isolating antimony"
+        },
+        {
+          "act": 11.972,
+          "tok": "imony",
+          "ctx": " skin contact with antimony"
+        },
+        {
+          "act": 11.897,
+          "tok": " Wheeler",
+          "ctx": " he critiqued Wheeler"
+        },
+        {
+          "act": 11.362,
+          "tok": " Wheeler",
+          "ctx": "rabarti stated that Wheeler"
+        },
+        {
+          "act": 11.176,
+          "tok": " Wheeler",
+          "ctx": "@ Hall asserted that Wheeler"
+        }
+      ],
+      "8728": [
+        {
+          "act": 15.28,
+          "tok": " he",
+          "ctx": " to the country , he"
+        },
+        {
+          "act": 14.085,
+          "tok": " He",
+          "ctx": " home in London . He"
+        },
+        {
+          "act": 14.012,
+          "tok": " he",
+          "ctx": " During this project , he"
+        },
+        {
+          "act": 13.993,
+          "tok": " he",
+          "ctx": " the Pakistani government ; he"
+        },
+        {
+          "act": 13.841,
+          "tok": " he",
+          "ctx": " Italy . There , he"
+        },
+        {
+          "act": 13.691,
+          "tok": " He",
+          "ctx": " based in London . He"
+        },
+        {
+          "act": 13.64,
+          "tok": " then",
+          "ctx": " appointed Director . He then"
+        },
+        {
+          "act": 13.571,
+          "tok": " he",
+          "ctx": "ic Cruise division , he"
+        }
+      ],
+      "1747": [
+        {
+          "act": 15.677,
+          "tok": " Ver",
+          "ctx": " Lydney Park and Ver"
+        },
+        {
+          "act": 15.637,
+          "tok": " Seg",
+          "ctx": "rikamedu and Seg"
+        },
+        {
+          "act": 15.286,
+          "tok": " Ver",
+          "ctx": " which he ran at Ver"
+        },
+        {
+          "act": 15.257,
+          "tok": " Ped",
+          "ctx": "The Roman naturalist Ped"
+        },
+        {
+          "act": 15.242,
+          "tok": " Seg",
+          "ctx": " the Roman fort of Seg"
+        },
+        {
+          "act": 15.068,
+          "tok": " Pet",
+          "ctx": " he was awarded the Pet"
+        },
+        {
+          "act": 15.041,
+          "tok": " Seg",
+          "ctx": " the Roman forts of Seg"
+        },
+        {
+          "act": 15.041,
+          "tok": " Sal",
+          "ctx": " The family relocated to Sal"
+        }
+      ],
+      "12214": [
+        {
+          "act": 28.32,
+          "tok": " archae",
+          "ctx": " moral grounds . The archae"
+        },
+        {
+          "act": 27.716,
+          "tok": " archae",
+          "ctx": " raise public awareness of archae"
+        },
+        {
+          "act": 27.01,
+          "tok": " archae",
+          "ctx": " provide lectures on the archae"
+        },
+        {
+          "act": 26.544,
+          "tok": " archae",
+          "ctx": " developed his love of archae"
+        },
+        {
+          "act": 26.28,
+          "tok": " archae",
+          "ctx": " the most famous British archae"
+        },
+        {
+          "act": 26.185,
+          "tok": " archae",
+          "ctx": " the book , the archae"
+        },
+        {
+          "act": 26.115,
+          "tok": " archae",
+          "ctx": " greater public interest in archae"
+        },
+        {
+          "act": 25.691,
+          "tok": " archae",
+          "ctx": "ied Treasure , an archae"
+        }
+      ],
+      "14408": [
+        {
+          "act": 13.434,
+          "tok": " isolated",
+          "ctx": " Antimony can be isolated"
+        },
+        {
+          "act": 12.626,
+          "tok": " ores",
+          "ctx": "<|eot_id|>Many antimony ores"
+        },
+        {
+          "act": 12.379,
+          "tok": " mined",
+          "ctx": " Most antimony is mined"
+        },
+        {
+          "act": 12.341,
+          "tok": " extraction",
+          "ctx": " = =<|eot_id|>The extraction"
+        },
+        {
+          "act": 11.97,
+          "tok": " found",
+          "ctx": " Antimony is sometimes found"
+        },
+        {
+          "act": 11.414,
+          "tok": " ore",
+          "ctx": " which is the predominant ore"
+        },
+        {
+          "act": 11.35,
+          "tok": " mineral",
+          "ctx": " in over 100 mineral"
+        },
+        {
+          "act": 11.034,
+          "tok": " is",
+          "ctx": " . Elemental antimony is"
+        }
+      ],
+      "4611": [
+        {
+          "act": 12.9,
+          "tok": " applied",
+          "ctx": " ill health . Wheeler applied"
+        },
+        {
+          "act": 12.699,
+          "tok": " devoted",
+          "ctx": " \" , and Wheeler devoted"
+        },
+        {
+          "act": 12.456,
+          "tok": " staged",
+          "ctx": "facts . The BBC staged"
+        },
+        {
+          "act": 12.346,
+          "tok": " turned",
+          "ctx": "amium , Wheeler turned"
+        },
+        {
+          "act": 12.344,
+          "tok": " turned",
+          "ctx": " English literature , Robert turned"
+        },
+        {
+          "act": 12.211,
+          "tok": " organised",
+          "ctx": "ological Institute , Wheeler organised"
+        },
+        {
+          "act": 12.183,
+          "tok": " wrote",
+          "ctx": " . After Tessa wrote"
+        },
+        {
+          "act": 12.102,
+          "tok": " began",
+          "ctx": "<|eot_id|>Wheeler began"
+        }
+      ]
+    }
+  },
+  "dfc_history": {
+    "step": [
+      0,
+      500,
+      1000,
+      1500,
+      2000,
+      2500,
+      3000,
+      3500,
+      3999
+    ],
+    "fve_bitnet": [
+      -0.7068617493446219,
+      0.6167241943721249,
+      0.6856819751982435,
+      0.7211576833438241,
+      0.7357508733542975,
+      0.7462240321541469,
+      0.7586831025327547,
+      0.7610066949020361,
+      0.7696747182477207
+    ],
+    "fve_fp": [
+      -0.8394619875503762,
+      0.9950195671596651,
+      0.9935869626368192,
+      0.9962357113282065,
+      0.9968506346991904,
+      0.9958747379825215,
+      0.9967671745476743,
+      0.9962658394497755,
+      0.9967259505572151
+    ],
+    "l0": [
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0,
+      32.0
+    ],
+    "dead": [
+      0,
+      10012,
+      8160,
+      7248,
+      6855,
+      6605,
+      6502,
+      6429,
+      6328
+    ]
+  },
+  "std_crosscoder": {
+    "metrics": {
+      "d_sae": 16384,
+      "k": 32,
+      "n_alive": 16384,
+      "n_dead": 0,
+      "n_shared": 7912,
+      "n_bitnet_excl": 8354,
+      "n_fp_excl": 0,
+      "frac_shared": 0.48291015625,
+      "frac_bitnet_excl": 0.5098876953125,
+      "frac_fp_excl": 0.0,
+      "r_mean": 0.7170114517211914,
+      "r_median": 0.8756141066551208,
+      "r_hist_edges": [
+        0.0,
+        0.05,
+        0.1,
+        0.15000000000000002,
+        0.2,
+        0.25,
+        0.30000000000000004,
+        0.35000000000000003,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6000000000000001,
+        0.65,
+        0.7000000000000001,
+        0.75,
+        0.8,
+        0.8500000000000001,
+        0.9,
+        0.9500000000000001,
+        1.0
+      ],
+      "r_hist_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2849,
+        4735,
+        233,
+        95,
+        58,
+        31,
+        29,
+        59,
+        705,
+        7568,
+        22
+      ],
+      "final_fve_bitnet": 0.7710921133427189,
+      "final_fve_fp": 0.9971304993271699,
+      "final_l0": 32.0
+    },
+    "history": {
+      "step": [
+        0,
+        500,
+        1000,
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        3999
+      ],
+      "fve_bitnet": [
+        -0.7401418864129379,
+        0.6191255980769379,
+        0.688548200509564,
+        0.723420254146595,
+        0.7386109801597971,
+        0.7489142116502707,
+        0.7610859016131895,
+        0.7620806397428241,
+        0.7710921133427189
+      ],
+      "fve_fp": [
+        -0.9579596916228585,
+        0.99584765921044,
+        0.9946321321733724,
+        0.9968050366542828,
+        0.9973069035080478,
+        0.9964220687906061,
+        0.9972245917710361,
+        0.9967145804288841,
+        0.9971304993271699
+      ],
+      "l0": [
+        32.0,
+        32.0,
+        32.0,
+        32.0,
+        32.0,
+        32.0,
+        32.0,
+        32.0,
+        32.0
+      ],
+      "dead": [
+        0,
+        9533,
+        7808,
+        6987,
+        6655,
+        6385,
+        6238,
+        6175,
+        6044
+      ]
+    }
+  },
+  "wall_s": 1423.1386458873749
+}

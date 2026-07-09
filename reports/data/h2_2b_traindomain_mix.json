@@ -1,0 +1,387 @@
+{
+  "config": {
+    "model": "microsoft/bitnet-b1.58-2B-4T-bf16",
+    "seq_len": 128,
+    "rank": 8,
+    "alpha": 16,
+    "batch": 4,
+    "n_train_seqs": 1024,
+    "n_val_seqs": 32,
+    "n_test_seqs": 512,
+    "skip_fw": 96,
+    "report_budgets": [
+      2,
+      5,
+      8
+    ],
+    "primary_b": 5,
+    "seeds_final": [
+      0,
+      1,
+      2
+    ],
+    "n_random_draws": 3,
+    "fineweb": [
+      "HuggingFaceFW/fineweb-edu",
+      "sample-10BT"
+    ],
+    "seed": 0,
+    "train_domain": "mix",
+    "purpose": "train-domain control: swap the adapter TRAINING corpus (fineweb or wiki+fineweb mix) while keeping the cross-domain test slices fixed; reciprocal of the cross-domain run, separates domain-adaptation from quantization-correction without a second model"
+  },
+  "extra_mem_frac_per_layer": 0.005188679245283019,
+  "env": {
+    "timestamp_utc": "2026-06-10T03:30:29Z",
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA A40",
+    "transformers": "5.10.2",
+    "git_error": "CalledProcessError(128, ['git', 'rev-parse', '--short', 'HEAD'])"
+  },
+  "base": {
+    "wikitext_ppl": 37.25802139741802,
+    "fineweb_ppl": 21.522909983057094
+  },
+  "fronts": {
+    "greedy@2": {
+      "layers": [
+        10,
+        28
+      ],
+      "wikitext": {
+        "ppl_mean": 25.772114049303614,
+        "ppl_sd": 1.2448459636625495,
+        "ppl_seeds": [
+          27.09765139208461,
+          25.590858137782224,
+          24.62783261804401
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.57482367675071,
+        "ppl_sd": 0.024094902781606656,
+        "ppl_seeds": [
+          20.602257117012364,
+          20.56512181734134,
+          20.557092095898422
+        ]
+      }
+    },
+    "greedy@5": {
+      "layers": [
+        1,
+        10,
+        26,
+        28,
+        29
+      ],
+      "wikitext": {
+        "ppl_mean": 21.826945893006126,
+        "ppl_sd": 0.5932538721163182,
+        "ppl_seeds": [
+          22.4441522580852,
+          21.775718668862886,
+          21.260966752070292
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.305940269269925,
+        "ppl_sd": 0.020321678585920547,
+        "ppl_seeds": [
+          20.329393507400383,
+          20.2935580310725,
+          20.294869269336893
+        ]
+      }
+    },
+    "greedy@8": {
+      "layers": [
+        0,
+        1,
+        10,
+        18,
+        26,
+        27,
+        28,
+        29
+      ],
+      "wikitext": {
+        "ppl_mean": 20.372764204484486,
+        "ppl_sd": 0.2104936246882662,
+        "ppl_seeds": [
+          20.60320023508514,
+          20.324493876860192,
+          20.190598501508138
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.234920166258647,
+        "ppl_sd": 0.02665058731962533,
+        "ppl_seeds": [
+          20.237221082188192,
+          20.207193720186282,
+          20.260345696401465
+        ]
+      }
+    },
+    "c_causal@2": {
+      "layers": [
+        0,
+        1
+      ],
+      "wikitext": {
+        "ppl_mean": 25.17907004201334,
+        "ppl_sd": 0.18663069882606068,
+        "ppl_seeds": [
+          25.39050381120205,
+          25.109448014106555,
+          25.03725830073142
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.661684704716805,
+        "ppl_sd": 0.015603393078963456,
+        "ppl_seeds": [
+          20.672549030828677,
+          20.66870005905101,
+          20.64380502427073
+        ]
+      }
+    },
+    "c_causal@5": {
+      "layers": [
+        0,
+        1,
+        2,
+        19,
+        29
+      ],
+      "wikitext": {
+        "ppl_mean": 20.906804031064834,
+        "ppl_sd": 0.21755575672862099,
+        "ppl_seeds": [
+          21.131187233773954,
+          20.892436971836783,
+          20.696787887583763
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.252262009116873,
+        "ppl_sd": 0.025284625835529966,
+        "ppl_seeds": [
+          20.235450410531065,
+          20.23999560682443,
+          20.281340009995116
+        ]
+      }
+    },
+    "c_causal@8": {
+      "layers": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        19,
+        28,
+        29
+      ],
+      "wikitext": {
+        "ppl_mean": 20.246781817750477,
+        "ppl_sd": 0.05866149919759288,
+        "ppl_seeds": [
+          20.312111946357568,
+          20.229613598617636,
+          20.198619908276225
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.315387566372447,
+        "ppl_sd": 0.001078716697823312,
+        "ppl_seeds": [
+          20.31628201212717,
+          20.314189607317687,
+          20.315691079672483
+        ]
+      }
+    },
+    "s_hawq@2": {
+      "layers": [
+        0,
+        1
+      ],
+      "wikitext": {
+        "ppl_mean": 24.41415435437294,
+        "ppl_sd": 0.06147278464343101,
+        "ppl_seeds": [
+          24.45187769391276,
+          24.447365859004925,
+          24.343219510201134
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.587825000452668,
+        "ppl_sd": 0.023444157158500633,
+        "ppl_seeds": [
+          20.56736265937225,
+          20.58270697059012,
+          20.613405371395633
+        ]
+      }
+    },
+    "s_hawq@5": {
+      "layers": [
+        0,
+        1,
+        3,
+        5,
+        9
+      ],
+      "wikitext": {
+        "ppl_mean": 23.228308215819453,
+        "ppl_sd": 0.21580080495250045,
+        "ppl_seeds": [
+          23.459104134197723,
+          23.194273150280278,
+          23.031547362980355
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.1804138291517,
+        "ppl_sd": 0.04543693444246947,
+        "ppl_seeds": [
+          20.23274404291268,
+          20.157516222435973,
+          20.150981222106445
+        ]
+      }
+    },
+    "s_hawq@8": {
+      "layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "wikitext": {
+        "ppl_mean": 22.652814881792285,
+        "ppl_sd": 0.12404585113361562,
+        "ppl_seeds": [
+          22.795520010338038,
+          22.570794239036466,
+          22.59213039600235
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.103546595199678,
+        "ppl_sd": 0.006188177818280642,
+        "ppl_seeds": [
+          20.097320740838924,
+          20.103622649346875,
+          20.109696395413238
+        ]
+      }
+    }
+  },
+  "random": {
+    "draw0@5": {
+      "layers": [
+        5,
+        11,
+        25,
+        26,
+        27
+      ],
+      "wikitext": {
+        "ppl_mean": 21.920418547403614,
+        "ppl_sd": 0.0,
+        "ppl_seeds": [
+          21.920418547403614
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.324760394139922,
+        "ppl_sd": 0.0,
+        "ppl_seeds": [
+          20.324760394139922
+        ]
+      }
+    },
+    "draw1@5": {
+      "layers": [
+        3,
+        7,
+        8,
+        14,
+        23
+      ],
+      "wikitext": {
+        "ppl_mean": 24.213842107425396,
+        "ppl_sd": 0.0,
+        "ppl_seeds": [
+          24.213842107425396
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.261046122719296,
+        "ppl_sd": 0.0,
+        "ppl_seeds": [
+          20.261046122719296
+        ]
+      }
+    },
+    "draw2@5": {
+      "layers": [
+        7,
+        12,
+        15,
+        24,
+        29
+      ],
+      "wikitext": {
+        "ppl_mean": 22.62408884718418,
+        "ppl_sd": 0.0,
+        "ppl_seeds": [
+          22.62408884718418
+        ]
+      },
+      "fineweb": {
+        "ppl_mean": 20.661688986052123,
+        "ppl_sd": 0.0,
+        "ppl_seeds": [
+          20.661688986052123
+        ]
+      }
+    }
+  },
+  "verdict": {
+    "primary_b": 5,
+    "train_domain": "mix",
+    "random_median@primary": {
+      "wikitext": 22.62408884718418,
+      "fineweb": 20.324760394139922
+    },
+    "wikitext": {
+      "base_ppl": 37.25802139741802,
+      "greedy8_ppl": 20.372764204484486,
+      "frac_recovered_greedy8": 0.45319790368963825,
+      "order_greedy_lt_c@primary": false,
+      "order_c_lt_hawq@primary": true,
+      "order_c_lt_randmed@primary": true
+    },
+    "fineweb": {
+      "base_ppl": 21.522909983057094,
+      "greedy8_ppl": 20.234920166258647,
+      "frac_recovered_greedy8": 0.05984273584809661,
+      "order_greedy_lt_c@primary": false,
+      "order_c_lt_hawq@primary": false,
+      "order_c_lt_randmed@primary": true
+    }
+  },
+  "wall_s": 2523.3088557720184
+}

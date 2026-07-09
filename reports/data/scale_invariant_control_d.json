@@ -1,0 +1,415 @@
+{
+  "config": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "steps": 2000,
+    "n_probe": 60,
+    "batch_size": 16,
+    "seq_len": 128
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "Lt_ternary": 2.859344017505646,
+      "Lfp_final": 2.728446733951569,
+      "sameloss_fp_loss": 2.835599994659424,
+      "sameloss_gap": 0.023744022846222013,
+      "sameloss_step": 1400,
+      "allparams_final": {
+        "ternary": {
+          "raw": 6615.709781901041,
+          "filter_norm": 760.1094533284505,
+          "fisher": 4.597862536450521
+        },
+        "fp": {
+          "raw": 3218.465625,
+          "filter_norm": 954.1016204833984,
+          "fisher": 2.6458804688927557
+        }
+      },
+      "bitlinear_final": {
+        "ternary": {
+          "raw": 5705.900390625,
+          "filter_norm": 400.5113189697266,
+          "fisher": 4.237322844332084
+        },
+        "fp": {
+          "raw": 2366.9870829264323,
+          "filter_norm": 566.0623779296875,
+          "fisher": 1.6123418305069208
+        }
+      },
+      "allparams_sameloss": {
+        "ternary": {
+          "raw": 6615.709781901041,
+          "filter_norm": 760.1094533284505,
+          "fisher": 4.877976511552333
+        },
+        "fp": {
+          "raw": 2603.7561564127604,
+          "filter_norm": 793.0159657796224,
+          "fisher": 2.1243934928661474
+        }
+      },
+      "bitlinear_sameloss": {
+        "ternary": {
+          "raw": 5705.900390625,
+          "filter_norm": 400.5113189697266,
+          "fisher": 4.1665923641994596
+        },
+        "fp": {
+          "raw": 1791.1286112467449,
+          "filter_norm": 432.74059092203777,
+          "fisher": 1.2743319626897573
+        }
+      },
+      "wall_s": 517.8405153751373
+    },
+    {
+      "seed": 1,
+      "Lt_ternary": 2.820589208602905,
+      "Lfp_final": 2.723051655292511,
+      "sameloss_fp_loss": 2.8334586381912232,
+      "sameloss_gap": 0.012869429588318049,
+      "sameloss_step": 1400,
+      "allparams_final": {
+        "ternary": {
+          "raw": 6257.552888997396,
+          "filter_norm": 756.2610015869141,
+          "fisher": 4.82947280636381
+        },
+        "fp": {
+          "raw": 3566.4264607747396,
+          "filter_norm": 1105.4666687011718,
+          "fisher": 2.3225983802358314
+        }
+      },
+      "bitlinear_final": {
+        "ternary": {
+          "raw": 5502.619608561198,
+          "filter_norm": 372.3542943318685,
+          "fisher": 4.380919060786255
+        },
+        "fp": {
+          "raw": 2681.8033365885417,
+          "filter_norm": 636.3261647542317,
+          "fisher": 1.617169477744028
+        }
+      },
+      "allparams_sameloss": {
+        "ternary": {
+          "raw": 6257.552888997396,
+          "filter_norm": 756.2610015869141,
+          "fisher": 4.80603029353324
+        },
+        "fp": {
+          "raw": 2871.822383626302,
+          "filter_norm": 862.0622884114583,
+          "fisher": 2.3489498178496433
+        }
+      },
+      "bitlinear_sameloss": {
+        "ternary": {
+          "raw": 5502.619608561198,
+          "filter_norm": 372.3542943318685,
+          "fisher": 3.917800434748642
+        },
+        "fp": {
+          "raw": 2046.6558776855468,
+          "filter_norm": 492.18798828125,
+          "fisher": 1.1985676398035139
+        }
+      },
+      "wall_s": 516.1138820648193
+    },
+    {
+      "seed": 2,
+      "Lt_ternary": 2.8398098945617676,
+      "Lfp_final": 2.7283043026924134,
+      "sameloss_fp_loss": 2.8356500387191774,
+      "sameloss_gap": 0.004159855842590154,
+      "sameloss_step": 1400,
+      "allparams_final": {
+        "ternary": {
+          "raw": 5833.093603515625,
+          "filter_norm": 637.9628295898438,
+          "fisher": 5.025262611291964
+        },
+        "fp": {
+          "raw": 2291.4375915527344,
+          "filter_norm": 644.4826059977214,
+          "fisher": 2.3972120534781425
+        }
+      },
+      "bitlinear_final": {
+        "ternary": {
+          "raw": 4999.0996500651045,
+          "filter_norm": 353.4452550252279,
+          "fisher": 3.9622720648767427
+        },
+        "fp": {
+          "raw": 1823.7531270345053,
+          "filter_norm": 468.91748504638673,
+          "fisher": 1.8880596151575446
+        }
+      },
+      "allparams_sameloss": {
+        "ternary": {
+          "raw": 5833.093603515625,
+          "filter_norm": 637.9628295898438,
+          "fisher": 4.854954909445951
+        },
+        "fp": {
+          "raw": 2016.2444580078125,
+          "filter_norm": 597.9273768107097,
+          "fisher": 2.0227358432266556
+        }
+      },
+      "bitlinear_sameloss": {
+        "ternary": {
+          "raw": 4999.0996500651045,
+          "filter_norm": 353.4452550252279,
+          "fisher": 3.8694000645773485
+        },
+        "fp": {
+          "raw": 1459.916121419271,
+          "filter_norm": 376.49949696858727,
+          "fisher": 1.3462728592567146
+        }
+      },
+      "wall_s": 515.5818593502045
+    },
+    {
+      "seed": 3,
+      "Lt_ternary": 2.845549190044403,
+      "Lfp_final": 2.719569945335388,
+      "sameloss_fp_loss": 2.8254626989364624,
+      "sameloss_gap": 0.020086491107940585,
+      "sameloss_step": 1400,
+      "allparams_final": {
+        "ternary": {
+          "raw": 7096.1141357421875,
+          "filter_norm": 825.6705861409505,
+          "fisher": 5.023251840069861
+        },
+        "fp": {
+          "raw": 3250.360245768229,
+          "filter_norm": 920.6748942057292,
+          "fisher": 2.524782337983197
+        }
+      },
+      "bitlinear_final": {
+        "ternary": {
+          "raw": 6064.962475585938,
+          "filter_norm": 422.48839111328124,
+          "fisher": 4.447255879407749
+        },
+        "fp": {
+          "raw": 2350.7020589192707,
+          "filter_norm": 543.4378911336263,
+          "fisher": 1.631466160994023
+        }
+      },
+      "allparams_sameloss": {
+        "ternary": {
+          "raw": 7096.1141357421875,
+          "filter_norm": 825.6705861409505,
+          "fisher": 5.258918040439312
+        },
+        "fp": {
+          "raw": 2608.4670572916666,
+          "filter_norm": 724.374355061849,
+          "fisher": 2.0341137466216423
+        }
+      },
+      "bitlinear_sameloss": {
+        "ternary": {
+          "raw": 6064.962475585938,
+          "filter_norm": 422.48839111328124,
+          "fisher": 4.140029159374535
+        },
+        "fp": {
+          "raw": 1764.1242899576823,
+          "filter_norm": 411.7380777994792,
+          "fisher": 1.2770488874521106
+        }
+      },
+      "wall_s": 520.6809091567993
+    },
+    {
+      "seed": 4,
+      "Lt_ternary": 2.85074383020401,
+      "Lfp_final": 2.72241188287735,
+      "sameloss_fp_loss": 2.8276585698127747,
+      "sameloss_gap": 0.023085260391235263,
+      "sameloss_step": 1400,
+      "allparams_final": {
+        "ternary": {
+          "raw": 6207.97060546875,
+          "filter_norm": 703.4838389078776,
+          "fisher": 4.766744602152357
+        },
+        "fp": {
+          "raw": 3123.5604736328123,
+          "filter_norm": 937.5210337320964,
+          "fisher": 2.4763076151184578
+        }
+      },
+      "bitlinear_final": {
+        "ternary": {
+          "raw": 5443.901220703125,
+          "filter_norm": 378.7567454020182,
+          "fisher": 3.9553453107364476
+        },
+        "fp": {
+          "raw": 2249.7659566243487,
+          "filter_norm": 540.9342732747396,
+          "fisher": 1.8918024532031268
+        }
+      },
+      "allparams_sameloss": {
+        "ternary": {
+          "raw": 6207.97060546875,
+          "filter_norm": 703.4838389078776,
+          "fisher": 4.870937885625608
+        },
+        "fp": {
+          "raw": 2527.8288798014323,
+          "filter_norm": 738.6705881754557,
+          "fisher": 2.003089322651249
+        }
+      },
+      "bitlinear_sameloss": {
+        "ternary": {
+          "raw": 5443.901220703125,
+          "filter_norm": 378.7567454020182,
+          "fisher": 3.9153780741617084
+        },
+        "fp": {
+          "raw": 1710.3471740722657,
+          "filter_norm": 417.11961059570314,
+          "fisher": 1.403846676228568
+        }
+      },
+      "wall_s": 514.7701754570007
+    }
+  ],
+  "summary": {
+    "allparams_final": {
+      "raw": {
+        "ratio_of_means": 2.0718396267806116,
+        "mean_of_ratios": {
+          "mean": 2.1052736502522555,
+          "std": 0.2605006586920106,
+          "n": 5
+        }
+      },
+      "filter_norm": {
+        "ratio_of_means": 0.8073845743915501,
+        "mean_of_ratios": {
+          "mean": 0.8235691055389228,
+          "std": 0.10821788710120446,
+          "n": 5
+        }
+      },
+      "fisher": {
+        "ratio_of_means": 1.960299505520741,
+        "mean_of_ratios": {
+          "mean": 1.9655794975341425,
+          "std": 0.129741696434376,
+          "n": 5
+        }
+      }
+    },
+    "bitlinear_final": {
+      "raw": {
+        "ratio_of_means": 2.415798432306631,
+        "mean_of_ratios": {
+          "mean": 2.440677239658642,
+          "std": 0.22900858298358598,
+          "n": 5
+        }
+      },
+      "filter_norm": {
+        "ratio_of_means": 0.6994851613446753,
+        "mean_of_ratios": {
+          "mean": 0.7048150803572184,
+          "std": 0.06635319146821175,
+          "n": 5
+        }
+      },
+      "fisher": {
+        "ratio_of_means": 2.42836533056991,
+        "mean_of_ratios": {
+          "mean": 2.4504722502860092,
+          "std": 0.29238482095703494,
+          "n": 5
+        }
+      }
+    },
+    "allparams_sameloss": {
+      "raw": {
+        "ratio_of_means": 2.5348542550189554,
+        "mean_of_ratios": {
+          "mean": 2.5578193192765633,
+          "std": 0.24209319137226834,
+          "n": 5
+        }
+      },
+      "filter_norm": {
+        "ratio_of_means": 0.9912372385589167,
+        "mean_of_ratios": {
+          "mean": 0.9989871171852929,
+          "std": 0.09282993090660176,
+          "n": 5
+        }
+      },
+      "fisher": {
+        "ratio_of_means": 2.3419877221391077,
+        "mean_of_ratios": {
+          "mean": 2.351894642790054,
+          "std": 0.1788104301745871,
+          "n": 5
+        }
+      }
+    },
+    "bitlinear_sameloss": {
+      "raw": {
+        "ratio_of_means": 3.1595918445882223,
+        "mean_of_ratios": {
+          "mean": 3.18386804847124,
+          "std": 0.271159193580789,
+          "n": 5
+        }
+      },
+      "filter_norm": {
+        "ratio_of_means": 0.9048344766242494,
+        "mean_of_ratios": {
+          "mean": 0.910991411524199,
+          "std": 0.08729532391483624,
+          "n": 5
+        }
+      },
+      "fisher": {
+        "ratio_of_means": 3.0783062606080924,
+        "mean_of_ratios": {
+          "mean": 3.0886857888698573,
+          "std": 0.21186648306307568,
+          "n": 5
+        }
+      }
+    }
+  },
+  "verdict": {
+    "raw_ratio_allparams": 2.0718396267806116,
+    "filter_norm_ratio_allparams_final": 0.8073845743915501,
+    "filter_norm_ratio_allparams_sameloss": 0.9912372385589167,
+    "filter_norm_ratio_bitlinear_final": 0.6994851613446753,
+    "decision_on_allparams_final_filternorm": "SIGNAL INVERTS -> raw effect was a scale artifact; rewrite headline."
+  }
+}

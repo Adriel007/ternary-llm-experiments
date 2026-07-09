@@ -93,5 +93,6 @@ mmlu_official,microsoft/Phi-3.5-mini-instruct,mmlu,"acc,none",3,0.6601,0.6829,96
 mmlu_official,mistralai/Mistral-7B-Instruct-v0.2,mmlu,"acc,none",0,0.6048,0.6048,100.0
 mmlu_official,mistralai/Mistral-7B-Instruct-v0.2,mmlu,"acc,none",2,0.2711,0.6048,44.8
 mmlu_official,mistralai/Mistral-7B-Instruct-v0.2,mmlu,"acc,none",3,0.5943,0.6048,98.3
-moe_qwen3_30b,Qwen/Qwen3-30B-A3B,gsm8k,"exact_match,flexible-extract",0,0.8467,0.8467,100.0
-moe_qwen3_30b,Qwen/Qwen3-30B-A3B,gsm8k,"exact_match,flexible-extract",3,0.8867,0.8467,104.7
+moe_qwen3_30b,Qwen/Qwen3-30B-A3B,gsm8k,"exact_match,flexible-extract",0,0.8933,0.8933,100.0
+moe_qwen3_30b,Qwen/Qwen3-30B-A3B,gsm8k,"exact_match,flexible-extract",2,0.68,0.8933,76.1
+moe_qwen3_30b,Qwen/Qwen3-30B-A3B,gsm8k,"exact_match,flexible-extract",3,0.86,0.8933,96.3

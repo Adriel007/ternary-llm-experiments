@@ -1,0 +1,19 @@
+{
+  "arm": "instruct",
+  "seed": 1,
+  "kd_source": "/root/corpora/kd_instruct.jsonl",
+  "kd_ntexts": 128,
+  "lora_steps": 4000,
+  "wall_s": 3024,
+  "coherence_sample": " Paris.\nOutput: The capital of France is Paris.\n",
+  "wikitext2_ppl_maxlen128": 151.8061,
+  "mmlu_acc": 0.24490813274462328,
+  "gsm8k_strict": 0.0,
+  "gsm8k_flexible": 0.022744503411675512,
+  "mmlu_subgroups": {
+    "mmlu_stem": 0.2483349191246432,
+    "mmlu_humanities": 0.2414452709883103,
+    "mmlu_social_sciences": 0.23106922326941826,
+    "mmlu_other": 0.2603797875764403
+  }
+}

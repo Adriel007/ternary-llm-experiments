@@ -24,7 +24,7 @@ Built from `results/retention_official.csv`. K3 ≈ 4.9 bpw is the universal "lo
 | Capability (benchmark, harness)            | K3 retention | K2 retention | source file |
 |--------------------------------------------|--------------|--------------|-------------|
 | Math reasoning (GSM8K flex, 5 families)    | 81–99 %      | 1–18 %       | `lmeval_stage3.jsonl` (+`lmeval_gsm8k`) |
-| Math, MoE 30B (GSM8K flex, experts ternarized) | ~100 % (104.7 %) | — | `moe_qwen3_30b.jsonl` |
+| Math, MoE 30B (GSM8K flex, experts ternarized) | 96 %         | 76 %         | `overnight/moe_qwen3_30b_k2.jsonl` |
 | Competition math (MATH-500, minerva)       | 78–105 %; K5→95 % | ~0–3 % | `math500_fulln.jsonl`, `math_official.jsonl` |
 | Knowledge (MMLU, 5 families / 6 models)    | 96–100 %     | 38–72 %      | `mmlu_official.jsonl` |
 | Knowledge (ARC-Challenge acc_norm)         | 96–101 %     | 44–79 %      | `lmeval_stage3.jsonl` |

@@ -232,12 +232,9 @@ def f6():
 def f8():
 
     
-    
-    INT = {
-        "Qwen2.5-7B-Instruct":       [(3.168, 0.4367), (4.001, 0.8133)],
-        "Qwen2.5-Coder-7B-Instruct": [(3.168, 0.6933), (4.001, 0.7533), (4.919, 0.7767)],
-        "Qwen3-8B":                  [(3.205, 0.8467), (4.028, 0.8833)],
-    }
+
+    intj = json.load(open(os.path.join(ROOT, "reports", "data", "paperB_int_kquant_fig8.json")))
+    INT = {m: [tuple(p) for p in pts] for m, pts in intj["int_kquant_gsm8k_flexible"].items()}
 
     
 

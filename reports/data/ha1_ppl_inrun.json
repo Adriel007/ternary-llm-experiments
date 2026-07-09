@@ -1,0 +1,17 @@
+{
+  "steps": 1000,
+  "lora_rank": 64,
+  "kd_source": "wikitext",
+  "max_len": 128,
+  "method": "live-model (no reload); base = scaling-off",
+  "ppl_maxlen128": {
+    "fp16": 27.0553,
+    "lora": 50.2292,
+    "base": 1929.6004
+  },
+  "note": "Aposta-1 PPL-in-run, R3 \u00a73.1; accuracy in ha1_eval_*.json",
+  "ppl_gap_recovered_frac": 0.9878,
+  "ppl_ratio_base_over_fp16": 71.3206,
+  "ppl_ratio_lora_over_fp16": 1.8565,
+  "wall_s": 411
+}

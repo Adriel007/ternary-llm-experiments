@@ -2,7 +2,10 @@
 
 Reproducibility package for a series of preprints on the **interpretability and
 post-training ternary (1.58-bit / K-trit-plane) quantization of large language models**.
-Each headline number in the papers has a committed artifact here.
+Every lm-eval accuracy number in the papers is backed by a committed artifact here
+(`results/`, `reports/data/`). A few single-run CPU-throughput and HumanEval figures for
+the 30B MoE model are reported as such (single run, no committed log) in the companion
+**sasori** repo and Paper F.
 
 - `experiments/` — analysis and harness code (e.g. `experiments/ternary-quantization/`,
   `experiments/interp/`, `experiments/dynamics/`), plus the fidelity gate and env stamp.

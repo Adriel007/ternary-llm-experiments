@@ -1,0 +1,30 @@
+{
+  "model": "microsoft/phi-2",
+  "max_new": 128,
+  "gamma": 4,
+  "n_prompts": 20,
+  "note": "speculative decoding is lossless (exact greedy output); speedup is wall-clock",
+  "step_ms": {
+    "target": 51.026,
+    "ternary_dense": 107.973,
+    "bnb4": 121.227
+  },
+  "c": {
+    "ternary_dense": 2.116,
+    "bnb4": 2.376
+  },
+  "tokens_per_s": {
+    "AR_vanilla": 18.97,
+    "spec_ternary_dense": 9.08,
+    "spec_bnb4": 8.26
+  },
+  "speedup_vs_AR": {
+    "spec_ternary_dense": 0.479,
+    "spec_bnb4": 0.436
+  },
+  "accepted_per_call": {
+    "spec_ternary_dense": 4.53,
+    "spec_bnb4": 4.57
+  },
+  "wall_s": 2245
+}

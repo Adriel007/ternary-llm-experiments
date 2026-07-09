@@ -1,0 +1,94 @@
+{
+  "setup": {
+    "mode": "depth",
+    "seed": 0,
+    "twin_steps": 3000,
+    "layers": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "d_in": 512,
+    "models": [
+      "ternary",
+      "fp"
+    ],
+    "crosscoder": {
+      "d_sae": 4096,
+      "k": 32,
+      "steps": 4000
+    }
+  },
+  "twin_val_loss": {
+    "ternary": 2.372596150636673,
+    "fp": 2.2179387509822845
+  },
+  "results": [
+    {
+      "layer": 1,
+      "scales": {
+        "scale_tern": 0.8835188746452332,
+        "scale_fp": 1.2815698385238647
+      },
+      "metrics": {
+        "d_sae": 4096,
+        "k": 32,
+        "n_alive": 4096,
+        "n_dead": 0,
+        "n_shared": 3750,
+        "n_tern_excl": 0,
+        "n_fp_excl": 6,
+        "frac_shared": 0.91552734375,
+        "frac_tern_excl": 0.0,
+        "frac_fp_excl": 0.00146484375,
+        "r_mean": 0.4615565538406372,
+        "r_median": 0.46544158458709717,
+        "cos_shared_mean": 0.070119708776474,
+        "cos_shared_median": 0.0654648020863533,
+        "r_hist_edges": [0.0, 0.05],
+        "r_hist_counts": [0],
+        "final_fve_tern": 0.9431018902377584,
+        "final_fve_fp": 0.9242816218467397,
+        "final_l0": 32.0
+      }
+    },
+    {
+      "layer": 3,
+      "metrics": {
+        "n_shared": 4019,
+        "n_tern_excl": 0,
+        "n_fp_excl": 0,
+        "r_median": 0.4861362874507904,
+        "cos_shared_median": 0.09078560024499893,
+        "final_fve_tern": 0.895108492039648,
+        "final_fve_fp": 0.880089067541198
+      }
+    },
+    {
+      "layer": 5,
+      "metrics": {
+        "n_shared": 4009,
+        "n_tern_excl": 0,
+        "n_fp_excl": 0,
+        "r_median": 0.4850028157234192,
+        "cos_shared_median": 0.15204954147338867,
+        "final_fve_tern": 0.8737266158517041,
+        "final_fve_fp": 0.8375787554351818
+      }
+    },
+    {
+      "layer": 7,
+      "metrics": {
+        "n_shared": 4074,
+        "n_tern_excl": 0,
+        "n_fp_excl": 0,
+        "r_median": 0.49349328875541687,
+        "cos_shared_median": 0.24806049466133118,
+        "final_fve_tern": 0.8738481886678579,
+        "final_fve_fp": 0.8510158975944557
+      }
+    }
+  ],
+  "wall_s": 736.8919899463654
+}

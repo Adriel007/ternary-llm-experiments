@@ -1,0 +1,50 @@
+{
+  "note": "Summary of the 3-seed H1 run (full per-step histories are reproducible via experiments/dynamics/run_full.py; the complete results.json lives in the Colab run artifacts). The corrected, PTQ-based H3 analysis is in h3.json; the 'spearman_lambda_delta' below is the CONFOUNDED relax-to-FP probe (kept only as a co-adaptation diagnostic), not the H3 result.",
+  "environment": {
+    "gpu": "NVIDIA L4",
+    "dtype": "bfloat16",
+    "torch": "2.11.0+cu128",
+    "python": "3.12.13",
+    "total_train_wall_s": 1199
+  },
+  "config": {
+    "seeds": [0, 1, 2],
+    "steps": 2000,
+    "batch_size": 16,
+    "seq_len": 128,
+    "lr": 0.0003,
+    "warmup": 100,
+    "weight_decay": 0.1,
+    "betas": [0.9, 0.95],
+    "n_train_tokens": 6000000,
+    "n_val_tokens": 300000,
+    "vocab_size": 50257,
+    "model": "tiny d=512 L=8 MHA h=8 intermediate=1408 relu2-gated, ~51.4M params",
+    "hessian_iters": 20,
+    "hessian_bsz": 8
+  },
+  "summary": {
+    "fp_final_val": {"mean": 2.7264209866523736, "std": 0.002374543832630474, "n": 3},
+    "ternary_final_val": {"mean": 2.8438524723052985, "std": 0.015220665176850598, "n": 3},
+    "ternarization_tax_nats": {"mean": 0.11743148565292365, "std": 0.012895117662486917, "n": 3},
+    "fp_perplexity": 15.28,
+    "ternary_perplexity": 17.18,
+    "lambda_max_fp": {"mean": 50.513306299845375, "std": 5.410710122353295, "n": 3},
+    "lambda_max_ternary": {"mean": 101.34238497416179, "std": 11.371747839959069, "n": 3},
+    "spearman_lambda_delta_CONFOUNDED_relax_probe": -0.9047619047618832
+  },
+  "per_seed": {
+    "ternary_final_val": [2.8624, 2.8251, 2.8441],
+    "fp_final_val": [2.7289, 2.7232, 2.7271],
+    "lambda_max_ternary": [88.8, 98.9, 116.3],
+    "lambda_max_fp": [49.8, 44.3, 57.5]
+  },
+  "ternarization_trajectory_seed0": {
+    "frac_zero_start": 0.310,
+    "frac_zero_end": 0.310,
+    "dist_to_lattice_start": 0.4478,
+    "dist_to_lattice_end": 0.4498,
+    "final_overall": {"frac_zero": 0.310, "frac_neg": 0.345, "frac_pos": 0.345, "dist_to_lattice": 0.4498, "n_ternary_weights": 25690112},
+    "comment": "%zeros is flat (scale-invariant under absmean): latent weights stay diffuse, no visible organization toward the lattice."
+  }
+}

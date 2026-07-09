@@ -1,8 +1,10 @@
 # MANIFEST — índice mestre do dado bruto
 
-**Autoridade:** os *verdicts* (números, conclusões) são fonte-única em `docs/backlog-done.md`.
-Aqui só o **mapa de localização**: codinome-de-pod → item → paper → run canônico. Onde a atribuição
-a paper é inferida (não lida direto do backlog), marco `≈`; onde é ambígua, aponto `→ backlog #NN`.
+**Autoridade:** os *verdicts* (números, conclusões) são consolidados no ledger de desenvolvimento
+`docs/backlog-done.md` (monorepo privado). Este pacote público embarca os **artefatos de dado** que
+lastreiam cada número (`results/`, `reports/data/`, `reports/figures/`); este MANIFEST é o mapa de
+localização deles: codinome-de-pod → item → paper → run canônico. Onde a atribuição a paper é inferida
+(não lida direto do backlog), marco `≈`; onde é ambígua, aponto `→ backlog #NN`.
 
 > **View navegável:** `results/paper-<id>/` reúne por **symlink** os stores de cada paper (dado real +
 > stores in-place), sem mover nada. Ver `results/README.md`. Este MANIFEST é o índice textual; a view é
@@ -45,6 +47,11 @@ cobrem o mesmo item (pods/retries/smokes distintos) — a coluna **canônico** d
 | df | `phd-hhdf`(hh_datafree) | data-free / crosscoder | ≈G/H | → backlog |
 
 > `phd-w9edit/` está **vazio** (run que nunca produziu saída) — candidato a `trash/` numa próxima passada.
+
+> **Órfãos load-bearing agora navegáveis por-paper (2026-07-09):** `phd-r2` (MoE-30B canônico, o lado
+> "96%") e `phd-hhdf` (head-to-head INT4) deixaram de estar soltos — foram linkados nas views:
+> `paper-b-kplane/{runpod-moe30b-phd-r2, runpod-int4hh-phd-hhdf}` e `paper-c-scale/runpod-moe30b-phd-r2`,
+> de modo que o empacotamento `tar -czh` de cada view já os inclui.
 
 ## 2) Stores in-place (ficam no pacote self-contained; ponteiro + proveniência)
 

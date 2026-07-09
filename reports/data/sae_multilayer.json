@@ -1,0 +1,2752 @@
+{
+  "model": "microsoft/bitnet-b1.58-2B-4T-bf16",
+  "layers": [
+    6,
+    15,
+    23
+  ],
+  "corpus": "wikitext-103-raw-v1",
+  "tag": "",
+  "results": [
+    {
+      "layer": 6,
+      "metrics": {
+        "fve": 0.8301610265979733,
+        "l0": 32.0,
+        "dead": 0,
+        "d_sae": 16384,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          2000,
+          3000,
+          3999
+        ],
+        "fve": [
+          -1.8454203480865696,
+          0.7727958999881431,
+          0.8284087443640972,
+          0.8307390169790676,
+          0.8159787301151151
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 3037,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 4112.328,
+              "focus": " )",
+              "context": "39 metres ( 128 ft ) deep from"
+            },
+            {
+              "act": 4111.849,
+              "focus": " )",
+              "context": "40 feet ( 12 m ) high ."
+            },
+            {
+              "act": 3939.96,
+              "focus": " )",
+              "context": "83 metres ( 272 ft ) iron bridge"
+            },
+            {
+              "act": 3894.757,
+              "focus": " )",
+              "context": "17 m ( 56 ft ) -wide"
+            },
+            {
+              "act": 3888.871,
+              "focus": " )",
+              "context": "11 metres ( 36 ft ) . In"
+            },
+            {
+              "act": 3844.833,
+              "focus": " )",
+              "context": "5 metres ( 16 ft ) . She"
+            }
+          ]
+        },
+        {
+          "feature": 7113,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 2952.882,
+              "focus": " and",
+              "context": " the Bruins to improve quickly , and they won"
+            },
+            {
+              "act": 2949.166,
+              "focus": " and",
+              "context": " The film received favorable reviews , and was a"
+            },
+            {
+              "act": 2864.712,
+              "focus": " and",
+              "context": " issuing advisories on it , and forecasters"
+            },
+            {
+              "act": 2859.245,
+              "focus": " and",
+              "context": " programs for education and outreach , and secured funding"
+            },
+            {
+              "act": 2848.932,
+              "focus": " and",
+              "context": " AML can be challenging , and should be"
+            },
+            {
+              "act": 2757.536,
+              "focus": " and",
+              "context": " first NBA Finals MVP award , and he cried"
+            }
+          ]
+        },
+        {
+          "feature": 3722,
+          "fire_rate": 0.3994,
+          "examples": [
+            {
+              "act": 4190.96,
+              "focus": " =",
+              "context": " contract expired .<|eot_id|>= = = Loan in"
+            },
+            {
+              "act": 3958.43,
+              "focus": " =",
+              "context": "pearances = =<|eot_id|>= = Awards ="
+            },
+            {
+              "act": 3954.159,
+              "focus": " =",
+              "context": "ifications = = =<|eot_id|>= = East "
+            },
+            {
+              "act": 3869.176,
+              "focus": " =",
+              "context": " Certifications = =<|eot_id|>= = Release history"
+            },
+            {
+              "act": 3859.921,
+              "focus": " =",
+              "context": " be found .<|eot_id|>= = = Production process"
+            },
+            {
+              "act": 3812.374,
+              "focus": " =",
+              "context": " Loose liner notes .<|eot_id|>= = Charts ="
+            }
+          ]
+        },
+        {
+          "feature": 2915,
+          "fire_rate": 0.3993,
+          "examples": [
+            {
+              "act": 2265.29,
+              "focus": " destroyed",
+              "context": " in height . Nine homes were destroyed and several"
+            },
+            {
+              "act": 2233.308,
+              "focus": " damaged",
+              "context": " at least 200 homes were damaged . Two"
+            },
+            {
+              "act": 2176.738,
+              "focus": " damaged",
+              "context": " . Numerous boats and homes were damaged and over"
+            },
+            {
+              "act": 2170.335,
+              "focus": " away",
+              "context": " flooded . Several farms were washed away , including"
+            },
+            {
+              "act": 2156.837,
+              "focus": " flooded",
+              "context": " to shelters as their homes were flooded . Several"
+            },
+            {
+              "act": 2146.338,
+              "focus": " destroyed",
+              "context": "fri\u00e8re , four homes were destroyed by the"
+            }
+          ]
+        },
+        {
+          "feature": 11430,
+          "fire_rate": 0.3992,
+          "examples": [
+            {
+              "act": 2325.545,
+              "focus": " timber",
+              "context": " barrows were typically constructed of timber because building"
+            },
+            {
+              "act": 2305.492,
+              "focus": " wooded",
+              "context": " if the area was not highly wooded , then"
+            },
+            {
+              "act": 2276.645,
+              "focus": " ceremonies",
+              "context": " key factor in the experience of ceremonies and rituals"
+            },
+            {
+              "act": 2268.842,
+              "focus": " forest",
+              "context": " lack of information on how densely forested the"
+            },
+            {
+              "act": 2259.229,
+              "focus": " lyn",
+              "context": " on the edge of a large lynchet sc"
+            },
+            {
+              "act": 2250.143,
+              "focus": " timber",
+              "context": " Aubrey Burl argued that these timber tombs"
+            }
+          ]
+        },
+        {
+          "feature": 14352,
+          "fire_rate": 0.399,
+          "examples": [
+            {
+              "act": 3944.336,
+              "focus": " =",
+              "context": ".com.<|eot_id|>= = Construction = =<|eot_id|>"
+            },
+            {
+              "act": 3839.741,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Critical reception = =<|eot_id|>"
+            },
+            {
+              "act": 3826.396,
+              "focus": " =",
+              "context": " statistics .<|eot_id|>= = Analysis = =<|eot_id|>"
+            },
+            {
+              "act": 3812.313,
+              "focus": " =",
+              "context": " anew .<|eot_id|>= = Development = =<|eot_id|>"
+            },
+            {
+              "act": 3778.359,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Service history = =<|eot_id|>"
+            },
+            {
+              "act": 3772.791,
+              "focus": " =",
+              "context": " traffic .<|eot_id|>= = History = =<|eot_id|>"
+            }
+          ]
+        },
+        {
+          "feature": 1465,
+          "fire_rate": 0.3989,
+          "examples": [
+            {
+              "act": 3153.683,
+              "focus": " cm",
+              "context": " measure 12 \u2013 14 cm ( "
+            },
+            {
+              "act": 3112.141,
+              "focus": " ",
+              "context": " color . This species grows to 24 cm"
+            },
+            {
+              "act": 3037.76,
+              "focus": " cm",
+              "context": " 21 @.@ 2 cm ( "
+            },
+            {
+              "act": 3018.614,
+              "focus": "pan",
+              "context": " in ) long with a wingspan of "
+            },
+            {
+              "act": 2985.647,
+              "focus": " cm",
+              "context": " Australia . Reaching 24 cm ( "
+            },
+            {
+              "act": 2906.488,
+              "focus": " cm",
+              "context": " , 27 \u2013 30 cm ( "
+            }
+          ]
+        },
+        {
+          "feature": 14670,
+          "fire_rate": 0.3987,
+          "examples": [
+            {
+              "act": 3804.873,
+              "focus": " Exc",
+              "context": " which had to be cleared . Excavation"
+            },
+            {
+              "act": 3706.346,
+              "focus": " Cin",
+              "context": " by the German occupation administration . Cinemas ,"
+            },
+            {
+              "act": 3678.649,
+              "focus": " Bes",
+              "context": " M. Nachtigall . Beside St"
+            },
+            {
+              "act": 3628.781,
+              "focus": " Cou",
+              "context": " of an air traffic service . Coupled with"
+            },
+            {
+              "act": 3619.869,
+              "focus": " Emb",
+              "context": "ely sinful form of murder . Embryonic"
+            },
+            {
+              "act": 3556.16,
+              "focus": " Ident",
+              "context": "@ counting if monitored then . Identifying individual"
+            }
+          ]
+        },
+        {
+          "feature": 5789,
+          "fire_rate": 0.3987,
+          "examples": [
+            {
+              "act": 3127.928,
+              "focus": "ity",
+              "context": " Imperial unit known as Calamity Raven ,"
+            },
+            {
+              "act": 2826.006,
+              "focus": " Imperial",
+              "context": " tasked to fight against a mysterious Imperial unit known"
+            },
+            {
+              "act": 2766.452,
+              "focus": "am",
+              "context": " mysterious Imperial unit known as Calamity Raven"
+            },
+            {
+              "act": 2571.526,
+              "focus": " mysterious",
+              "context": " are tasked to fight against a mysterious Imperial unit"
+            },
+            {
+              "act": 2529.185,
+              "focus": " war",
+              "context": " Gallia lose face in the war . While"
+            },
+            {
+              "act": 2492.941,
+              "focus": "ian",
+              "context": " echelons of the Gallian Army exploit"
+            }
+          ]
+        },
+        {
+          "feature": 15799,
+          "fire_rate": 0.398,
+          "examples": [
+            {
+              "act": 5265.272,
+              "focus": "@",
+              "context": " appearances . A thirty @-@ second commercial"
+            },
+            {
+              "act": 5261.611,
+              "focus": "@",
+              "context": " Oklahoma Territory . Thirty @-@ six acres"
+            },
+            {
+              "act": 5182.778,
+              "focus": "@",
+              "context": " played in a three @-@ game test"
+            },
+            {
+              "act": 5155.545,
+              "focus": "@",
+              "context": " after an 18 @-@ month battle"
+            },
+            {
+              "act": 5154.331,
+              "focus": "@",
+              "context": " signed to a three @-@ year deal"
+            },
+            {
+              "act": 5132.188,
+              "focus": "@",
+              "context": " the tour included thirty @-@ one dates"
+            }
+          ]
+        },
+        {
+          "feature": 10990,
+          "fire_rate": 0.3979,
+          "examples": [
+            {
+              "act": 5777.883,
+              "focus": " '",
+              "context": " concept of ' Air Jordan . ' \"<|eot_id|>"
+            },
+            {
+              "act": 5723.298,
+              "focus": " \"",
+              "context": "s \" head of government . \" Lafitte"
+            },
+            {
+              "act": 5086.537,
+              "focus": " \"",
+              "context": " the entire county \" wet . \" On advice"
+            },
+            {
+              "act": 4988.455,
+              "focus": " \"",
+              "context": " woman in the free world . \" EW quoted"
+            },
+            {
+              "act": 4916.446,
+              "focus": " \"",
+              "context": " track as \" totally charming . \" A reviewer"
+            },
+            {
+              "act": 4852.547,
+              "focus": " \"",
+              "context": " as much because of that . \" Hanneman"
+            }
+          ]
+        },
+        {
+          "feature": 8503,
+          "fire_rate": 0.3977,
+          "examples": [
+            {
+              "act": 2693.548,
+              "focus": " %",
+              "context": " SV<|eot_id|>= Saves ; Sv % =<|eot_id|>"
+            },
+            {
+              "act": 2469.921,
+              "focus": " minutes",
+              "context": " =<|eot_id|>Time On Ice ( minutes ) ;"
+            },
+            {
+              "act": 2459.058,
+              "focus": " (",
+              "context": "I =<|eot_id|>Time On Ice ( minutes )"
+            },
+            {
+              "act": 2388.082,
+              "focus": "ts",
+              "context": " =<|eot_id|>Assists ; Pts<|eot_id|>="
+            },
+            {
+              "act": 2334.29,
+              "focus": " ;",
+              "context": " ; GA =<|eot_id|>Goals Against ; GAA"
+            },
+            {
+              "act": 2317.413,
+              "focus": "I",
+              "context": "<|eot_id|>= Games Played ; TOI =<|eot_id|>"
+            }
+          ]
+        },
+        {
+          "feature": 3274,
+          "fire_rate": 0.3976,
+          "examples": [
+            {
+              "act": 5577.5,
+              "focus": "=",
+              "context": " have not exaggerated . \"<|eot_id|>= = Critical"
+            },
+            {
+              "act": 5556.345,
+              "focus": "=",
+              "context": " of memorable lyrics . \"<|eot_id|>= = Music"
+            },
+            {
+              "act": 5491.808,
+              "focus": "=",
+              "context": "ll ever make . \"<|eot_id|>= = ="
+            },
+            {
+              "act": 5401.595,
+              "focus": "=",
+              "context": " \" peace offensive . \"<|eot_id|>= = Statements"
+            },
+            {
+              "act": 5299.844,
+              "focus": "=",
+              "context": " history would be . \"<|eot_id|>= = ="
+            },
+            {
+              "act": 5137.366,
+              "focus": "=",
+              "context": " a terrible idea . \"<|eot_id|>= Livin"
+            }
+          ]
+        },
+        {
+          "feature": 805,
+          "fire_rate": 0.3969,
+          "examples": [
+            {
+              "act": 6435.737,
+              "focus": " ",
+              "context": " had received an advance of $ 50 @"
+            },
+            {
+              "act": 6372.797,
+              "focus": " ",
+              "context": " in 2007 brought $ 808 million"
+            },
+            {
+              "act": 6004.445,
+              "focus": " ",
+              "context": " was offered a salary of $ 12 @"
+            },
+            {
+              "act": 5797.643,
+              "focus": " ",
+              "context": " that Juanita received a $ 168 million"
+            },
+            {
+              "act": 5739.43,
+              "focus": " ",
+              "context": " coach with a salary of $ 10 @"
+            },
+            {
+              "act": 5728.491,
+              "focus": " ",
+              "context": " would pay as much as $ 50 @"
+            }
+          ]
+        },
+        {
+          "feature": 3265,
+          "fire_rate": 0.3969,
+          "examples": [
+            {
+              "act": 3068.455,
+              "focus": " \"",
+              "context": " I Want for Christmas Is You \" by Carey"
+            },
+            {
+              "act": 2881.162,
+              "focus": " \"",
+              "context": " , \" Underneath the Tree \" premiered on"
+            },
+            {
+              "act": 2871.63,
+              "focus": " \"",
+              "context": " \" In God 's Hands \" and \""
+            },
+            {
+              "act": 2771.979,
+              "focus": " ,",
+              "context": " Flower Fairies of the Spring , was published"
+            },
+            {
+              "act": 2686.544,
+              "focus": " at",
+              "context": " the lead in Driving Miss Daisy at the theatre"
+            },
+            {
+              "act": 2671.288,
+              "focus": " \"",
+              "context": " . \" Love Me Like You \" was included"
+            }
+          ]
+        },
+        {
+          "feature": 3856,
+          "fire_rate": 0.3968,
+          "examples": [
+            {
+              "act": 3145.801,
+              "focus": "opo",
+              "context": " achieve a cure . Hematopoietic"
+            },
+            {
+              "act": 3127.038,
+              "focus": "atin",
+              "context": " up to several years . Gelatinipul"
+            },
+            {
+              "act": 3096.782,
+              "focus": "lyph",
+              "context": " remains obscure . The hieroglyphs that"
+            },
+            {
+              "act": 2872.409,
+              "focus": " Yugosl",
+              "context": "-@ war membership . The Yugoslav communist"
+            },
+            {
+              "act": 2854.3,
+              "focus": " opera",
+              "context": " of the universe . \" Soap opera reporting website"
+            },
+            {
+              "act": 2779.258,
+              "focus": "avic",
+              "context": "@ Political Standpoint . Slavic people living"
+            }
+          ]
+        },
+        {
+          "feature": 435,
+          "fire_rate": 0.3965,
+          "examples": [
+            {
+              "act": 2449.469,
+              "focus": " glanced",
+              "context": "-@ inch Dahlgren glanced off the"
+            },
+            {
+              "act": 2435.8,
+              "focus": " exploded",
+              "context": " the German battleships , Defence exploded and sank"
+            },
+            {
+              "act": 2421.51,
+              "focus": " explode",
+              "context": " The other two shells failed to explode and caused"
+            },
+            {
+              "act": 2380.792,
+              "focus": " exploded",
+              "context": " last salvo . The shell exploded upon impacting"
+            },
+            {
+              "act": 2311.38,
+              "focus": " shattered",
+              "context": " The shell failed to explode and shattered on impact"
+            },
+            {
+              "act": 2269.889,
+              "focus": " rico",
+              "context": "-@ inch belt armor , ricocheted"
+            }
+          ]
+        },
+        {
+          "feature": 10484,
+          "fire_rate": 0.3963,
+          "examples": [
+            {
+              "act": 5926.971,
+              "focus": "30",
+              "context": " . At 17 : 30 , K"
+            },
+            {
+              "act": 5342.392,
+              "focus": "30",
+              "context": "<|eot_id|>Around 19 : 30 , Admiral"
+            },
+            {
+              "act": 5329.382,
+              "focus": "00",
+              "context": "Shortly before 16 : 00 the battle"
+            },
+            {
+              "act": 4665.345,
+              "focus": "00",
+              "context": " shortly after 17 : 00 , and"
+            },
+            {
+              "act": 4518.631,
+              "focus": "00",
+              "context": "Shortly after 20 : 00 , the"
+            },
+            {
+              "act": 4396.473,
+              "focus": "00",
+              "context": "Shortly after 19 : 00 , the"
+            }
+          ]
+        },
+        {
+          "feature": 3840,
+          "fire_rate": 0.3959,
+          "examples": [
+            {
+              "act": 4736.578,
+              "focus": "36",
+              "context": " over 11 metres ( 36 ft )"
+            },
+            {
+              "act": 4431.547,
+              "focus": "16",
+              "context": " by 5 metres ( 16 ft )"
+            },
+            {
+              "act": 4418.303,
+              "focus": "240",
+              "context": " approximately 150 mi ( 240 km )"
+            },
+            {
+              "act": 4414.169,
+              "focus": "81",
+              "context": " approximately 130 kilometres ( 81 mi )"
+            },
+            {
+              "act": 4325.983,
+              "focus": "56",
+              "context": " of 17 metres ( 56 ft )"
+            },
+            {
+              "act": 4314.762,
+              "focus": "16",
+              "context": " than 5 metres ( 16 ft )"
+            }
+          ]
+        },
+        {
+          "feature": 13000,
+          "fire_rate": 0.3956,
+          "examples": [
+            {
+              "act": 4858.44,
+              "focus": "color",
+              "context": "Barker worked principally in watercolor with pen"
+            },
+            {
+              "act": 4630.666,
+              "focus": " oils",
+              "context": " @-@ white , in oils , and"
+            },
+            {
+              "act": 4222.545,
+              "focus": "colour",
+              "context": "arker was equally proficient in watercolour , pen"
+            },
+            {
+              "act": 4178.939,
+              "focus": " oils",
+              "context": "colour , pen and ink , oils , and"
+            },
+            {
+              "act": 4115.286,
+              "focus": " paint",
+              "context": " \" I have always tried to paint instinctively"
+            },
+            {
+              "act": 4040.026,
+              "focus": " sketch",
+              "context": " pastels . She carried a sketchbook with"
+            }
+          ]
+        },
+        {
+          "feature": 1828,
+          "fire_rate": 0.3952,
+          "examples": [
+            {
+              "act": 4670.592,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Background = =<|eot_id|>Houston"
+            },
+            {
+              "act": 4417.104,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Background = =<|eot_id|>By"
+            },
+            {
+              "act": 4413.929,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Biography = =<|eot_id|>="
+            },
+            {
+              "act": 4359.59,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Background = =<|eot_id|>The"
+            },
+            {
+              "act": 4353.042,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Background = =<|eot_id|>F"
+            },
+            {
+              "act": 4328.448,
+              "focus": " =",
+              "context": " .<|eot_id|>= = Synopsis = =<|eot_id|>="
+            }
+          ]
+        },
+        {
+          "feature": 13290,
+          "fire_rate": 0.3952,
+          "examples": [
+            {
+              "act": 7713.12,
+              "focus": "PL",
+              "context": " the Private Pilot Licence ( PPL ) ,"
+            },
+            {
+              "act": 7329.346,
+              "focus": "ights",
+              "context": " the GA spectrum : microlights , amateur"
+            },
+            {
+              "act": 7232.709,
+              "focus": "ights",
+              "context": "35 per hour for microlights . Recent"
+            },
+            {
+              "act": 7042.401,
+              "focus": " qualification",
+              "context": " = = =<|eot_id|>The pilot qualification most relevant"
+            },
+            {
+              "act": 6773.406,
+              "focus": "ights",
+              "context": " aircraft , such as microlights , amateur"
+            },
+            {
+              "act": 6754.179,
+              "focus": " Private",
+              "context": " most relevant to GA is the Private Pilot Licence"
+            }
+          ]
+        },
+        {
+          "feature": 11932,
+          "fire_rate": 0.3952,
+          "examples": [
+            {
+              "act": 2723.519,
+              "focus": " submarines",
+              "context": " @-@ powered ballistic missile submarines being built"
+            },
+            {
+              "act": 2679.293,
+              "focus": " submarine",
+              "context": "ant is the first ballistic missile submarine to have"
+            },
+            {
+              "act": 2678.49,
+              "focus": " submarines",
+              "context": " and built by India . The submarines are "
+            },
+            {
+              "act": 2595.718,
+              "focus": " submarines",
+              "context": " build nuclear @-@ powered submarines .<|eot_id|>"
+            },
+            {
+              "act": 2496.915,
+              "focus": " submarines",
+              "context": " submarines are nuclear powered ballistic missile submarines built under"
+            },
+            {
+              "act": 2489.875,
+              "focus": " submarine",
+              "context": " December 2014 , the submarine set off"
+            }
+          ]
+        },
+        {
+          "feature": 3817,
+          "fire_rate": 0.3951,
+          "examples": [
+            {
+              "act": 3122.927,
+              "focus": " Clayton",
+              "context": " for her work . Mary Violet Clayton Calth"
+            },
+            {
+              "act": 3027.256,
+              "focus": " Krak",
+              "context": " co @-@ star Jane Krakowski ,"
+            },
+            {
+              "act": 2744.941,
+              "focus": "anz",
+              "context": " 10 . Margaret Pomeranz and David"
+            },
+            {
+              "act": 2723.588,
+              "focus": "man",
+              "context": " the world \" . Sarah Rodman of The"
+            },
+            {
+              "act": 2717.473,
+              "focus": " Ritch",
+              "context": " year , she voiced Roxanne Ritchie ,"
+            },
+            {
+              "act": 2712.236,
+              "focus": "ker",
+              "context": " \" he added . Deborah Wilker of South"
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2560,
+      "sae": {
+        "d_sae": 16384,
+        "k": 32,
+        "steps": 4000
+      }
+    },
+    {
+      "layer": 15,
+      "metrics": {
+        "fve": 0.767544453874338,
+        "l0": 32.0,
+        "dead": 0,
+        "d_sae": 16384,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          2000,
+          3000,
+          3999
+        ],
+        "fve": [
+          -0.17157313096733473,
+          0.7116847477076802,
+          0.7479138303159489,
+          0.7591904362687711,
+          0.7630931441442798
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 12579,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 15483.918,
+              "focus": "192",
+              "context": " of Hymns ( 1929 )"
+            },
+            {
+              "act": 15087.145,
+              "focus": "197",
+              "context": " on April 4 , 1979 ."
+            },
+            {
+              "act": 15005.547,
+              "focus": "191",
+              "context": "umption Church in Dwight ( 1914 )"
+            },
+            {
+              "act": 14819.974,
+              "focus": "192",
+              "context": "ception Church in Omaha ( 1926 )"
+            },
+            {
+              "act": 14594.974,
+              "focus": "192",
+              "context": " of the Five Thousand ( 1929 )"
+            },
+            {
+              "act": 14446.428,
+              "focus": "185",
+              "context": " Camille Montagne in 1856 ,"
+            }
+          ]
+        },
+        {
+          "feature": 11343,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 15691.889,
+              "focus": " .",
+              "context": " simply quit , but get fired . This proves"
+            },
+            {
+              "act": 15488.892,
+              "focus": " but",
+              "context": " decides he cannot simply quit , but get fired"
+            },
+            {
+              "act": 14924.88,
+              "focus": " ,",
+              "context": " he decides he cannot simply quit , but get"
+            },
+            {
+              "act": 14628.204,
+              "focus": " he",
+              "context": " falter a second time , he decides he"
+            },
+            {
+              "act": 14341.163,
+              "focus": " quit",
+              "context": " , he decides he cannot simply quit , but"
+            },
+            {
+              "act": 14071.037,
+              "focus": " difficult",
+              "context": " but get fired . This proves difficult as he"
+            }
+          ]
+        },
+        {
+          "feature": 4375,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 13157.356,
+              "focus": "8",
+              "context": " during the war of 1788 \u2013 "
+            },
+            {
+              "act": 12990.088,
+              "focus": " ",
+              "context": " squadrons during the war of 1788"
+            },
+            {
+              "act": 12319.293,
+              "focus": " of",
+              "context": " Finnish squadrons during the war of 178"
+            },
+            {
+              "act": 11823.397,
+              "focus": "8",
+              "context": "@ Swedish War of 1788 \u2013 "
+            },
+            {
+              "act": 11707.124,
+              "focus": " ",
+              "context": "During the Russian war of 1788"
+            },
+            {
+              "act": 11577.92,
+              "focus": " ",
+              "context": " of exposure during the war of 1741"
+            }
+          ]
+        },
+        {
+          "feature": 13468,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 13968.304,
+              "focus": " groups",
+              "context": " can be prepared with various functional groups both on"
+            },
+            {
+              "act": 11756.692,
+              "focus": " .",
+              "context": " carbon center and on the sulfur . The substitution"
+            },
+            {
+              "act": 11434.548,
+              "focus": " on",
+              "context": " prepared with various functional groups both on the an"
+            },
+            {
+              "act": 11367.342,
+              "focus": " both",
+              "context": " be prepared with various functional groups both on the"
+            },
+            {
+              "act": 11253.064,
+              "focus": " and",
+              "context": " on the anionic carbon center and on the"
+            },
+            {
+              "act": 10818.833,
+              "focus": " prepared",
+              "context": " of ylides can be prepared with various"
+            }
+          ]
+        },
+        {
+          "feature": 3389,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 17225.541,
+              "focus": " were",
+              "context": " ; coins made of antimony were issued in"
+            },
+            {
+              "act": 16290.652,
+              "focus": " ,",
+              "context": "hou province in 1931 , but because"
+            },
+            {
+              "act": 16165.106,
+              "focus": " but",
+              "context": " province in 1931 , but because of"
+            },
+            {
+              "act": 15774.22,
+              "focus": "ing",
+              "context": " their rapid wear , their minting was discontinued"
+            },
+            {
+              "act": 15386.271,
+              "focus": " mint",
+              "context": " of their rapid wear , their minting was"
+            },
+            {
+              "act": 15278.126,
+              "focus": " issued",
+              "context": " coins made of antimony were issued in China"
+            }
+          ]
+        },
+        {
+          "feature": 6938,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 15149.276,
+              "focus": "isc",
+              "context": " he was thought to approach omniscience and"
+            },
+            {
+              "act": 14830.782,
+              "focus": "isc",
+              "context": " the gods , was not omniscient ."
+            },
+            {
+              "act": 11831.896,
+              "focus": "isc",
+              "context": " album Ziltoid the Omniscient ("
+            },
+            {
+              "act": 11154.97,
+              "focus": "isc",
+              "context": " = Ziltoid the Omniscient and"
+            },
+            {
+              "act": 10016.973,
+              "focus": " after",
+              "context": " Han Qi in 1124 after leaving the"
+            },
+            {
+              "act": 9960.261,
+              "focus": " learned",
+              "context": " 1122 , but he learned from Zhou"
+            }
+          ]
+        },
+        {
+          "feature": 5803,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 14758.887,
+              "focus": " novel",
+              "context": " of the Chicago Reader said the novel transcends"
+            },
+            {
+              "act": 14194.862,
+              "focus": " has",
+              "context": " also positive , saying the album has a \""
+            },
+            {
+              "act": 14168.742,
+              "focus": " was",
+              "context": " her review commenting that the song was a \""
+            },
+            {
+              "act": 13549.467,
+              "focus": " largely",
+              "context": " He noted that the album \" largely offers a"
+            },
+            {
+              "act": 13151.7,
+              "focus": " a",
+              "context": " review commenting that the song was a \" predict"
+            },
+            {
+              "act": 13104.107,
+              "focus": " is",
+              "context": " the Herald Sun that \" there is not a"
+            }
+          ]
+        },
+        {
+          "feature": 11356,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 20292.902,
+              "focus": " \u2013",
+              "context": " 4<|eot_id|>May 11 \u2013 Colonna"
+            },
+            {
+              "act": 19814.078,
+              "focus": " \u2013",
+              "context": " 3<|eot_id|>May 12 \u2013 Colonna"
+            },
+            {
+              "act": 19695.072,
+              "focus": " \u2013",
+              "context": " 5<|eot_id|>May 13 \u2013 Colonna"
+            },
+            {
+              "act": 19608.162,
+              "focus": " \u2013",
+              "context": " 5<|eot_id|>May 16 \u2013 Colonna"
+            },
+            {
+              "act": 19451.422,
+              "focus": " \u2013",
+              "context": " 5<|eot_id|>May 14 \u2013 Colonna"
+            },
+            {
+              "act": 19125.879,
+              "focus": " \u2013",
+              "context": " 4<|eot_id|>May 15 \u2013 Colonna"
+            }
+          ]
+        },
+        {
+          "feature": 6465,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 21677.338,
+              "focus": " Reality",
+              "context": " . Reviewed Work : Image and Reality in the"
+            },
+            {
+              "act": 21138.52,
+              "focus": " Reality",
+              "context": " \" Reviewed Work : Image and Reality of the"
+            },
+            {
+              "act": 19263.766,
+              "focus": " of",
+              "context": " Reviewed Work : Image and Reality of the Israel"
+            },
+            {
+              "act": 16968.461,
+              "focus": " Image",
+              "context": " Perspectives , \" Reviewed Work : Image and Reality"
+            },
+            {
+              "act": 16937.629,
+              "focus": " Image",
+              "context": " , Nicolas . Reviewed Work : Image and Reality"
+            },
+            {
+              "act": 16663.988,
+              "focus": " Reality",
+              "context": " . Reviewed work : Image and Reality of the"
+            }
+          ]
+        },
+        {
+          "feature": 9329,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 20488.691,
+              "focus": " symbol",
+              "context": " of Sb as the standard chemical symbol for ant"
+            },
+            {
+              "act": 16907.455,
+              "focus": " for",
+              "context": " Sb as the standard chemical symbol for antimony"
+            },
+            {
+              "act": 16073.146,
+              "focus": " abbreviation",
+              "context": "zelius , who used this abbreviation of the"
+            },
+            {
+              "act": 15204.945,
+              "focus": " chemical",
+              "context": " use of Sb as the standard chemical symbol for"
+            },
+            {
+              "act": 12209.332,
+              "focus": " of",
+              "context": "ius , who used this abbreviation of the name"
+            },
+            {
+              "act": 11782.757,
+              "focus": "ius",
+              "context": "\u00f6ns Jakob Berzelius , who"
+            }
+          ]
+        },
+        {
+          "feature": 13571,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 12686.289,
+              "focus": " could",
+              "context": " female deity . The feminine form could also be"
+            },
+            {
+              "act": 12648.935,
+              "focus": " form",
+              "context": " or female deity . The feminine form could also"
+            },
+            {
+              "act": 12351.77,
+              "focus": " feminine",
+              "context": " male or female deity . The feminine form could"
+            },
+            {
+              "act": 11992.646,
+              "focus": " written",
+              "context": " The feminine form could also be written with an"
+            },
+            {
+              "act": 11895.053,
+              "focus": " ,",
+              "context": " with an egg as determinative , connecting goddess"
+            },
+            {
+              "act": 11811.746,
+              "focus": " egg",
+              "context": " could also be written with an egg as determin"
+            }
+          ]
+        },
+        {
+          "feature": 3104,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 13979.424,
+              "focus": " competition",
+              "context": " 2004 . The architecture competition was planned"
+            },
+            {
+              "act": 12610.793,
+              "focus": " competition",
+              "context": " approved the project . An architectural competition was planned"
+            },
+            {
+              "act": 12537.28,
+              "focus": " submitted",
+              "context": " again . An investment study was submitted to the"
+            },
+            {
+              "act": 12312.768,
+              "focus": " study",
+              "context": "igorated again . An investment study was submitted"
+            },
+            {
+              "act": 12237.332,
+              "focus": " was",
+              "context": "2004 . The architecture competition was planned for"
+            },
+            {
+              "act": 12186.821,
+              "focus": " .",
+              "context": " Croatia formed a construction workgroup . It was"
+            }
+          ]
+        },
+        {
+          "feature": 13059,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 20317.68,
+              "focus": " nineteen",
+              "context": "0 . At the age of nineteen , she"
+            },
+            {
+              "act": 20076.42,
+              "focus": "24",
+              "context": " days , when at age 24 he led"
+            },
+            {
+              "act": 19564.783,
+              "focus": "15",
+              "context": " education , when he was 15 Wheeler was"
+            },
+            {
+              "act": 19404.332,
+              "focus": "16",
+              "context": " 1909 , aged 16 . She"
+            },
+            {
+              "act": 19186.428,
+              "focus": "23",
+              "context": " . At the age of 23 , he"
+            },
+            {
+              "act": 18927.418,
+              "focus": "27",
+              "context": " that time , at age 27 , she"
+            }
+          ]
+        },
+        {
+          "feature": 13495,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 18111.758,
+              "focus": " ridge",
+              "context": " to upper @-@ level ridge located south"
+            },
+            {
+              "act": 17260.215,
+              "focus": " pressure",
+              "context": "aster and an area of high pressure located over"
+            },
+            {
+              "act": 16930.717,
+              "focus": " ridge",
+              "context": " to mid @-@ level ridge , Omar"
+            },
+            {
+              "act": 15545.579,
+              "focus": " located",
+              "context": " upper @-@ level ridge located south of"
+            },
+            {
+              "act": 14133.521,
+              "focus": "lies",
+              "context": " @-@ latitude westerlies to the"
+            },
+            {
+              "act": 14118.48,
+              "focus": " located",
+              "context": " and an area of high pressure located over the"
+            }
+          ]
+        },
+        {
+          "feature": 7811,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 37358.078,
+              "focus": " /",
+              "context": "20 % of the blood and / or bone"
+            },
+            {
+              "act": 36949.457,
+              "focus": " /",
+              "context": " the City should reduce construction and / or population"
+            },
+            {
+              "act": 36498.23,
+              "focus": " /",
+              "context": " of tumor suppressor genes and / or the"
+            },
+            {
+              "act": 36103.23,
+              "focus": " /",
+              "context": " that it was poorly researched and / or allowed"
+            },
+            {
+              "act": 33440.758,
+              "focus": " /",
+              "context": " malignant cells with light microscopy and / or by"
+            },
+            {
+              "act": 19879.529,
+              "focus": " /",
+              "context": "s evidence is highly selective and / or dubious"
+            }
+          ]
+        },
+        {
+          "feature": 14285,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 15944.648,
+              "focus": " ,",
+              "context": " Dominican Republic in 1996 , on a"
+            },
+            {
+              "act": 15816.412,
+              "focus": " finds",
+              "context": " , on a whim , and finds herself compelled"
+            },
+            {
+              "act": 15807.187,
+              "focus": " and",
+              "context": "6 , on a whim , and finds herself"
+            },
+            {
+              "act": 15164.742,
+              "focus": " She",
+              "context": " the age of 14 . She is a"
+            },
+            {
+              "act": 15090.613,
+              "focus": " confront",
+              "context": " , and finds herself compelled to confront her father"
+            },
+            {
+              "act": 14858.536,
+              "focus": " herself",
+              "context": " on a whim , and finds herself compelled to"
+            }
+          ]
+        },
+        {
+          "feature": 4789,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 18949.203,
+              "focus": " N",
+              "context": " Nc6 3 . Nc3"
+            },
+            {
+              "act": 18524.432,
+              "focus": " N",
+              "context": "4 Ng6 19 . Nf3"
+            },
+            {
+              "act": 17572.918,
+              "focus": " Q",
+              "context": " Rf7 22 . Qh5"
+            },
+            {
+              "act": 17450.402,
+              "focus": " Q",
+              "context": " Qc7 15 . Qe3"
+            },
+            {
+              "act": 16729.803,
+              "focus": " Q",
+              "context": "3 Rac8 16 . Qe2"
+            },
+            {
+              "act": 16511.523,
+              "focus": " Be",
+              "context": "1 Be7 17 . Be2 "
+            }
+          ]
+        },
+        {
+          "feature": 2523,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 17045.553,
+              "focus": " ,",
+              "context": " opinion towards aviation generally is worsening , based on"
+            },
+            {
+              "act": 16225.853,
+              "focus": " ,",
+              "context": " concerns relating to emissions and noise , and private"
+            },
+            {
+              "act": 15907.339,
+              "focus": " concerns",
+              "context": " worsening , based on increasing environmental concerns relating to"
+            },
+            {
+              "act": 15291.192,
+              "focus": " worsening",
+              "context": "Public opinion towards aviation generally is worsening , based"
+            },
+            {
+              "act": 14560.467,
+              "focus": " and",
+              "context": " relating to emissions and noise , and private flying"
+            },
+            {
+              "act": 13987.334,
+              "focus": " on",
+              "context": " aviation generally is worsening , based on increasing environmental"
+            }
+          ]
+        },
+        {
+          "feature": 11562,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 12881.947,
+              "focus": " called",
+              "context": "endent television . \" Rolling Stone called her Palin"
+            },
+            {
+              "act": 11873.032,
+              "focus": " said",
+              "context": " \" Nicole Phelps of Style.com said , \""
+            },
+            {
+              "act": 11691.562,
+              "focus": " said",
+              "context": " \" Tim Stack of Entertainment Weekly said , \""
+            },
+            {
+              "act": 11597.807,
+              "focus": " wrote",
+              "context": " \" GM Andrew Soltis wrote in "
+            },
+            {
+              "act": 11508.933,
+              "focus": " explains",
+              "context": " order . Banerjea explains that though"
+            },
+            {
+              "act": 11308.055,
+              "focus": "cur",
+              "context": " \" Rowson and Watson concur . Watson"
+            }
+          ]
+        },
+        {
+          "feature": 9009,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 15301.233,
+              "focus": "elling",
+              "context": "i is a fictionalized retelling of Yue"
+            },
+            {
+              "act": 14994.716,
+              "focus": " written",
+              "context": " , and execution . It was written by a"
+            },
+            {
+              "act": 14538.059,
+              "focus": " ,",
+              "context": "ai ( \u94b1\u5f69 ) , who lived"
+            },
+            {
+              "act": 14158.602,
+              "focus": " It",
+              "context": " military exploits , and execution . It was written"
+            },
+            {
+              "act": 13394.054,
+              "focus": " was",
+              "context": " exploits , and execution . It was written by"
+            },
+            {
+              "act": 13321.468,
+              "focus": " .",
+              "context": " , military exploits , and execution . It was"
+            }
+          ]
+        },
+        {
+          "feature": 9377,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 18489.119,
+              "focus": " fell",
+              "context": " partially downed by the storm fell on him"
+            },
+            {
+              "act": 18231.166,
+              "focus": " on",
+              "context": " downed by the storm fell on him during"
+            },
+            {
+              "act": 17089.832,
+              "focus": " and",
+              "context": " when her vehicle hydroplaned and struck a"
+            },
+            {
+              "act": 16579.186,
+              "focus": " struck",
+              "context": " her vehicle hydroplaned and struck a tree"
+            },
+            {
+              "act": 16511.258,
+              "focus": "ed",
+              "context": " killed when her vehicle hydroplaned and struck"
+            },
+            {
+              "act": 14681.174,
+              "focus": " and",
+              "context": " individual died after a wall collapsed and several slaves"
+            }
+          ]
+        },
+        {
+          "feature": 7649,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 25713.27,
+              "focus": " addition",
+              "context": " Institute of Archaeology . In addition , the"
+            },
+            {
+              "act": 25048.699,
+              "focus": " addition",
+              "context": " the same season ) . In addition he set"
+            },
+            {
+              "act": 24820.311,
+              "focus": " addition",
+              "context": " old at the time . In addition to films"
+            },
+            {
+              "act": 24618.607,
+              "focus": " addition",
+              "context": " publisher in the world . In addition to Polish"
+            },
+            {
+              "act": 24616.219,
+              "focus": " addition",
+              "context": " over forty million dollars . In addition , when"
+            },
+            {
+              "act": 24296.229,
+              "focus": " addition",
+              "context": " under his first teacher . In addition to the"
+            }
+          ]
+        },
+        {
+          "feature": 15570,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 17019.812,
+              "focus": " ",
+              "context": " in ( 50 @.@ 8 mm"
+            },
+            {
+              "act": 16288.049,
+              "focus": " ",
+              "context": " ( with 61 @.@ 20 days"
+            },
+            {
+              "act": 15311.494,
+              "focus": " ",
+              "context": " in ( 177 @.@ 8 mm"
+            },
+            {
+              "act": 14598.846,
+              "focus": " ",
+              "context": " averaging only 5 @.@ 5 ha"
+            },
+            {
+              "act": 14584.543,
+              "focus": " ",
+              "context": " cm ( 8 @.@ 3 in"
+            },
+            {
+              "act": 14530.716,
+              "focus": " ",
+              "context": " feet ( 5 @.@ 2 m"
+            }
+          ]
+        },
+        {
+          "feature": 16374,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 16188.659,
+              "focus": "186",
+              "context": " pace and scale from August 1862 until"
+            },
+            {
+              "act": 16124.747,
+              "focus": "186",
+              "context": " departed on 18 December 1869 and"
+            },
+            {
+              "act": 16079.654,
+              "focus": "186",
+              "context": " the month of August , 1862 ,"
+            },
+            {
+              "act": 15895.599,
+              "focus": "186",
+              "context": "<|eot_id|>On 31 July 1862 ,"
+            },
+            {
+              "act": 15246.585,
+              "focus": "186",
+              "context": " Mallory in late January 1862 that"
+            },
+            {
+              "act": 15175.896,
+              "focus": "186",
+              "context": " reactivated in August , 1862 ."
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2560,
+      "sae": {
+        "d_sae": 16384,
+        "k": 32,
+        "steps": 4000
+      }
+    },
+    {
+      "layer": 23,
+      "metrics": {
+        "fve": 0.784817628141435,
+        "l0": 32.0,
+        "dead": 2,
+        "d_sae": 16384,
+        "k": 32
+      },
+      "history": {
+        "step": [
+          0,
+          1000,
+          2000,
+          3000,
+          3999
+        ],
+        "fve": [
+          0.10504469584686094,
+          0.7400556668690379,
+          0.7719115065056749,
+          0.7818659232403812,
+          0.7873365929774849
+        ],
+        "l0": [
+          32.0,
+          32.0,
+          32.0,
+          32.0,
+          32.0
+        ],
+        "dead": [
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      },
+      "dashboard": [
+        {
+          "feature": 7861,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 53064.449,
+              "focus": "ending",
+              "context": " of fact and fiction . Blending together these"
+            },
+            {
+              "act": 52814.203,
+              "focus": " mixes",
+              "context": " the masala film , which mixes several genres"
+            },
+            {
+              "act": 52673.707,
+              "focus": " of",
+              "context": "1970s that this blend of technologies started"
+            },
+            {
+              "act": 47380.652,
+              "focus": " of",
+              "context": " an extraordinary and utterly seamless blend of adventure ,"
+            },
+            {
+              "act": 45723.301,
+              "focus": " of",
+              "context": " because of Tong 's blending of archery"
+            },
+            {
+              "act": 45188.004,
+              "focus": "using",
+              "context": " it a prime example of fusing free jazz"
+            }
+          ]
+        },
+        {
+          "feature": 4420,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 36076.34,
+              "focus": " to",
+              "context": " attempts to hide the games due to Reagan '"
+            },
+            {
+              "act": 29861.441,
+              "focus": " thus",
+              "context": " as an explicitly political publication and thus declined the"
+            },
+            {
+              "act": 29809.506,
+              "focus": " and",
+              "context": "el as an explicitly political publication and thus declined"
+            },
+            {
+              "act": 26458.547,
+              "focus": " he",
+              "context": " relief of Cuautla as he was afraid"
+            },
+            {
+              "act": 26454.496,
+              "focus": " he",
+              "context": " chief Gabbar Singh , but he could not"
+            },
+            {
+              "act": 26318.461,
+              "focus": " he",
+              "context": " he could not accept it as he was committed"
+            }
+          ]
+        },
+        {
+          "feature": 15612,
+          "fire_rate": 0.4,
+          "examples": [
+            {
+              "act": 46835.68,
+              "focus": " all",
+              "context": " \" set the pattern \" for all Wheeler '"
+            },
+            {
+              "act": 45067.457,
+              "focus": "s",
+              "context": " pattern \" for all Wheeler 's future excavation"
+            },
+            {
+              "act": 44974.344,
+              "focus": " for",
+              "context": " had \" set the pattern \" for all Wheeler"
+            },
+            {
+              "act": 36650.355,
+              "focus": " for",
+              "context": " a trend @-@ setter for \" multi"
+            },
+            {
+              "act": 35456.336,
+              "focus": " for",
+              "context": "ster . It became a prototype for synagogue design"
+            },
+            {
+              "act": 34031.996,
+              "focus": " that",
+              "context": " clearly the progenitor of much that has sounded"
+            }
+          ]
+        },
+        {
+          "feature": 13102,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 48542.867,
+              "focus": " famous",
+              "context": " Wu Song . Wu Song becomes famous for killing"
+            },
+            {
+              "act": 47682.422,
+              "focus": " famous",
+              "context": " =<|eot_id|>Wheeler became famous in Britain"
+            },
+            {
+              "act": 39009.938,
+              "focus": " reputation",
+              "context": " doing so , he developed a reputation as a"
+            },
+            {
+              "act": 37689.898,
+              "focus": " attention",
+              "context": "ators , Eaton came to public attention as leader"
+            },
+            {
+              "act": 37156.98,
+              "focus": " known",
+              "context": " . Meanwhile , Wheeler was well known for his"
+            },
+            {
+              "act": 35853.629,
+              "focus": " reputation",
+              "context": " Mail that Wheeler had developed a reputation as \""
+            }
+          ]
+        },
+        {
+          "feature": 10447,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 41365.902,
+              "focus": " (",
+              "context": "in Ehrensv\u00e4rd ( 171"
+            },
+            {
+              "act": 40408.508,
+              "focus": " (",
+              "context": " =<|eot_id|>There Will Be Blood ( 200"
+            },
+            {
+              "act": 40193.785,
+              "focus": " (",
+              "context": "s Court , Xiao Jianhua ( \u8096"
+            },
+            {
+              "act": 39529.262,
+              "focus": " (",
+              "context": " meant that No. 12 ( General Purpose"
+            },
+            {
+              "act": 39245.461,
+              "focus": " (",
+              "context": "icism = =<|eot_id|>Fitwatch ( formed in"
+            },
+            {
+              "act": 39066.562,
+              "focus": " (",
+              "context": "@ comedy Housefull 2 ( 201"
+            }
+          ]
+        },
+        {
+          "feature": 15264,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 35521.105,
+              "focus": " it",
+              "context": " double spacing is now avoided because it can create"
+            },
+            {
+              "act": 29982.379,
+              "focus": " they",
+              "context": " second game were removed , as they took up"
+            },
+            {
+              "act": 29462.229,
+              "focus": " to",
+              "context": " first glance ) may be shown to actually impair"
+            },
+            {
+              "act": 28932.0,
+              "focus": " can",
+              "context": " spacing is now avoided because it can create distracting"
+            },
+            {
+              "act": 27659.334,
+              "focus": " actually",
+              "context": " glance ) may be shown to actually impair reading"
+            },
+            {
+              "act": 27036.453,
+              "focus": " spacing",
+              "context": " Web enhances readability , that double spacing looks strange"
+            }
+          ]
+        },
+        {
+          "feature": 4274,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 31034.859,
+              "focus": " Music",
+              "context": " June 2006 through Universal Music Group before"
+            },
+            {
+              "act": 25116.938,
+              "focus": " Society",
+              "context": " by the Royal Astronomical Society . The"
+            },
+            {
+              "act": 24917.578,
+              "focus": " Universe",
+              "context": " crowned the winner of the Miss Universe Sri Lanka"
+            },
+            {
+              "act": 24013.496,
+              "focus": " Music",
+              "context": " , it was announced that Universal Music Group would"
+            },
+            {
+              "act": 22929.029,
+              "focus": " Factor",
+              "context": " and British versions of The X Factor and on"
+            },
+            {
+              "act": 22916.5,
+              "focus": " Music",
+              "context": "3 by RCA Records through Sony Music Entertainment ."
+            }
+          ]
+        },
+        {
+          "feature": 10788,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 32621.541,
+              "focus": " physics",
+              "context": " , and help create a nuclear physics group there"
+            },
+            {
+              "act": 29673.4,
+              "focus": " Physics",
+              "context": " he became the head of its Physics Department and"
+            },
+            {
+              "act": 29297.82,
+              "focus": " burns",
+              "context": "30 @-@ bed acute burns hospital for"
+            },
+            {
+              "act": 29157.494,
+              "focus": " phone",
+              "context": "OT / CAT joint venture mobile phone operator ,"
+            },
+            {
+              "act": 28565.283,
+              "focus": " Research",
+              "context": " its Physics Department and its Nuclear Research Center in"
+            },
+            {
+              "act": 28289.67,
+              "focus": " art",
+              "context": " a new purpose as a DIY art and music"
+            }
+          ]
+        },
+        {
+          "feature": 14610,
+          "fire_rate": 0.3999,
+          "examples": [
+            {
+              "act": 23885.566,
+              "focus": " Watch",
+              "context": "ufu County . China Labor Watch reported that"
+            },
+            {
+              "act": 22700.549,
+              "focus": " Program",
+              "context": "1993 Sundance Festival Shorts Program . He"
+            },
+            {
+              "act": 22591.5,
+              "focus": " Week",
+              "context": " face of Indian Bridal Fashion Week \u2014 IB"
+            },
+            {
+              "act": 22402.838,
+              "focus": " Awards",
+              "context": " Magazine during The Women in Hollywood Awards , honoring"
+            },
+            {
+              "act": 22162.432,
+              "focus": " Holdings",
+              "context": " and his group , MJ Basketball Holdings , to"
+            },
+            {
+              "act": 21997.561,
+              "focus": " Collection",
+              "context": " 's Remix & Soundtrack Collection , she"
+            }
+          ]
+        },
+        {
+          "feature": 11344,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 34874.879,
+              "focus": " growing",
+              "context": " the level of combat readiness is growing greatly ;"
+            },
+            {
+              "act": 32016.742,
+              "focus": "ifying",
+              "context": " an indication the storm was intensifying . The"
+            },
+            {
+              "act": 29758.086,
+              "focus": " growing",
+              "context": " , which are estimated to be growing in numbers"
+            },
+            {
+              "act": 28769.604,
+              "focus": " growing",
+              "context": "ia 's population has been growing slowly ,"
+            },
+            {
+              "act": 28598.396,
+              "focus": " rising",
+              "context": " caused by previous chemotherapy ) is rising ; therapy"
+            },
+            {
+              "act": 27261.473,
+              "focus": " failing",
+              "context": " a man whose physical body is failing him ."
+            }
+          ]
+        },
+        {
+          "feature": 6806,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 39132.824,
+              "focus": " Some",
+              "context": " in the course of history . Some gods can"
+            },
+            {
+              "act": 37277.984,
+              "focus": " Some",
+              "context": " giving power of the sun . Some scholars have"
+            },
+            {
+              "act": 36424.379,
+              "focus": " many",
+              "context": "ekheb \" . But many other names"
+            },
+            {
+              "act": 35221.359,
+              "focus": " Some",
+              "context": " apply to many deities . Some epithets"
+            },
+            {
+              "act": 34666.742,
+              "focus": " Many",
+              "context": " regions they presided over . Many gods had"
+            },
+            {
+              "act": 34341.941,
+              "focus": " Some",
+              "context": " , the kandake . Some deities"
+            }
+          ]
+        },
+        {
+          "feature": 4558,
+          "fire_rate": 0.3998,
+          "examples": [
+            {
+              "act": 51143.785,
+              "focus": " that",
+              "context": " to the fact that the steel that composed their"
+            },
+            {
+              "act": 49415.176,
+              "focus": " that",
+              "context": " .<|eot_id|>The earthen mound that once covered"
+            },
+            {
+              "act": 47825.824,
+              "focus": " that",
+              "context": " the larger slabs of stone that have fallen"
+            },
+            {
+              "act": 47417.203,
+              "focus": " which",
+              "context": " timber levers and struts which would have"
+            },
+            {
+              "act": 46106.219,
+              "focus": " that",
+              "context": " , the armies of industry professionals that put Bey"
+            },
+            {
+              "act": 46061.438,
+              "focus": " that",
+              "context": " . The hieroglyphs that were used"
+            }
+          ]
+        },
+        {
+          "feature": 2319,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 32801.121,
+              "focus": " two",
+              "context": " titled as a sly reference to two of his"
+            },
+            {
+              "act": 30704.584,
+              "focus": " the",
+              "context": " walrus , a reference to the 196"
+            },
+            {
+              "act": 30322.59,
+              "focus": " a",
+              "context": " \" bizarre \" after it mirrored a real life"
+            },
+            {
+              "act": 28247.855,
+              "focus": " by",
+              "context": " star ; the story was inspired by John Holmes"
+            },
+            {
+              "act": 26915.996,
+              "focus": " to",
+              "context": " was titled as a sly reference to two of"
+            },
+            {
+              "act": 26542.545,
+              "focus": " that",
+              "context": " ; a parody of an incident that occurred during"
+            }
+          ]
+        },
+        {
+          "feature": 16239,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 43200.414,
+              "focus": " G",
+              "context": " of Lying , alongside Ricky Gervais"
+            },
+            {
+              "act": 39439.32,
+              "focus": " Sk",
+              "context": " reception was positive , with Rachel Sklar of"
+            },
+            {
+              "act": 38866.363,
+              "focus": " and",
+              "context": " Red . A cover of Rodgers and Hammerstein"
+            },
+            {
+              "act": 38808.559,
+              "focus": " de",
+              "context": " North station at the Roque de los Much"
+            },
+            {
+              "act": 38511.348,
+              "focus": " Bur",
+              "context": " scored by R. D. Burman ,"
+            },
+            {
+              "act": 38492.27,
+              "focus": " Dr",
+              "context": " fellow SNL cast member Rachel Dratch in"
+            }
+          ]
+        },
+        {
+          "feature": 3647,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 37218.789,
+              "focus": " used",
+              "context": " of California , which had been used to build"
+            },
+            {
+              "act": 34137.512,
+              "focus": " speakers",
+              "context": "anyi then began using the speakers in a"
+            },
+            {
+              "act": 34112.844,
+              "focus": " slider",
+              "context": " 90 . He uses the slider less frequently"
+            },
+            {
+              "act": 33958.926,
+              "focus": " used",
+              "context": " two new Repsold machines were used for recording"
+            },
+            {
+              "act": 33624.27,
+              "focus": " used",
+              "context": " A. fragilis have been used as diagnostic"
+            },
+            {
+              "act": 33135.562,
+              "focus": " term",
+              "context": " Bewick , who used this term in his"
+            }
+          ]
+        },
+        {
+          "feature": 223,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 24445.416,
+              "focus": " success",
+              "context": " The film emerged as a commercial success , with"
+            },
+            {
+              "act": 24381.217,
+              "focus": " success",
+              "context": " , and was a box office success , gross"
+            },
+            {
+              "act": 20994.748,
+              "focus": " hit",
+              "context": " . The song was a club hit in the"
+            },
+            {
+              "act": 20567.688,
+              "focus": " hit",
+              "context": " . The novel was a commercial hit and was"
+            },
+            {
+              "act": 19738.605,
+              "focus": " success",
+              "context": " and was a critical and commercial success . The"
+            },
+            {
+              "act": 18952.502,
+              "focus": " hit",
+              "context": " became an international top forty Christmas hit song and"
+            }
+          ]
+        },
+        {
+          "feature": 11529,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 36065.152,
+              "focus": " origin",
+              "context": " stressed that a precise place of origin was \""
+            },
+            {
+              "act": 33826.926,
+              "focus": " builders",
+              "context": " although the identity of the original builders is still"
+            },
+            {
+              "act": 30858.055,
+              "focus": " sculptures",
+              "context": " , but that evidence of such sculptures has not"
+            },
+            {
+              "act": 29719.502,
+              "focus": " reason",
+              "context": " war captives , although the reason for this"
+            },
+            {
+              "act": 29096.951,
+              "focus": " necessity",
+              "context": " of the offender is an absolute necessity ' are"
+            },
+            {
+              "act": 29028.666,
+              "focus": " impact",
+              "context": " , and consideration of the national impact of GA"
+            }
+          ]
+        },
+        {
+          "feature": 431,
+          "fire_rate": 0.3997,
+          "examples": [
+            {
+              "act": 47527.117,
+              "focus": " among",
+              "context": " censorship of Polish schools , resistance among teachers led"
+            },
+            {
+              "act": 47404.344,
+              "focus": " among",
+              "context": " spreading disinformation and lowering morale among the Germans"
+            },
+            {
+              "act": 46323.07,
+              "focus": " among",
+              "context": " was largely a result of panic among the large"
+            },
+            {
+              "act": 43536.695,
+              "focus": " among",
+              "context": " .<|eot_id|>A major mutiny among crews of"
+            },
+            {
+              "act": 43520.012,
+              "focus": " among",
+              "context": " country . Cultural life was vibrant among both soldiers"
+            },
+            {
+              "act": 41545.598,
+              "focus": " among",
+              "context": " in suppressing a major mutiny among the crew"
+            }
+          ]
+        },
+        {
+          "feature": 1340,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 63727.82,
+              "focus": " of",
+              "context": " , Wheeler took a brief leave of absence to"
+            },
+            {
+              "act": 41622.629,
+              "focus": " of",
+              "context": " standards are issued with a Certificate of Airworth"
+            },
+            {
+              "act": 39275.051,
+              "focus": " of",
+              "context": "ibine has a positive heat of formation ,"
+            },
+            {
+              "act": 39115.508,
+              "focus": " of",
+              "context": " 4 right @-@ of @-"
+            },
+            {
+              "act": 38796.941,
+              "focus": " of",
+              "context": " missions and attacks on enemy lines of communication ,"
+            },
+            {
+              "act": 38608.211,
+              "focus": " of",
+              "context": " stay after arriving at this port of entry ."
+            }
+          ]
+        },
+        {
+          "feature": 4104,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 29794.045,
+              "focus": " order",
+              "context": "co , however disregarded the order and ,"
+            },
+            {
+              "act": 27751.279,
+              "focus": " idea",
+              "context": " picked up , they abandoned this idea . After"
+            },
+            {
+              "act": 27750.715,
+              "focus": " mind",
+              "context": " an abortion , but changes her mind and decides"
+            },
+            {
+              "act": 27292.689,
+              "focus": " late",
+              "context": " , but Hutch receives it too late .<|eot_id|>"
+            },
+            {
+              "act": 27164.178,
+              "focus": " refused",
+              "context": " into a pitcher , but he refused and left"
+            },
+            {
+              "act": 27084.908,
+              "focus": " threat",
+              "context": " payment , it delivered on its threat . T"
+            }
+          ]
+        },
+        {
+          "feature": 16050,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 49730.984,
+              "focus": " has",
+              "context": " barrow \" , it too has suffered considerable"
+            },
+            {
+              "act": 46994.023,
+              "focus": " also",
+              "context": " . The United States Virgin Islands also sustained significant"
+            },
+            {
+              "act": 44765.324,
+              "focus": " also",
+              "context": " were extensively damaged . The village also suffered water"
+            },
+            {
+              "act": 42152.406,
+              "focus": " only",
+              "context": " numerous islands , most of which only recorded minor"
+            },
+            {
+              "act": 38867.129,
+              "focus": " England",
+              "context": " . New York State and New England bore the"
+            },
+            {
+              "act": 37940.977,
+              "focus": " ,",
+              "context": " Cape Cod and Nantucket , bore the"
+            }
+          ]
+        },
+        {
+          "feature": 3785,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 31790.648,
+              "focus": " year",
+              "context": " After a five @-@ year absence ,"
+            },
+            {
+              "act": 31714.076,
+              "focus": " year",
+              "context": " After a five @-@ year break from"
+            },
+            {
+              "act": 27310.973,
+              "focus": " desperate",
+              "context": " a decade @-@ long desperate struggle ,"
+            },
+            {
+              "act": 26711.047,
+              "focus": " year",
+              "context": " After a two @-@ year hiatus ,"
+            },
+            {
+              "act": 26501.867,
+              "focus": " long",
+              "context": " from a decade @-@ long losing streak"
+            },
+            {
+              "act": 25312.576,
+              "focus": " month",
+              "context": " an 18 @-@ month battle with"
+            }
+          ]
+        },
+        {
+          "feature": 16073,
+          "fire_rate": 0.3996,
+          "examples": [
+            {
+              "act": 46089.316,
+              "focus": " of",
+              "context": " to gain traction at the beginning of the holiday"
+            },
+            {
+              "act": 41763.289,
+              "focus": " of",
+              "context": " Music Canada . By the end of 201"
+            },
+            {
+              "act": 39787.137,
+              "focus": " of",
+              "context": " live with the band throughout half of 199"
+            },
+            {
+              "act": 35357.121,
+              "focus": " of",
+              "context": " abdominal pain in the early part of 201"
+            },
+            {
+              "act": 35187.77,
+              "focus": " of",
+              "context": " Geological Survey in the second half of 201"
+            },
+            {
+              "act": 33916.691,
+              "focus": " of",
+              "context": " Bucharest ) by the end of 191"
+            }
+          ]
+        },
+        {
+          "feature": 13911,
+          "fire_rate": 0.3995,
+          "examples": [
+            {
+              "act": 41648.746,
+              "focus": "ised",
+              "context": " In doing so , he emphasised the folk"
+            },
+            {
+              "act": 41116.875,
+              "focus": "ised",
+              "context": "-@ Rivers , Wheeler emphasised the need"
+            },
+            {
+              "act": 40343.695,
+              "focus": "ising",
+              "context": " for a project . Further emphasising the importance"
+            },
+            {
+              "act": 39164.727,
+              "focus": " the",
+              "context": " doing so , he emphasised the folklor"
+            },
+            {
+              "act": 38327.367,
+              "focus": " of",
+              "context": " \" , also stressing the importance of crowd involvement"
+            },
+            {
+              "act": 38205.793,
+              "focus": "ised",
+              "context": " Wheeler and his first wife emphasised \" technical"
+            }
+          ]
+        }
+      ],
+      "n_vectors": 400000,
+      "d_in": 2560,
+      "sae": {
+        "d_sae": 16384,
+        "k": 32,
+        "steps": 4000
+      }
+    }
+  ],
+  "wall_s": 1048.8900768756866
+}

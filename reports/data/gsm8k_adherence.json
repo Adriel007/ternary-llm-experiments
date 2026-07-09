@@ -1,0 +1,56 @@
+{
+  "model": "microsoft/bitnet-b1.58-2B-4T-bf16",
+  "rank": 8,
+  "alpha": 16,
+  "num_fewshot": 5,
+  "greedy_layers": [
+    28,
+    10,
+    29,
+    26,
+    1,
+    0,
+    27,
+    18
+  ],
+  "allocations": {
+    "base": {
+      "layers": [],
+      "strict_match": 0.42380591357088704,
+      "flexible_extract": 0.620166793025019,
+      "adherence": {
+        "n": 2638,
+        "n_with_strict_template": 1664,
+        "adherence_rate": 0.6307808946171342
+      },
+      "eval_s": 2577.2359368801117
+    },
+    "greedy@8": {
+      "layers": [
+        0,
+        1,
+        10,
+        18,
+        26,
+        27,
+        28,
+        29
+      ],
+      "strict_match": 0.4927975739196361,
+      "flexible_extract": 0.6141015921152388,
+      "adherence": {
+        "n": 2638,
+        "n_with_strict_template": 1998,
+        "adherence_rate": 0.7573919636087946
+      },
+      "eval_s": 2792.2772676944733
+    }
+  },
+  "verdict": {
+    "delta_strict": 0.06899166034874904,
+    "delta_flexible": -0.006065200909780133,
+    "delta_adherence": 0.1266110689916604,
+    "adherence_explains_strict": true
+  },
+  "note": "2-arm data-parallel (one arm per GPU); each arm full 1319-doc test. n doubled by lm-eval per-filter sample logging; rates are correct."
+}

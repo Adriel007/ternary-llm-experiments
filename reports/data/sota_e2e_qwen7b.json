@@ -1,0 +1,30 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "max_new": 128,
+  "gamma": 4,
+  "n_prompts": 15,
+  "note": "speculative decoding is lossless (exact greedy output); speedup is wall-clock",
+  "step_ms": {
+    "target": 22.732,
+    "ternary_dense": 35.497,
+    "bnb4": 34.417
+  },
+  "c": {
+    "ternary_dense": 1.562,
+    "bnb4": 1.514
+  },
+  "tokens_per_s": {
+    "AR_vanilla": 42.8,
+    "spec_ternary_dense": 21.07,
+    "spec_bnb4": 27.84
+  },
+  "speedup_vs_AR": {
+    "spec_ternary_dense": 0.492,
+    "spec_bnb4": 0.651
+  },
+  "accepted_per_call": {
+    "spec_ternary_dense": 3.57,
+    "spec_bnb4": 4.59
+  },
+  "wall_s": 2554
+}

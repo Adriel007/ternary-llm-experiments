@@ -36,7 +36,7 @@ for r in load("humaneval.jsonl"):
 for r in load("ifeval_subset.jsonl"):
     rows.append(("ifeval_subset", r["model"], "ifeval", "prompt_strict", r["K"], r["prompt_strict"]))
 
-for r in load("moe_qwen3_30b.jsonl"):
+for r in load("overnight/moe_qwen3_30b_k2.jsonl"):
     rows.append(("moe_qwen3_30b", r["model"], "gsm8k", "exact_match,flexible-extract", r["K"], r["flex"]))
 
 base = {}

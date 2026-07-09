@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "figure": "Paper B, Figure fig8_int_vs_ternary (\\label{fig:intvster}): integer K-quants survive; uniform ternary K2 collapses",
+    "what": "Integer llama.cpp K-quant accuracy points used as the survival baseline against uniform ternary K2/K3.",
+    "task": "gsm8k",
+    "metric": "exact_match,flexible-extract",
+    "shots": 5,
+    "limit": 300,
+    "harness": "EleutherAI lm-eval HFLM (same harness as the ternary sweep); quantize->dequant->accuracy, device-independent",
+    "measured": "RunPod, 2026-06-30",
+    "bpw_definition": "real GGUF file-based storage of the quantized weights (packed), not the information-theoretic entropy bound",
+    "provenance_caveat": "The per-run lm-eval result JSONs for these integer K-quant points were NOT retained -- pods were torn down after the run per the project's capture->delete policy, and the values were transcribed at capture time into sasori/bench/plot_pareto_int_vs_ternary.py (committed 2026-06-30). They are reproduced verbatim in this file so the figure loads from a single auditable data artifact rather than from an inline code literal. The ternary side of the SAME figure loads from a retained artifact: experiments/ternary-quantization/data/overnight/clean_sweep_2026-06-30.json.",
+    "independent_support": "The qualitative claim the figure makes -- a uniform-ternary K2 reasoning cliff that mixed-precision integer K-quants do NOT reproduce at comparable bpw -- is independently corroborated by the retained RTN int3 control (results/runpod-runs) and by the ternary K2/K3 sweep, both of which are backed by committed JSON. This figure is a positioning/context plot, not a headline result; the headline (the K-lever, fig1) rests on the retained sweep."
+  },
+  "int_kquant_gsm8k_flexible": {
+    "Qwen2.5-7B-Instruct":       [[3.168, 0.4367], [4.001, 0.8133]],
+    "Qwen2.5-Coder-7B-Instruct": [[3.168, 0.6933], [4.001, 0.7533], [4.919, 0.7767]],
+    "Qwen3-8B":                  [[3.205, 0.8467], [4.028, 0.8833]]
+  }
+}
